@@ -199,18 +199,42 @@ export async function classificar(itens, { log = console.log } = {}) {
 
   const resultados = [];
   const vistos = new Set();
+  const falhas = [];
+
   for (let i = 0; i < lotes.length; i += CHAMADAS_PARALELAS) {
     const respostas = await Promise.allSettled(
       lotes.slice(i, i + CHAMADAS_PARALELAS).map((l) => classificarLote(cliente, l, log)),
     );
     for (const r of respostas) {
-      if (r.status !== 'fulfilled') { log('  [llm] chamada falhou: ' + (r.reason?.message ?? r.reason)); continue; }
+      if (r.status !== 'fulfilled') {
+        const msg = r.reason?.message ?? String(r.reason);
+        falhas.push(msg);
+        log('  [llm] chamada falhou: ' + msg);
+        continue;
+      }
       for (const c of r.value) {
         if (vistos.has(c._bruto.url)) continue;
         vistos.add(c._bruto.url);
         resultados.push(c);
       }
     }
+  }
+
+  // Falhar alto, nunca em silencio -- ver a mesma guarda em classificador.js.
+  if (falhas.length && resultados.length === 0) {
+    throw new Error(
+      'todas as ' + falhas.length + ' chamadas ao modelo falharam; nada foi classificado.\n'
+      + 'Primeiro erro: ' + falhas[0] + '\n'
+      + 'Verifique ANTHROPIC_API_KEY, o saldo de creditos da conta e o nome do modelo ('
+      + MODELO + ').',
+    );
+  }
+  if (falhas.length > lotes.length / 2) {
+    throw new Error(
+      'mais da metade das chamadas falhou (' + falhas.length + ' de ' + lotes.length
+      + '); rodada abortada para nao gravar um resultado parcial silencioso.\n'
+      + 'Primeiro erro: ' + falhas[0],
+    );
   }
 
   const uso = resultados.reduce((a, r) => ({

@@ -86,6 +86,16 @@ async function principal() {
   }
 
   log('\n2. portao (sem custo de LLM)');
+
+  // Nenhuma fonte devolver nada nao e "semana calma": e fonte quebrada.
+  // Bloqueio por IP de datacenter, mudanca de API, feed fora do ar -- tudo isso
+  // terminaria verde e sem alteracao se nao fosse esta guarda.
+  if (brutos.length === 0) {
+    throw new Error(
+      'todas as fontes devolveram zero itens. Isso indica fonte quebrada, nao ausencia '
+      + 'de novidades. Rode com --seco para ver os erros de cada fonte.',
+    );
+  }
   const novos = brutos.filter((b) => !conhecidos.has(chave(b.url)));
   log('  ' + brutos.length + ' brutos -> ' + novos.length + ' novos ('
     + (brutos.length - novos.length) + ' ja conhecidos)\n');

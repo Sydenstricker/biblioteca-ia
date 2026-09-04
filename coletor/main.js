@@ -136,6 +136,16 @@ async function principal() {
   }
   log('  total bruto: ' + brutos.length + '\n');
 
+  // Nenhuma fonte devolver nada nao e "semana calma": e fonte quebrada.
+  // Bloqueio por IP de datacenter, mudanca de API, feed fora do ar -- tudo isso
+  // terminaria verde e sem alteracao se nao fosse esta guarda.
+  if (brutos.length === 0) {
+    throw new Error(
+      'todas as fontes devolveram zero itens. Isso indica fonte quebrada, nao ausencia '
+      + 'de novidades. Rode com --seco para ver os erros de cada fonte.',
+    );
+  }
+
   log('2. atualizando itens ja conhecidos');
   const tocados = atualizarConhecidos(acervo, brutos);
   log('  ' + tocados + ' itens do acervo reapareceram (mencoes +1)\n');

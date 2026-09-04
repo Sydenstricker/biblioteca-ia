@@ -168,6 +168,7 @@ export async function classificar(itens, { log = console.log } = {}) {
 
   const resultados = [];
   const vistos = new Set(); // o modelo pode repetir um indice entre lotes paralelos
+  const falhas = [];
 
   for (let i = 0; i < lotes.length; i += CHAMADAS_PARALELAS) {
     const fatia = lotes.slice(i, i + CHAMADAS_PARALELAS);
@@ -182,9 +183,34 @@ export async function classificar(itens, { log = console.log } = {}) {
           resultados.push(c);
         }
       } else {
-        log('  [llm] chamada falhou: ' + (r.reason?.message ?? r.reason));
+        const msg = r.reason?.message ?? String(r.reason);
+        falhas.push(msg);
+        log('  [llm] chamada falhou: ' + msg);
       }
     }
+  }
+
+  // Falhar alto, nunca em silencio.
+  //
+  // Antes desta guarda, um erro em TODAS as chamadas (chave invalida, saldo
+  // zerado, modelo indisponivel) era apenas registrado no log: a funcao devolvia
+  // lista vazia, o coletor gravava arquivos sem alteracao, o create-pull-request
+  // nao via diff e o workflow terminava VERDE sem ter feito nada. Custou uma
+  // sessao de depuracao para descobrir que o problema nao era o PR.
+  if (falhas.length && resultados.length === 0) {
+    throw new Error(
+      'todas as ' + falhas.length + ' chamadas ao modelo falharam; nada foi classificado.\n'
+      + 'Primeiro erro: ' + falhas[0] + '\n'
+      + 'Verifique ANTHROPIC_API_KEY, o saldo de creditos da conta e o nome do modelo ('
+      + MODELO + ').',
+    );
+  }
+  if (falhas.length > lotes.length / 2) {
+    throw new Error(
+      'mais da metade das chamadas falhou (' + falhas.length + ' de ' + lotes.length
+      + '); rodada abortada para nao gravar um resultado parcial silencioso.\n'
+      + 'Primeiro erro: ' + falhas[0],
+    );
   }
 
   const uso = resultados.reduce((acc, r) => ({
