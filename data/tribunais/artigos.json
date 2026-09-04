@@ -1,1 +1,813 @@
-[]
+[
+  {
+    "id": "doi.org/10.1007/s10506-019-09255-y",
+    "nome": "Using machine learning to predict decisions of the European Court of Human Rights",
+    "url": "https://doi.org/10.1007/s10506-019-09255-y",
+    "resumo": "Estudo usa processamento de linguagem natural para prever decisoes da Corte Europeia de Direitos Humanos, com acuracia media de 75%, caindo para 58-68% ao prever casos futuros. E referencia classica sobre limites da predicao judicial automatizada, util para debates sobre jurimetria no Brasil.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Uniao Europeia",
+      "Conselho da Europa"
+    ],
+    "orgaos": [
+      "Corte Internacional"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Jurimetria e Estatistica",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Transparencia e Explicabilidade",
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2019,
+      "citacoes": 427,
+      "acesso_aberto": true,
+      "doi": "10.1007/s10506-019-09255-y",
+      "autores": [
+        "Masha Medvedeva",
+        "Michel Vols",
+        "Martijn Wieling"
+      ],
+      "veiculo": "Artificial Intelligence and Law"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1093/oso/9780198838364.001.0001",
+    "nome": "Online Courts and the Future of Justice",
+    "url": "https://doi.org/10.1093/oso/9780198838364.001.0001",
+    "resumo": "Livro de Richard Susskind defende os tribunais online como resposta ao problema global de acesso a justica, citando explicitamente o acervo de 100 milhoes de casos no Brasil. Obra de referencia para discussoes sobre transformacao digital e tecnologia no Judiciario brasileiro.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Reino Unido",
+      "Global",
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Atendimento ao Cidadao",
+      "Julgamento",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Atendimento e Chatbot",
+      "Classificacao e Triagem de Processos"
+    ],
+    "temas": [
+      "Acesso a Justica",
+      "Produtividade e Eficiencia",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2019,
+      "citacoes": 367,
+      "acesso_aberto": false,
+      "doi": "10.1093/oso/9780198838364.001.0001",
+      "autores": [
+        "Richard Susskind"
+      ],
+      "veiculo": "nao informado"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1016/j.clsr.2021.105567",
+    "nome": "Why fairness cannot be automated: Bridging the gap between EU non-discrimination law and AI",
+    "url": "https://doi.org/10.1016/j.clsr.2021.105567",
+    "resumo": "Artigo sustenta que a nocao de equidade do direito antidiscriminatorio da UE nao pode ser plenamente automatizada, propondo ponte entre criterios juridicos e metricas estatisticas de vies. Interessa a tribunais brasileiros que discutem auditoria e discriminacao algoritmica em decisoes automatizadas.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Uniao Europeia"
+    ],
+    "orgaos": [
+      "Corte Internacional"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Avaliacao de Risco de Pessoas"
+    ],
+    "temas": [
+      "Vies e Discriminacao",
+      "Governanca e Regulacao",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.6,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2021,
+      "citacoes": 311,
+      "acesso_aberto": false,
+      "doi": "10.1016/j.clsr.2021.105567",
+      "autores": [
+        "Sandra Wachter",
+        "Brent Mittelstadt",
+        "Chris Russell"
+      ],
+      "veiculo": "Computer law & security review"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1007/s12027-020-00602-0",
+    "nome": "Criminal justice, artificial intelligence systems, and human rights",
+    "url": "https://doi.org/10.1007/s12027-020-00602-0",
+    "resumo": "O artigo analisa a automacao na justica criminal por big data e aprendizado de maquina, examinando jurisprudencia e direitos humanos afetados. Serve de referencia para o debate brasileiro sobre uso de IA em decisoes penais e avaliacao de risco.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Uniao Europeia",
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Corte Internacional",
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Instrucao Probatoria"
+    ],
+    "aplicacoes": [
+      "Avaliacao de Risco de Pessoas"
+    ],
+    "temas": [
+      "Devido Processo Legal",
+      "Vies e Discriminacao",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2020,
+      "citacoes": 223,
+      "acesso_aberto": true,
+      "doi": "10.1007/s12027-020-00602-0",
+      "autores": [
+        "Aleš Završník"
+      ],
+      "veiculo": "ERA Forum"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.53637/zgux2213",
+    "nome": "Judge v Robot? Artificial Intelligence and Judicial Decision-Making",
+    "url": "https://doi.org/10.53637/zgux2213",
+    "resumo": "Texto classico de Tania Sourdin discute em que medida a IA pode substituir, apoiar ou complementar o papel do juiz, sobretudo em litigios civeis de menor complexidade. E referencia teorica direta para o debate brasileiro sobre limites da automacao no julgamento.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau",
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Julgamento",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Classificacao e Triagem de Processos"
+    ],
+    "temas": [
+      "Devido Processo Legal",
+      "Governanca e Regulacao",
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2018,
+      "citacoes": 201,
+      "acesso_aberto": true,
+      "doi": "10.53637/zgux2213",
+      "autores": [
+        "Tania Sourdin"
+      ],
+      "veiculo": "University of New South Wales law journal"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1007/s10506-021-09294-4",
+    "nome": "Preserving the rule of law in the era of artificial intelligence (AI)",
+    "url": "https://doi.org/10.1007/s10506-021-09294-4",
+    "resumo": "Artigo analisa como sistemas de IA de decisao automatizada ameacam o Estado de Direito, com foco no uso de IA para auxiliar juizes em decisoes judiciais. Discute garantias juridicas necessarias, tema diretamente util ao debate brasileiro sobre limites da IA no julgamento.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global",
+      "Uniao Europeia"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Avaliacao de Risco de Pessoas"
+    ],
+    "temas": [
+      "Devido Processo Legal",
+      "Governanca e Regulacao",
+      "Transparencia e Explicabilidade"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2021,
+      "citacoes": 159,
+      "acesso_aberto": true,
+      "doi": "10.1007/s10506-021-09294-4",
+      "autores": [
+        "Stanley Greenstein"
+      ],
+      "veiculo": "Artificial Intelligence and Law"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.2139/ssrn.4583531",
+    "nome": "Legalbench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models",
+    "url": "https://doi.org/10.2139/ssrn.4583531",
+    "resumo": "O LegalBench e um benchmark colaborativo para medir raciocinio juridico em grandes modelos de linguagem. Importa ao Judiciario por oferecer metrica de avaliacao da confiabilidade de LLMs antes de sua adocao em tarefas juridicas.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Estados Unidos",
+      "Global"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Resumo de Documentos"
+    ],
+    "temas": [
+      "IA Generativa",
+      "Responsabilidade e Auditoria",
+      "Alucinacao e Erro",
+      "Transparencia e Explicabilidade"
+    ],
+    "confianca": 0.75,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2023,
+      "citacoes": 148,
+      "acesso_aberto": true,
+      "doi": "10.2139/ssrn.4583531",
+      "autores": [
+        "Neel Guha",
+        "Julian Nyarko",
+        "Daniel E. Ho",
+        "Christopher Ré",
+        "Adam Chilton"
+      ],
+      "veiculo": "SSRN Electronic Journal"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1016/j.aiopen.2024.09.002",
+    "nome": "Large language models in law: A survey",
+    "url": "https://doi.org/10.1016/j.aiopen.2024.09.002",
+    "resumo": "Survey abrangente sobre modelos de linguagem aplicados ao direito, incluindo usos no sistema judicial e desafios pendentes. Serve de panorama tecnico para tribunais que avaliam adocao de IA generativa.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "China",
+      "Global"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Minutas e Redacao de Decisoes",
+      "Resumo de Documentos"
+    ],
+    "temas": [
+      "IA Generativa",
+      "Produtividade e Eficiencia",
+      "Alucinacao e Erro"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2024,
+      "citacoes": 128,
+      "acesso_aberto": true,
+      "doi": "10.1016/j.aiopen.2024.09.002",
+      "autores": [
+        "Jinqi Lai",
+        "Wensheng Gan",
+        "Jiayang Wu",
+        "Zhenlian Qi",
+        "Philip S. Yu"
+      ],
+      "veiculo": "AI Open"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1007/s10506-018-9237-x",
+    "nome": "Judicial analytics and the great transformation of American Law",
+    "url": "https://doi.org/10.1007/s10506-018-9237-x",
+    "resumo": "Artigo discute analitica preditiva sobre decisoes judiciais nos EUA, avaliando fatores extralegais e disparidades entre juizes. Interessa a jurimetria e a politicas de reducao de vies decisorio.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Tribunal Superior",
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Jurimetria e Estatistica"
+    ],
+    "temas": [
+      "Vies e Discriminacao",
+      "Transparencia e Explicabilidade",
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.75,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2018,
+      "citacoes": 118,
+      "acesso_aberto": true,
+      "doi": "10.1007/s10506-018-9237-x",
+      "autores": [
+        "Daniel L. Chen"
+      ],
+      "veiculo": "Artificial Intelligence and Law"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1080/10345329.2019.1658694",
+    "nome": "Predicting risk in criminal procedure: actuarial tools, algorithms, AI and judicial decision-making",
+    "url": "https://doi.org/10.1080/10345329.2019.1658694",
+    "resumo": "Artigo analisa o uso de ferramentas atuariais, algoritmos e IA para avaliacao de risco em fianca, sentenca e livramento condicional, area tradicionalmente de discricao judicial. Levanta preocupacoes eticas sobre justica individualizada e serve de referencia para debates sobre risco algoritmico no processo penal.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Execucao e Cumprimento",
+      "Instrucao Probatoria"
+    ],
+    "aplicacoes": [
+      "Avaliacao de Risco de Pessoas"
+    ],
+    "temas": [
+      "Devido Processo Legal"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2019,
+      "citacoes": 101,
+      "acesso_aberto": false,
+      "doi": "10.1080/10345329.2019.1658694",
+      "autores": [
+        "Carolyn McKay"
+      ],
+      "veiculo": "Current Issues in Criminal Justice"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "openalex.org/w2945057689",
+    "nome": "Developing Artificially Intelligent Justice",
+    "url": "https://openalex.org/W2945057689",
+    "resumo": "Artigo argumenta que a adjudicacao por IA transformara os valores adjudicatorios, favorecendo uma 'justica codificada' padronizada em detrimento da discricao equitativa, sobretudo na esfera penal e recursal. Discute a plausibilidade dos 'juizes-robo' e riscos associados, sendo leitura de referencia para o debate sobre limites da IA no julgamento.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (openalex.org)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Suprema Corte",
+      "Primeiro Grau",
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Avaliacao de Risco de Pessoas"
+    ],
+    "temas": [
+      "Devido Processo Legal",
+      "Transparencia e Explicabilidade",
+      "Governanca e Regulacao",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2019,
+      "citacoes": 84,
+      "acesso_aberto": false,
+      "doi": "",
+      "autores": [
+        "Richard M. Ré",
+        "Alicia Solow-Niederman"
+      ],
+      "veiculo": "nao informado"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.2139/ssrn.4539836",
+    "nome": "AI Assistance in Legal Analysis: An Empirical Study",
+    "url": "https://doi.org/10.2139/ssrn.4539836",
+    "resumo": "Estudo empirico de Choi e Schwarcz mede o efeito da assistencia de IA generativa no desempenho de analise juridica. Interessa ao Judiciario como evidencia sobre ganhos e limites do uso de LLMs em tarefas de redacao e analise juridica.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "IA Generativa",
+      "Produtividade e Eficiencia",
+      "Capacitacao e Pessoas",
+      "Alucinacao e Erro"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2023,
+      "citacoes": 81,
+      "acesso_aberto": true,
+      "doi": "10.2139/ssrn.4539836",
+      "autores": [
+        "Jonathan H. Choi",
+        "Daniel Schwarcz"
+      ],
+      "veiculo": "SSRN Electronic Journal"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1515/ajle-2020-0008",
+    "nome": "The Impact of Artificial Intelligence on the Right to a Fair Trial: Towards a Robot Judge?",
+    "url": "https://doi.org/10.1515/ajle-2020-0008",
+    "resumo": "Artigo analisa o impacto da IA sobre o direito ao processo justo (art. 6 CEDH), distinguindo assistentes de IA para juizes e o chamado 'juiz-robo' que decidiria autonomamente. Conclui pela preferencia do modelo assistivo, oferecendo parametros uteis ao debate brasileiro sobre limites da automacao decisoria.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Conselho da Europa",
+      "Uniao Europeia",
+      "Global"
+    ],
+    "orgaos": [
+      "Corte Internacional",
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Devido Processo Legal"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2020,
+      "citacoes": 80,
+      "acesso_aberto": false,
+      "doi": "10.1515/ajle-2020-0008",
+      "autores": [
+        "Jasper Ulenaers"
+      ],
+      "veiculo": "Asian Journal of Law and Economics"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2609.02158v1",
+    "nome": "OBJECTION! Lawyer Agents Mitigate Guilty Bias in Legal Judgment Prediction",
+    "url": "https://arxiv.org/abs/2609.02158v1",
+    "resumo": "Preprint apresenta o OBJECTION, pipeline que insere um agente 'advogado adversarial' na predicao de julgamentos para mitigar o vies de culpa herdado de bases construidas sob a otica acusatoria. Importa ao Judiciario por evidenciar como modelos preditivos podem reproduzir presuncao de culpa.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "Global",
+      "China"
+    ],
+    "orgaos": [
+      "Primeiro Grau",
+      "Ministerio Publico"
+    ],
+    "fases": [
+      "Julgamento",
+      "Instrucao Probatoria"
+    ],
+    "aplicacoes": [
+      "Avaliacao de Risco de Pessoas",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Vies e Discriminacao",
+      "Devido Processo Legal",
+      "Transparencia e Explicabilidade"
+    ],
+    "confianca": 0.75,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2608.21089v1",
+    "nome": "Can Legal AI Know When It Is Wrong? And Do Students Know When It Is?",
+    "url": "https://arxiv.org/abs/2608.21089v1",
+    "resumo": "Estudo audita LLMs de uso geral em questoes do direito contratual indiano e mede a 'taxa de erro de alta confianca', mostrando veredictos incorretos com confianca proxima do maximo. Interessa ao Judiciario brasileiro como evidencia empirica dos riscos de alucinacao e excesso de confianca no uso de IA generativa para analise juridica.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "India",
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia",
+      "Resumo de Documentos"
+    ],
+    "temas": [
+      "Alucinacao e Erro",
+      "IA Generativa"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2608.17168v1",
+    "nome": "Can LLMs Reason in a Legally Meaningful Manner? A Small-scale Study on European Court of Human Rights Cases",
+    "url": "https://arxiv.org/abs/2608.17168v1",
+    "resumo": "Pesquisa avalia se um LLM de ponta produz raciocinio juridicamente significativo ao prever desfechos de casos da Corte Europeia de Direitos Humanos, concluindo que as analises sao estruturalmente completas mas superficiais. Serve de alerta sobre limites do uso de IA em predicao e fundamentacao de decisoes.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "Conselho da Europa",
+      "Uniao Europeia"
+    ],
+    "orgaos": [
+      "Corte Internacional"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Jurimetria e Estatistica"
+    ],
+    "temas": [
+      "Transparencia e Explicabilidade",
+      "IA Generativa",
+      "Devido Processo Legal"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2608.10400v2",
+    "nome": "Do Judges Behave Like Algorithms?",
+    "url": "https://arxiv.org/abs/2608.10400v2",
+    "resumo": "Estudo examina audiencias de fianca em Harris County (Texas) para verificar se juizes ja decidem seguindo regras previsiveis, quase algoritmicas, ou se usam informacao individualizada nao capturada nos dados. A discussao alimenta o debate sobre substituicao ou apoio algoritmico em decisoes de risco e liberdade.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Avaliacao de Risco de Pessoas",
+      "Jurimetria e Estatistica"
+    ],
+    "temas": [
+      "Vies e Discriminacao",
+      "Devido Processo Legal",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2608.21409v1",
+    "nome": "Sycophants in the Courtroom: Are LLMs Fragile to Juridical Authority and Evolving Legal Standards?",
+    "url": "https://arxiv.org/abs/2608.21409v1",
+    "resumo": "Estudo propoe benchmark que testa se LLMs cedem a autoridade juridica invocada pelo usuario (bajulacao) e se lidam com validade temporal de normas. Interessa ao Judiciario por evidenciar risco de erro e alucinacao no uso de IA generativa em pesquisa e raciocinio juridico.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Alucinacao e Erro",
+      "IA Generativa",
+      "Transparencia e Explicabilidade"
+    ],
+    "confianca": 0.6,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2608.08830v1",
+    "nome": "PROSLEX: A Novel Dataset for Expert-Annotated Legal Statute Prediction for Indian Judiciary",
+    "url": "https://arxiv.org/abs/2608.08830v1",
+    "resumo": "Pesquisadores apresentam o PROSLEX, base com 1.623 documentos juridicos indianos anotados por especialistas para prever dispositivos legais aplicaveis com explicacoes. Relevante como referencia metodologica para classificacao automatizada de processos com exigencia de explicabilidade.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "India"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Triagem e Distribuicao",
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos",
+      "Extracao de Dados de Documentos"
+    ],
+    "temas": [
+      "Transparencia e Explicabilidade",
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.6,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2608.21401v1",
+    "nome": "Generative Gap Filling",
+    "url": "https://arxiv.org/abs/2608.21401v1",
+    "resumo": "Estudo empirico compara humanos e LLMs na tarefa de prever clausulas contratuais suprimidas, encontrando desempenho superior dos modelos. Importa ao Judiciario por sugerir uso de IA no preenchimento de lacunas contratuais em litigios, tema de interpretacao judicial.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Instrucao Probatoria",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Extracao de Dados de Documentos",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "IA Generativa",
+      "Devido Processo Legal"
+    ],
+    "confianca": 0.5,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  }
+]
