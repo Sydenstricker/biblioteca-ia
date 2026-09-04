@@ -39,6 +39,54 @@
     ]
   },
   {
+    "id": "br-cnj-gabinete-do-juizo",
+    "tipo": "aplicacao",
+    "nome": "Gabinete do Juízo",
+    "orgao": "Conselho Nacional de Justiça (CNJ) — programa Justiça 4.0",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca",
+      "Primeiro Grau"
+    ],
+    "ano": 2025,
+    "o_que_faz": "Solução nacional que reúne num só lugar as tarefas diárias de gabinete: redigir despachos, decisões e sentenças, assinar atos e documentos, e gerir a pauta de audiências. A camada de IA acrescentou chat direto com o usuário, geração de minutas, leitura assistida dos autos, sugestão de precedentes qualificados e sugestão de movimentos processuais. Integra o programa Justiça 4.0, acordo de cooperação entre o CNJ e o Programa das Nações Unidas para o Desenvolvimento iniciado em 2020.",
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia",
+      "Resumo de Documentos"
+    ],
+    "autonomia": "assistida",
+    "situacao": "Em producao",
+    "verificacao": "fonte_primaria",
+    "temas": [
+      "IA Generativa",
+      "Produtividade e Eficiencia",
+      "Acesso a Justica"
+    ],
+    "controversia": "A sugestão automatizada de precedentes qualificados e de movimentos processuais é o ponto que mais pede atenção: influencia diretamente o conteúdo da decisão, e a conferência do precedente na fonte oficial continua indispensável.",
+    "fontes": [
+      {
+        "veiculo": "CNJ — página do Gabinete do Juízo",
+        "url": "https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/justica-4-0/gabinete-do-juizo/"
+      },
+      {
+        "veiculo": "CNJ — lançamento do sistema",
+        "url": "https://www.cnj.jus.br/gabinete-do-juizo-cnj-lanca-sistema-que-auxilia-o-dia-a-dia-de-magistrados/"
+      },
+      {
+        "veiculo": "CNJ — funcionalidade de IA com chat, minutas e precedentes",
+        "url": "https://www.cnj.jus.br/gabinete-do-juizo-ganha-funcionalidade-de-ia-que-integra-chat-minutas-e-pesquisa-de-precedentes/"
+      }
+    ]
+  },
+  {
     "id": "br-cnj-resolucao-615-2025",
     "tipo": "norma",
     "nome": "Resolução CNJ nº 615/2025",
@@ -184,6 +232,53 @@
       {
         "veiculo": "CNJ",
         "url": "https://www.cnj.jus.br/judiciario-ganha-agilidade-com-uso-de-inteligencia-artificial/"
+      }
+    ]
+  },
+  {
+    "id": "br-tjam-arandu",
+    "tipo": "aplicacao",
+    "nome": "Arandu",
+    "orgao": "Tribunal de Justiça do Amazonas (TJAM)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual",
+      "Primeiro Grau"
+    ],
+    "ano": 2026,
+    "o_que_faz": "Plataforma de IA generativa desenvolvida pelo próprio tribunal — \"arandu\" significa entendimento, saber, sabedoria em tupi. A primeira ferramenta do ecossistema identifica similaridade entre processos, sinalizando possíveis demandas repetitivas ou predatórias, e é usada pelo Nugepac nessa triagem. O modelo foi treinado sobre mais de 500 mil petições distribuídas no Judiciário amazonense e continua aprendendo a cada nova peça protocolada. Apoia-se no Archeion, base de dados criada pelo tribunal para sustentar suas aplicações de IA. Obteve o primeiro lugar entre os projetos apresentados na Expojud Portugal 2026, na Faculdade de Direito da Universidade de Lisboa.",
+    "fases": [
+      "Triagem e Distribuicao",
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Deteccao de Casos Repetitivos",
+      "Deteccao de Fraude ou Anomalia",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "autonomia": "apoio",
+    "situacao": "Em producao",
+    "verificacao": "fonte_primaria",
+    "temas": [
+      "IA Generativa",
+      "Produtividade e Eficiencia",
+      "Acesso a Justica"
+    ],
+    "controversia": "Modelo treinado sobre o acervo do próprio tribunal aprende os padrões desse acervo, inclusive os indesejados. Sinalizar similaridade como indício de demanda predatória exige o mesmo cuidado da Berna: padronização da petição pode decorrer da padronização da própria lesão.",
+    "fontes": [
+      {
+        "veiculo": "TJAM — plataforma Arandu e IA própria",
+        "url": "https://www.tjam.jus.br/index.php/menu/sala-de-imprensa/17259-tecnologia-tjam-plataforma-arandu-fortalece-transformacao-digital-do-tjam-com-inteligencia-artificial-desenvolvida-pelo-proprio-tribunal"
+      },
+      {
+        "veiculo": "TJAM — ferramenta que identifica similaridades",
+        "url": "https://www.tjam.jus.br/index.php/juizados/noticias/10091-tribunal-de-justica-do-amazonas-lanca-ferramenta-de-inteligencia-artificial-que-identifica-similaridades-entre-processos"
+      },
+      {
+        "veiculo": "TJAM — premiação na Expojud Portugal 2026",
+        "url": "https://www.tjam.jus.br/index.php/menu/sala-de-imprensa/16664-pleno-do-tjam-destaca-premiacao-internacional-da-plataforma-de-inteligencia-artificial-arandu"
       }
     ]
   },
@@ -346,6 +441,104 @@
       {
         "veiculo": "Conjur",
         "url": "https://www.conjur.com.br/2025-abr-17/tj-do-rio-de-janeiro-amplia-uso-de-inteligencia-artificial-na-area-civel/"
+      }
+    ]
+  },
+  {
+    "id": "br-tjsp-minutaia",
+    "tipo": "aplicacao",
+    "nome": "MinutaIA (TJSP)",
+    "orgao": "Tribunal de Justiça de São Paulo (TJSP)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual",
+      "Primeiro Grau"
+    ],
+    "ano": 2026,
+    "o_que_faz": "Elabora minutas de peças a partir dos autos, de modelos de documento e de jurisprudência, para magistrados, assessores e assistentes. O diferencial é a integração direta com os sistemas de tramitação do tribunal: acessa processos do eproc e do SAJ sem necessidade de inserção manual do conteúdo, e analisa autos de até 6 mil páginas numa única operação. Em processos sob segredo de justiça, o usuário sobe documentos previamente anonimizados. Todo conteúdo gerado é proposta, sem poder decisório: a revisão e a modificação cabem ao usuário. Integra o Projeto IA TJSP.",
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Resumo de Documentos",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "autonomia": "assistida",
+    "situacao": "Em producao",
+    "verificacao": "fonte_primaria",
+    "temas": [
+      "IA Generativa",
+      "Produtividade e Eficiencia",
+      "Protecao de Dados",
+      "Responsabilidade e Auditoria"
+    ],
+    "controversia": "Não confundir com o produto comercial homônimo em minutaia.com.br, que é de empresa privada e não tem relação com o tribunal. A ferramenta do TJSP fica em minutaia.tjsp.jus.br e é de uso interno.",
+    "fontes": [
+      {
+        "veiculo": "TJSP — anúncio de disponibilização",
+        "url": "https://www.tjsp.jus.br/Noticias/Noticia?codigoNoticia=115130"
+      },
+      {
+        "veiculo": "TJSP — documentação da ferramenta",
+        "url": "https://minutaia.tjsp.jus.br/docs"
+      },
+      {
+        "veiculo": "TJSP — Projeto IA, novas ferramentas",
+        "url": "https://www.tjsp.jus.br/Noticias/Noticia?codigoNoticia=114455"
+      }
+    ]
+  },
+  {
+    "id": "br-trf3-lia3r",
+    "tipo": "aplicacao",
+    "nome": "LIA3R",
+    "orgao": "Tribunal Regional Federal da 3ª Região (TRF3), nacionalizada pelo CNJ",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal Regional Federal",
+      "Conselho ou Orgao de Governanca",
+      "Primeiro Grau"
+    ],
+    "ano": 2026,
+    "o_que_faz": "Auxilia na elaboração de minutas de decisões, despachos e ementas, faz pesquisa jurídica especializada e resume peças e documentos extensos. Alimenta-se do banco de dados do PJe, de bases de conhecimento com documentos curados (RAG) e de documentos que o próprio usuário fornece na conversa. Desenvolvida por magistrados e servidores do TRF3, foi incorporada ao programa Conecta do CNJ, que identifica soluções criadas por tribunais e as disponibiliza em escala nacional. Supera 100 mil interações mensais, com mais de 2.330 prompts ativos, 450 bases de dados e 575 autores; já resumiu cerca de 1,55 milhão de peças em 106 mil processos.",
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Resumo de Documentos",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "autonomia": "assistida",
+    "situacao": "Em producao",
+    "verificacao": "fonte_primaria",
+    "temas": [
+      "IA Generativa",
+      "Produtividade e Eficiencia",
+      "Protecao de Dados",
+      "Responsabilidade e Auditoria"
+    ],
+    "controversia": "Opera com autenticação integrada ao sistema unificado do CNJ, anonimização de dados pessoais, monitoramento de respostas e rastreabilidade das operações — camadas declaradas justamente porque a escala nacional amplia o alcance de qualquer falha.",
+    "fontes": [
+      {
+        "veiculo": "CNJ — página da LIA3R no Conecta",
+        "url": "https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/justica-4-0/conheca-o-conecta/lia3r/"
+      },
+      {
+        "veiculo": "CNJ — nacionalização da ferramenta",
+        "url": "https://www.cnj.jus.br/plataforma-digital-do-poder-judiciario-nacionaliza-ferramenta-de-ia-criada-pelo-trf-3/"
+      },
+      {
+        "veiculo": "TRF3 — 101 mil interações por mês",
+        "url": "https://web.trf3.jus.br/noticias/Noticiar/ExibirNoticia/445857-lia3r-alcanca-101-mil-interacoes-por-mes"
       }
     ]
   },
