@@ -30,6 +30,12 @@
 
 * { box-sizing: border-box; }
 
+/* O atributo hidden vale display:none pela folha do navegador -- que qualquer
+   `display` explicito sobrepoe. Sem esta regra, .busca-linha { display: flex }
+   mantinha a busca visivel mesmo com hidden=true, e o usuario digitava numa caixa
+   que nao filtrava nada. */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
   background: var(--fundo);

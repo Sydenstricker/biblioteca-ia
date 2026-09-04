@@ -431,9 +431,30 @@ function cartaoUso(uso) {
   return el;
 }
 
-function blocoFaq(item) {
+/** Texto pesquisavel de um cartao ou de uma pergunta, sem acento. */
+function textoDe(o) {
+  return normalizar([
+    o.titulo, o.oQueFaz, o.destaque, o.cuidado, o.rotuloCuidado, o.aplicacao,
+    ...(o.exemplos || []),
+    o.pergunta, ...(o.resposta || []),
+    ...(o.fontes || []).map((f) => f.veiculo),
+  ].filter(Boolean).join(' '));
+}
+
+/** true se todos os termos da busca aparecem no item. Sem busca, tudo passa. */
+function casaBusca(o) {
+  const termos = normalizar(estado.busca).split(/\s+/).filter(Boolean);
+  if (!termos.length) return true;
+  const txt = textoDe(o);
+  return termos.every((t) => txt.includes(t));
+}
+
+function blocoFaq(item, aberto = false) {
   const d = document.createElement('details');
   d.className = 'faq-item';
+  // Com busca ativa a resposta ja abre: obrigar mais um clique para ver o que
+  // casou anula o proposito de ter pesquisado.
+  d.open = aberto;
 
   const s = document.createElement('summary');
   s.textContent = item.pergunta;
@@ -468,8 +489,15 @@ function renderGuia(alvo) {
   intro.append(h2, p);
   alvo.append(intro);
 
+  const buscando = !!estado.busca;
+  let achados = 0;
+
   // Dois grupos com sentidos opostos: a IA que voce adota e a que chega ate voce.
   for (const grupo of g.grupos) {
+    const usos = grupo.usos.filter(casaBusca);
+    achados += usos.length;
+    if (!usos.length) continue; // grupo sem resultado nao vira secao vazia
+
     const sec = document.createElement('section');
     sec.className = 'grupo-usos g-' + grupo.id;
 
@@ -482,7 +510,7 @@ function renderGuia(alvo) {
 
     const grade = document.createElement('div');
     grade.className = 'grade-usos';
-    for (const uso of grupo.usos) grade.append(cartaoUso(uso));
+    for (const uso of usos) grade.append(cartaoUso(uso));
     sec.append(grade);
     alvo.append(sec);
   }
@@ -495,9 +523,23 @@ function renderGuia(alvo) {
   aviso.className = 'aviso-faq';
   aviso.textContent = g.faq.aviso;
   faq.append(h2f, aviso);
-  for (const item of g.faq.perguntas) faq.append(blocoFaq(item));
 
-  alvo.append(faq);
+  const perguntas = g.faq.perguntas.filter(casaBusca);
+  achados += perguntas.length;
+  for (const item of perguntas) faq.append(blocoFaq(item, buscando));
+  if (perguntas.length) alvo.append(faq);
+
+  if (buscando && achados === 0) {
+    const vazio = document.createElement('div');
+    vazio.className = 'vazio';
+    vazio.innerHTML = '<p><strong>Nada no guia menciona esses termos.</strong></p>';
+    const dica = document.createElement('p');
+    dica.textContent = 'Tente uma palavra só, ou procure nas abas de Aplicações, '
+      + 'Notícias e Artigos, que têm acervo bem maior.';
+    vazio.append(dica);
+    alvo.append(vazio);
+  }
+  return achados;
 }
 
 const RENDER = { aplicacoes: fichaAplicacao, noticias: linhaNoticia, artigos: linhaArtigo };
@@ -512,11 +554,14 @@ function aplicar() {
   document.querySelector('main').classList.toggle('sem-filtros', estatico);
 
   if (estatico) {
-    renderGuia(saida);
+    const achados = renderGuia(saida);
     $('#filtros').innerHTML = '';
-    $('#contagem').textContent = '';
-    $('#limpar').hidden = true;
-    $('#vazio').hidden = true;
+    $('#contagem').textContent = estado.busca
+      ? achados + (achados === 1 ? ' trecho do guia menciona' : ' trechos do guia mencionam')
+        + ' "' + estado.busca + '"'
+      : '';
+    $('#limpar').hidden = !estado.busca;
+    $('#vazio').hidden = true; // o guia tem estado vazio proprio
     escreverUrl();
     return;
   }
@@ -547,8 +592,12 @@ function trocarVista(nome, inicial = false) {
   }
   $('#explicacao').textContent = VISTAS[nome].explicacao;
   $('#explicacao').hidden = !VISTAS[nome].explicacao;
-  // Buscar dentro do guia nao faz sentido: sao oito perguntas numa pagina so.
-  $('#busca').closest('.busca-linha').hidden = !!VISTAS[nome].estatico;
+  // A busca vale em TODAS as abas, guia inclusive: quem ouve falar de "texto
+  // branco" procura por isso, e escondi-la fazia o usuario digitar numa caixa
+  // inerte. O placeholder muda para dizer o que sera pesquisado.
+  $('#busca').placeholder = VISTAS[nome].estatico
+    ? 'Buscar no guia: alucinação, texto branco, resolução…'
+    : 'Buscar por sistema, tribunal, tema…';
   $('#ordem-artigo').hidden = !VISTAS[nome].ordenavel;
   if (!inicial) {
     // Filtros de uma vista nao fazem sentido na outra.

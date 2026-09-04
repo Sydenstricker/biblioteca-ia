@@ -140,6 +140,42 @@ ok('os cartoes do grupo "chega" dizem como reagir, nao como usar', () => {
   }
 });
 
+// A busca no guia foi adicionada porque o usuario procurou "texto branco" e nao
+// achou nada: a caixa aparecia (o hidden era sobreposto por display:flex) mas o
+// guia nem passava pela filtragem.
+ok('buscar no guia encontra o cartao e a pergunta certos', () => {
+  porId.busca.disparar('input', { target: { value: 'texto branco' } });
+});
+
+await new Promise((r) => setTimeout(r, 200));
+ok('"texto branco" traz o comando oculto, e so ele', () => {
+  const titulos = cartoesUso().map((c) => c.textContent);
+  assert.equal(cartoesUso().length, 1, 'esperava exatamente 1 cartao');
+  assert.ok(titulos[0].includes('Comando escondido'), 'cartao errado: ' + titulos[0]);
+  assert.equal(perguntas().length, 1, 'esperava exatamente 1 pergunta');
+});
+
+ok('a resposta do FAQ ja vem aberta quando ha busca', () => {
+  assert.equal(perguntas()[0].open, true, 'obrigar mais um clique anula a busca');
+});
+
+ok('busca sem resultado mostra estado vazio proprio', () => {
+  porId.busca.disparar('input', { target: { value: 'xyzabc123' } });
+});
+
+await new Promise((r) => setTimeout(r, 200));
+ok('nada encontrado no guia avisa em vez de ficar em branco', () => {
+  assert.equal(cartoesUso().length, 0);
+  assert.equal(perguntas().length, 0);
+  assert.ok(porId.saida.buscarTodos('vazio').length === 1, 'faltou o aviso de nada encontrado');
+});
+
+ok('limpar a busca restaura o guia inteiro', () => {
+  porId.limpar.disparar('click');
+  assert.equal(cartoesUso().length, totalUsos());
+  assert.equal(perguntas().length, guia.faq.perguntas.length);
+});
+
 // ---------- as vistas de dados ----------
 
 aba('aplicacoes').disparar('click');
