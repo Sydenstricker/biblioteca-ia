@@ -38,14 +38,24 @@ function construirSchema() {
           + '(1) o que faz, (2) para quem e, (3) como e cobrado ou licenciado. '
           + 'Se algo for desconhecido, diga "nao informado" -- nunca invente.',
       },
+      // ATENCAO: nada de minItems/maxItems. O strict tool use nao aceita
+      // "complex array constraints" e devolve 400 na hora -- foi o que derrubou a
+      // primeira rodada de producao. O limite vive na descricao (o modelo respeita)
+      // e e imposto no codigo por limitar(), abaixo. Ver teste-schema.js.
       industrias: {
-        type: 'array', items: { type: 'string', enum: VALORES.industrias }, minItems: 1, maxItems: 3,
+        type: 'array',
+        items: { type: 'string', enum: VALORES.industrias },
+        description: 'De 1 a 3 valores, do mais para o menos relevante.',
       },
       funcoes: {
-        type: 'array', items: { type: 'string', enum: VALORES.funcoes }, minItems: 1, maxItems: 3,
+        type: 'array',
+        items: { type: 'string', enum: VALORES.funcoes },
+        description: 'De 1 a 3 valores, do mais para o menos relevante.',
       },
       modalidades: {
-        type: 'array', items: { type: 'string', enum: VALORES.modalidades }, minItems: 1, maxItems: 3,
+        type: 'array',
+        items: { type: 'string', enum: VALORES.modalidades },
+        description: 'De 1 a 3 valores, do mais para o menos relevante.',
       },
       implementacao: { type: 'string', enum: VALORES.implementacao },
       maturidade: { type: 'string', enum: VALORES.maturidade },
@@ -113,6 +123,22 @@ const FERRAMENTA = {
   input_schema: construirSchema(),
 };
 
+/**
+ * Impoe no codigo os limites que o schema nao pode impor.
+ *
+ * Como `maxItems` e rejeitado pelo strict tool use, o teto de valores por dimensao
+ * so existe na descricao -- que o modelo segue quase sempre, mas nao por garantia.
+ * Aparar aqui e o que mantem os cartoes legiveis e os filtros discriminantes.
+ */
+function limitar(c) {
+  return {
+    ...c,
+    industrias: (c.industrias || []).slice(0, 3),
+    funcoes: (c.funcoes || []).slice(0, 3),
+    modalidades: (c.modalidades || []).slice(0, 3),
+  };
+}
+
 async function classificarLote(cliente, lote, log) {
   const texto = lote
     .map((it, i) => [
@@ -152,7 +178,7 @@ async function classificarLote(cliente, lote, log) {
 
   return (chamada.input.classificacoes || [])
     .filter((c) => lote[c.indice])
-    .map((c) => ({ ...c, _bruto: lote[c.indice], _modelo: MODELO, _uso: uso }));
+    .map((c) => ({ ...limitar(c), _bruto: lote[c.indice], _modelo: MODELO, _uso: uso }));
 }
 
 /** Classifica todos os itens. Devolve { aprovados, descartados, uso }. */
@@ -225,3 +251,6 @@ export async function classificar(itens, { log = console.log } = {}) {
     uso,
   };
 }
+
+/** Exposta so para coletor/teste-schema.js auditar o schema sem chamar a API. */
+export const FERRAMENTA_PARA_TESTE = FERRAMENTA;

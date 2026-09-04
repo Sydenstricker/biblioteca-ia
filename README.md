@@ -185,6 +185,8 @@ node coletor/main.js
 node coletor/promover.js
 
 # testes
+node coletor/teste-schema.js       # valida os schemas sem gastar API
+node coletor/teste-procedencia.js
 node coletor/teste-frontend.js
 ```
 
@@ -263,6 +265,7 @@ coletor/main.js         orquestrador
 coletor/promover.js     pendentes → acervo
 coletor/teste-frontend.js  teste de fumaça sem navegador
 coletor/dom-falso.js    DOM mínimo compartilhado pelos testes
+coletor/teste-schema.js  valida os schemas contra os limites do strict tool use
 
 —— hub IA em Tribunais ——
 tribunais.html          a página do hub

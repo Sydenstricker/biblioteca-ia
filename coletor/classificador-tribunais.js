@@ -72,11 +72,34 @@ function construirSchema() {
           + 'negada pela fonte oficial. '
           + 'Na duvida responda "nenhuma" -- nao infira polemica a partir de tom critico.',
       },
-      paises: { type: 'array', items: { type: 'string', enum: V.paises }, minItems: 1, maxItems: 3 },
-      orgaos: { type: 'array', items: { type: 'string', enum: V.orgaos }, minItems: 1, maxItems: 3 },
-      fases: { type: 'array', items: { type: 'string', enum: V.fases }, minItems: 1, maxItems: 3 },
-      aplicacoes: { type: 'array', items: { type: 'string', enum: V.aplicacoes }, minItems: 1, maxItems: 3 },
-      temas: { type: 'array', items: { type: 'string', enum: V.temas }, minItems: 1, maxItems: 4 },
+      // ATENCAO: nada de minItems/maxItems -- o strict tool use rejeita "complex
+      // array constraints" com 400. O limite vive na descricao e e imposto por
+      // limitar(), abaixo. Ver teste-schema.js.
+      paises: {
+        type: 'array',
+        items: { type: 'string', enum: V.paises },
+        description: 'De 1 a 3 valores, do mais para o menos relevante.',
+      },
+      orgaos: {
+        type: 'array',
+        items: { type: 'string', enum: V.orgaos },
+        description: 'De 1 a 3 valores, do mais para o menos relevante.',
+      },
+      fases: {
+        type: 'array',
+        items: { type: 'string', enum: V.fases },
+        description: 'De 1 a 3 valores, do mais para o menos relevante.',
+      },
+      aplicacoes: {
+        type: 'array',
+        items: { type: 'string', enum: V.aplicacoes },
+        description: 'De 1 a 3 valores, do mais para o menos relevante.',
+      },
+      temas: {
+        type: 'array',
+        items: { type: 'string', enum: V.temas },
+        description: 'De 1 a 4 valores, do mais para o menos relevante.',
+      },
       sistemas_mencionados: {
         type: 'array',
         items: {
@@ -88,11 +111,10 @@ function construirSchema() {
           required: ['nome', 'orgao'],
           additionalProperties: false,
         },
-        maxItems: 4,
         description:
-          'Sistemas de IA NOMEADOS no texto e operados por orgao de justica. Só nomes '
-          + 'proprios de sistemas -- nunca produtos genericos de mercado (ChatGPT, Copilot) '
-          + 'nem o nome do tribunal sozinho. Array vazio se nenhum for nomeado.',
+          'Sistemas de IA NOMEADOS no texto e operados por orgao de justica. No maximo 4. '
+          + 'Só nomes proprios de sistemas -- nunca produtos genericos de mercado (ChatGPT, '
+          + 'Copilot) nem o nome do tribunal sozinho. Array vazio se nenhum for nomeado.',
       },
       confianca: { type: 'number', description: 'De 0 a 1. Seja honesto: abaixo de 0,5 vai para revisao manual.' },
     },
@@ -152,6 +174,19 @@ const FERRAMENTA = {
   input_schema: construirSchema(),
 };
 
+/** Impoe no codigo os tetos que `maxItems` imporia, se o strict tool use o aceitasse. */
+function limitar(c) {
+  return {
+    ...c,
+    paises: (c.paises || []).slice(0, 3),
+    orgaos: (c.orgaos || []).slice(0, 3),
+    fases: (c.fases || []).slice(0, 3),
+    aplicacoes: (c.aplicacoes || []).slice(0, 3),
+    temas: (c.temas || []).slice(0, 4),
+    sistemas_mencionados: (c.sistemas_mencionados || []).slice(0, 4),
+  };
+}
+
 async function classificarLote(cliente, lote, log) {
   const texto = lote
     .map((it, i) => [
@@ -185,7 +220,7 @@ async function classificarLote(cliente, lote, log) {
 
   return (chamada.input.classificacoes || [])
     .filter((c) => lote[c.indice])
-    .map((c) => ({ ...c, _bruto: lote[c.indice], _modelo: MODELO, _uso: u }));
+    .map((c) => ({ ...limitar(c), _bruto: lote[c.indice], _modelo: MODELO, _uso: u }));
 }
 
 export async function classificar(itens, { log = console.log } = {}) {
@@ -249,3 +284,6 @@ export async function classificar(itens, { log = console.log } = {}) {
     uso,
   };
 }
+
+/** Exposta so para coletor/teste-schema.js auditar o schema sem chamar a API. */
+export const FERRAMENTA_PARA_TESTE = FERRAMENTA;
