@@ -28,11 +28,11 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Instalar dependencias
         working-directory: coletor
@@ -60,7 +60,7 @@ jobs:
 
       - name: Abrir Pull Request
         if: ${{ !inputs.seco }}
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: coletor/novidades
           delete-branch: true
