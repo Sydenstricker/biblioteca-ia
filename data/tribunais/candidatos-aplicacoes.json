@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "nome": "MinutaIA",
+    "orgao": "TJSP",
+    "visto_em": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1WenVXUFZpTzlQWDVjWEFiRmNEeVZLWXYzX1pwWmVDVHBMWms0cWp2cUZUbGhVLUF0c2xYRmx3Y2pmcnNTX2dXcTVfaGh1a1p0dmpIS2h0b2xBQlpuWWE4a1NVcmFPeFRrRFduWmdR?oc=5",
+    "titulo_da_noticia": "TJSP disponibiliza MinutaIA para apoio à atividade dos gabinetes",
+    "data": "2026-09-04",
+    "situacao": "a confirmar com fonte primaria"
+  },
+  {
+    "nome": "LIA3R",
+    "orgao": "Justica Federal da 3a Regiao",
+    "visto_em": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeWJmeV91TklqbU1EUzFaLU02NVJCaXpBdHlvcEc5QU1oU2w5TjhKV2tKR1BHdlpLb1lsSUNXV3lXVUZRUElaWjh0V1RjRjZXdDAtMVAzNDRSTC1hZW1OWm9oR013ck9HbUQ5TWNZdHA4eVNQc2NxdElkOEVqSUd0RGhLTGFVRF9EQVlybkoxTHd1WFRaRUEybnVKSHB0NVA0c1dMWnBnREh4eDh4VGRzX3NQamhPenlmcWc?oc=5",
+    "titulo_da_noticia": "CNJ lança LIA3R e amplia uso de inteligência artificial desenvolvida pela Justiça Federal da 3ª Região",
+    "data": "2026-09-04",
+    "situacao": "a confirmar com fonte primaria"
+  },
+  {
+    "nome": "Arandu",
+    "orgao": "TJAM",
+    "visto_em": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPQ252WGE3WVhYTDQ3UG50c3d5REZqQmljNjhhMnNyUkhQRXJlbFNDNE1uLVVmOUNpcmpIWjgtWDNaY2V0dHhrR21STkdVQzZjMGNOVW1yS3g1dDdVcWR3QWpUTGJtQ0g2ZHpvblJNajM4LVR5dDlIZUZTR1hoMXVjVnk2bllGUkpsS1k5eVRDOUxpVjBXUGNjd0cyYzlSMjFmQzM3ZVlZQ2hnRGV4QVJXYVFWLTdBZUI1Rk9iVy1OZmxuWXZfUzMzNEJTV0ZZWGZjbGo1OXlRNi1nTVpSVVpOQ3NGUXdTdmtZcWFzNm1YMU1EVWRwd3BvUWkxNC1VOFZGbUdSQU1TV3RhUU8tTGRJMDdxN0tCeGg1RHBCT2xjTXlLT0ZTU2VZeUxB?oc=5",
+    "titulo_da_noticia": "XXI Consepre - TJAM apresenta ecossistema Arandu e novas ferramentas de inteligência artificial utilizadas pelo Judiciário Estadual amazonense",
+    "data": "2026-09-04",
+    "situacao": "a confirmar com fonte primaria"
+  },
+  {
+    "nome": "Gabinete do Juízo",
+    "orgao": "CNJ",
+    "visto_em": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZHR6REwtQklGZXZUUkFDUURGejRLNTljS2tTTkN0MWZPa3I1enpldldsOWhqOGx4T1VLcEF5VFVPYkFiTHBHLTh6aWRXQ3M0SjduQ3N5d0g2R0dQNkVUdDlRY21ONm9TS3RBbldxejNLYnRtRlpxRG0xY2pQTFF1ZnFzZjl2cWVqV29tNDBNTkZiejhLeWxNQl96bTRPdmUwM1h3Q0NDNC1GLVB2N3VkcEZMeFJLcVBWMEhB?oc=5",
+    "titulo_da_noticia": "Gabinete do Juízo ganha funcionalidade de IA que integra chat, minutas e pesquisa de precedentes",
+    "data": "2026-09-04",
+    "situacao": "a confirmar com fonte primaria"
+  }
+]
