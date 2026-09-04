@@ -85,6 +85,14 @@ async function principal() {
     }
   }
 
+  // Rebusca as citacoes dos artigos ja no acervo. Sem isto o numero congela no dia
+  // da coleta -- o dedup impede que o artigo volte pelo caminho normal -- e as
+  // ordenacoes "em ascensao" e "por velocidade" ficariam eternamente desatualizadas.
+  if (artigos.length && !SECO) {
+    log('');
+    await fonteAcademico.atualizarSinais(artigos, { log });
+  }
+
   log('\n2. portao (sem custo de LLM)');
 
   // Nenhuma fonte devolver nada nao e "semana calma": e fonte quebrada.
@@ -106,7 +114,14 @@ async function principal() {
     if (novos.length > 25) log('  ... e mais ' + (novos.length - 25));
     return;
   }
-  if (novos.length === 0) { log('nada novo. Encerrando.'); return; }
+  // Nada novo nao significa nada a gravar: as citacoes recem-atualizadas precisam
+  // ser persistidas, senao a rodada inteira se perde.
+  if (novos.length === 0) {
+    log('nada novo a classificar.');
+    escrever(C.artigos, artigos);
+    log('citacoes dos ' + artigos.length + ' artigos atualizadas. Encerrando.');
+    return;
+  }
 
   log('3. classificando');
   const { classificar, MODELO } = await import('./classificador-tribunais.js');

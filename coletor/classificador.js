@@ -172,6 +172,16 @@ async function classificarLote(cliente, lote, log) {
     return [];
   }
 
+
+  // Itens enviados que voltam sem classificacao sao repagos na proxima rodada.
+  // A causa mais comum e truncamento por max_tokens: o array vem incompleto e
+  // nada no retorno denuncia isso -- so o silencio.
+  const devolvidas = (chamada.input.classificacoes || []).length;
+  if (devolvidas < lote.length) {
+    log('  [llm] AVISO: enviados ' + lote.length + ', devolvidos ' + devolvidas
+      + (resposta.stop_reason === 'max_tokens' ? ' -- truncado por max_tokens' : '')
+      + '. Os faltantes reaparecem na proxima rodada e serao repagos.');
+  }
   const uso = resposta.usage;
   log('  [llm] lote de ' + lote.length + ': ' + uso.input_tokens + ' in / '
     + uso.output_tokens + ' out / ' + (uso.cache_read_input_tokens ?? 0) + ' cache');

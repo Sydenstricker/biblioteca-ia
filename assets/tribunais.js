@@ -25,7 +25,8 @@ const VISTAS = {
   artigos: {
     arquivo: 'data/tribunais/artigos.json',
     filtros: ['temas', 'paises'],
-    explicacao: 'Produção acadêmica sobre IA e sistemas de justiça, ordenada por citações. Vem do OpenAlex e do arXiv.',
+    ordenavel: true,
+    explicacao: 'Produção acadêmica sobre IA e sistemas de justiça, do OpenAlex e do arXiv. Use a ordenação para separar os clássicos consolidados dos trabalhos que estão ganhando tração agora.',
   },
 };
 
@@ -34,7 +35,29 @@ const ROTULOS = {
   fases: 'Fase processual', verificacao: 'Verificação', temas: 'Tema',
 };
 
-const estado = { vista: 'guia', dados: {}, taxonomia: null, selecao: {}, busca: '' };
+/**
+ * Ordenacoes da aba de artigos. Cada uma responde a uma pergunta diferente:
+ *
+ *   citados     o que a area ja consagrou. Favorece o antigo, por construcao.
+ *   ascensao    o que esta subindo AGORA -- ultimo ano completo contra a media
+ *               dos anteriores. Pega ate obra antiga sendo redescoberta.
+ *   velocidade  citacoes por ano desde a publicacao. Normaliza a idade, entao um
+ *               trabalho de 2024 nao e punido por ter tido menos tempo.
+ *   recentes    simplesmente o mais novo primeiro.
+ */
+const ORDENS_ARTIGO = {
+  citados: { rotulo: 'Mais citados', chave: (a) => a.sinais?.citacoes ?? 0 },
+  ascensao: { rotulo: 'Em ascensão', chave: (a) => a.sinais?.aceleracao ?? -1 },
+  velocidade: { rotulo: 'Citações por ano', chave: (a) => a.sinais?.velocidade ?? 0 },
+  recentes: { rotulo: 'Mais recentes', chave: (a) => a.sinais?.ano ?? 0 },
+};
+
+/** A partir daqui o artigo ganha selo de destaque: cresceu 40% sobre a media. */
+const LIMIAR_ASCENSAO = 1.4;
+
+const estado = {
+  vista: 'guia', dados: {}, taxonomia: null, selecao: {}, busca: '', ordemArtigo: 'citados',
+};
 
 const $ = (s) => document.querySelector(s);
 const normalizar = (s) => (s || '').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
@@ -124,6 +147,16 @@ function filtrar(ignorando = null) {
     }
     return termos.every((t) => item._indice.includes(t));
   });
+}
+
+/**
+ * Só a aba de artigos reordena. As outras já vêm na ordem certa do coletor:
+ * notícia por data, aplicação por id.
+ */
+function ordenar(lista) {
+  if (estado.vista !== 'artigos') return lista;
+  const ordem = ORDENS_ARTIGO[estado.ordemArtigo] || ORDENS_ARTIGO.citados;
+  return [...lista].sort((a, b) => ordem.chave(b) - ordem.chave(a));
 }
 
 // ---------- render ----------
@@ -294,6 +327,19 @@ function linhaArtigo(item) {
   h3.append(a);
 
   const s = item.sinais || {};
+
+  // O selo de ascensao e o unico sinal do hub que muda sozinho a cada rodada:
+  // depende da contagem de citacoes rebuscada no OpenAlex, nao do texto do artigo.
+  if (s.aceleracao >= LIMIAR_ASCENSAO) {
+    const selo = document.createElement('span');
+    selo.className = 'selo-ascensao';
+    selo.textContent = '↗ em ascensão';
+    selo.title = 'Citações no último ano completo foram ' + s.aceleracao
+      + '× a média dos anos anteriores'
+      + (s.citacoes_ano_recente ? ' (' + s.citacoes_ano_recente + ' citações nesse ano)' : '');
+    h3.append(' ', selo);
+  }
+
   const meta = document.createElement('p');
   meta.className = 'ficha-meta';
   meta.textContent = [
@@ -309,6 +355,7 @@ function linhaArtigo(item) {
   rodape.className = 'rodape-cartao';
   rodape.textContent = [
     s.citacoes != null ? s.citacoes + ' citações' : '',
+    s.velocidade ? s.velocidade + '/ano' : '',
     s.acesso_aberto ? 'acesso aberto' : '',
     s.doi ? 'DOI ' + s.doi : '',
   ].filter(Boolean).join('  ·  ');
@@ -474,7 +521,7 @@ function aplicar() {
     return;
   }
 
-  const resultado = filtrar();
+  const resultado = ordenar(filtrar());
   const frag = document.createDocumentFragment();
   for (const item of resultado) frag.append(RENDER[estado.vista](item));
   saida.append(frag);
@@ -502,6 +549,7 @@ function trocarVista(nome, inicial = false) {
   $('#explicacao').hidden = !VISTAS[nome].explicacao;
   // Buscar dentro do guia nao faz sentido: sao oito perguntas numa pagina so.
   $('#busca').closest('.busca-linha').hidden = !!VISTAS[nome].estatico;
+  $('#ordem-artigo').hidden = !VISTAS[nome].ordenavel;
   if (!inicial) {
     // Filtros de uma vista nao fazem sentido na outra.
     for (const d of Object.keys(ROTULOS)) if (!VISTAS[nome].filtros.includes(d)) estado.selecao[d]?.clear();
@@ -513,6 +561,22 @@ function trocarVista(nome, inicial = false) {
 
 for (const b of document.querySelectorAll('.aba')) {
   b.addEventListener('click', () => trocarVista(b.dataset.vista));
+}
+
+// O seletor de ordenacao e montado a partir de ORDENS_ARTIGO, para os rotulos nao
+// viverem em dois lugares. Fica AQUI, no nivel do modulo, e nao em trocarVista():
+// la dentro ele seria repovoado a cada troca de aba, acumulando opcoes repetidas e
+// um ouvinte novo por vez.
+{
+  const sel = $('#ordem-artigo');
+  for (const [id, o] of Object.entries(ORDENS_ARTIGO)) {
+    const op = document.createElement('option');
+    op.value = id;
+    op.textContent = o.rotulo;
+    sel.append(op);
+  }
+  sel.value = estado.ordemArtigo;
+  sel.addEventListener('change', (e) => { estado.ordemArtigo = e.target.value; aplicar(); });
 }
 
 let temporizador;

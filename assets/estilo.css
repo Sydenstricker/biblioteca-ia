@@ -714,3 +714,35 @@ main.sem-filtros .filtros { display: none; }
 @media (max-width: 860px) {
   .g-chega { margin-left: 0; margin-right: 0; }
 }
+
+/* Selo de artigo em ascensão. É o único indicador do hub que muda sozinho a cada
+   rodada: depende das citações rebuscadas no OpenAlex, não do texto do artigo. */
+.selo-ascensao {
+  display: inline-block;
+  padding: 1px 7px;
+  font-size: 10.5px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #1f6b45;
+  background: #e4f3ea;
+  border: 1px solid #b9dcc8;
+  border-radius: 4px;
+  vertical-align: middle;
+  cursor: help;
+}
+
+:root[data-tema="escuro"] .selo-ascensao {
+  color: #7fd0a3;
+  background: #17301f;
+  border-color: #2c5039;
+}
+
+#ordem-artigo {
+  flex: none;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--texto);
+  background: var(--superficie);
+  border: 1px solid var(--borda-forte);
+  border-radius: var(--raio);
+}

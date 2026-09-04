@@ -214,6 +214,16 @@ async function classificarLote(cliente, lote, log) {
   const chamada = resposta.content.find((b) => b.type === 'tool_use');
   if (!chamada) { log('  [llm] modelo nao chamou a ferramenta'); return []; }
 
+
+  // Itens enviados que voltam sem classificacao sao repagos na proxima rodada.
+  // A causa mais comum e truncamento por max_tokens: o array vem incompleto e
+  // nada no retorno denuncia isso -- so o silencio.
+  const devolvidas = (chamada.input.classificacoes || []).length;
+  if (devolvidas < lote.length) {
+    log('  [llm] AVISO: enviados ' + lote.length + ', devolvidos ' + devolvidas
+      + (resposta.stop_reason === 'max_tokens' ? ' -- truncado por max_tokens' : '')
+      + '. Os faltantes reaparecem na proxima rodada e serao repagos.');
+  }
   const u = resposta.usage;
   log('  [llm] lote de ' + lote.length + ': ' + u.input_tokens + ' in / ' + u.output_tokens
     + ' out / ' + (u.cache_read_input_tokens ?? 0) + ' cache');

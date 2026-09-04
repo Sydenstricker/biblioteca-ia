@@ -38,7 +38,10 @@
         "Michel Vols",
         "Martijn Wieling"
       ],
-      "veiculo": "Artificial Intelligence and Law"
+      "veiculo": "Artificial Intelligence and Law",
+      "velocidade": 61,
+      "aceleracao": 1.2,
+      "citacoes_ano_recente": 73
     },
     "tipo": "artigo"
   },
@@ -82,7 +85,10 @@
       "autores": [
         "Richard Susskind"
       ],
-      "veiculo": "nao informado"
+      "veiculo": "nao informado",
+      "velocidade": 52.4,
+      "aceleracao": 1.07,
+      "citacoes_ano_recente": 54
     },
     "tipo": "artigo"
   },
@@ -123,7 +129,10 @@
         "Brent Mittelstadt",
         "Chris Russell"
       ],
-      "veiculo": "Computer law & security review"
+      "veiculo": "Computer law & security review",
+      "velocidade": 62.2,
+      "aceleracao": 1.43,
+      "citacoes_ano_recente": 77
     },
     "tipo": "artigo"
   },
@@ -165,7 +174,10 @@
       "autores": [
         "Aleš Završník"
       ],
-      "veiculo": "ERA Forum"
+      "veiculo": "ERA Forum",
+      "velocidade": 37.2,
+      "aceleracao": 1.06,
+      "citacoes_ano_recente": 39
     },
     "tipo": "artigo"
   },
@@ -207,7 +219,10 @@
       "autores": [
         "Tania Sourdin"
       ],
-      "veiculo": "University of New South Wales law journal"
+      "veiculo": "University of New South Wales law journal",
+      "velocidade": 25.1,
+      "aceleracao": 1.6,
+      "citacoes_ano_recente": 35
     },
     "tipo": "artigo"
   },
@@ -248,7 +263,10 @@
       "autores": [
         "Stanley Greenstein"
       ],
-      "veiculo": "Artificial Intelligence and Law"
+      "veiculo": "Artificial Intelligence and Law",
+      "velocidade": 31.8,
+      "aceleracao": 1.62,
+      "citacoes_ano_recente": 46
     },
     "tipo": "artigo"
   },
@@ -295,7 +313,10 @@
         "Christopher Ré",
         "Adam Chilton"
       ],
-      "veiculo": "SSRN Electronic Journal"
+      "veiculo": "SSRN Electronic Journal",
+      "velocidade": 49.3,
+      "aceleracao": null,
+      "citacoes_ano_recente": 74
     },
     "tipo": "artigo"
   },
@@ -342,7 +363,10 @@
         "Zhenlian Qi",
         "Philip S. Yu"
       ],
-      "veiculo": "AI Open"
+      "veiculo": "AI Open",
+      "velocidade": 64,
+      "aceleracao": null,
+      "citacoes_ano_recente": 62
     },
     "tipo": "artigo"
   },
@@ -382,7 +406,10 @@
       "autores": [
         "Daniel L. Chen"
       ],
-      "veiculo": "Artificial Intelligence and Law"
+      "veiculo": "Artificial Intelligence and Law",
+      "velocidade": 14.8,
+      "aceleracao": 0.45,
+      "citacoes_ano_recente": 8
     },
     "tipo": "artigo"
   },
@@ -421,7 +448,10 @@
       "autores": [
         "Carolyn McKay"
       ],
-      "veiculo": "Current Issues in Criminal Justice"
+      "veiculo": "Current Issues in Criminal Justice",
+      "velocidade": 14.4,
+      "aceleracao": 1.47,
+      "citacoes_ano_recente": 20
     },
     "tipo": "artigo"
   },
@@ -507,7 +537,10 @@
         "Jonathan H. Choi",
         "Daniel Schwarcz"
       ],
-      "veiculo": "SSRN Electronic Journal"
+      "veiculo": "SSRN Electronic Journal",
+      "velocidade": 27,
+      "aceleracao": null,
+      "citacoes_ano_recente": 29
     },
     "tipo": "artigo"
   },
@@ -545,7 +578,10 @@
       "autores": [
         "Jasper Ulenaers"
       ],
-      "veiculo": "Asian Journal of Law and Economics"
+      "veiculo": "Asian Journal of Law and Economics",
+      "velocidade": 13.3,
+      "aceleracao": 1.06,
+      "citacoes_ano_recente": 14
     },
     "tipo": "artigo"
   },

@@ -13,7 +13,7 @@ const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 const porId = montarDom([
   'filtros', 'busca', 'saida', 'contagem', 'limpar', 'vazio', 'tema',
-  'explicacao', 'rodape-info', 'n-aplicacoes', 'n-noticias', 'n-artigos',
+  'explicacao', 'rodape-info', 'n-aplicacoes', 'n-noticias', 'n-artigos', 'ordem-artigo',
 ]);
 
 // As abas nao tem id: sao consultadas por '.aba'. Registramos as quatro a mao.
@@ -201,6 +201,36 @@ ok('aba de noticias nao quebra', () => {
 ok('aba de artigos nao quebra', () => {
   aba('artigos').disparar('click');
   assert.equal(porId.saida.className, 'lista-artigos');
+});
+
+const artigos = ler('data/tribunais/artigos.json');
+const cartoesArtigo = () => porId.saida.buscarTodos('artigo');
+
+ok('a aba de artigos mostra o seletor de ordenacao', () => {
+  assert.equal(porId['ordem-artigo'].hidden, false, 'seletor deveria aparecer em artigos');
+  assert.equal(porId['ordem-artigo'].filhos.length, 4, 'esperava 4 ordenacoes');
+});
+
+ok('ordenar por citacoes poe o mais citado primeiro', () => {
+  porId['ordem-artigo'].value = 'citados';
+  porId['ordem-artigo'].disparar('change', { target: { value: 'citados' } });
+  const max = Math.max(...artigos.map((a) => a.sinais?.citacoes ?? 0));
+  assert.ok(cartoesArtigo()[0].textContent.includes(String(max)), 'primeiro nao e o mais citado');
+});
+
+ok('ordenar por ascensao poe o de maior aceleracao primeiro', () => {
+  porId['ordem-artigo'].disparar('change', { target: { value: 'ascensao' } });
+  const comAcel = artigos.filter((a) => a.sinais?.aceleracao);
+  assert.ok(comAcel.length > 0, 'a base precisa ter artigos com aceleracao medida');
+  const topo = comAcel.sort((a, b) => b.sinais.aceleracao - a.sinais.aceleracao)[0];
+  assert.ok(cartoesArtigo()[0].textContent.includes(topo.nome.slice(0, 30)), 'topo errado');
+});
+
+ok('so o artigo em ascensao ganha selo', () => {
+  const comSelo = cartoesArtigo().filter((c) => c.buscarTodos('selo-ascensao').length);
+  const esperado = artigos.filter((a) => a.sinais?.aceleracao >= 1.4).length;
+  assert.equal(comSelo.length, esperado);
+  assert.ok(esperado > 0, 'a base precisa ter ao menos um artigo em ascensao');
 });
 
 ok('voltar ao guia re-renderiza o conteudo didatico', () => {

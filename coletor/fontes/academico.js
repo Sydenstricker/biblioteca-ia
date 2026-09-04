@@ -25,20 +25,60 @@ const ANO_MINIMO = 2018; // antes disso o tema e outro: sistemas especialistas, 
 
 export const nome = 'academico';
 
-async function openAlex(log, limite) {
+/**
+ * Sinais de citacao derivados de counts_by_year.
+ *
+ * O ano corrente e SEMPRE parcial, entao fica de fora das duas contas -- incluir
+ * setembro como se fosse um ano faria todo artigo parecer em queda.
+ *
+ *   velocidade  citacoes por ano completo desde a publicacao. Normaliza a idade:
+ *               um artigo de 2024 com 80 citacoes vale mais que um de 2018 com 200.
+ *   aceleracao  ultimo ano completo dividido pela media dos anos anteriores. Capta
+ *               o que esta subindo AGORA, inclusive obra antiga redescoberta.
+ *               So e calculada com ao menos 2 anos anteriores e 5 citacoes no ano
+ *               recente -- sem esse piso, 2 para 6 viraria "300% de crescimento".
+ */
+function sinaisDeCitacao(w) {
+  const anoAtual = new Date().getFullYear();
+  const total = w.cited_by_count || 0;
+  const anosCompletos = Math.max(1, anoAtual - (w.publication_year || anoAtual));
+  const velocidade = Number((total / anosCompletos).toFixed(1));
+
+  const porAno = new Map((w.counts_by_year || []).map((x) => [x.year, x.cited_by_count]));
+  const ultimoCompleto = anoAtual - 1;
+  const recente = porAno.get(ultimoCompleto) ?? 0;
+  const anteriores = [...porAno.entries()]
+    .filter(([ano]) => ano < ultimoCompleto && ano > (w.publication_year || 0))
+    .map(([, n]) => n);
+
+  let aceleracao = null;
+  if (anteriores.length >= 2 && recente >= 5) {
+    const media = anteriores.reduce((a, b) => a + b, 0) / anteriores.length;
+    if (media > 0) aceleracao = Number((recente / media).toFixed(2));
+  }
+
+  return { velocidade, aceleracao, citacoes_ano_recente: recente };
+}
+
+function urlOpenAlex(limite, ordenacao, filtrosExtra = '') {
   const filtro = `title_and_abstract.search:(${TERMOS_IA}) AND (${TERMOS_JUSTICA})`;
-  const url = 'https://api.openalex.org/works'
+  return 'https://api.openalex.org/works'
     + '?filter=' + encodeURIComponent(filtro) + ',from_publication_date:' + ANO_MINIMO + '-01-01'
+    + filtrosExtra
     + '&per-page=' + limite
-    + '&sort=cited_by_count:desc'
+    + '&sort=' + ordenacao
     // O OpenAlex pede um e-mail para entrar no "polite pool", com filas melhores.
     + '&mailto=' + encodeURIComponent(process.env.EMAIL_CONTATO || 'biblioteca-ia@example.org');
+}
+
+async function openAlex(log, limite, ordenacao = 'cited_by_count:desc', rotulo = 'citados', extra = '') {
+  const url = urlOpenAlex(limite, ordenacao, extra);
 
   try {
     const resp = await fetch(url, { signal: AbortSignal.timeout(30000) });
     if (!resp.ok) { log('  [openalex] HTTP ' + resp.status); return []; }
     const j = await resp.json();
-    log('  [openalex] ' + j.results.length + ' de ' + j.meta.count + ' trabalhos');
+    log('  [openalex/' + rotulo + '] ' + j.results.length + ' de ' + j.meta.count + ' trabalhos');
 
     return j.results.map((w) => {
       const autores = (w.authorships || []).slice(0, 5).map((a) => a.author?.display_name).filter(Boolean);
@@ -61,6 +101,7 @@ async function openAlex(log, limite) {
           doi: (w.doi || '').replace('https://doi.org/', ''),
           autores,
           veiculo,
+          ...sinaisDeCitacao(w),
         },
       };
     });
@@ -81,7 +122,12 @@ function reconstruirResumo(indice) {
 }
 
 async function arxiv(log, limite) {
-  const consulta = 'all:("legal reasoning" OR "legal judgment prediction" OR "court" OR "judiciary") AND all:("large language model" OR "artificial intelligence")';
+  // MESMO erro que o do OpenAlex, repetido aqui e so descoberto depois: "court"
+  // solto casa QUADRA de basquete -- veio "HoopMind: Opponent-Aware Game-Tree".
+  // Expressoes juridicas especificas, nunca o termo isolado.
+  const consulta = 'all:("legal reasoning" OR "legal judgment prediction" OR "judicial decision"'
+    + ' OR "court decision" OR judiciary OR "case law" OR "legal text") '
+    + 'AND all:("large language model" OR "artificial intelligence" OR "machine learning")';
   const url = 'http://export.arxiv.org/api/query?search_query=' + encodeURIComponent(consulta)
     + '&sortBy=submittedDate&sortOrder=descending&max_results=' + limite;
 
@@ -113,8 +159,82 @@ async function arxiv(log, limite) {
 }
 
 export async function coletar({ log = console.log, limite = 25 } = {}) {
-  const [a, b] = await Promise.all([openAlex(log, limite), arxiv(log, 15)]);
+  // DUAS consultas ao OpenAlex, de proposito. Ordenar so por citacoes devolve
+  // sempre os MESMOS classicos, que o dedup barra -- o pilar academico congelaria
+  // depois da primeira rodada. A consulta por data traz o que acabou de sair, que
+  // ainda nao tem citacao alguma e nunca apareceria na outra.
+  // As duas consultas ao OpenAlex vao em SERIE: disparadas em paralelo, a segunda
+  // levava HTTP 429. O arXiv e outro servico, entao pode correr junto.
+  const preprintsProm = arxiv(log, 15);
+
+  // 1. Os classicos: mais citados de todos os tempos. Conjunto estavel entre rodadas.
+  const citados = await openAlex(log, limite, 'cited_by_count:desc', 'citados');
+  await new Promise((r) => setTimeout(r, 1200));
+
+  // 2. Os promissores: publicados nos ultimos 2 anos e JA com mais de 2 citacoes.
+  //    MEDIDO: ordenar apenas por data devolvia artigos com zero citacao -- ser
+  //    novo nao e ser promissor. Com o piso de citacoes vieram trabalhos como
+  //    "Challenges for generative AI in legal reasoning" e "When should a computer
+  //    decide?", que sao recentes e ja com tracao. O corpus cai de 4.643 para ~215
+  //    trabalhos, e a precisao da primeira pagina sobe bastante.
+  const doisAnosAtras = new Date(Date.now() - 730 * 864e5).toISOString().slice(0, 10);
+  const promissores = await openAlex(
+    log, Math.round(limite * 0.6), 'publication_date:desc', 'promissores',
+    ',from_publication_date:' + doisAnosAtras + ',cited_by_count:>2',
+  );
+  const preprints = await preprintsProm;
+
   const porUrl = new Map();
-  for (const it of [...a, ...b]) if (it.url) porUrl.set(it.url, it);
-  return [...porUrl.values()];
+  for (const it of [...citados, ...promissores, ...preprints]) if (it.url) porUrl.set(it.url, it);
+
+  // Dedup tambem por titulo: o OpenAlex devolve versoes do mesmo trabalho com DOIs
+  // distintos, e sem isto o mesmo artigo seria classificado -- e pago -- duas vezes.
+  const porTitulo = new Map();
+  for (const it of porUrl.values()) {
+    const chave = it.nome.normalize('NFD').replace(/\p{Diacritic}/gu, '')
+      .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    if (!porTitulo.has(chave)) porTitulo.set(chave, it);
+  }
+  return [...porTitulo.values()];
+}
+
+/**
+ * Rebusca os sinais de artigos JA no acervo, pelo DOI.
+ *
+ * Sem isto a contagem de citacoes congela no dia da coleta e "crescimento" nao
+ * significa nada: o dedup impede que o item volte pelo caminho normal. E o
+ * equivalente, para artigos, do que atualizarConhecidos() faz no coletor geral.
+ */
+export async function atualizarSinais(artigos, { log = console.log } = {}) {
+  const comDoi = artigos.filter((a) => a.sinais?.doi);
+  if (!comDoi.length) return 0;
+
+  const LOTE = 40; // o filtro doi: aceita lista separada por |
+  let atualizados = 0;
+
+  for (let i = 0; i < comDoi.length; i += LOTE) {
+    const fatia = comDoi.slice(i, i + LOTE);
+    const url = 'https://api.openalex.org/works?filter=doi:'
+      + fatia.map((a) => encodeURIComponent(a.sinais.doi)).join('|')
+      + '&per-page=' + LOTE
+      + '&mailto=' + encodeURIComponent(process.env.EMAIL_CONTATO || 'biblioteca-ia@example.org');
+
+    try {
+      const resp = await fetch(url, { signal: AbortSignal.timeout(30000) });
+      if (!resp.ok) { log('  [openalex/atualizar] HTTP ' + resp.status); continue; }
+      const j = await resp.json();
+      const porDoi = new Map((j.results || []).map((w) => [(w.doi || '').replace('https://doi.org/', ''), w]));
+
+      for (const a of fatia) {
+        const w = porDoi.get(a.sinais.doi);
+        if (!w) continue;
+        a.sinais = { ...a.sinais, citacoes: w.cited_by_count, ...sinaisDeCitacao(w) };
+        atualizados++;
+      }
+    } catch (e) {
+      log('  [openalex/atualizar] falhou: ' + e.message);
+    }
+  }
+  log('  [openalex/atualizar] ' + atualizados + ' artigos com citacoes atualizadas');
+  return atualizados;
 }
