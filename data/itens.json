@@ -1,5 +1,289 @@
 [
   {
+    "id": "codewithbullet.com",
+    "tipo": "ferramenta",
+    "nome": "Bullet (YC S26)",
+    "resumo": "Bullet e um agente de codificacao com IA que promete gerar e editar codigo mais rapido que alternativas. Destina-se a desenvolvedores e times de engenharia de software. Cobranca nao informada.",
+    "url": "https://www.codewithbullet.com",
+    "dominio": "codewithbullet.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "SaaS Pronto",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49283063",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.55,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 121,
+      "comentarios_hn": 89,
+      "data_hn": "2026-08-13"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "ctgt.ai",
+    "tipo": "caso_de_uso",
+    "nome": "Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it",
+    "resumo": "Pesquisa que mostra que destilar o DeepSeek no GPT-OSS nao transfere os comportamentos de censura do modelo original. Voltada a pesquisadores e equipes que avaliam seguranca e alinhamento de LLMs. Cobranca nao informada; parece material de pesquisa aberto.",
+    "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+    "dominio": "ctgt.ai",
+    "industrias": [
+      "Tecnologia e Software",
+      "Ciencia e Pesquisa"
+    ],
+    "funcoes": [
+      "Pesquisa e P&D",
+      "Seguranca e Risco"
+    ],
+    "modalidades": [
+      "Texto e LLM"
+    ],
+    "implementacao": "Modelo / Foundation Model",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49113599",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.5,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 170,
+      "comentarios_hn": 73,
+      "data_hn": "2026-07-30"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/affaan-m/ecc",
+    "tipo": "projeto_oss",
+    "nome": "ECC",
+    "resumo": "Sistema de otimizacao de harness de agentes com skills, memoria, seguranca e pesquisa para Claude Code, Codex, Cursor e similares. Voltado a desenvolvedores que usam assistentes de codigo com agentes. Projeto open source no GitHub; cobranca nao informada.",
+    "url": "https://github.com/affaan-m/ECC",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/affaan-m/ECC",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.55,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 248227,
+      "forks": 37411,
+      "ultimo_push": "2026-09-03"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/anil-matcha/open-generative-ai",
+    "tipo": "projeto_oss",
+    "nome": "Open-Generative-AI",
+    "resumo": "Estudio open source de geracao de imagens e videos com acesso a mais de 600 modelos, sem filtros de conteudo. Voltado a criadores e equipes criativas que querem auto-hospedar. Licenca MIT, gratuito; custos de modelos externos nao informados.",
+    "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+    "dominio": "github.com",
+    "industrias": [
+      "Midia e Entretenimento",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Design e Criacao",
+      "Marketing e Conteudo",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Geracao de Imagem",
+      "Geracao de Imagem",
+      "Geracao de Imagem"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/Anil-matcha/Open-Generative-AI",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.6,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 27715,
+      "forks": 4907,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/arize-ai/phoenix",
+    "tipo": "projeto_oss",
+    "nome": "phoenix",
+    "resumo": "Phoenix e uma ferramenta de observabilidade e avaliacao de aplicacoes de LLM e agentes. Destinada a engenheiros de IA que precisam monitorar e avaliar modelos em producao. Open source, com oferta comercial da Arize nao detalhada.",
+    "url": "https://github.com/Arize-ai/phoenix",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/Arize-ai/phoenix",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 11328,
+      "forks": 1102,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/bentoml/bentoml",
+    "tipo": "projeto_oss",
+    "nome": "BentoML",
+    "resumo": "BentoML permite servir modelos e apps de IA como APIs de inferencia, filas de jobs e pipelines multi-modelo. Voltado a engenheiros de ML e MLOps. Open source com plataforma gerenciada; precos nao informados.",
+    "url": "https://github.com/bentoml/BentoML",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "ML Classico e Dados Estruturados",
+      "Multimodal"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/bentoml/BentoML",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 8820,
+      "forks": 1021,
+      "ultimo_push": "2026-08-28"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/bentoml/openllm",
+    "tipo": "projeto_oss",
+    "nome": "OpenLLM",
+    "resumo": "OpenLLM permite rodar LLMs abertos como Llama e DeepSeek expondo endpoints compativeis com a API da OpenAI. Para desenvolvedores e times que querem self-hosting de modelos. Open source pela BentoML; cobranca nao informada.",
+    "url": "https://github.com/bentoml/OpenLLM",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Texto e LLM"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/bentoml/OpenLLM",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 12524,
+      "forks": 836,
+      "ultimo_push": "2026-08-31"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/berriai/litellm",
+    "tipo": "projeto_oss",
+    "nome": "litellm",
+    "resumo": "Gateway de IA que padroniza chamadas a mais de 100 APIs de LLM no formato OpenAI, com custo, guardrails e balanceamento. Para times de engenharia e LLMOps. Open source com versao empresarial; precos nao informados.",
+    "url": "https://github.com/BerriAI/litellm",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/BerriAI/litellm",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 58042,
+      "forks": 11171,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
     "id": "github.com/browser-use/browser-use",
     "tipo": "projeto_oss",
     "nome": "Browser Use",
@@ -25,13 +309,642 @@
     "classificado_por": "semente-manual",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-02",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 62000
+      "estrelas": 112274,
+      "forks": 12353,
+      "ultimo_push": "2026-09-04"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/bytedance/deer-flow",
+    "tipo": "projeto_oss",
+    "nome": "deer-flow",
+    "resumo": "Harness de superagente de longo horizonte que pesquisa, programa e cria usando sandboxes, memorias, ferramentas e subagentes. Para desenvolvedores e equipes que automatizam tarefas complexas. Open source da ByteDance; cobranca nao informada.",
+    "url": "https://github.com/bytedance/deer-flow",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal",
+      "Ciencia e Pesquisa"
+    ],
+    "funcoes": [
+      "Pesquisa e P&D",
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM",
+      "RAG e Busca Semantica"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/bytedance/deer-flow",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 81362,
+      "forks": 11223,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/bytedance/ui-tars-desktop",
+    "tipo": "projeto_oss",
+    "nome": "UI-TARS-desktop",
+    "resumo": "Stack open source de agente multimodal que opera GUI, navegador e computador. Para desenvolvedores que criam agentes de automacao. Open source, cobranca nao informada.",
+    "url": "https://github.com/bytedance/UI-TARS-desktop",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Multimodal",
+      "Visao Computacional"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/bytedance/UI-TARS-desktop",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 38842,
+      "forks": 3929,
+      "ultimo_push": "2026-08-05"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/comet-ml/opik",
+    "tipo": "projeto_oss",
+    "nome": "opik",
+    "resumo": "Opik faz tracing, avaliacao automatizada e monitoramento de aplicacoes LLM, RAG e fluxos agenticos. Para times de engenharia de IA em producao. Open source mantido pela Comet; cobranca nao informada.",
+    "url": "https://github.com/comet-ml/opik",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "RAG e Busca Semantica",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/comet-ml/opik",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 21795,
+      "forks": 1752,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/composiohq/composio",
+    "tipo": "projeto_oss",
+    "nome": "composio",
+    "resumo": "Composio oferece mais de mil toolkits, busca de ferramentas, autenticacao e um sandbox para agentes de IA executarem acoes. Destinado a desenvolvedores que constroem agentes. Codigo aberto; cobranca nao informada.",
+    "url": "https://github.com/ComposioHQ/composio",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos",
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "API / Developer Tool",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/ComposioHQ/composio",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 30048,
+      "forks": 4766,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/dataelement/bisheng",
+    "tipo": "projeto_oss",
+    "nome": "bisheng",
+    "resumo": "BISHENG e uma plataforma aberta de LLMOps para aplicacoes de IA corporativas, com workflows GenAI, RAG, agentes, fine-tuning e gestao de modelos. Voltada a equipes de TI e engenharia de empresas. Codigo aberto; condicoes comerciais nao informadas.",
+    "url": "https://github.com/dataelement/bisheng",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "RAG e Busca Semantica",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/dataelement/bisheng",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 11926,
+      "forks": 1958,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/deepseek-ai/deepseek-harness",
+    "tipo": "projeto_oss",
+    "nome": "deepseek-harness",
+    "resumo": "Harness de agentes de IA baseado inteiramente em plugins, publicado pela DeepSeek. Para desenvolvedores que constroem agentes. Open source; cobranca nao informada.",
+    "url": "https://github.com/deepseek-ai/deepseek-harness",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/deepseek-ai/deepseek-harness",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.55,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 212129,
+      "forks": 24893,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/espnet/espnet",
+    "tipo": "projeto_oss",
+    "nome": "espnet",
+    "resumo": "Toolkit ponta a ponta para processamento de fala, incluindo ASR, TTS e traducao. Para pesquisadores academicos e engenheiros de audio. Open source, cobranca nao informada.",
+    "url": "https://github.com/espnet/espnet",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Ciencia e Pesquisa"
+    ],
+    "funcoes": [
+      "Pesquisa e P&D",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/espnet/espnet",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 9947,
+      "forks": 2427,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/farion1231/cc-switch",
+    "tipo": "ferramenta",
+    "nome": "cc-switch",
+    "resumo": "cc-switch e um app desktop que centraliza a gestao de provedores, skills e MCP para assistentes de codigo como Claude Code e Codex. Voltado a desenvolvedores que usam varias ferramentas de IA. Open source; cobranca nao informada.",
+    "url": "https://github.com/farion1231/cc-switch",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/farion1231/cc-switch",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.6,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 131068,
+      "forks": 9014,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/firecrawl/firecrawl",
+    "tipo": "ferramenta",
+    "nome": "firecrawl",
+    "resumo": "API de contexto para buscar, raspar e converter conteudo da web em formato pronto para LLMs. Voltada a desenvolvedores de agentes e pipelines de dados. Open source com servico gerenciado; precos nao informados.",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "API / Developer Tool",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/firecrawl/firecrawl",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 176457,
+      "forks": 9653,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/google-ai-edge/mediapipe",
+    "tipo": "projeto_oss",
+    "nome": "mediapipe",
+    "resumo": "Framework multiplataforma do Google para pipelines de ML em midia ao vivo e streaming. Para desenvolvedores mobile e de aplicacoes de percepcao em tempo real. Open source e gratuito.",
+    "url": "https://github.com/google-ai-edge/mediapipe",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Visao Computacional",
+      "Multimodal",
+      "Audio e Voz"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/google-ai-edge/mediapipe",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 36838,
+      "forks": 6149,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/google-gemini/gemini-cli",
+    "tipo": "ferramenta",
+    "nome": "gemini-cli",
+    "resumo": "Agente de IA open source que leva o Gemini para o terminal, com suporte a MCP. Para desenvolvedores e usuarios tecnicos. Open source; uso da API Gemini com cobranca nao informada.",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Produtividade Pessoal",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/google-gemini/gemini-cli",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 106815,
+      "forks": 14526,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/graphify-labs/graphify",
+    "tipo": "projeto_oss",
+    "nome": "graphify",
+    "resumo": "Transforma bases de codigo, docs, schemas SQL e PDFs em grafo de conhecimento consultavel via parsing AST deterministico. Para desenvolvedores que usam agentes como Claude Code, Cursor e Gemini CLI. Open source; cobranca nao informada.",
+    "url": "https://github.com/Graphify-Labs/graphify",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Texto e LLM",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/Graphify-Labs/graphify",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 114695,
+      "forks": 11142,
+      "ultimo_push": "2026-08-30"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/harry0703/moneyprinterturbo",
+    "tipo": "projeto_oss",
+    "nome": "MoneyPrinterTurbo",
+    "resumo": "Gera videos curtos em HD a partir de um tema ou palavra-chave usando LLMs e fluxo automatizado com TTS e legendas. Voltado a criadores de conteudo para TikTok, Reels e Shorts. Projeto open source; cobranca nao informada.",
+    "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+    "dominio": "github.com",
+    "industrias": [
+      "Midia e Entretenimento",
+      "Varejo e E-commerce",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Marketing e Conteudo",
+      "Design e Criacao",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Geracao de Imagem",
+      "Audio e Voz"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/harry0703/MoneyPrinterTurbo",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 120506,
+      "forks": 18484,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/headroomlabs-ai/headroom",
+    "tipo": "projeto_oss",
+    "nome": "headroom",
+    "resumo": "Comprime saidas de ferramentas, logs, arquivos e chunks de RAG antes de chegarem ao LLM, reduzindo tokens. Voltado a desenvolvedores de agentes de codigo e pipelines RAG. Distribuido como projeto open source; cobranca nao informada.",
+    "url": "https://github.com/headroomlabs-ai/headroom",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "RAG e Busca Semantica",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/headroomlabs-ai/headroom",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.75,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 68922,
+      "forks": 5341,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/huggingface/datasets",
+    "tipo": "projeto_oss",
+    "nome": "datasets",
+    "resumo": "Biblioteca e hub para acessar e manipular datasets prontos para treinar modelos de IA. Para engenheiros de ML e pesquisadores. Open source e gratuito.",
+    "url": "https://github.com/huggingface/datasets",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Ciencia e Pesquisa",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "ML Classico e Dados Estruturados",
+      "Multimodal"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/huggingface/datasets",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 21896,
+      "forks": 3387,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/huggingface/transformers",
+    "tipo": "projeto_oss",
+    "nome": "transformers",
+    "resumo": "Framework de definicao de modelos de ML de ponta em texto, visao, audio e multimodal, para inferencia e treino. Voltado a pesquisadores e engenheiros de ML. Open source sob licenca Apache 2.0.",
+    "url": "https://github.com/huggingface/transformers",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Ciencia e Pesquisa"
+    ],
+    "funcoes": [
+      "Pesquisa e P&D",
+      "Engenharia e Codigo",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "Multimodal",
+      "Visao Computacional"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/huggingface/transformers",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.95,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 164786,
+      "forks": 34444,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/humansignal/label-studio",
+    "tipo": "ferramenta",
+    "nome": "label-studio",
+    "resumo": "Ferramenta de rotulagem e anotacao de dados de multiplos tipos com formato de saida padronizado. Para times de ML e MLOps que preparam datasets. Open source com edicao comercial; detalhes de cobranca nao informados.",
+    "url": "https://github.com/HumanSignal/label-studio",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Visao Computacional",
+      "Texto e LLM",
+      "ML Classico e Dados Estruturados"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/HumanSignal/label-studio",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 28203,
+      "forks": 3688,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
   },
   {
     "id": "github.com/infiniflow/ragflow",
@@ -61,13 +974,88 @@
     "classificado_por": "semente-manual",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-02",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 38000
+      "estrelas": 90053,
+      "forks": 10623,
+      "ultimo_push": "2026-09-04"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/jackwener/opencli",
+    "tipo": "projeto_oss",
+    "nome": "OpenCLI",
+    "resumo": "Transforma qualquer site em interface de linha de comando operada por agente de IA usando o navegador logado do usuario. Voltado a desenvolvedores e automatizadores de tarefas web. Open source, cobranca nao informada.",
+    "url": "https://github.com/jackwener/OpenCLI",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/jackwener/OpenCLI",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.6,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 28973,
+      "forks": 2844,
+      "ultimo_push": "2026-08-30"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/jeecgboot/jeecgboot",
+    "tipo": "projeto_oss",
+    "nome": "JeecgBoot",
+    "resumo": "Plataforma low-code empresarial em Java que gera codigo e sistemas inteiros a partir de instrucoes em linguagem natural, com chat de IA, base de conhecimento e MCP. Para equipes de desenvolvimento corporativo. Open source com edicoes comerciais; detalhes de cobranca nao informados.",
+    "url": "https://github.com/jeecgboot/JeecgBoot",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos",
+      "Gestao de Projetos"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "Agentes Autonomos",
+      "RAG e Busca Semantica"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/jeecgboot/JeecgBoot",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.75,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 47628,
+      "forks": 16179,
+      "ultimo_push": "2026-09-02"
+    },
+    "status": "ativo",
+    "nota_curador": ""
   },
   {
     "id": "github.com/langchain-ai/langchain",
@@ -95,13 +1083,329 @@
     "classificado_por": "semente-manual",
     "confianca": 0.95,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-02",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 118000
+      "estrelas": 145646,
+      "forks": 24314,
+      "ultimo_push": "2026-09-04"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/langchain-ai/langgraph",
+    "tipo": "projeto_oss",
+    "nome": "langgraph",
+    "resumo": "LangGraph e um framework para construir agentes resilientes com grafos de estado. Voltado a desenvolvedores e equipes enterprise que criam sistemas multiagente. Open source; cobranca nao informada.",
+    "url": "https://github.com/langchain-ai/langgraph",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM",
+      "RAG e Busca Semantica"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/langchain-ai/langgraph",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 41055,
+      "forks": 6934,
+      "ultimo_push": "2026-09-03"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/langflow-ai/langflow",
+    "tipo": "projeto_oss",
+    "nome": "langflow",
+    "resumo": "Langflow e uma ferramenta visual para construir e implantar agentes e fluxos de trabalho com IA. Destina-se a desenvolvedores e times que criam aplicacoes com LLMs. Projeto open source; cobranca nao informada.",
+    "url": "https://github.com/langflow-ai/langflow",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/langflow-ai/langflow",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 154247,
+      "forks": 10021,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/langfuse/langfuse",
+    "tipo": "projeto_oss",
+    "nome": "langfuse",
+    "resumo": "Plataforma open source de engenharia de IA com observabilidade, avaliacao de LLMs, gestao de prompts e datasets. Voltada a times de desenvolvimento que operam aplicacoes com LLM. Open source com opcao self-hosted; demais planos nao informados.",
+    "url": "https://github.com/langfuse/langfuse",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/langfuse/langfuse",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 34203,
+      "forks": 3696,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/langgenius/dify",
+    "tipo": "ferramenta",
+    "nome": "dify",
+    "resumo": "Plataforma low-code para construir workflows agenticos e pipelines RAG com varios modelos e ferramentas. Voltada a times de produto e desenvolvedores que levam apps de LLM a producao. Open source com opcoes de nuvem e self-hosted; precos nao informados.",
+    "url": "https://github.com/langgenius/dify",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Engenharia e Codigo",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "RAG e Busca Semantica",
+      "Texto e LLM"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/langgenius/dify",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 154450,
+      "forks": 24413,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/lidge-jun/opencodex",
+    "tipo": "projeto_oss",
+    "nome": "opencodex",
+    "resumo": "Proxy universal que permite usar qualquer LLM (Claude, Gemini, Grok, DeepSeek, Ollama) com Codex CLI e Claude Code. Voltado a desenvolvedores que querem trocar de provedor de modelo. Open source, cobranca nao informada.",
+    "url": "https://github.com/lidge-jun/opencodex",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Texto e LLM"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/lidge-jun/opencodex",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.65,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 13316,
+      "forks": 988,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/linshenkx/prompt-optimizer",
+    "tipo": "ferramenta",
+    "nome": "prompt-optimizer",
+    "resumo": "prompt-optimizer otimiza e testa prompts para obter melhores respostas de LLMs. Voltado a usuarios e desenvolvedores de IA. Open source; cobranca nao informada.",
+    "url": "https://github.com/linshenkx/prompt-optimizer",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Produtividade Pessoal",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/linshenkx/prompt-optimizer",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.7,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 34089,
+      "forks": 3998,
+      "ultimo_push": "2026-08-26"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/lucidrains/vit-pytorch",
+    "tipo": "projeto_oss",
+    "nome": "vit-pytorch",
+    "resumo": "Implementacao em PyTorch do Vision Transformer e variantes para classificacao de imagens. Para pesquisadores e engenheiros de visao computacional. Open source e gratuito.",
+    "url": "https://github.com/lucidrains/vit-pytorch",
+    "dominio": "github.com",
+    "industrias": [
+      "Ciencia e Pesquisa",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Pesquisa e P&D",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Visao Computacional"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/lucidrains/vit-pytorch",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 25498,
+      "forks": 3494,
+      "ultimo_push": "2026-09-03"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/lyogavin/airllm",
+    "tipo": "projeto_oss",
+    "nome": "airllm",
+    "resumo": "AirLLM permite inferencia de modelos de 70B em uma unica GPU de 4GB. Para desenvolvedores e pesquisadores com hardware limitado. Open source; cobranca nao informada.",
+    "url": "https://github.com/lyogavin/airllm",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/lyogavin/airllm",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 33693,
+      "forks": 3540,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/maaassistantarknights/maaassistantarknights",
+    "tipo": "projeto_oss",
+    "nome": "MaaAssistantArknights",
+    "resumo": "Assistente que automatiza tarefas diarias do jogo Arknights usando visao computacional na tela. Para jogadores do titulo. Open source e gratuito.",
+    "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights",
+    "dominio": "github.com",
+    "industrias": [
+      "Midia e Entretenimento"
+    ],
+    "funcoes": [
+      "Produtividade Pessoal",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Visao Computacional",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.75,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 23018,
+      "forks": 2822,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
   },
   {
     "id": "github.com/mem0ai/mem0",
@@ -129,13 +1433,306 @@
     "classificado_por": "semente-manual",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-02",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 30000
+      "estrelas": 64706,
+      "forks": 7577,
+      "ultimo_push": "2026-09-04"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/microsoft/unilm",
+    "tipo": "projeto_oss",
+    "nome": "unilm",
+    "resumo": "Coletanea de modelos fundacionais pre-treinados da Microsoft para texto, documentos e multimodalidade. Para pesquisadores e engenheiros de ML. Open source, cobranca nao informada.",
+    "url": "https://github.com/microsoft/unilm",
+    "dominio": "github.com",
+    "industrias": [
+      "Ciencia e Pesquisa",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Pesquisa e P&D",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "Multimodal",
+      "Texto e LLM",
+      "Visao Computacional"
+    ],
+    "implementacao": "Modelo / Foundation Model",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/microsoft/unilm",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 22203,
+      "forks": 2702,
+      "ultimo_push": "2026-08-26"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/mintplex-labs/anything-llm",
+    "tipo": "projeto_oss",
+    "nome": "anything-llm",
+    "resumo": "Plataforma all-in-one para rodar agentes e chat com documentos localmente, com RAG e banco vetorial. Para empresas e usuarios que querem IA self-hosted. Open source com versao hospedada; cobranca nao informada.",
+    "url": "https://github.com/Mintplex-Labs/anything-llm",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Produtividade Pessoal",
+      "Operacoes e Processos",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/Mintplex-Labs/anything-llm",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 65617,
+      "forks": 7250,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/mlflow/mlflow",
+    "tipo": "projeto_oss",
+    "nome": "mlflow",
+    "resumo": "MLflow e uma plataforma aberta para rastrear, avaliar, monitorar e gerenciar modelos de ML, LLMs e agentes. Serve equipes de ciencia de dados e engenharia de ML em producao. Open source sob licenca Apache; cobranca nao informada.",
+    "url": "https://github.com/mlflow/mlflow",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Ciencia e Pesquisa"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "ML Classico e Dados Estruturados",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/mlflow/mlflow",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 27812,
+      "forks": 6251,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/modelscope/ms-swift",
+    "tipo": "projeto_oss",
+    "nome": "ms-swift",
+    "resumo": "Framework para fine-tuning e alinhamento de centenas de LLMs e modelos multimodais. Para times de ML que treinam modelos proprios. Open source, cobranca nao informada.",
+    "url": "https://github.com/modelscope/ms-swift",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Ciencia e Pesquisa"
+    ],
+    "funcoes": [
+      "Pesquisa e P&D",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "Multimodal"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/modelscope/ms-swift",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 15514,
+      "forks": 1655,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/nanobrowser/nanobrowser",
+    "tipo": "projeto_oss",
+    "nome": "nanobrowser",
+    "resumo": "Extensao Chrome open source para automacao web com multiplos agentes de IA usando a chave de API do proprio usuario. Voltada a usuarios tecnicos que querem alternativa ao OpenAI Operator. Gratuita e open source; custo fica por conta da API do LLM.",
+    "url": "https://github.com/nanobrowser/nanobrowser",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Plug-in ou Extensao",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/nanobrowser/nanobrowser",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.75,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 13726,
+      "forks": 1449,
+      "ultimo_push": "2026-08-18"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/netflix/metaflow",
+    "tipo": "projeto_oss",
+    "nome": "metaflow",
+    "resumo": "Metaflow e um framework da Netflix para construir, gerenciar e implantar sistemas de ML e IA em escala. Voltado a cientistas de dados e engenheiros de ML. Open source; cobranca nao informada.",
+    "url": "https://github.com/Netflix/metaflow",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "ML Classico e Dados Estruturados",
+      "Texto e LLM"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/Netflix/metaflow",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 10254,
+      "forks": 1345,
+      "ultimo_push": "2026-09-02"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/nocobase/nocobase",
+    "tipo": "ferramenta",
+    "nome": "nocobase",
+    "resumo": "Plataforma no-code com IA para construir sistemas de negocio como CRM, ERP e ferramentas internas. Voltada a empresas e equipes de TI que precisam de aplicacoes internas. Open source com opcao self-hosted; demais planos nao informados.",
+    "url": "https://github.com/nocobase/nocobase",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Suporte e Atendimento"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/nocobase/nocobase",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.75,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 24031,
+      "forks": 2858,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/nousresearch/hermes-agent",
+    "tipo": "projeto_oss",
+    "nome": "hermes-agent",
+    "resumo": "Agente de IA da Nous Research que evolui com o uso do usuario. Voltado a desenvolvedores e usuarios de assistentes LLM. Open source; cobranca nao informada.",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos",
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/NousResearch/hermes-agent",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.5,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 241373,
+      "forks": 49508,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
   },
   {
     "id": "github.com/ollama/ollama",
@@ -163,13 +1760,51 @@
     "classificado_por": "semente-manual",
     "confianca": 0.95,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-02",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 155000
+      "estrelas": 180142,
+      "forks": 17690,
+      "ultimo_push": "2026-09-04"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/open-webui/open-webui",
+    "tipo": "projeto_oss",
+    "nome": "open-webui",
+    "resumo": "Interface web self-hosted para interagir com LLMs via Ollama, OpenAI API e outros, com suporte a RAG e MCP. Voltada a usuarios e times que querem chat de IA privado. Open source e gratuito.",
+    "url": "https://github.com/open-webui/open-webui",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Produtividade Pessoal",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "RAG e Busca Semantica"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/open-webui/open-webui",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 150937,
+      "forks": 22054,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
   },
   {
     "id": "github.com/openai/whisper",
@@ -207,6 +1842,45 @@
     "nota_curador": "Item semente, classificado à mão."
   },
   {
+    "id": "github.com/openvinotoolkit/openvino",
+    "tipo": "projeto_oss",
+    "nome": "openvino",
+    "resumo": "Toolkit para otimizar e implantar inferencia de IA em hardware diverso. Para engenheiros de ML e sistemas embarcados. Open source, cobranca nao informada.",
+    "url": "https://github.com/openvinotoolkit/openvino",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software",
+      "Manufatura e Industria"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "Visao Computacional",
+      "Texto e LLM",
+      "Multimodal"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/openvinotoolkit/openvino",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 10802,
+      "forks": 3360,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
     "id": "github.com/paddlepaddle/paddleocr",
     "tipo": "projeto_oss",
     "nome": "PaddleOCR",
@@ -232,13 +1906,773 @@
     "classificado_por": "semente-manual",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-02",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 45000
+      "estrelas": 88871,
+      "forks": 11308,
+      "ultimo_push": "2026-07-22"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/paddlepaddle/paddlespeech",
+    "tipo": "projeto_oss",
+    "nome": "PaddleSpeech",
+    "resumo": "Toolkit de fala com ASR streaming, TTS, verificacao de locutor e traducao de fala. Voltado a desenvolvedores e pesquisadores de audio. Open source, licenca Apache segundo o repositorio; cobranca nao informada.",
+    "url": "https://github.com/PaddlePaddle/PaddleSpeech",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/PaddlePaddle/PaddleSpeech",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 12680,
+      "forks": 1960,
+      "ultimo_push": "2026-08-12"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/pathwaycom/llm-app",
+    "tipo": "projeto_oss",
+    "nome": "llm-app",
+    "resumo": "Templates prontos para RAG, pipelines de IA e busca corporativa sincronizados com fontes de dados ao vivo. Para equipes de dados e engenharia em empresas. Open source da Pathway; cobranca nao informada.",
+    "url": "https://github.com/pathwaycom/llm-app",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/pathwaycom/llm-app",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 58937,
+      "forks": 1478,
+      "ultimo_push": "2026-07-05"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/portkey-ai/gateway",
+    "tipo": "projeto_oss",
+    "nome": "gateway",
+    "resumo": "Gateway de IA que roteia chamadas para mais de 1.600 LLMs com guardrails integrados em uma unica API. Voltado a desenvolvedores e plataformas que consomem varios modelos. Open source com servico gerenciado da Portkey; precos nao informados.",
+    "url": "https://github.com/Portkey-AI/gateway",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Texto e LLM"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/Portkey-AI/gateway",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 12901,
+      "forks": 1283,
+      "ultimo_push": "2026-05-25"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/promptfoo/promptfoo",
+    "tipo": "projeto_oss",
+    "nome": "promptfoo",
+    "resumo": "Promptfoo testa prompts, agentes e sistemas RAG, com red teaming e varredura de vulnerabilidades em IA. Voltado a desenvolvedores e times de seguranca de IA, com integracao em CI/CD. Open source; cobranca nao informada.",
+    "url": "https://github.com/promptfoo/promptfoo",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Seguranca e Risco"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "RAG e Busca Semantica"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/promptfoo/promptfoo",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.88,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 24820,
+      "forks": 2261,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/quentinfuxa/whisperlivekit",
+    "tipo": "projeto_oss",
+    "nome": "WhisperLiveKit",
+    "resumo": "Transcricao de fala em tempo real local com ASR streaming, diarizacao e traducao. Para desenvolvedores que precisam de APIs compativeis com OpenAI/Deepgram. Open source, cobranca nao informada.",
+    "url": "https://github.com/QuentinFuxa/WhisperLiveKit",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos",
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/QuentinFuxa/WhisperLiveKit",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 11001,
+      "forks": 1135,
+      "ultimo_push": "2026-09-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/qwenaudio/sensevoice",
+    "tipo": "projeto_oss",
+    "nome": "SenseVoice",
+    "resumo": "Modelo aberto de ASR multilingue com identificacao de idioma, emocao e eventos sonoros. Para desenvolvedores de aplicacoes de voz multilingues. Open source, cobranca nao informada.",
+    "url": "https://github.com/QwenAudio/SenseVoice",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Multimodal"
+    ],
+    "implementacao": "Modelo / Foundation Model",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/QwenAudio/SenseVoice",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 9236,
+      "forks": 817,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/rerun-io/rerun",
+    "tipo": "projeto_oss",
+    "nome": "rerun",
+    "resumo": "Ferramenta de visualizacao e streaming de dados multimodais de robotica. Para engenheiros de robotica e visao computacional. Open source, cobranca nao informada.",
+    "url": "https://github.com/rerun-io/rerun",
+    "dominio": "github.com",
+    "industrias": [
+      "Manufatura e Industria",
+      "Tecnologia e Software",
+      "Ciencia e Pesquisa"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Robotica e Embarcado",
+      "Visao Computacional",
+      "Multimodal"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/rerun-io/rerun",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 11400,
+      "forks": 842,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/roboflow/supervision",
+    "tipo": "projeto_oss",
+    "nome": "supervision",
+    "resumo": "Biblioteca Python com utilitarios reutilizaveis de visao computacional, como deteccao, rastreamento e metricas. Voltada a desenvolvedores e engenheiros de ML que constroem pipelines de visao. Open source e gratuito.",
+    "url": "https://github.com/roboflow/supervision",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Visao Computacional",
+      "ML Classico e Dados Estruturados"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/roboflow/supervision",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 49882,
+      "forks": 4755,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/run-llama/llama_index",
+    "tipo": "projeto_oss",
+    "nome": "llama_index",
+    "resumo": "Framework para construir aplicacoes LLM sobre dados proprios, com agentes documentais, OCR e RAG. Para desenvolvedores e empresas. Open source com servicos em nuvem pagos (LlamaCloud).",
+    "url": "https://github.com/run-llama/llama_index",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Dados e Analytics",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/run-llama/llama_index",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 52021,
+      "forks": 8080,
+      "ultimo_push": "2026-09-03"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/runanywhereai/runanywhere-sdks",
+    "tipo": "projeto_oss",
+    "nome": "runanywhere-sdks",
+    "resumo": "SDK para rodar modelos de IA localmente em dispositivos moveis e web. Para desenvolvedores de apps com IA on-device. Open source, cobranca nao informada.",
+    "url": "https://github.com/RunanywhereAI/runanywhere-sdks",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "Multimodal",
+      "Audio e Voz"
+    ],
+    "implementacao": "API / Developer Tool",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/RunanywhereAI/runanywhere-sdks",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.7,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 10276,
+      "forks": 371,
+      "ultimo_push": "2026-09-02"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/screenpipe/screenpipe",
+    "tipo": "projeto_oss",
+    "nome": "screenpipe",
+    "resumo": "Grava continuamente tela e audio localmente para dar contexto a agentes de IA. Voltado a desenvolvedores e usuarios de assistentes como Claude e Codex. Open source; cobranca nao informada.",
+    "url": "https://github.com/screenpipe/screenpipe",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "Multimodal",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/screenpipe/screenpipe",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.7,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 21411,
+      "forks": 2175,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/significant-gravitas/autogpt",
+    "tipo": "projeto_oss",
+    "nome": "AutoGPT",
+    "resumo": "Plataforma para criar e executar agentes autonomos baseados em LLMs. Voltada a desenvolvedores e equipes que querem automatizar tarefas com IA. Open source, com oferta em nuvem; detalhes de cobranca nao informados.",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 187120,
+      "forks": 46042,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/speechbrain/speechbrain",
+    "tipo": "projeto_oss",
+    "nome": "speechbrain",
+    "resumo": "Toolkit de fala em PyTorch para reconhecimento, diarizacao, separacao e melhoria de audio. Para pesquisadores e engenheiros de fala. Open source, cobranca nao informada.",
+    "url": "https://github.com/speechbrain/speechbrain",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Pesquisa e P&D",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/speechbrain/speechbrain",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 11801,
+      "forks": 1722,
+      "ultimo_push": "2026-08-27"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/startrail-org/pixelrag",
+    "tipo": "projeto_oss",
+    "nome": "PixelRAG",
+    "resumo": "Sistema de RAG que faz busca nativa em pixels usando modelos de visao-linguagem, dispensando parsing de web. Voltado a desenvolvedores de buscadores e agentes multimodais. Repositorio aberto; cobranca nao informada.",
+    "url": "https://github.com/StarTrail-org/PixelRAG",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Pesquisa e P&D",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Multimodal",
+      "Visao Computacional"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/StarTrail-org/PixelRAG",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.5,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 9871,
+      "forks": 846,
+      "ultimo_push": "2026-08-30"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/thedotmack/claude-mem",
+    "tipo": "projeto_oss",
+    "nome": "claude-mem",
+    "resumo": "Camada de memoria persistente que captura, comprime e reinjeta contexto entre sessoes de agentes de IA. Para desenvolvedores que usam Claude Code, Codex, Copilot e similares. Open source; cobranca nao informada.",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/thedotmack/claude-mem",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 93179,
+      "forks": 8187,
+      "ultimo_push": "2026-09-04"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/uberi/speech_recognition",
+    "tipo": "projeto_oss",
+    "nome": "speech_recognition",
+    "resumo": "Biblioteca Python que unifica varios motores de reconhecimento de fala online e offline. Para desenvolvedores Python que precisam de transcricao simples. Open source, cobranca nao informada.",
+    "url": "https://github.com/Uberi/speech_recognition",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "Audio e Voz"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/Uberi/speech_recognition",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.7,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 8987,
+      "forks": 2417,
+      "ultimo_push": "2026-09-02"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/wanshuiyin/auto-claude-code-research-in-sleep",
+    "tipo": "projeto_oss",
+    "nome": "Auto-claude-code-research-in-sleep",
+    "resumo": "Conjunto de skills em Markdown para automatizar pesquisa de ML, com revisao entre modelos, descoberta de ideias e automacao de experimentos. Voltado a pesquisadores de IA que usam agentes LLM. Open source, cobranca nao informada.",
+    "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "dominio": "github.com",
+    "industrias": [
+      "Ciencia e Pesquisa",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.6,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 15724,
+      "forks": 1367,
+      "ultimo_push": "2026-09-03"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/yamadashy/repomix",
+    "tipo": "projeto_oss",
+    "nome": "repomix",
+    "resumo": "Repomix empacota um repositorio inteiro em um unico arquivo otimizado para consumo por LLMs. Para desenvolvedores que usam assistentes de IA em bases de codigo. Open source; cobranca nao informada.",
+    "url": "https://github.com/yamadashy/repomix",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/yamadashy/repomix",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 28192,
+      "forks": 1511,
+      "ultimo_push": "2026-09-03"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/yusufkaraaslan/skill_seekers",
+    "tipo": "projeto_oss",
+    "nome": "Skill_Seekers",
+    "resumo": "Converte sites de documentacao, repositorios GitHub e PDFs em skills para o Claude, com deteccao automatica de conflitos. Voltado a desenvolvedores que montam bases de conhecimento para agentes. Open source, cobranca nao informada.",
+    "url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.6,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 14911,
+      "forks": 1516,
+      "ultimo_push": "2026-08-30"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/yzhao062/pyod",
+    "tipo": "projeto_oss",
+    "nome": "pyod",
+    "resumo": "Biblioteca Python para deteccao de anomalias em dados tabulares, series temporais, grafos, texto, imagem e audio, com mais de 60 detectores. Destina-se a cientistas de dados e times de fraude e monitoramento. Open source; cobranca nao informada.",
+    "url": "https://github.com/yzhao062/pyod",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Financas",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Seguranca e Risco",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "ML Classico e Dados Estruturados",
+      "Multimodal",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/yzhao062/pyod",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 9981,
+      "forks": 1503,
+      "ultimo_push": "2026-08-19"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/zylon-ai/private-gpt",
+    "tipo": "projeto_oss",
+    "nome": "private-gpt",
+    "resumo": "private-gpt oferece uma camada de API para aplicacoes de IA privadas sobre modelos locais, com RAG, tools, MCP e text-to-sql. Voltado a empresas que precisam rodar IA on-premise. Open source; cobranca nao informada.",
+    "url": "https://github.com/zylon-ai/private-gpt",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Seguranca e Risco"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/zylon-ai/private-gpt",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-04",
+    "ultima_verificacao": "2026-09-04",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 57491,
+      "forks": 7612,
+      "ultimo_push": "2026-09-03"
+    },
+    "status": "ativo",
+    "nota_curador": ""
   },
   {
     "id": "harvey.ai",
