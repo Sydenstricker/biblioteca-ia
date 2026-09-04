@@ -1,124 +1,41 @@
 [
   {
-    "id": "br-tjrj-assis",
+    "id": "ar-prometea",
     "tipo": "aplicacao",
-    "nome": "ASSIS",
-    "orgao": "Tribunal de Justiça do Rio de Janeiro (TJRJ)",
-    "paises": ["Brasil"],
-    "orgaos": ["Tribunal de Justica Estadual", "Primeiro Grau"],
-    "ano": 2024,
-    "o_que_faz": "Assistente de IA generativa que elabora minutas de relatórios, decisões e sentenças em processos eletrônicos, redige ementas no padrão CNJ e responde perguntas sobre o conteúdo dos autos. Na primeira fase foi implantado para uso exclusivo de magistrados em 54 juizados especiais cíveis e fazendários; em 2025 passou a ser ampliado para a competência cível. Opera em ambiente isolado, sem reutilização dos dados para treinar outros modelos, com auditoria e rastreabilidade, mantendo a revisão do conteúdo sob responsabilidade do usuário.",
-    "fases": ["Julgamento", "Recursos e Precedentes"],
-    "aplicacoes": ["Minutas e Redacao de Decisoes", "Resumo de Documentos", "Pesquisa de Jurisprudencia"],
+    "nome": "Prometea",
+    "orgao": "Ministerio Público Fiscal de Buenos Aires / IALAB-UBA",
+    "paises": [
+      "Argentina"
+    ],
+    "orgaos": [
+      "Ministerio Publico"
+    ],
+    "ano": 2017,
+    "o_que_faz": "Nascido no Laboratório de Inovação e Inteligência Artificial da Faculdade de Direito de Buenos Aires em parceria com o Ministério Público Fiscal portenho, analisa infrações menores, procedimentos de trânsito e políticas sociais como a gestão de subsídios, elaborando minutas de peças em minutos. Serviu de base para o PretorIA colombiano.",
+    "fases": [
+      "Triagem e Distribuicao",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Classificacao e Triagem de Processos"
+    ],
     "autonomia": "assistida",
     "situacao": "Em producao",
-    "verificacao": "fonte_primaria",
-    "temas": ["IA Generativa", "Produtividade e Eficiencia", "Responsabilidade e Auditoria"],
+    "verificacao": "fonte_secundaria",
+    "temas": [
+      "Produtividade e Eficiencia"
+    ],
     "controversia": "",
     "fontes": [
-      { "veiculo": "TJRJ — portal oficial do projeto", "url": "https://www.tjrj.jus.br/magistrado/servicos/assis/o-projeto" },
-      { "veiculo": "CNJ", "url": "https://www.cnj.jus.br/ferramenta-de-ia-vai-auxiliar-juizes-fluminenses-na-elaboracao-de-minutas-de-sentenca/" },
-      { "veiculo": "Conjur", "url": "https://www.conjur.com.br/2025-abr-17/tj-do-rio-de-janeiro-amplia-uso-de-inteligencia-artificial-na-area-civel/" }
-    ]
-  },
-  {
-    "id": "br-stf-victor",
-    "tipo": "aplicacao",
-    "nome": "VICTOR",
-    "orgao": "Supremo Tribunal Federal (STF)",
-    "paises": ["Brasil"],
-    "orgaos": ["Suprema Corte"],
-    "ano": 2018,
-    "o_que_faz": "Classifica recursos extraordinários quanto aos temas de repercussão geral, identificando em segundos peças processuais que um servidor levaria muito mais tempo para triar. Atua na etapa anterior à análise humana, sem produzir juízo de mérito.",
-    "fases": ["Triagem e Distribuicao", "Recursos e Precedentes"],
-    "aplicacoes": ["Classificacao e Triagem de Processos", "Deteccao de Casos Repetitivos"],
-    "autonomia": "automacao",
-    "situacao": "Em producao",
-    "verificacao": "fonte_primaria",
-    "temas": ["Produtividade e Eficiencia"],
-    "controversia": "",
-    "fontes": [
-      { "veiculo": "CNJ", "url": "https://www.cnj.jus.br/judiciario-ganha-agilidade-com-uso-de-inteligencia-artificial/" }
-    ]
-  },
-  {
-    "id": "br-stj-socrates",
-    "tipo": "aplicacao",
-    "nome": "Sócrates",
-    "orgao": "Superior Tribunal de Justiça (STJ)",
-    "paises": ["Brasil"],
-    "orgaos": ["Tribunal Superior"],
-    "ano": 2019,
-    "o_que_faz": "Automatiza o exame dos recursos que chegam ao tribunal e das decisões anteriores proferidas no processo, organizando as informações que subsidiam a análise do gabinete.",
-    "fases": ["Triagem e Distribuicao", "Recursos e Precedentes"],
-    "aplicacoes": ["Classificacao e Triagem de Processos", "Resumo de Documentos"],
-    "autonomia": "apoio",
-    "situacao": "Em producao",
-    "verificacao": "fonte_primaria",
-    "temas": ["Produtividade e Eficiencia"],
-    "controversia": "",
-    "fontes": [
-      { "veiculo": "CNJ", "url": "https://www.cnj.jus.br/judiciario-ganha-agilidade-com-uso-de-inteligencia-artificial/" }
-    ]
-  },
-  {
-    "id": "br-stj-athos",
-    "tipo": "aplicacao",
-    "nome": "Athos",
-    "orgao": "Superior Tribunal de Justiça (STJ)",
-    "paises": ["Brasil"],
-    "orgaos": ["Tribunal Superior"],
-    "ano": 2020,
-    "o_que_faz": "Localiza processos que podem ser submetidos ao rito dos recursos repetitivos, identificando teses semelhantes ainda antes da distribuição aos ministros. O objetivo é agrupar controvérsias idênticas para julgamento uniforme.",
-    "fases": ["Triagem e Distribuicao", "Recursos e Precedentes"],
-    "aplicacoes": ["Deteccao de Casos Repetitivos", "Classificacao e Triagem de Processos"],
-    "autonomia": "apoio",
-    "situacao": "Em producao",
-    "verificacao": "fonte_primaria",
-    "temas": ["Produtividade e Eficiencia"],
-    "controversia": "",
-    "fontes": [
-      { "veiculo": "CNJ", "url": "https://www.cnj.jus.br/judiciario-ganha-agilidade-com-uso-de-inteligencia-artificial/" }
-    ]
-  },
-  {
-    "id": "br-tjpe-elis",
-    "tipo": "aplicacao",
-    "nome": "Elis",
-    "orgao": "Tribunal de Justiça de Pernambuco (TJPE)",
-    "paises": ["Brasil"],
-    "orgaos": ["Tribunal de Justica Estadual", "Primeiro Grau"],
-    "ano": 2019,
-    "o_que_faz": "Organiza documentos, datas, prazos e dados processuais para o magistrado que julgará cada caso. Por técnicas de automação, insere minutas no sistema e chega a assinar despachos, quando assim determinado pelo juiz. Foi aplicada sobretudo em execuções fiscais, feitos de alto volume e baixa complexidade.",
-    "fases": ["Execucao e Cumprimento", "Triagem e Distribuicao"],
-    "aplicacoes": ["Minutas e Redacao de Decisoes", "Extracao de Dados de Documentos", "Classificacao e Triagem de Processos"],
-    "autonomia": "assistida",
-    "situacao": "Em producao",
-    "verificacao": "fonte_primaria",
-    "temas": ["Produtividade e Eficiencia", "Responsabilidade e Auditoria"],
-    "controversia": "A assinatura automatizada de despachos, ainda que sob determinação do juiz, é o ponto que mais suscita debate sobre os limites da delegação de atos decisórios a sistemas.",
-    "fontes": [
-      { "veiculo": "CNJ", "url": "https://www.cnj.jus.br/judiciario-ganha-agilidade-com-uso-de-inteligencia-artificial/" }
-    ]
-  },
-  {
-    "id": "br-tjmg-radar",
-    "tipo": "aplicacao",
-    "nome": "Radar",
-    "orgao": "Tribunal de Justiça de Minas Gerais (TJMG)",
-    "paises": ["Brasil"],
-    "orgaos": ["Tribunal de Justica Estadual"],
-    "ano": 2018,
-    "o_que_faz": "Identifica e separa recursos que tratam de matéria jurídica semelhante, ou que já contam com precedente firmado em tribunais superiores ou em Incidente de Resolução de Demandas Repetitivas, permitindo julgamento em bloco.",
-    "fases": ["Recursos e Precedentes", "Julgamento"],
-    "aplicacoes": ["Deteccao de Casos Repetitivos", "Classificacao e Triagem de Processos"],
-    "autonomia": "apoio",
-    "situacao": "Em producao",
-    "verificacao": "fonte_primaria",
-    "temas": ["Produtividade e Eficiencia"],
-    "controversia": "",
-    "fontes": [
-      { "veiculo": "CNJ", "url": "https://www.cnj.jus.br/judiciario-ganha-agilidade-com-uso-de-inteligencia-artificial/" }
+      {
+        "veiculo": "Universidad de los Andes",
+        "url": "https://algoritmos.uniandes.edu.co/pretoria-anteriormente-conocido-como-prometea/"
+      },
+      {
+        "veiculo": "Infobae",
+        "url": "https://www.infobae.com/tecno/2020/07/28/la-justicia-de-colombia-usara-un-sistema-de-inteligencia-artificial-basado-en-un-desarrollo-argentino/"
+      }
     ]
   },
   {
@@ -126,85 +43,310 @@
     "tipo": "norma",
     "nome": "Resolução CNJ nº 615/2025",
     "orgao": "Conselho Nacional de Justiça (CNJ)",
-    "paises": ["Brasil"],
-    "orgaos": ["Conselho ou Orgao de Governanca"],
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
     "ano": 2025,
     "o_que_faz": "Institui a política de uso de inteligência artificial no Poder Judiciário, reunindo num só sistema a governança, a classificação de risco, a auditoria e a transparência das soluções de IA empregadas pelos tribunais. Aprovada em 11 de março de 2025, publicada em 14 de março e em vigor desde 14 de julho de 2025. REVOGA a Resolução CNJ nº 332/2020, que fora concebida antes da difusão da IA generativa. Não alcança o STF, que possui autonomia administrativa própria.",
-    "fases": ["Gestao Administrativa"],
-    "aplicacoes": ["Jurimetria e Estatistica"],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Jurimetria e Estatistica"
+    ],
     "autonomia": "apoio",
     "situacao": "Em producao",
     "verificacao": "fonte_primaria",
-    "temas": ["Governanca e Regulacao", "Transparencia e Explicabilidade", "Responsabilidade e Auditoria", "Protecao de Dados"],
+    "temas": [
+      "Governanca e Regulacao",
+      "Transparencia e Explicabilidade",
+      "Responsabilidade e Auditoria",
+      "Protecao de Dados"
+    ],
     "controversia": "Há debate acadêmico sobre a legalidade de o CNJ disciplinar a matéria por resolução, sem lei em sentido estrito.",
     "fontes": [
-      { "veiculo": "CNJ — texto oficial (PDF)", "url": "https://atos.cnj.jus.br/files/original1555302025031467d4517244566.pdf" },
-      { "veiculo": "CNJ — ficha do ato", "url": "https://atos.cnj.jus.br/atos/detalhar/6001" },
-      { "veiculo": "Revista do CEJUR/TJSC — análise de legalidade", "url": "https://revistadocejur.tjsc.jus.br/cejur/article/view/464" }
+      {
+        "veiculo": "CNJ — texto oficial (PDF)",
+        "url": "https://atos.cnj.jus.br/files/original1555302025031467d4517244566.pdf"
+      },
+      {
+        "veiculo": "CNJ — ficha do ato",
+        "url": "https://atos.cnj.jus.br/atos/detalhar/6001"
+      },
+      {
+        "veiculo": "Revista do CEJUR/TJSC — análise de legalidade",
+        "url": "https://revistadocejur.tjsc.jus.br/cejur/article/view/464"
+      }
     ]
   },
   {
-    "id": "us-compas",
+    "id": "br-stf-victor",
     "tipo": "aplicacao",
-    "nome": "COMPAS",
-    "orgao": "Northpointe / equivant — adotado por tribunais estaduais dos EUA",
-    "paises": ["Estados Unidos"],
-    "orgaos": ["Primeiro Grau", "Tribunal de Justica Estadual"],
-    "ano": 2016,
-    "o_que_faz": "Ferramenta proprietária que atribui a réus uma pontuação de risco de reincidência, usada por juízes americanos em decisões sobre fiança, sentença e liberdade condicional. É o caso mais estudado do mundo em viés algorítmico aplicado à justiça criminal.",
-    "fases": ["Julgamento", "Execucao e Cumprimento"],
-    "aplicacoes": ["Avaliacao de Risco de Pessoas"],
-    "autonomia": "assistida",
+    "nome": "VICTOR",
+    "orgao": "Supremo Tribunal Federal (STF)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Suprema Corte"
+    ],
+    "ano": 2018,
+    "o_que_faz": "Classifica recursos extraordinários quanto aos temas de repercussão geral, identificando em segundos peças processuais que um servidor levaria muito mais tempo para triar. Atua na etapa anterior à análise humana, sem produzir juízo de mérito.",
+    "fases": [
+      "Triagem e Distribuicao",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos",
+      "Deteccao de Casos Repetitivos"
+    ],
+    "autonomia": "automacao",
     "situacao": "Em producao",
-    "verificacao": "contestado",
-    "temas": ["Vies e Discriminacao", "Devido Processo Legal", "Transparencia e Explicabilidade"],
-    "controversia": "Em 2016 a ProPublica analisou as pontuações de mais de 10 mil pessoas presas no condado de Broward, na Flórida, e concluiu que réus negros tinham cerca do dobro da probabilidade de serem rotulados incorretamente como de alto risco, enquanto réus brancos eram mais frequentemente classificados como de baixo risco e voltavam a delinquir. A Northpointe contestou a metodologia, e o debate estatístico resultante (sobre quais definições de justiça algorítmica são matematicamente compatíveis entre si) tornou-se referência da área. No caso Wisconsin v. Loomis, julgado em julho de 2016, a Suprema Corte de Wisconsin manteve o uso da ferramenta, mas determinou que os juízes sejam advertidos sobre suas limitações, incluindo o caráter proprietário do algoritmo e o potencial de viés racial e de gênero.",
-    "fontes": [
-      { "veiculo": "ProPublica — Machine Bias", "url": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" },
-      { "veiculo": "State Bar of Wisconsin — o caso Loomis", "url": "https://www.wisbar.org/NewsPublications/InsideTrack/Pages/Article.aspx?Volume=9&Issue=14&ArticleID=25730" },
-      { "veiculo": "Colorado Tech. Law Journal — o debate COMPAS/ProPublica", "url": "https://ctlj.colorado.edu/wp-content/uploads/2021/02/17.1_4-Washington_3.18.19.pdf" }
-    ]
-  },
-  {
-    "id": "co-pretoria",
-    "tipo": "aplicacao",
-    "nome": "PretorIA",
-    "orgao": "Corte Constitucional da Colômbia",
-    "paises": ["Colombia"],
-    "orgaos": ["Suprema Corte"],
-    "ano": 2020,
-    "o_que_faz": "Lê, detecta e resume grandes volumes de ações de tutela para apoiar a seleção dos casos que a Corte Constitucional examinará. Segundo os relatos do projeto, reduziu de cerca de 96 dias para poucos minutos o tempo de triagem dos casos urgentes, sempre sob supervisão humana. Foi desenvolvido a partir da experiência do Prometea argentino, em colaboração com a Universidad de Buenos Aires e a Universidad del Rosario.",
-    "fases": ["Triagem e Distribuicao"],
-    "aplicacoes": ["Classificacao e Triagem de Processos", "Resumo de Documentos"],
-    "autonomia": "apoio",
-    "situacao": "Em producao",
-    "verificacao": "fonte_secundaria",
-    "temas": ["Produtividade e Eficiencia", "Acesso a Justica"],
-    "controversia": "Organizações de direitos digitais latino-americanas levantaram questões sobre transparência e sobre o risco de a triagem automatizada influenciar quais causas chegam ao julgamento constitucional.",
-    "fontes": [
-      { "veiculo": "Universidad de los Andes — Sistemas de Algoritmos Públicos", "url": "https://algoritmos.uniandes.edu.co/pretoria-anteriormente-conocido-como-prometea/" },
-      { "veiculo": "Derechos Digitales — informe", "url": "https://www.derechosdigitales.org/wp-content/uploads/CPC_informe_Colombia.pdf" }
-    ]
-  },
-  {
-    "id": "ar-prometea",
-    "tipo": "aplicacao",
-    "nome": "Prometea",
-    "orgao": "Ministerio Público Fiscal de Buenos Aires / IALAB-UBA",
-    "paises": ["Argentina"],
-    "orgaos": ["Ministerio Publico"],
-    "ano": 2017,
-    "o_que_faz": "Nascido no Laboratório de Inovação e Inteligência Artificial da Faculdade de Direito de Buenos Aires em parceria com o Ministério Público Fiscal portenho, analisa infrações menores, procedimentos de trânsito e políticas sociais como a gestão de subsídios, elaborando minutas de peças em minutos. Serviu de base para o PretorIA colombiano.",
-    "fases": ["Triagem e Distribuicao", "Gestao Administrativa"],
-    "aplicacoes": ["Minutas e Redacao de Decisoes", "Classificacao e Triagem de Processos"],
-    "autonomia": "assistida",
-    "situacao": "Em producao",
-    "verificacao": "fonte_secundaria",
-    "temas": ["Produtividade e Eficiencia"],
+    "verificacao": "fonte_primaria",
+    "temas": [
+      "Produtividade e Eficiencia"
+    ],
     "controversia": "",
     "fontes": [
-      { "veiculo": "Universidad de los Andes", "url": "https://algoritmos.uniandes.edu.co/pretoria-anteriormente-conocido-como-prometea/" },
-      { "veiculo": "Infobae", "url": "https://www.infobae.com/tecno/2020/07/28/la-justicia-de-colombia-usara-un-sistema-de-inteligencia-artificial-basado-en-un-desarrollo-argentino/" }
+      {
+        "veiculo": "CNJ",
+        "url": "https://www.cnj.jus.br/judiciario-ganha-agilidade-com-uso-de-inteligencia-artificial/"
+      }
+    ]
+  },
+  {
+    "id": "br-stj-athos",
+    "tipo": "aplicacao",
+    "nome": "Athos",
+    "orgao": "Superior Tribunal de Justiça (STJ)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal Superior"
+    ],
+    "ano": 2020,
+    "o_que_faz": "Localiza processos que podem ser submetidos ao rito dos recursos repetitivos, identificando teses semelhantes ainda antes da distribuição aos ministros. O objetivo é agrupar controvérsias idênticas para julgamento uniforme.",
+    "fases": [
+      "Triagem e Distribuicao",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Deteccao de Casos Repetitivos",
+      "Classificacao e Triagem de Processos"
+    ],
+    "autonomia": "apoio",
+    "situacao": "Em producao",
+    "verificacao": "fonte_primaria",
+    "temas": [
+      "Produtividade e Eficiencia"
+    ],
+    "controversia": "",
+    "fontes": [
+      {
+        "veiculo": "CNJ",
+        "url": "https://www.cnj.jus.br/judiciario-ganha-agilidade-com-uso-de-inteligencia-artificial/"
+      }
+    ]
+  },
+  {
+    "id": "br-stj-socrates",
+    "tipo": "aplicacao",
+    "nome": "Sócrates",
+    "orgao": "Superior Tribunal de Justiça (STJ)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal Superior"
+    ],
+    "ano": 2019,
+    "o_que_faz": "Automatiza o exame dos recursos que chegam ao tribunal e das decisões anteriores proferidas no processo, organizando as informações que subsidiam a análise do gabinete.",
+    "fases": [
+      "Triagem e Distribuicao",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos",
+      "Resumo de Documentos"
+    ],
+    "autonomia": "apoio",
+    "situacao": "Em producao",
+    "verificacao": "fonte_primaria",
+    "temas": [
+      "Produtividade e Eficiencia"
+    ],
+    "controversia": "",
+    "fontes": [
+      {
+        "veiculo": "CNJ",
+        "url": "https://www.cnj.jus.br/judiciario-ganha-agilidade-com-uso-de-inteligencia-artificial/"
+      }
+    ]
+  },
+  {
+    "id": "br-tjgo-berna",
+    "tipo": "aplicacao",
+    "nome": "Berna",
+    "orgao": "Tribunal de Justiça de Goiás (TJGO) / CNJ",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual",
+      "Conselho ou Orgao de Governanca"
+    ],
+    "ano": 2026,
+    "o_que_faz": "Compara petições iniciais por critérios matemáticos objetivos e agrupa as que apresentam padrão de repetição, pedidos padronizados e semelhança de argumentação, para apoiar a identificação de litigância predatória. Desenvolvida pelo TJGO e integrada à Plataforma Digital do Poder Judiciário (PDPJ-Br), foi disponibilizada aos tribunais em 2026. Analisou cerca de 30 milhões de processos ajuizados entre janeiro de 2025 e fevereiro de 2026 e sinalizou aproximadamente 2,5 milhões como possíveis demandas em massa ou abusivas, organizados em mais de 353 mil grupos de ações similares.",
+    "fases": [
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Deteccao de Fraude ou Anomalia",
+      "Deteccao de Casos Repetitivos",
+      "Classificacao e Triagem de Processos"
+    ],
+    "autonomia": "apoio",
+    "situacao": "Em producao",
+    "verificacao": "fonte_primaria",
+    "temas": [
+      "Produtividade e Eficiencia",
+      "Acesso a Justica",
+      "Responsabilidade e Auditoria"
+    ],
+    "controversia": "O agrupamento por similaridade indica padronização, não abuso: a caracterização de litigância predatória continua sendo decisão jurisdicional caso a caso. Há debate sobre o risco de que triagem automatizada por semelhança textual atinja demandas legítimas de massa, em que a padronização da petição decorre da padronização da própria lesão.",
+    "fontes": [
+      {
+        "veiculo": "CNJ — ferramenta disponibilizada aos tribunais",
+        "url": "https://www.cnj.jus.br/tribunais-ja-podem-usar-ferramenta-de-ia-para-identificar-acoes-repetitivas-e-abusivas/"
+      },
+      {
+        "veiculo": "Justiça Federal da 2ª Região",
+        "url": "https://www.trf2.jus.br/jf2/noticia-jf2/2026/tribunais-ja-podem-usar-ferramenta-de-ia-para-identificar-acoes-repetitivas"
+      }
+    ]
+  },
+  {
+    "id": "br-tjmg-radar",
+    "tipo": "aplicacao",
+    "nome": "Radar",
+    "orgao": "Tribunal de Justiça de Minas Gerais (TJMG)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual"
+    ],
+    "ano": 2018,
+    "o_que_faz": "Identifica e separa recursos que tratam de matéria jurídica semelhante, ou que já contam com precedente firmado em tribunais superiores ou em Incidente de Resolução de Demandas Repetitivas, permitindo julgamento em bloco.",
+    "fases": [
+      "Recursos e Precedentes",
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Deteccao de Casos Repetitivos",
+      "Classificacao e Triagem de Processos"
+    ],
+    "autonomia": "apoio",
+    "situacao": "Em producao",
+    "verificacao": "fonte_primaria",
+    "temas": [
+      "Produtividade e Eficiencia"
+    ],
+    "controversia": "",
+    "fontes": [
+      {
+        "veiculo": "CNJ",
+        "url": "https://www.cnj.jus.br/judiciario-ganha-agilidade-com-uso-de-inteligencia-artificial/"
+      }
+    ]
+  },
+  {
+    "id": "br-tjpe-elis",
+    "tipo": "aplicacao",
+    "nome": "Elis",
+    "orgao": "Tribunal de Justiça de Pernambuco (TJPE)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual",
+      "Primeiro Grau"
+    ],
+    "ano": 2019,
+    "o_que_faz": "Organiza documentos, datas, prazos e dados processuais para o magistrado que julgará cada caso. Por técnicas de automação, insere minutas no sistema e chega a assinar despachos, quando assim determinado pelo juiz. Foi aplicada sobretudo em execuções fiscais, feitos de alto volume e baixa complexidade.",
+    "fases": [
+      "Execucao e Cumprimento",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Extracao de Dados de Documentos",
+      "Classificacao e Triagem de Processos"
+    ],
+    "autonomia": "assistida",
+    "situacao": "Em producao",
+    "verificacao": "fonte_primaria",
+    "temas": [
+      "Produtividade e Eficiencia",
+      "Responsabilidade e Auditoria"
+    ],
+    "controversia": "A assinatura automatizada de despachos, ainda que sob determinação do juiz, é o ponto que mais suscita debate sobre os limites da delegação de atos decisórios a sistemas.",
+    "fontes": [
+      {
+        "veiculo": "CNJ",
+        "url": "https://www.cnj.jus.br/judiciario-ganha-agilidade-com-uso-de-inteligencia-artificial/"
+      }
+    ]
+  },
+  {
+    "id": "br-tjrj-assis",
+    "tipo": "aplicacao",
+    "nome": "ASSIS",
+    "orgao": "Tribunal de Justiça do Rio de Janeiro (TJRJ)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual",
+      "Primeiro Grau"
+    ],
+    "ano": 2024,
+    "o_que_faz": "Assistente de IA generativa que elabora minutas de relatórios, decisões e sentenças em processos eletrônicos, redige ementas no padrão CNJ e responde perguntas sobre o conteúdo dos autos. Na primeira fase foi implantado para uso exclusivo de magistrados em 54 juizados especiais cíveis e fazendários; em 2025 passou a ser ampliado para a competência cível. Opera em ambiente isolado, sem reutilização dos dados para treinar outros modelos, com auditoria e rastreabilidade, mantendo a revisão do conteúdo sob responsabilidade do usuário.",
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Resumo de Documentos",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "autonomia": "assistida",
+    "situacao": "Em producao",
+    "verificacao": "fonte_primaria",
+    "temas": [
+      "IA Generativa",
+      "Produtividade e Eficiencia",
+      "Responsabilidade e Auditoria"
+    ],
+    "controversia": "",
+    "fontes": [
+      {
+        "veiculo": "TJRJ — portal oficial do projeto",
+        "url": "https://www.tjrj.jus.br/magistrado/servicos/assis/o-projeto"
+      },
+      {
+        "veiculo": "CNJ",
+        "url": "https://www.cnj.jus.br/ferramenta-de-ia-vai-auxiliar-juizes-fluminenses-na-elaboracao-de-minutas-de-sentenca/"
+      },
+      {
+        "veiculo": "Conjur",
+        "url": "https://www.conjur.com.br/2025-abr-17/tj-do-rio-de-janeiro-amplia-uso-de-inteligencia-artificial-na-area-civel/"
+      }
     ]
   },
   {
@@ -212,42 +354,86 @@
     "tipo": "aplicacao",
     "nome": "Smart Courts (智慧法院)",
     "orgao": "Supremo Tribunal Popular da China",
-    "paises": ["China"],
-    "orgaos": ["Suprema Corte", "Primeiro Grau"],
+    "paises": [
+      "China"
+    ],
+    "orgaos": [
+      "Suprema Corte",
+      "Primeiro Grau"
+    ],
     "ano": 2022,
     "o_que_faz": "Sistema nacional conectado à mesa de trabalho de cada juiz do país. Filtra automaticamente processos em busca de referências, recomenda leis e regulamentos, redige documentos jurídicos e sinaliza possíveis erros humanos na sentença. As Opiniões do Supremo Tribunal Popular sobre a aplicação de IA no campo judicial, de dezembro de 2022, determinaram que todos os tribunais implantassem IA de apoio até 2025, com operação plena prevista para 2030. O Tribunal Superior de Hainan relatou reduções de 50% no tempo de elaboração de sentenças e de até 90% em documentos processuais.",
-    "fases": ["Julgamento", "Recursos e Precedentes", "Gestao Administrativa"],
-    "aplicacoes": ["Minutas e Redacao de Decisoes", "Pesquisa de Jurisprudencia", "Deteccao de Fraude ou Anomalia"],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia",
+      "Deteccao de Fraude ou Anomalia"
+    ],
     "autonomia": "assistida",
     "situacao": "Em producao",
     "verificacao": "fonte_primaria",
-    "temas": ["Produtividade e Eficiencia", "Governanca e Regulacao", "Devido Processo Legal"],
+    "temas": [
+      "Produtividade e Eficiencia",
+      "Governanca e Regulacao",
+      "Devido Processo Legal"
+    ],
     "controversia": "A escala e o grau de integração — com o sistema sinalizando divergências do juiz em relação ao padrão algorítmico — levantam, na literatura ocidental, questões sobre independência judicial. As fontes disponíveis são majoritariamente oficiais ou dela derivadas, o que limita a verificação independente.",
     "fontes": [
-      { "veiculo": "Supremo Tribunal Popular — portal em inglês", "url": "https://english.court.gov.cn/2022-12/12/c_838810.htm" },
-      { "veiculo": "China Justice Observer — texto das Opiniões (2022)", "url": "https://www.chinajusticeobserver.com/law/x/the-supreme-people-s-court-the-opinions-on-regulating-and-strengthening-the-applications-of-artificial-intelligence-in-the-judicial-field-20221208" },
-      { "veiculo": "South China Morning Post", "url": "https://www.scmp.com/news/china/science/article/3185140/chinas-court-ai-reaches-every-corner-justice-system-advising" }
+      {
+        "veiculo": "Supremo Tribunal Popular — portal em inglês",
+        "url": "https://english.court.gov.cn/2022-12/12/c_838810.htm"
+      },
+      {
+        "veiculo": "China Justice Observer — texto das Opiniões (2022)",
+        "url": "https://www.chinajusticeobserver.com/law/x/the-supreme-people-s-court-the-opinions-on-regulating-and-strengthening-the-applications-of-artificial-intelligence-in-the-judicial-field-20221208"
+      },
+      {
+        "veiculo": "South China Morning Post",
+        "url": "https://www.scmp.com/news/china/science/article/3185140/chinas-court-ai-reaches-every-corner-justice-system-advising"
+      }
     ]
   },
   {
-    "id": "ee-juiz-robo",
+    "id": "co-pretoria",
     "tipo": "aplicacao",
-    "nome": "\"Juiz-robô\" da Estônia",
-    "orgao": "Ministério da Justiça e Assuntos Digitais da Estônia",
-    "paises": ["Estonia"],
-    "orgaos": ["Primeiro Grau", "Conselho ou Orgao de Governanca"],
-    "ano": 2019,
-    "o_que_faz": "NÃO EXISTE. Em março de 2019 a Wired noticiou que a Estônia estaria desenvolvendo um \"juiz-robô\" para decidir causas de pequeno valor, e a informação foi replicada mundialmente, inclusive pelo Fórum Econômico Mundial. O Ministério da Justiça estoniano publicou desmentido formal: não há, e nunca houve, projeto ou ambição de substituir o juiz humano por IA em procedimentos de pequenas causas ou em qualquer outro. O que existe é a automação de etapas processuais e o plano de automatizar o procedimento nacional de injunção de pagamento, julgado por um único departamento de um único tribunal.",
-    "fases": ["Gestao Administrativa"],
-    "aplicacoes": ["Classificacao e Triagem de Processos"],
-    "autonomia": "automacao",
-    "situacao": "Nunca existiu",
-    "verificacao": "desmentido",
-    "temas": ["Governanca e Regulacao", "Alucinacao e Erro"],
-    "controversia": "Está no acervo justamente para registrar o desmentido. É o exemplo canônico de como uma reportagem imprecisa sobre IA no Judiciário circula por anos como fato — inclusive em artigos acadêmicos e apresentações institucionais. Ao encontrar a afirmação de que a Estônia tem juízes-robô, cite o desmentido oficial.",
+    "nome": "PretorIA",
+    "orgao": "Corte Constitucional da Colômbia",
+    "paises": [
+      "Colombia"
+    ],
+    "orgaos": [
+      "Suprema Corte"
+    ],
+    "ano": 2020,
+    "o_que_faz": "Lê, detecta e resume grandes volumes de ações de tutela para apoiar a seleção dos casos que a Corte Constitucional examinará. Segundo os relatos do projeto, reduziu de cerca de 96 dias para poucos minutos o tempo de triagem dos casos urgentes, sempre sob supervisão humana. Foi desenvolvido a partir da experiência do Prometea argentino, em colaboração com a Universidad de Buenos Aires e a Universidad del Rosario.",
+    "fases": [
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos",
+      "Resumo de Documentos"
+    ],
+    "autonomia": "apoio",
+    "situacao": "Em producao",
+    "verificacao": "fonte_secundaria",
+    "temas": [
+      "Produtividade e Eficiencia",
+      "Acesso a Justica"
+    ],
+    "controversia": "Organizações de direitos digitais latino-americanas levantaram questões sobre transparência e sobre o risco de a triagem automatizada influenciar quais causas chegam ao julgamento constitucional.",
     "fontes": [
-      { "veiculo": "Ministério da Justiça e Assuntos Digitais da Estônia — desmentido oficial", "url": "https://www.justdigi.ee/en/news/estonia-does-not-develop-ai-judge" },
-      { "veiculo": "World Economic Forum — a versão original, não corrigida", "url": "https://www.weforum.org/stories/2019/03/estonia-is-building-a-robot-judge-to-help-clear-legal-backlog/" }
+      {
+        "veiculo": "Universidad de los Andes — Sistemas de Algoritmos Públicos",
+        "url": "https://algoritmos.uniandes.edu.co/pretoria-anteriormente-conocido-como-prometea/"
+      },
+      {
+        "veiculo": "Derechos Digitales — informe",
+        "url": "https://www.derechosdigitales.org/wp-content/uploads/CPC_informe_Colombia.pdf"
+      }
     ]
   },
   {
@@ -255,20 +441,125 @@
     "tipo": "norma",
     "nome": "Carta Ética Europeia sobre o uso de IA nos sistemas judiciais",
     "orgao": "CEPEJ — Comissão Europeia para a Eficiência da Justiça, Conselho da Europa",
-    "paises": ["Conselho da Europa", "Uniao Europeia"],
-    "orgaos": ["Conselho ou Orgao de Governanca", "Corte Internacional"],
+    "paises": [
+      "Conselho da Europa",
+      "Uniao Europeia"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca",
+      "Corte Internacional"
+    ],
     "ano": 2018,
     "o_que_faz": "Primeiro texto europeu a estabelecer princípios éticos para o uso de IA em sistemas judiciais, adotado em 4 de dezembro de 2018. Oferece um quadro de princípios para legisladores e profissionais do direito, ancorado no respeito aos direitos fundamentais da Convenção Europeia de Direitos Humanos e à proteção de dados, com a não discriminação em posição central. A CEPEJ passou depois a estudar um mecanismo de certificação de produtos de IA judicial à luz da Carta.",
-    "fases": ["Gestao Administrativa"],
-    "aplicacoes": ["Jurimetria e Estatistica"],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Jurimetria e Estatistica"
+    ],
     "autonomia": "apoio",
     "situacao": "Em producao",
     "verificacao": "fonte_primaria",
-    "temas": ["Governanca e Regulacao", "Vies e Discriminacao", "Transparencia e Explicabilidade", "Protecao de Dados"],
+    "temas": [
+      "Governanca e Regulacao",
+      "Vies e Discriminacao",
+      "Transparencia e Explicabilidade",
+      "Protecao de Dados"
+    ],
     "controversia": "",
     "fontes": [
-      { "veiculo": "Conselho da Europa — página da Carta", "url": "https://www.coe.int/en/web/cepej/cepej-european-ethical-charter-on-the-use-of-artificial-intelligence-ai-in-judicial-systems-and-their-environment" },
-      { "veiculo": "Conselho da Europa — texto integral (PDF)", "url": "https://rm.coe.int/ethical-charter-en-for-publication-4-december-2018/16808f699c" }
+      {
+        "veiculo": "Conselho da Europa — página da Carta",
+        "url": "https://www.coe.int/en/web/cepej/cepej-european-ethical-charter-on-the-use-of-artificial-intelligence-ai-in-judicial-systems-and-their-environment"
+      },
+      {
+        "veiculo": "Conselho da Europa — texto integral (PDF)",
+        "url": "https://rm.coe.int/ethical-charter-en-for-publication-4-december-2018/16808f699c"
+      }
+    ]
+  },
+  {
+    "id": "ee-juiz-robo",
+    "tipo": "aplicacao",
+    "nome": "\"Juiz-robô\" da Estônia",
+    "orgao": "Ministério da Justiça e Assuntos Digitais da Estônia",
+    "paises": [
+      "Estonia"
+    ],
+    "orgaos": [
+      "Primeiro Grau",
+      "Conselho ou Orgao de Governanca"
+    ],
+    "ano": 2019,
+    "o_que_faz": "NÃO EXISTE. Em março de 2019 a Wired noticiou que a Estônia estaria desenvolvendo um \"juiz-robô\" para decidir causas de pequeno valor, e a informação foi replicada mundialmente, inclusive pelo Fórum Econômico Mundial. O Ministério da Justiça estoniano publicou desmentido formal: não há, e nunca houve, projeto ou ambição de substituir o juiz humano por IA em procedimentos de pequenas causas ou em qualquer outro. O que existe é a automação de etapas processuais e o plano de automatizar o procedimento nacional de injunção de pagamento, julgado por um único departamento de um único tribunal.",
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos"
+    ],
+    "autonomia": "automacao",
+    "situacao": "Nunca existiu",
+    "verificacao": "desmentido",
+    "temas": [
+      "Governanca e Regulacao",
+      "Alucinacao e Erro"
+    ],
+    "controversia": "Está no acervo justamente para registrar o desmentido. É o exemplo canônico de como uma reportagem imprecisa sobre IA no Judiciário circula por anos como fato — inclusive em artigos acadêmicos e apresentações institucionais. Ao encontrar a afirmação de que a Estônia tem juízes-robô, cite o desmentido oficial.",
+    "fontes": [
+      {
+        "veiculo": "Ministério da Justiça e Assuntos Digitais da Estônia — desmentido oficial",
+        "url": "https://www.justdigi.ee/en/news/estonia-does-not-develop-ai-judge"
+      },
+      {
+        "veiculo": "World Economic Forum — a versão original, não corrigida",
+        "url": "https://www.weforum.org/stories/2019/03/estonia-is-building-a-robot-judge-to-help-clear-legal-backlog/"
+      }
+    ]
+  },
+  {
+    "id": "us-compas",
+    "tipo": "aplicacao",
+    "nome": "COMPAS",
+    "orgao": "Northpointe / equivant — adotado por tribunais estaduais dos EUA",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Primeiro Grau",
+      "Tribunal de Justica Estadual"
+    ],
+    "ano": 2016,
+    "o_que_faz": "Ferramenta proprietária que atribui a réus uma pontuação de risco de reincidência, usada por juízes americanos em decisões sobre fiança, sentença e liberdade condicional. É o caso mais estudado do mundo em viés algorítmico aplicado à justiça criminal.",
+    "fases": [
+      "Julgamento",
+      "Execucao e Cumprimento"
+    ],
+    "aplicacoes": [
+      "Avaliacao de Risco de Pessoas"
+    ],
+    "autonomia": "assistida",
+    "situacao": "Em producao",
+    "verificacao": "contestado",
+    "temas": [
+      "Vies e Discriminacao",
+      "Devido Processo Legal",
+      "Transparencia e Explicabilidade"
+    ],
+    "controversia": "Em 2016 a ProPublica analisou as pontuações de mais de 10 mil pessoas presas no condado de Broward, na Flórida, e concluiu que réus negros tinham cerca do dobro da probabilidade de serem rotulados incorretamente como de alto risco, enquanto réus brancos eram mais frequentemente classificados como de baixo risco e voltavam a delinquir. A Northpointe contestou a metodologia, e o debate estatístico resultante (sobre quais definições de justiça algorítmica são matematicamente compatíveis entre si) tornou-se referência da área. No caso Wisconsin v. Loomis, julgado em julho de 2016, a Suprema Corte de Wisconsin manteve o uso da ferramenta, mas determinou que os juízes sejam advertidos sobre suas limitações, incluindo o caráter proprietário do algoritmo e o potencial de viés racial e de gênero.",
+    "fontes": [
+      {
+        "veiculo": "ProPublica — Machine Bias",
+        "url": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
+      },
+      {
+        "veiculo": "State Bar of Wisconsin — o caso Loomis",
+        "url": "https://www.wisbar.org/NewsPublications/InsideTrack/Pages/Article.aspx?Volume=9&Issue=14&ArticleID=25730"
+      },
+      {
+        "veiculo": "Colorado Tech. Law Journal — o debate COMPAS/ProPublica",
+        "url": "https://ctlj.colorado.edu/wp-content/uploads/2021/02/17.1_4-Washington_3.18.19.pdf"
+      }
     ]
   }
 ]

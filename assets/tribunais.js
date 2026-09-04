@@ -349,12 +349,13 @@ function cartaoUso(uso) {
 
   const ganho = document.createElement('p');
   ganho.className = 'ganho';
-  ganho.textContent = uso.ganho;
+  ganho.textContent = uso.destaque;
 
   const cuidado = document.createElement('div');
   cuidado.className = 'cuidado';
   const rot = document.createElement('strong');
-  rot.textContent = 'Onde tomar cuidado';
+  // Cartao do grupo "chega" nao fala de cuidado ao usar, e sim de como reagir.
+  rot.textContent = uso.rotuloCuidado || 'Onde tomar cuidado';
   const txt = document.createElement('p');
   txt.textContent = uso.cuidado;
   cuidado.append(rot, txt);
@@ -406,7 +407,7 @@ function blocoFaq(item) {
 /** O guia nao e uma colecao filtravel: monta a pagina inteira de uma vez. */
 function renderGuia(alvo) {
   const g = estado.dados.guia;
-  if (!g?.usos) {
+  if (!g?.grupos) {
     alvo.innerHTML = '<div class="vazio"><p>Guia indisponível.</p></div>';
     return;
   }
@@ -418,10 +419,26 @@ function renderGuia(alvo) {
   const p = document.createElement('p');
   p.textContent = g.abertura.texto;
   intro.append(h2, p);
+  alvo.append(intro);
 
-  const grade = document.createElement('div');
-  grade.className = 'grade-usos';
-  for (const uso of g.usos) grade.append(cartaoUso(uso));
+  // Dois grupos com sentidos opostos: a IA que voce adota e a que chega ate voce.
+  for (const grupo of g.grupos) {
+    const sec = document.createElement('section');
+    sec.className = 'grupo-usos g-' + grupo.id;
+
+    const h = document.createElement('h2');
+    h.textContent = grupo.titulo;
+    const sub = document.createElement('p');
+    sub.className = 'grupo-sub';
+    sub.textContent = grupo.texto;
+    sec.append(h, sub);
+
+    const grade = document.createElement('div');
+    grade.className = 'grade-usos';
+    for (const uso of grupo.usos) grade.append(cartaoUso(uso));
+    sec.append(grade);
+    alvo.append(sec);
+  }
 
   const faq = document.createElement('section');
   faq.className = 'guia-faq';
@@ -433,7 +450,7 @@ function renderGuia(alvo) {
   faq.append(h2f, aviso);
   for (const item of g.faq.perguntas) faq.append(blocoFaq(item));
 
-  alvo.append(intro, grade, faq);
+  alvo.append(faq);
 }
 
 const RENDER = { aplicacoes: fichaAplicacao, noticias: linhaNoticia, artigos: linhaArtigo };

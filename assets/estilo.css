@@ -681,3 +681,36 @@ main {
    de ficar ocupando 232px vazios ao lado do conteudo. */
 main.sem-filtros { grid-template-columns: minmax(0, 1fr); }
 main.sem-filtros .filtros { display: none; }
+
+/* ---------- os dois grupos do guia ---------- */
+
+.grupo-usos { margin-bottom: 40px; }
+
+.grupo-usos h2 { margin: 0 0 5px; }
+
+.grupo-sub {
+  max-width: 66ch;
+  margin: 0 0 18px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--texto-suave);
+}
+
+/* O segundo grupo não é ferramenta que se adota: é o que chega. A distinção
+   conceitual precisa se ver antes de qualquer palavra ser lida. */
+.g-chega {
+  padding: 24px;
+  margin-left: -24px;
+  margin-right: -24px;
+  background: var(--acento-fundo);
+  border-radius: var(--raio);
+}
+
+.g-chega .cartao-uso { border-color: var(--borda-forte); }
+.g-chega .arte { background: var(--superficie); }
+.g-chega .ganho { color: #8a4a1a; }
+:root[data-tema="escuro"] .g-chega .ganho { color: #e0a06a; }
+
+@media (max-width: 860px) {
+  .g-chega { margin-left: 0; margin-right: 0; }
+}

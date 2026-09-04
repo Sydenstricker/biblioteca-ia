@@ -44,6 +44,8 @@ await new Promise((r) => setTimeout(r, 80));
 const ler = (p) => JSON.parse(readFileSync(join(RAIZ, p), 'utf8'));
 const aplicacoes = ler('data/tribunais/aplicacoes.json');
 const guia = ler('data/tribunais/guia.json');
+const todosUsos = () => guia.grupos.flatMap((g) => g.usos);
+const totalUsos = () => todosUsos().length;
 
 let passou = 0;
 function ok(nome, fn) {
@@ -65,7 +67,7 @@ ok('abre no guia, nao na grade de fichas', () => {
 });
 
 ok('renderiza um cartao por uso e um bloco por pergunta', () => {
-  assert.equal(cartoesUso().length, guia.usos.length);
+  assert.equal(cartoesUso().length, totalUsos());
   assert.equal(perguntas().length, guia.faq.perguntas.length);
 });
 
@@ -116,8 +118,25 @@ ok('as fontes do FAQ sao URLs validas', () => {
 
 ok('todo cartao aponta para uma aplicacao existente na taxonomia', () => {
   const validas = ler('taxonomia-tribunais.json').aplicacoes.valores;
-  for (const u of guia.usos) {
+  for (const u of todosUsos()) {
     assert.ok(validas.includes(u.aplicacao), u.titulo + ': "' + u.aplicacao + '" fora da taxonomia');
+  }
+});
+
+// A distincao entre "a IA que voce usa" e "a que chega ate voce" e a espinha do
+// guia. Se alguem colapsar os dois grupos num so, isto aqui reclama.
+ok('os dois grupos existem e sao visualmente distintos', () => {
+  assert.equal(guia.grupos.length, 2, 'o guia precisa dos dois sentidos');
+  const ids = guia.grupos.map((g) => g.id);
+  assert.deepEqual(ids, ['usa', 'chega']);
+  assert.ok(porId.saida.buscarTodos('g-usa').length === 1, 'secao do grupo "usa" ausente');
+  assert.ok(porId.saida.buscarTodos('g-chega').length === 1, 'secao do grupo "chega" ausente');
+});
+
+ok('os cartoes do grupo "chega" dizem como reagir, nao como usar', () => {
+  for (const u of guia.grupos.find((g) => g.id === 'chega').usos) {
+    assert.ok(u.rotuloCuidado, u.titulo + ' deveria ter rotulo proprio de reacao');
+    assert.ok(!/Onde tomar cuidado/.test(u.rotuloCuidado), u.titulo + ' usa rotulo de ferramenta');
   }
 });
 
@@ -186,7 +205,7 @@ ok('aba de artigos nao quebra', () => {
 
 ok('voltar ao guia re-renderiza o conteudo didatico', () => {
   aba('guia').disparar('click');
-  assert.equal(cartoesUso().length, guia.usos.length);
+  assert.equal(cartoesUso().length, totalUsos());
 });
 
 console.log('\n' + passou + ' verificacoes passaram');
