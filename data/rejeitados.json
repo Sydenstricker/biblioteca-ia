@@ -1,1 +1,134 @@
-[]
+[
+  {
+    "id": "github.com/f/prompts.chat",
+    "nome": "prompts.chat",
+    "motivo": "Colecao comunitaria de prompts, nao e aplicacao de IA.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/dietrichgebert/ponytail",
+    "nome": "ponytail",
+    "motivo": "Colecao de regras/prompts para agentes, sem aplicacao de IA propria.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/rasbt/llms-from-scratch",
+    "nome": "LLMs-from-scratch",
+    "motivo": "Material educacional/tutorial de implementacao de LLM passo a passo.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/thedaviddias/front-end-checklist",
+    "nome": "Front-End-Checklist",
+    "motivo": "Checklist/lista de referencia, nao e aplicacao de IA.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/microsoft/ai-agents-for-beginners",
+    "nome": "ai-agents-for-beginners",
+    "motivo": "Curso/tutorial educacional, nao e ferramenta catalogavel.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/datawhalechina/hello-agents",
+    "nome": "hello-agents",
+    "motivo": "Tutorial de estudo sobre agentes.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/microsoft/generative-ai-for-beginners",
+    "nome": "generative-ai-for-beginners",
+    "motivo": "Curso educacional, nao e aplicacao de IA.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/asgeirtj/system_prompts_leaks",
+    "nome": "system_prompts_leaks",
+    "motivo": "Colecao de prompts vazados, nao e ferramenta de IA.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/rohitg00/ai-engineering-from-scratch",
+    "nome": "ai-engineering-from-scratch",
+    "motivo": "Curso/tutorial de estudo, nao e aplicacao catalogavel.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/nirdiamant/rag_techniques",
+    "nome": "RAG_Techniques",
+    "motivo": "Colecao de tutoriais em notebooks, nao e ferramenta.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/accumulatemore/cv",
+    "nome": "CV",
+    "motivo": "Repositorio de notas e cursos de deep learning, nao e aplicacao de IA.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/spmallick/learnopencv",
+    "nome": "learnopencv",
+    "motivo": "Repositorio de tutoriais e exemplos, material didatico.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/liguodongiot/llm-action",
+    "nome": "llm-action",
+    "motivo": "Repositorio de conteudo educacional e compartilhamento de conhecimento sobre LLMs, nao uma ferramenta.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/medusajs/medusa",
+    "nome": "medusa",
+    "motivo": "Plataforma de e-commerce; IA e apenas mencao periferica.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/jcodesmore/ai-website-cloner-template",
+    "nome": "ai-website-cloner-template",
+    "motivo": "Template/boilerplate trivial para agentes de codigo, nao e aplicacao de IA propria.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/gitlawb/openclaude",
+    "nome": "openclaude",
+    "motivo": "Descricao vaga demais ('runs anywhere, uses anything'), sem informacao catalogavel.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/sirmalloc/ccstatusline",
+    "nome": "ccstatusline",
+    "motivo": "Statusline cosmetica para CLI, nao e aplicacao de IA.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/bojieli/ai-agent-book",
+    "nome": "ai-agent-book",
+    "motivo": "E um livro com codigo de apoio, material educacional.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/datawhalechina/all-in-rag",
+    "nome": "all-in-rag",
+    "motivo": "Guia/tutorial educacional sobre RAG, nao e ferramenta.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "economist.com",
+    "nome": "AI agents lie, cheat and steal. That is putting off users",
+    "motivo": "Artigo jornalistico/opiniao, nao e ferramenta ou caso de uso catalogavel.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "law.uchicago.edu",
+    "nome": "Rethinking legal education in the AI era",
+    "motivo": "Artigo institucional sobre educacao juridica, nao e ferramenta ou projeto de IA.",
+    "data": "2026-09-04"
+  },
+  {
+    "id": "reuters.com",
+    "nome": "German advocacy group lodges criminal complaint over Meta AI glasses",
+    "motivo": "Noticia juridica sobre oculos da Meta, nao e aplicacao catalogavel.",
+    "data": "2026-09-04"
+  }
+]
