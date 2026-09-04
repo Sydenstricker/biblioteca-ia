@@ -1,0 +1,67 @@
+{
+  "_comentario": "Vocabulario FECHADO. O classificador so pode escolher valores desta lista (enum no structured output). Adicionar um valor aqui e a unica forma de criar uma categoria nova. Nunca renomeie um valor sem migrar data/itens.json.",
+  "versao": 1,
+
+  "tipo": {
+    "_descricao": "Que especie de registro e este. Define o que o card mostra.",
+    "valores": [
+      { "id": "ferramenta",   "rotulo": "Ferramenta / Produto", "ajuda": "SaaS, app ou API comercial que voce pode usar hoje." },
+      { "id": "caso_de_uso",  "rotulo": "Caso de Uso",          "ajuda": "Aplicacao documentada de IA num contexto real, nao um produto." },
+      { "id": "projeto_oss",  "rotulo": "Projeto Open Source",  "ajuda": "Repositorio, framework, biblioteca ou modelo aberto." }
+    ]
+  },
+
+  "industrias": {
+    "_descricao": "Vertical: o setor de mercado. Multiplo. Use 'Transversal' quando nao for especifico de setor algum.",
+    "valores": [
+      "Transversal", "Saude", "Financas", "Juridico", "Educacao",
+      "Varejo e E-commerce", "Agronegocio", "Manufatura e Industria",
+      "Logistica e Transporte", "Setor Publico e Governo",
+      "Midia e Entretenimento", "Imobiliario e Construcao",
+      "Energia e Utilities", "Telecomunicacoes", "Turismo e Hospitalidade",
+      "Tecnologia e Software", "Seguros", "Ciencia e Pesquisa"
+    ]
+  },
+
+  "funcoes": {
+    "_descricao": "Horizontal: a area de negocio beneficiada. Multiplo.",
+    "valores": [
+      "Vendas e CRM", "Marketing e Conteudo", "Suporte e Atendimento",
+      "RH e Recrutamento", "Financeiro e Contabil", "Juridico e Compliance",
+      "Engenharia e Codigo", "Dados e Analytics", "Design e Criacao",
+      "Operacoes e Processos", "Pesquisa e P&D", "Educacao e Treinamento",
+      "Seguranca e Risco", "Gestao de Projetos", "Produtividade Pessoal"
+    ]
+  },
+
+  "modalidades": {
+    "_descricao": "Capacidade nativa: o tipo de entrada/saida da tecnologia. Multiplo.",
+    "valores": [
+      "Texto e LLM", "Agentes Autonomos", "RAG e Busca Semantica",
+      "Visao Computacional", "Audio e Voz", "Geracao de Imagem",
+      "Geracao de Video", "Multimodal", "ML Classico e Dados Estruturados",
+      "Robotica e Embarcado"
+    ]
+  },
+
+  "implementacao": {
+    "_descricao": "Como a solucao chega ao usuario. Valor unico.",
+    "valores": [
+      "SaaS Pronto", "API / Developer Tool", "Open Source",
+      "Plug-in ou Extensao", "Modelo / Foundation Model",
+      "Infraestrutura e Plataforma", "Servico ou Consultoria"
+    ]
+  },
+
+  "maturidade": {
+    "_descricao": "Estagio de adocao. Valor unico.",
+    "valores": [
+      "Experimental", "Em Crescimento", "Consolidado", "Descontinuado"
+    ]
+  },
+
+  "status": {
+    "_descricao": "Saude do registro no acervo. Gerido pelo coletor e pela curadoria, nao pelo LLM.",
+    "valores": ["ativo", "suspeito", "descontinuado"]
+  }
+}

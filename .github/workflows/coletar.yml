@@ -1,0 +1,90 @@
+name: Coletar novidades
+
+# O coletor NUNCA escreve na main. Ele abre um Pull Request com os itens novos
+# ja classificados, e voce aprova pelo celular em meio minuto. E esse portao que
+# impede o acervo de virar lixeira -- veja o README, secao "Por que Pull Request".
+
+on:
+  schedule:
+    - cron: '0 9 * * 1' # toda segunda-feira, 09:00 UTC (06:00 em Brasilia)
+  workflow_dispatch: # e sob demanda, pelo botao "Run workflow"
+    inputs:
+      seco:
+        description: 'Ensaio seco (coleta e lista candidatos, sem gastar LLM)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: coletar
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependencias
+        working-directory: coletor
+        run: npm install --no-audit --no-fund
+
+      - name: Ensaio seco
+        if: inputs.seco
+        working-directory: coletor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node main.js --seco
+
+      - name: Coletar e classificar
+        if: ${{ !inputs.seco }}
+        working-directory: coletor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODELO_CLASSIFICADOR: ${{ vars.MODELO_CLASSIFICADOR }}
+        run: node main.js
+
+      - name: Promover pendentes para o acervo
+        if: ${{ !inputs.seco }}
+        run: node coletor/promover.js
+
+      - name: Abrir Pull Request
+        if: ${{ !inputs.seco }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: coletor/novidades
+          delete-branch: true
+          commit-message: 'coletor: novidades de ${{ github.run_started_at }}'
+          title: 'Novidades do coletor'
+          body: |
+            Itens novos encontrados pelo coletor automatico, ja classificados
+            contra a taxonomia fechada.
+
+            **Como revisar:** leia o diff de `data/itens.json`. Cada bloco
+            adicionado e um item novo. Se algum nao merece entrar, apague o
+            bloco dele aqui mesmo no PR antes de dar merge.
+
+            Itens marcados com `nota_curador` sobre confianca baixa foram
+            classificados com pouco texto -- confira esses primeiro.
+
+            ---
+
+            :warning: **Resolva este PR ainda esta semana.** Enquanto ele nao for
+            mesclado, estes itens nao estao nem no acervo nem em `rejeitados.json`,
+            entao a proxima rodada vai paga-los de novo. Fechar sem merge nao
+            resolve: eles voltam. Para descartar um item de vez, apague o bloco
+            dele aqui e de merge no resto.
+          add-paths: |
+            data/itens.json
+            data/rejeitados.json
+            data/sinais.jsonl

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IA em Tribunais — Biblioteca de IA</title>
+<meta name="description" content="Hub sobre inteligência artificial no Judiciário: aplicações em uso nos tribunais do Brasil e do mundo, notícias e artigos acadêmicos do tema.">
+<link rel="stylesheet" href="assets/estilo.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+</head>
+<body>
+
+<header class="topo">
+  <div class="faixa">
+    <div>
+      <nav class="migalha"><a href="index.html">Biblioteca de IA</a> <span>/</span></nav>
+      <h1>⚖️ IA em Tribunais</h1>
+      <p class="subtitulo">Aplicações em uso no Judiciário, notícias e produção acadêmica — com a procedência de cada informação à vista.</p>
+    </div>
+    <button id="tema" class="botao-icone" title="Alternar tema" aria-label="Alternar tema">◐</button>
+  </div>
+
+  <div class="abas" role="tablist">
+    <button class="aba ativa" data-vista="aplicacoes" role="tab">Aplicações <span class="pill" id="n-aplicacoes"></span></button>
+    <button class="aba" data-vista="noticias" role="tab">Notícias <span class="pill" id="n-noticias"></span></button>
+    <button class="aba" data-vista="artigos" role="tab">Artigos <span class="pill" id="n-artigos"></span></button>
+  </div>
+
+  <div class="busca-linha">
+    <input id="busca" type="search" placeholder="Buscar por sistema, tribunal, tema…" autocomplete="off">
+  </div>
+</header>
+
+<main>
+  <aside id="filtros" class="filtros" aria-label="Filtros"></aside>
+
+  <section class="resultados">
+    <div id="explicacao" class="explicacao"></div>
+    <div class="barra-resultado">
+      <span id="contagem" class="contagem"></span>
+      <button id="limpar" class="botao-texto" hidden>limpar filtros</button>
+    </div>
+    <div id="saida"></div>
+    <div id="vazio" class="vazio" hidden>
+      <p><strong>Nada encontrado com esses filtros.</strong></p>
+      <p>Tente remover uma dimensão, ou veja outra aba.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <span id="rodape-info"></span>
+  <a href="index.html">← voltar à biblioteca geral</a>
+</footer>
+
+<script src="assets/tribunais.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biblioteca de IA</title>
+<meta name="description" content="Mapa consultavel de aplicacoes, ferramentas e projetos de inteligencia artificial, organizados por industria, funcao e modalidade.">
+<link rel="stylesheet" href="assets/estilo.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗂️</text></svg>">
+</head>
+<body>
+
+<header class="topo">
+  <div class="faixa">
+    <div>
+      <h1>Biblioteca de IA</h1>
+      <p class="subtitulo">Mapa consultável de aplicações, ferramentas e projetos de inteligência artificial.</p>
+    </div>
+    <button id="tema" class="botao-icone" title="Alternar tema" aria-label="Alternar tema">◐</button>
+  </div>
+
+  <div class="busca-linha">
+    <input id="busca" type="search" placeholder="Descreva uma dor: &quot;ler contratos longos em PDF&quot;, &quot;atendimento por voz&quot;…" autocomplete="off">
+    <select id="ordem" aria-label="Ordenação">
+      <option value="tendencia">Em alta</option>
+      <option value="recentes">Mais recentes</option>
+      <option value="alfabetica">A–Z</option>
+    </select>
+  </div>
+</header>
+
+<div class="faixa-destaque">
+  <a class="destaque" href="tribunais.html">
+    <span class="emoji">⚖️</span>
+    <span>
+      <strong>IA em Tribunais — hub em destaque</strong>
+      <span class="txt">Aplicações no Judiciário do Brasil e do mundo, notícias do tema e produção acadêmica.</span>
+    </span>
+    <span class="seta">→</span>
+  </a>
+</div>
+
+<main>
+  <aside id="filtros" class="filtros" aria-label="Filtros"></aside>
+
+  <section class="resultados">
+    <div class="barra-resultado">
+      <span id="contagem" class="contagem"></span>
+      <button id="limpar" class="botao-texto" hidden>limpar filtros</button>
+    </div>
+    <div id="grade" class="grade"></div>
+    <div id="vazio" class="vazio" hidden>
+      <p><strong>Nada encontrado com esses filtros.</strong></p>
+      <p>Tente remover uma dimensão — combinar indústria, função e modalidade ao mesmo tempo costuma zerar o resultado.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <span id="rodape-info"></span>
+  <a href="https://github.com/" id="link-repo" rel="noopener">contribuir no GitHub</a>
+</footer>
+
+<script src="assets/app.js" type="module"></script>
+</body>
+</html>

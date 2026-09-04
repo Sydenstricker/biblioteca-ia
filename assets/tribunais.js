@@ -1,0 +1,376 @@
+// Hub "IA em Tribunais". Tres colecoes com ciclos de vida diferentes, tres layouts:
+// aplicacao e ficha, noticia e fluxo cronologico, artigo e referencia por citacao.
+
+const VISTAS = {
+  aplicacoes: {
+    arquivo: 'data/tribunais/aplicacoes.json',
+    filtros: ['paises', 'orgaos', 'aplicacoes', 'fases', 'verificacao'],
+    explicacao: 'Sistemas de IA em uso (ou anunciados) por órgãos de justiça. Cada ficha traz a procedência da informação — este é um domínio em que afirmação sem fonte circula com facilidade.',
+  },
+  noticias: {
+    arquivo: 'data/tribunais/noticias.json',
+    filtros: ['temas', 'paises', 'orgaos'],
+    explicacao: 'Cobertura recente sobre IA no Judiciário, da mais nova para a mais antiga. Coletada automaticamente e classificada; notícias com mais de 18 meses saem do acervo.',
+  },
+  artigos: {
+    arquivo: 'data/tribunais/artigos.json',
+    filtros: ['temas', 'paises'],
+    explicacao: 'Produção acadêmica sobre IA e sistemas de justiça, ordenada por citações. Vem do OpenAlex e do arXiv.',
+  },
+};
+
+const ROTULOS = {
+  paises: 'País', orgaos: 'Órgão', aplicacoes: 'Aplicação',
+  fases: 'Fase processual', verificacao: 'Verificação', temas: 'Tema',
+};
+
+const estado = { vista: 'aplicacoes', dados: {}, taxonomia: null, selecao: {}, busca: '' };
+
+const $ = (s) => document.querySelector(s);
+const normalizar = (s) => (s || '').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+
+/** Rotulos legiveis para dimensoes cujos valores sao ids. */
+function rotuloValor(dim, valor) {
+  const d = estado.taxonomia[dim];
+  if (!d) return valor;
+  const achado = Array.isArray(d.valores)
+    ? d.valores.find((v) => typeof v === 'object' && v.id === valor)
+    : null;
+  return achado ? achado.rotulo : valor;
+}
+
+function valoresDe(dim) {
+  const d = estado.taxonomia[dim];
+  if (!d) return [];
+  return d.valores.map((v) => (typeof v === 'object' ? v.id : v));
+}
+
+// ---------- carga ----------
+
+async function carregar() {
+  estado.taxonomia = await fetch('taxonomia-tribunais.json').then((r) => r.json());
+
+  for (const [nome, cfg] of Object.entries(VISTAS)) {
+    try {
+      estado.dados[nome] = await fetch(cfg.arquivo).then((r) => (r.ok ? r.json() : []));
+    } catch {
+      estado.dados[nome] = [];
+    }
+    for (const item of estado.dados[nome]) {
+      item._indice = normalizar([
+        item.nome, item.resumo, item.o_que_faz, item.orgao, item.controversia,
+        ...(item.paises || []), ...(item.orgaos || []), ...(item.aplicacoes || []),
+        ...(item.temas || []), ...(item.fases || []),
+        ...(item.sinais?.autores || []), item.sinais?.veiculo,
+      ].join(' '));
+    }
+    $('#n-' + nome).textContent = estado.dados[nome].length;
+  }
+
+  lerUrl();
+  trocarVista(estado.vista, true);
+}
+
+function lerUrl() {
+  const p = new URLSearchParams(location.search);
+  if (p.get('v') && VISTAS[p.get('v')]) estado.vista = p.get('v');
+  estado.busca = p.get('q') || '';
+  $('#busca').value = estado.busca;
+  for (const dim of Object.keys(ROTULOS)) {
+    const v = p.get(dim);
+    if (v) estado.selecao[dim] = new Set(v.split('~').filter(Boolean));
+  }
+}
+
+function escreverUrl() {
+  const p = new URLSearchParams();
+  if (estado.vista !== 'aplicacoes') p.set('v', estado.vista);
+  if (estado.busca) p.set('q', estado.busca);
+  for (const [dim, sel] of Object.entries(estado.selecao)) {
+    if (sel?.size && VISTAS[estado.vista].filtros.includes(dim)) p.set(dim, [...sel].join('~'));
+  }
+  const qs = p.toString();
+  history.replaceState(null, '', qs ? '?' + qs : location.pathname);
+}
+
+// ---------- filtragem ----------
+
+function filtrar(ignorando = null) {
+  const itens = estado.dados[estado.vista] || [];
+  const dims = VISTAS[estado.vista].filtros;
+  const termos = normalizar(estado.busca).split(/\s+/).filter(Boolean);
+
+  return itens.filter((item) => {
+    for (const dim of dims) {
+      if (dim === ignorando) continue;
+      const sel = estado.selecao[dim];
+      if (!sel?.size) continue;
+      const valor = item[dim];
+      const lista = Array.isArray(valor) ? valor : [valor];
+      if (!lista.some((v) => sel.has(v))) return false;
+    }
+    return termos.every((t) => item._indice.includes(t));
+  });
+}
+
+// ---------- render ----------
+
+function montarFiltros() {
+  const alvo = $('#filtros');
+  alvo.innerHTML = '';
+
+  for (const dim of VISTAS[estado.vista].filtros) {
+    const grupo = document.createElement('div');
+    grupo.className = 'grupo-filtro';
+    grupo.innerHTML = '<h2>' + ROTULOS[dim] + '</h2>';
+
+    const base = filtrar(dim);
+    let opcoesAdicionadas = 0;
+    for (const valor of valoresDe(dim)) {
+      const n = base.filter((i) => {
+        const v = i[dim];
+        return Array.isArray(v) ? v.includes(valor) : v === valor;
+      }).length;
+      // Numa colecao pequena, listar dezenas de opcoes zeradas so atrapalha.
+      if (n === 0 && !estado.selecao[dim]?.has(valor)) continue;
+
+      const rotulo = document.createElement('label');
+      rotulo.className = 'opcao';
+      rotulo.dataset.campo = dim;
+      rotulo.dataset.valor = valor;
+
+      const caixa = document.createElement('input');
+      caixa.type = 'checkbox';
+      caixa.checked = !!estado.selecao[dim]?.has(valor);
+      caixa.addEventListener('change', () => {
+        estado.selecao[dim] ||= new Set();
+        caixa.checked ? estado.selecao[dim].add(valor) : estado.selecao[dim].delete(valor);
+        aplicar();
+      });
+
+      const txt = document.createElement('span');
+      txt.textContent = rotuloValor(dim, valor);
+      const cont = document.createElement('span');
+      cont.className = 'n';
+      cont.textContent = n;
+
+      rotulo.append(caixa, txt, cont);
+      grupo.append(rotulo);
+      opcoesAdicionadas++;
+    }
+    // Uma dimensao sem nenhuma opcao util nao vira secao vazia na barra lateral.
+    if (opcoesAdicionadas > 0) alvo.append(grupo);
+  }
+}
+
+function selo(verificacao) {
+  const el = document.createElement('span');
+  el.className = 'selo-verif v-' + verificacao;
+  el.textContent = rotuloValor('verificacao', verificacao);
+  const ajuda = estado.taxonomia.verificacao.valores.find((v) => v.id === verificacao);
+  if (ajuda) el.title = ajuda.ajuda;
+  return el;
+}
+
+function fichaAplicacao(item) {
+  const el = document.createElement('article');
+  el.className = 'ficha' + (item.verificacao === 'desmentido' ? ' desmentida' : '');
+
+  const topo = document.createElement('div');
+  topo.className = 'ficha-topo';
+  const h3 = document.createElement('h3');
+  h3.textContent = item.nome;
+  topo.append(h3, selo(item.verificacao));
+
+  const meta = document.createElement('p');
+  meta.className = 'ficha-meta';
+  meta.textContent = [item.orgao, item.ano, item.situacao].filter(Boolean).join('  ·  ');
+
+  const corpo = document.createElement('p');
+  corpo.className = 'resumo';
+  corpo.textContent = item.o_que_faz;
+
+  el.append(topo, meta, corpo);
+
+  if (item.controversia) {
+    const c = document.createElement('div');
+    c.className = 'controversia';
+    c.innerHTML = '<strong>Controvérsia</strong>';
+    const p = document.createElement('p');
+    p.textContent = item.controversia;
+    c.append(p);
+    el.append(c);
+  }
+
+  const tags = document.createElement('div');
+  tags.className = 'tags';
+  for (const t of [...(item.aplicacoes || []), ...(item.fases || [])]) {
+    const b = document.createElement('span');
+    b.className = 'tag';
+    b.textContent = t;
+    tags.append(b);
+  }
+  el.append(tags);
+
+  if (item.fontes?.length) {
+    const f = document.createElement('div');
+    f.className = 'fontes';
+    f.append(document.createTextNode('Fontes: '));
+    item.fontes.forEach((fo, i) => {
+      if (i) f.append(document.createTextNode(' · '));
+      const a = document.createElement('a');
+      a.href = fo.url; a.target = '_blank'; a.rel = 'noopener';
+      a.textContent = fo.veiculo;
+      f.append(a);
+    });
+    el.append(f);
+  }
+  return el;
+}
+
+function linhaNoticia(item) {
+  const el = document.createElement('article');
+  el.className = 'noticia';
+
+  const data = document.createElement('time');
+  data.className = 'noticia-data';
+  const d = item.sinais?.data_publicacao || item.coletado_em || '';
+  data.textContent = d ? d.split('-').reverse().join('/') : '';
+
+  const corpo = document.createElement('div');
+  const h3 = document.createElement('h3');
+  const a = document.createElement('a');
+  a.href = item.url; a.target = '_blank'; a.rel = 'noopener';
+  a.textContent = item.nome;
+  h3.append(a);
+
+  const meta = document.createElement('p');
+  meta.className = 'ficha-meta';
+  meta.textContent = item.sinais?.veiculo || '';
+
+  const p = document.createElement('p');
+  p.className = 'resumo';
+  p.textContent = item.resumo;
+
+  const tags = document.createElement('div');
+  tags.className = 'tags';
+  for (const t of (item.temas || []).slice(0, 3)) {
+    const b = document.createElement('span');
+    b.className = 'tag';
+    b.textContent = t;
+    tags.append(b);
+  }
+
+  corpo.append(h3, meta, p, tags);
+  el.append(data, corpo);
+  return el;
+}
+
+function linhaArtigo(item) {
+  const el = document.createElement('article');
+  el.className = 'artigo';
+
+  const h3 = document.createElement('h3');
+  const a = document.createElement('a');
+  a.href = item.url; a.target = '_blank'; a.rel = 'noopener';
+  a.textContent = item.nome;
+  h3.append(a);
+
+  const s = item.sinais || {};
+  const meta = document.createElement('p');
+  meta.className = 'ficha-meta';
+  meta.textContent = [
+    (s.autores || []).slice(0, 3).join('; ') + ((s.autores || []).length > 3 ? ' et al.' : ''),
+    s.ano, s.veiculo,
+  ].filter(Boolean).join('  ·  ');
+
+  const p = document.createElement('p');
+  p.className = 'resumo';
+  p.textContent = item.resumo;
+
+  const rodape = document.createElement('div');
+  rodape.className = 'rodape-cartao';
+  rodape.textContent = [
+    s.citacoes != null ? s.citacoes + ' citações' : '',
+    s.acesso_aberto ? 'acesso aberto' : '',
+    s.doi ? 'DOI ' + s.doi : '',
+  ].filter(Boolean).join('  ·  ');
+
+  el.append(h3, meta, p, rodape);
+  return el;
+}
+
+const RENDER = { aplicacoes: fichaAplicacao, noticias: linhaNoticia, artigos: linhaArtigo };
+
+function aplicar() {
+  const resultado = filtrar();
+  const saida = $('#saida');
+  saida.innerHTML = '';
+  saida.className = 'lista-' + estado.vista;
+
+  const frag = document.createDocumentFragment();
+  for (const item of resultado) frag.append(RENDER[estado.vista](item));
+  saida.append(frag);
+
+  const total = (estado.dados[estado.vista] || []).length;
+  $('#contagem').textContent = resultado.length === total
+    ? total + ' registros'
+    : resultado.length + ' de ' + total;
+  $('#vazio').hidden = resultado.length > 0;
+
+  const temFiltro = estado.busca
+    || VISTAS[estado.vista].filtros.some((d) => estado.selecao[d]?.size);
+  $('#limpar').hidden = !temFiltro;
+
+  montarFiltros();
+  escreverUrl();
+}
+
+function trocarVista(nome, inicial = false) {
+  estado.vista = nome;
+  for (const b of document.querySelectorAll('.aba')) {
+    b.classList.toggle('ativa', b.dataset.vista === nome);
+  }
+  $('#explicacao').textContent = VISTAS[nome].explicacao;
+  if (!inicial) {
+    // Filtros de uma vista nao fazem sentido na outra.
+    for (const d of Object.keys(ROTULOS)) if (!VISTAS[nome].filtros.includes(d)) estado.selecao[d]?.clear();
+  }
+  aplicar();
+}
+
+// ---------- eventos ----------
+
+for (const b of document.querySelectorAll('.aba')) {
+  b.addEventListener('click', () => trocarVista(b.dataset.vista));
+}
+
+let temporizador;
+$('#busca').addEventListener('input', (e) => {
+  clearTimeout(temporizador);
+  temporizador = setTimeout(() => { estado.busca = e.target.value.trim(); aplicar(); }, 130);
+});
+
+$('#limpar').addEventListener('click', () => {
+  for (const d of Object.keys(ROTULOS)) estado.selecao[d]?.clear();
+  estado.busca = '';
+  $('#busca').value = '';
+  aplicar();
+});
+
+$('#tema').addEventListener('click', () => {
+  const escuro = document.documentElement.dataset.tema === 'escuro';
+  document.documentElement.dataset.tema = escuro ? 'claro' : 'escuro';
+  try { localStorage.setItem('tema', document.documentElement.dataset.tema); } catch { /* modo privado */ }
+});
+
+try {
+  const salvo = localStorage.getItem('tema');
+  if (salvo) document.documentElement.dataset.tema = salvo;
+  else if (matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.tema = 'escuro';
+} catch { /* indisponivel */ }
+
+carregar().catch((e) => {
+  $('#saida').innerHTML = '<div class="vazio"><p><strong>Não consegui carregar o hub.</strong></p><p>'
+    + e.message + '</p></div>';
+});

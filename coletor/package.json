@@ -1,0 +1,14 @@
+{
+  "name": "biblioteca-ia-coletor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "coletar": "node main.js",
+    "coletar:seco": "node main.js --seco"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.72.0"
+  }
+}

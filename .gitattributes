@@ -1,0 +1,5 @@
+# O coletor roda em Ubuntu e faz commit de JSON. Sem LF forcado, cada rodada
+# geraria um diff em que todas as linhas parecem alteradas.
+* text=auto eol=lf
+*.png binary
+*.jpg binary

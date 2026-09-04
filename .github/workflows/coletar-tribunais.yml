@@ -1,0 +1,83 @@
+name: Coletar IA em Tribunais
+
+# Mesma regra do coletor geral: nunca escreve na main, sempre abre PR.
+# Roda em dia diferente do outro coletor para os PRs nao se atropelarem.
+
+on:
+  schedule:
+    - cron: '0 9 * * 4' # toda quinta-feira, 09:00 UTC (06:00 em Brasilia)
+  workflow_dispatch:
+    inputs:
+      seco:
+        description: 'Ensaio seco (coleta e lista candidatos, sem gastar LLM)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: coletar-tribunais
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependencias
+        working-directory: coletor
+        run: npm install --no-audit --no-fund
+
+      - name: Ensaio seco
+        if: inputs.seco
+        run: node coletor/main-tribunais.js --seco
+
+      - name: Coletar e classificar
+        if: ${{ !inputs.seco }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODELO_CLASSIFICADOR: ${{ vars.MODELO_CLASSIFICADOR }}
+          EMAIL_CONTATO: ${{ vars.EMAIL_CONTATO }}
+        run: node coletor/main-tribunais.js
+
+      - name: Abrir Pull Request
+        if: ${{ !inputs.seco }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: coletor/tribunais
+          delete-branch: true
+          commit-message: 'hub tribunais: novidades de ${{ github.run_started_at }}'
+          title: 'IA em Tribunais — novidades'
+          body: |
+            Notícias e artigos novos sobre IA no Judiciário, ja classificados
+            contra `taxonomia-tribunais.json`.
+
+            **Como revisar:**
+
+            - `data/tribunais/noticias.json` e `artigos.json` — itens novos.
+              Confira o campo `verificacao`: comunicado de tribunal e
+              `fonte_primaria`, reportagem sobre comunicado e `fonte_secundaria`.
+            - `data/tribunais/candidatos-aplicacoes.json` — sistemas NOMEADOS nas
+              noticias desta rodada. **Nao entram no catalogo sozinhos.** Confirme
+              cada um com fonte primaria e, so entao, escreva a ficha em
+              `data/tribunais/aplicacoes.json`.
+
+            ---
+
+            :warning: **Resolva este PR ainda esta semana.** Enquanto nao for
+            mesclado, estes itens nao estao nem no acervo nem em `rejeitados.json`,
+            entao a proxima rodada vai paga-los de novo.
+          add-paths: |
+            data/tribunais/noticias.json
+            data/tribunais/artigos.json
+            data/tribunais/candidatos-aplicacoes.json
+            data/tribunais/rejeitados.json

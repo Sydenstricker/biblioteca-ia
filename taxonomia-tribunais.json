@@ -1,0 +1,95 @@
+{
+  "_comentario": "Vocabulario FECHADO do hub 'IA em Tribunais'. Mesma regra da taxonomia geral: o classificador so escolhe daqui, via enum no strict tool schema. A dimensao 'verificacao' nao existe no acervo geral e e o coracao deste hub -- ver README.",
+  "versao": 1,
+
+  "tipo": {
+    "_descricao": "Especie de registro. Cada um tem seu proprio ciclo de vida: aplicacao e catalogo estavel, noticia e fluxo que decai, artigo e referencia permanente.",
+    "valores": [
+      { "id": "aplicacao", "rotulo": "Aplicação", "ajuda": "Um sistema de IA efetivamente usado (ou proposto) por um orgao de justica." },
+      { "id": "noticia",   "rotulo": "Notícia",    "ajuda": "Cobertura jornalistica sobre IA no Judiciario." },
+      { "id": "artigo",    "rotulo": "Artigo",     "ajuda": "Trabalho academico revisado por pares ou preprint." },
+      { "id": "norma",     "rotulo": "Norma",      "ajuda": "Resolucao, carta de principios ou marco regulatorio." }
+    ]
+  },
+
+  "verificacao": {
+    "_descricao": "O quanto a existencia e o funcionamento do item estao comprovados. Este dominio e cheio de mito repetido como fato -- o 'juiz-robo da Estonia' foi noticiado mundialmente e depois desmentido pelo proprio Ministerio da Justica estoniano. Nenhuma aplicacao entra no acervo sem um valor aqui.",
+    "valores": [
+      { "id": "fonte_primaria",   "rotulo": "Fonte primária",   "ajuda": "Confirmado por documento do proprio orgao (portal oficial, resolucao, relatorio)." },
+      { "id": "fonte_secundaria", "rotulo": "Fonte secundária", "ajuda": "Relatado por imprensa ou literatura confiavel, sem confirmacao oficial direta." },
+      { "id": "contestado",       "rotulo": "Contestado",       "ajuda": "Existe, mas o funcionamento, o alcance ou a legitimidade sao objeto de disputa publica." },
+      { "id": "desmentido",       "rotulo": "Desmentido",       "ajuda": "Amplamente noticiado e depois negado pela fonte oficial. Fica no acervo justamente para registrar o desmentido." }
+    ]
+  },
+
+  "paises": {
+    "_descricao": "Jurisdicao. Multiplo, porque normas supranacionais alcancam varios paises.",
+    "valores": [
+      "Brasil", "Estados Unidos", "Colombia", "Argentina", "Mexico", "Chile",
+      "China", "Estonia", "Reino Unido", "Franca", "Alemanha", "Espanha",
+      "Portugal", "India", "Uniao Europeia", "Conselho da Europa", "Global"
+    ]
+  },
+
+  "orgaos": {
+    "_descricao": "Tipo de orgao. Multiplo.",
+    "valores": [
+      "Suprema Corte", "Tribunal Superior", "Tribunal de Justica Estadual",
+      "Tribunal Regional Federal", "Justica do Trabalho", "Justica Eleitoral",
+      "Primeiro Grau", "Ministerio Publico", "Defensoria Publica",
+      "Conselho ou Orgao de Governanca", "Corte Internacional"
+    ]
+  },
+
+  "fases": {
+    "_descricao": "Fase do fluxo processual em que a IA atua. Multiplo.",
+    "valores": [
+      "Triagem e Distribuicao", "Instrucao Probatoria", "Julgamento",
+      "Recursos e Precedentes", "Execucao e Cumprimento",
+      "Atendimento ao Cidadao", "Gestao Administrativa"
+    ]
+  },
+
+  "aplicacoes": {
+    "_descricao": "O que a IA faz, concretamente. Multiplo. Dimensao mais util do hub: e por aqui que se acha 'quem ja resolveu o meu problema'.",
+    "valores": [
+      "Classificacao e Triagem de Processos",
+      "Pesquisa de Jurisprudencia",
+      "Minutas e Redacao de Decisoes",
+      "Resumo de Documentos",
+      "Transcricao de Audiencias",
+      "Deteccao de Casos Repetitivos",
+      "Jurimetria e Estatistica",
+      "Extracao de Dados de Documentos",
+      "Avaliacao de Risco de Pessoas",
+      "Atendimento e Chatbot",
+      "Traducao e Acessibilidade",
+      "Deteccao de Fraude ou Anomalia"
+    ]
+  },
+
+  "autonomia": {
+    "_descricao": "Quanto a maquina decide sozinha. Valor unico. Distingue apoio de substituicao -- a diferenca que mais importa juridicamente.",
+    "valores": [
+      { "id": "apoio",      "rotulo": "Apoio ao humano",      "ajuda": "Sugere, resume ou organiza; a decisao segue integralmente humana." },
+      { "id": "automacao",  "rotulo": "Automação de tarefa",  "ajuda": "Executa tarefa repetitiva sem conteudo decisorio (triagem, transcricao, cadastro)." },
+      { "id": "assistida",  "rotulo": "Decisão assistida",    "ajuda": "Produz minuta ou pontuacao que influencia diretamente a decisao." },
+      { "id": "autonoma",   "rotulo": "Decisão autônoma",     "ajuda": "Decide sem revisao humana caso a caso. Raro e juridicamente controverso." }
+    ]
+  },
+
+  "situacao": {
+    "_descricao": "Estagio operacional da aplicacao. Valor unico.",
+    "valores": ["Em producao", "Piloto", "Anunciado", "Descontinuado", "Nunca existiu"]
+  },
+
+  "temas": {
+    "_descricao": "Eixo tematico, usado sobretudo em noticias e artigos. Multiplo.",
+    "valores": [
+      "Governanca e Regulacao", "Vies e Discriminacao", "Transparencia e Explicabilidade",
+      "Protecao de Dados", "Produtividade e Eficiencia", "Acesso a Justica",
+      "Devido Processo Legal", "Responsabilidade e Auditoria",
+      "IA Generativa", "Alucinacao e Erro", "Capacitacao e Pessoas"
+    ]
+  }
+}

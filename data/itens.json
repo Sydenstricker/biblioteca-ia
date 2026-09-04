@@ -1,0 +1,274 @@
+[
+  {
+    "id": "github.com/browser-use/browser-use",
+    "tipo": "projeto_oss",
+    "nome": "Browser Use",
+    "resumo": "Permite que um agente de IA navegue e opere páginas web como um usuário, clicando, preenchendo formulários e extraindo dados. Voltado a quem automatiza fluxos em sistemas sem API. Código aberto; cobrança não informada para a versão hospedada.",
+    "url": "https://github.com/browser-use/browser-use",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Visao Computacional"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "manual",
+    "fonte_url": "https://github.com/browser-use/browser-use",
+    "classificado_por": "semente-manual",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-02",
+    "ultima_verificacao": "2026-09-02",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 62000
+    },
+    "status": "ativo",
+    "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/infiniflow/ragflow",
+    "tipo": "projeto_oss",
+    "nome": "RAGFlow",
+    "resumo": "Motor de RAG que faz o entendimento profundo de documentos antes de indexá-los, preservando tabelas e layout. Serve a equipes que precisam responder perguntas sobre acervos grandes de PDFs e relatórios. Licença Apache 2.0, com edição comercial paga.",
+    "url": "https://github.com/infiniflow/ragflow",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Juridico",
+      "Financas"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Pesquisa e P&D",
+      "Juridico e Compliance"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "manual",
+    "fonte_url": "https://github.com/infiniflow/ragflow",
+    "classificado_por": "semente-manual",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-02",
+    "ultima_verificacao": "2026-09-02",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 38000
+    },
+    "status": "ativo",
+    "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/langchain-ai/langchain",
+    "tipo": "projeto_oss",
+    "nome": "LangChain",
+    "resumo": "Framework para compor aplicações sobre modelos de linguagem, encadeando prompts, ferramentas, memória e fontes de dados. Voltado a desenvolvedores que constroem RAG, agentes e pipelines de LLM. Licença MIT; o framework é gratuito, com produtos pagos separados para observabilidade.",
+    "url": "https://github.com/langchain-ai/langchain",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "RAG e Busca Semantica",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "manual",
+    "fonte_url": "https://github.com/langchain-ai/langchain",
+    "classificado_por": "semente-manual",
+    "confianca": 0.95,
+    "primeira_aparicao": "2026-09-02",
+    "ultima_verificacao": "2026-09-02",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 118000
+    },
+    "status": "ativo",
+    "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/mem0ai/mem0",
+    "tipo": "projeto_oss",
+    "nome": "Mem0",
+    "resumo": "Camada de memória persistente para agentes e assistentes, guardando fatos entre sessões em vez de reenviar todo o histórico. Voltada a desenvolvedores de assistentes que precisam lembrar preferências do usuário. Código aberto, com plano hospedado pago.",
+    "url": "https://github.com/mem0ai/mem0",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Suporte e Atendimento"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "RAG e Busca Semantica"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "manual",
+    "fonte_url": "https://github.com/mem0ai/mem0",
+    "classificado_por": "semente-manual",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-02",
+    "ultima_verificacao": "2026-09-02",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 30000
+    },
+    "status": "ativo",
+    "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/ollama/ollama",
+    "tipo": "projeto_oss",
+    "nome": "Ollama",
+    "resumo": "Executa modelos de linguagem abertos localmente, com um comando único para baixar e rodar cada modelo. Serve a desenvolvedores e equipes que precisam de inferência offline ou não podem enviar dados a terceiros. Licença MIT, sem custo de uso.",
+    "url": "https://github.com/ollama/ollama",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "Multimodal"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Consolidado",
+    "fonte": "manual",
+    "fonte_url": "https://github.com/ollama/ollama",
+    "classificado_por": "semente-manual",
+    "confianca": 0.95,
+    "primeira_aparicao": "2026-09-02",
+    "ultima_verificacao": "2026-09-02",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 155000
+    },
+    "status": "ativo",
+    "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/openai/whisper",
+    "tipo": "projeto_oss",
+    "nome": "Whisper",
+    "resumo": "Modelo de reconhecimento de fala que transcreve e traduz áudio em dezenas de idiomas, incluindo português. Usado por quem precisa legendar, transcrever entrevistas ou indexar áudio. Licença MIT; os pesos são gratuitos para uso local.",
+    "url": "https://github.com/openai/whisper",
+    "dominio": "github.com",
+    "industrias": [
+      "Midia e Entretenimento",
+      "Saude",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Suporte e Atendimento",
+      "Marketing e Conteudo"
+    ],
+    "modalidades": [
+      "Audio e Voz"
+    ],
+    "implementacao": "Modelo / Foundation Model",
+    "maturidade": "Consolidado",
+    "fonte": "manual",
+    "fonte_url": "https://github.com/openai/whisper",
+    "classificado_por": "semente-manual",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-09-02",
+    "ultima_verificacao": "2026-09-02",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 78000
+    },
+    "status": "ativo",
+    "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/paddlepaddle/paddleocr",
+    "tipo": "projeto_oss",
+    "nome": "PaddleOCR",
+    "resumo": "Reconhecimento óptico de caracteres multilíngue, incluindo extração de tabelas e documentos estruturados. Usado por equipes que precisam digitalizar notas fiscais, formulários e documentos escaneados em escala. Licença Apache 2.0, sem custo de uso.",
+    "url": "https://github.com/PaddlePaddle/PaddleOCR",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Financas",
+      "Setor Publico e Governo"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Financeiro e Contabil"
+    ],
+    "modalidades": [
+      "Visao Computacional"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "manual",
+    "fonte_url": "https://github.com/PaddlePaddle/PaddleOCR",
+    "classificado_por": "semente-manual",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-09-02",
+    "ultima_verificacao": "2026-09-02",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 45000
+    },
+    "status": "ativo",
+    "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "harvey.ai",
+    "tipo": "ferramenta",
+    "nome": "Harvey",
+    "resumo": "Assistente de IA para escritórios de advocacia e departamentos jurídicos, com análise de contratos, pesquisa e redação de peças. Voltado a advogados em firmas grandes e áreas jurídicas corporativas. Vendido por contrato empresarial; preço não divulgado publicamente.",
+    "url": "https://www.harvey.ai",
+    "dominio": "harvey.ai",
+    "industrias": [
+      "Juridico"
+    ],
+    "funcoes": [
+      "Juridico e Compliance",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "RAG e Busca Semantica"
+    ],
+    "implementacao": "SaaS Pronto",
+    "maturidade": "Em Crescimento",
+    "fonte": "manual",
+    "fonte_url": "https://www.harvey.ai",
+    "classificado_por": "semente-manual",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-02",
+    "ultima_verificacao": "2026-09-02",
+    "mencoes": 1,
+    "sinais": {},
+    "status": "ativo",
+    "nota_curador": "Item semente, classificado à mão."
+  }
+]
