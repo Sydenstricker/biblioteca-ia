@@ -1,7 +1,17 @@
 // Hub "IA em Tribunais". Tres colecoes com ciclos de vida diferentes, tres layouts:
 // aplicacao e ficha, noticia e fluxo cronologico, artigo e referencia por citacao.
 
+import { diagrama } from './diagramas.js';
+
 const VISTAS = {
+  // A porta de entrada. Quem chega aqui costuma nao saber ainda o que procurar --
+  // as outras tres abas sao referencia, e so servem a quem ja sabe.
+  guia: {
+    arquivo: 'data/tribunais/guia.json',
+    filtros: [],
+    estatico: true,
+    explicacao: '',
+  },
   aplicacoes: {
     arquivo: 'data/tribunais/aplicacoes.json',
     filtros: ['paises', 'orgaos', 'aplicacoes', 'fases', 'verificacao'],
@@ -24,7 +34,7 @@ const ROTULOS = {
   fases: 'Fase processual', verificacao: 'Verificação', temas: 'Tema',
 };
 
-const estado = { vista: 'aplicacoes', dados: {}, taxonomia: null, selecao: {}, busca: '' };
+const estado = { vista: 'guia', dados: {}, taxonomia: null, selecao: {}, busca: '' };
 
 const $ = (s) => document.querySelector(s);
 const normalizar = (s) => (s || '').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
@@ -56,6 +66,9 @@ async function carregar() {
     } catch {
       estado.dados[nome] = [];
     }
+    // O guia e um objeto de conteudo, nao uma colecao: sem indice e sem contador.
+    if (cfg.estatico) continue;
+
     for (const item of estado.dados[nome]) {
       item._indice = normalizar([
         item.nome, item.resumo, item.o_que_faz, item.orgao, item.controversia,
@@ -84,7 +97,7 @@ function lerUrl() {
 
 function escreverUrl() {
   const p = new URLSearchParams();
-  if (estado.vista !== 'aplicacoes') p.set('v', estado.vista);
+  if (estado.vista !== 'guia') p.set('v', estado.vista);
   if (estado.busca) p.set('q', estado.busca);
   for (const [dim, sel] of Object.entries(estado.selecao)) {
     if (sel?.size && VISTAS[estado.vista].filtros.includes(dim)) p.set(dim, [...sel].join('~'));
@@ -304,14 +317,147 @@ function linhaArtigo(item) {
   return el;
 }
 
+/** Lista de fontes com links, reaproveitada por fichas e pelo FAQ. */
+function listaFontes(fontes, rotulo = 'Fontes: ') {
+  const f = document.createElement('div');
+  f.className = 'fontes';
+  f.append(document.createTextNode(rotulo));
+  fontes.forEach((fo, i) => {
+    if (i) f.append(document.createTextNode(' · '));
+    const a = document.createElement('a');
+    a.href = fo.url; a.target = '_blank'; a.rel = 'noopener';
+    a.textContent = fo.veiculo;
+    f.append(a);
+  });
+  return f;
+}
+
+function cartaoUso(uso) {
+  const el = document.createElement('article');
+  el.className = 'cartao-uso';
+
+  const arte = document.createElement('div');
+  arte.className = 'arte';
+  arte.innerHTML = diagrama(uso.icone);
+
+  const h3 = document.createElement('h3');
+  h3.textContent = uso.titulo;
+
+  const oQue = document.createElement('p');
+  oQue.className = 'resumo';
+  oQue.textContent = uso.oQueFaz;
+
+  const ganho = document.createElement('p');
+  ganho.className = 'ganho';
+  ganho.textContent = uso.ganho;
+
+  const cuidado = document.createElement('div');
+  cuidado.className = 'cuidado';
+  const rot = document.createElement('strong');
+  rot.textContent = 'Onde tomar cuidado';
+  const txt = document.createElement('p');
+  txt.textContent = uso.cuidado;
+  cuidado.append(rot, txt);
+
+  el.append(arte, h3, oQue, ganho, cuidado);
+
+  if (uso.exemplos?.length) {
+    const usa = document.createElement('p');
+    usa.className = 'quem-usa';
+    usa.textContent = 'Já em uso: ' + uso.exemplos.join(', ');
+    el.append(usa);
+  }
+
+  // O cartao didatico leva ao catalogo: clicar filtra as aplicacoes por esta funcao.
+  if (uso.aplicacao) {
+    const ver = document.createElement('button');
+    ver.className = 'botao-texto ver-catalogo';
+    ver.textContent = 'ver quem usa no catálogo →';
+    ver.addEventListener('click', () => {
+      estado.selecao.aplicacoes = new Set([uso.aplicacao]);
+      trocarVista('aplicacoes');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    el.append(ver);
+  }
+  return el;
+}
+
+function blocoFaq(item) {
+  const d = document.createElement('details');
+  d.className = 'faq-item';
+
+  const s = document.createElement('summary');
+  s.textContent = item.pergunta;
+  d.append(s);
+
+  const corpo = document.createElement('div');
+  corpo.className = 'faq-corpo';
+  for (const par of item.resposta) {
+    const p = document.createElement('p');
+    p.textContent = par;
+    corpo.append(p);
+  }
+  if (item.fontes?.length) corpo.append(listaFontes(item.fontes, 'Onde conferir: '));
+  d.append(corpo);
+  return d;
+}
+
+/** O guia nao e uma colecao filtravel: monta a pagina inteira de uma vez. */
+function renderGuia(alvo) {
+  const g = estado.dados.guia;
+  if (!g?.usos) {
+    alvo.innerHTML = '<div class="vazio"><p>Guia indisponível.</p></div>';
+    return;
+  }
+
+  const intro = document.createElement('section');
+  intro.className = 'guia-intro';
+  const h2 = document.createElement('h2');
+  h2.textContent = g.abertura.titulo;
+  const p = document.createElement('p');
+  p.textContent = g.abertura.texto;
+  intro.append(h2, p);
+
+  const grade = document.createElement('div');
+  grade.className = 'grade-usos';
+  for (const uso of g.usos) grade.append(cartaoUso(uso));
+
+  const faq = document.createElement('section');
+  faq.className = 'guia-faq';
+  const h2f = document.createElement('h2');
+  h2f.textContent = g.faq.titulo;
+  const aviso = document.createElement('p');
+  aviso.className = 'aviso-faq';
+  aviso.textContent = g.faq.aviso;
+  faq.append(h2f, aviso);
+  for (const item of g.faq.perguntas) faq.append(blocoFaq(item));
+
+  alvo.append(intro, grade, faq);
+}
+
 const RENDER = { aplicacoes: fichaAplicacao, noticias: linhaNoticia, artigos: linhaArtigo };
 
 function aplicar() {
-  const resultado = filtrar();
   const saida = $('#saida');
   saida.innerHTML = '';
   saida.className = 'lista-' + estado.vista;
 
+  // O guia e conteudo editorial: nada de filtro, contagem, busca ou estado vazio.
+  const estatico = !!VISTAS[estado.vista].estatico;
+  document.querySelector('main').classList.toggle('sem-filtros', estatico);
+
+  if (estatico) {
+    renderGuia(saida);
+    $('#filtros').innerHTML = '';
+    $('#contagem').textContent = '';
+    $('#limpar').hidden = true;
+    $('#vazio').hidden = true;
+    escreverUrl();
+    return;
+  }
+
+  const resultado = filtrar();
   const frag = document.createDocumentFragment();
   for (const item of resultado) frag.append(RENDER[estado.vista](item));
   saida.append(frag);
@@ -336,6 +482,9 @@ function trocarVista(nome, inicial = false) {
     b.classList.toggle('ativa', b.dataset.vista === nome);
   }
   $('#explicacao').textContent = VISTAS[nome].explicacao;
+  $('#explicacao').hidden = !VISTAS[nome].explicacao;
+  // Buscar dentro do guia nao faz sentido: sao oito perguntas numa pagina so.
+  $('#busca').closest('.busca-linha').hidden = !!VISTAS[nome].estatico;
   if (!inicial) {
     // Filtros de uma vista nao fazem sentido na outra.
     for (const d of Object.keys(ROTULOS)) if (!VISTAS[nome].filtros.includes(d)) estado.selecao[d]?.clear();

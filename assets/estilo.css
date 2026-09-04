@@ -537,3 +537,147 @@ main {
   gap: 8px;
   flex-wrap: wrap;
 }
+
+/* =====================================================================
+   Aba "Comece aqui" — o guia didático
+   ===================================================================== */
+
+.guia-intro { max-width: 62ch; margin-bottom: 26px; }
+
+.guia-intro h2,
+.guia-faq h2 {
+  margin: 0 0 8px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+
+.guia-intro p { margin: 0; color: var(--texto-suave); line-height: 1.6; }
+
+.grade-usos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 16px;
+  margin-bottom: 42px;
+}
+
+.cartao-uso {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+/* O esquema herda a cor do texto, então funciona nos dois temas sem duplicação. */
+.arte {
+  margin: -2px 0 12px;
+  padding: 12px 0;
+  color: var(--acento);
+  background: var(--fundo);
+  border-radius: 7px;
+}
+
+.diagrama { display: block; width: 100%; max-width: 200px; height: auto; margin: 0 auto; }
+
+.cartao-uso h3 { margin: 0 0 7px; font-size: 16px; font-weight: 600; }
+.cartao-uso .resumo { margin: 0 0 9px; }
+
+.ganho {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--acento);
+}
+
+.cuidado {
+  margin-top: auto;
+  padding: 10px 12px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  background: var(--fundo);
+  border-left: 2px solid var(--borda-forte);
+  border-radius: 0 5px 5px 0;
+}
+
+.cuidado strong {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 10.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+}
+
+.cuidado p { margin: 0; color: var(--texto-suave); }
+
+.quem-usa {
+  margin: 12px 0 0;
+  font-size: 12px;
+  color: var(--texto-suave);
+}
+
+.ver-catalogo { margin-top: 10px; align-self: flex-start; }
+
+/* ---------- FAQ ---------- */
+
+.guia-faq { max-width: 78ch; }
+
+.aviso-faq {
+  margin: 0 0 18px;
+  padding: 10px 13px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--texto-suave);
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: 7px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--borda);
+}
+
+.faq-item summary {
+  padding: 14px 30px 14px 0;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--texto-suave);
+}
+
+.faq-item[open] summary::after { content: '−'; }
+.faq-item summary:hover { color: var(--acento); }
+
+.faq-corpo { padding: 0 0 18px; }
+
+.faq-corpo p {
+  margin: 0 0 11px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--texto-suave);
+  max-width: 68ch;
+}
+
+.faq-corpo .fontes { margin-top: 12px; }
+
+/* No guia nao ha barra lateral: a coluna dos filtros colapsa de vez, em vez
+   de ficar ocupando 232px vazios ao lado do conteudo. */
+main.sem-filtros { grid-template-columns: minmax(0, 1fr); }
+main.sem-filtros .filtros { display: none; }

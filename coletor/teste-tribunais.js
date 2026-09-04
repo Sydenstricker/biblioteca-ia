@@ -1,5 +1,5 @@
 // Teste de fumaca do hub "IA em Tribunais", sem navegador.
-// Reaproveita o DOM minimo de teste-frontend.js e exercita as tres vistas.
+// Reaproveita o DOM minimo de dom-falso.js e exercita as quatro vistas.
 //
 //   node coletor/teste-tribunais.js
 
@@ -16,13 +16,16 @@ const porId = montarDom([
   'explicacao', 'rodape-info', 'n-aplicacoes', 'n-noticias', 'n-artigos',
 ]);
 
-// As abas nao tem id: sao consultadas por '.aba'. Registramos as tres a mao.
-const abas = ['aplicacoes', 'noticias', 'artigos'].map((v) => {
+// As abas nao tem id: sao consultadas por '.aba'. Registramos as quatro a mao.
+// O guia e a primeira e a ativa por padrao -- e a porta de entrada do hub.
+const NOMES_ABAS = ['guia', 'aplicacoes', 'noticias', 'artigos'];
+const abas = NOMES_ABAS.map((v) => {
   const el = new Elemento('button');
-  el.className = 'aba' + (v === 'aplicacoes' ? ' ativa' : '');
+  el.className = 'aba' + (v === 'guia' ? ' ativa' : '');
   el.dataset.vista = v;
   return el;
 });
+const aba = (nome) => abas[NOMES_ABAS.indexOf(nome)];
 
 const querySelectorAllOriginal = globalThis.document.querySelectorAll;
 globalThis.document.querySelectorAll = (sel) => {
@@ -38,7 +41,9 @@ globalThis.fetch = async (caminho) => ({
 await import(pathToFileURL(join(RAIZ, 'assets', 'tribunais.js')).href);
 await new Promise((r) => setTimeout(r, 80));
 
-const aplicacoes = JSON.parse(readFileSync(join(RAIZ, 'data/tribunais/aplicacoes.json'), 'utf8'));
+const ler = (p) => JSON.parse(readFileSync(join(RAIZ, p), 'utf8'));
+const aplicacoes = ler('data/tribunais/aplicacoes.json');
+const guia = ler('data/tribunais/guia.json');
 
 let passou = 0;
 function ok(nome, fn) {
@@ -47,11 +52,82 @@ function ok(nome, fn) {
 }
 
 const fichas = () => porId.saida.buscarTodos('ficha');
+const cartoesUso = () => porId.saida.buscarTodos('cartao-uso');
+const perguntas = () => porId.saida.buscarTodos('faq-item');
 
 console.log('teste de fumaca do hub IA em Tribunais\n');
 
-ok('renderiza uma ficha por aplicacao', () => {
+// ---------- o guia, que e a vista padrao ----------
+
+ok('abre no guia, nao na grade de fichas', () => {
+  assert.equal(porId.saida.className, 'lista-guia');
+  assert.equal(fichas().length, 0, 'a vista inicial nao deve renderizar fichas');
+});
+
+ok('renderiza um cartao por uso e um bloco por pergunta', () => {
+  assert.equal(cartoesUso().length, guia.usos.length);
+  assert.equal(perguntas().length, guia.faq.perguntas.length);
+});
+
+ok('todo cartao traz esquema, ganho e cuidado', () => {
+  for (const c of cartoesUso()) {
+    assert.equal(c.buscarTodos('arte').length, 1, 'cartao sem esquema');
+    assert.equal(c.buscarTodos('ganho').length, 1, 'cartao sem ganho');
+    assert.equal(c.buscarTodos('cuidado').length, 1, 'cartao sem secao de cuidado');
+  }
+});
+
+ok('os esquemas SVG sao desenhados de fato', () => {
+  for (const c of cartoesUso()) {
+    const arte = c.buscarTodos('arte')[0];
+    assert.match(arte.innerHTML, /^<svg/, 'esquema ausente ou nome de icone invalido');
+    assert.match(arte.innerHTML, /viewBox/, 'SVG sem viewBox');
+  }
+});
+
+// A escolha editorial mais importante do guia: nada de robo nem juiz de metal.
+ok('nenhum esquema usa iconografia de robo', () => {
+  const tudo = cartoesUso().map((c) => c.buscarTodos('arte')[0].innerHTML).join(' ').toLowerCase();
+  for (const proibido of ['robot', 'robo', 'android', 'cyborg', 'brain', 'cerebro']) {
+    assert.ok(!tudo.includes(proibido), 'esquema contem referencia a "' + proibido + '"');
+  }
+});
+
+ok('a barra lateral some e a coluna colapsa no guia', () => {
+  assert.equal(porId.filtros.innerHTML, '');
+  assert.ok(porId._main.classList.has('sem-filtros'), 'main deveria ter a classe sem-filtros');
+});
+
+ok('toda resposta do FAQ tem texto', () => {
+  for (const p of guia.faq.perguntas) {
+    assert.ok(p.resposta.length > 0, p.pergunta + ' esta sem resposta');
+    for (const par of p.resposta) assert.ok(par.length > 40, p.pergunta + ' tem paragrafo curto demais');
+  }
+});
+
+ok('as fontes do FAQ sao URLs validas', () => {
+  for (const p of guia.faq.perguntas) {
+    for (const f of p.fontes || []) {
+      assert.match(f.url, /^https?:\/\//, p.pergunta + ' tem fonte sem URL valida');
+      assert.ok(f.veiculo?.length > 2, p.pergunta + ' tem fonte sem veiculo');
+    }
+  }
+});
+
+ok('todo cartao aponta para uma aplicacao existente na taxonomia', () => {
+  const validas = ler('taxonomia-tribunais.json').aplicacoes.valores;
+  for (const u of guia.usos) {
+    assert.ok(validas.includes(u.aplicacao), u.titulo + ': "' + u.aplicacao + '" fora da taxonomia');
+  }
+});
+
+// ---------- as vistas de dados ----------
+
+aba('aplicacoes').disparar('click');
+
+ok('trocar para aplicacoes renderiza uma ficha por item', () => {
   assert.equal(fichas().length, aplicacoes.length);
+  assert.ok(!porId._main.classList.has('sem-filtros'), 'a barra lateral deveria voltar');
 });
 
 ok('a contagem das abas bate com os arquivos', () => {
@@ -59,9 +135,7 @@ ok('a contagem das abas bate com os arquivos', () => {
 });
 
 ok('toda ficha exibe selo de verificacao', () => {
-  for (const f of fichas()) {
-    assert.equal(f.buscarTodos('selo-verif').length, 1, 'ficha sem selo de verificacao');
-  }
+  for (const f of fichas()) assert.equal(f.buscarTodos('selo-verif').length, 1, 'ficha sem selo');
 });
 
 ok('o item desmentido recebe tratamento visual proprio', () => {
@@ -80,8 +154,7 @@ ok('toda aplicacao tem ao menos uma fonte com link', () => {
 
 ok('a controversia so aparece quando existe', () => {
   const comTexto = aplicacoes.filter((a) => a.controversia).length;
-  const renderizadas = fichas().filter((f) => f.buscarTodos('controversia').length).length;
-  assert.equal(renderizadas, comTexto);
+  assert.equal(fichas().filter((f) => f.buscarTodos('controversia').length).length, comTexto);
 });
 
 ok('busca textual sem acento encontra item acentuado', () => {
@@ -100,20 +173,20 @@ ok('limpar restaura tudo', () => {
   assert.equal(fichas().length, aplicacoes.length);
 });
 
-ok('trocar para a aba de noticias nao quebra', () => {
-  abas[1].disparar('click');
+ok('aba de noticias nao quebra', () => {
+  aba('noticias').disparar('click');
   assert.match(porId.explicacao.textContent, /Cobertura recente/);
   assert.equal(porId.saida.className, 'lista-noticias');
 });
 
-ok('trocar para a aba de artigos nao quebra', () => {
-  abas[2].disparar('click');
+ok('aba de artigos nao quebra', () => {
+  aba('artigos').disparar('click');
   assert.equal(porId.saida.className, 'lista-artigos');
 });
 
-ok('voltar para aplicacoes re-renderiza', () => {
-  abas[0].disparar('click');
-  assert.equal(fichas().length, aplicacoes.length);
+ok('voltar ao guia re-renderiza o conteudo didatico', () => {
+  aba('guia').disparar('click');
+  assert.equal(cartoesUso().length, guia.usos.length);
 });
 
 console.log('\n' + passou + ' verificacoes passaram');

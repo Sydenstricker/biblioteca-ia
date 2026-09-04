@@ -35,6 +35,10 @@ export class Elemento {
     for (const c of String(v).split(/\s+/).filter(Boolean)) this.classList.add(c);
   }
 
+  /** Sobe ate um ancestral com a classe pedida. O stub nao mantem parentesco,
+   *  entao devolve a si mesmo: basta para o app so ler/escrever .hidden nele. */
+  closest() { return this; }
+
   /** So precisa suportar seletor de classe unica, que e o que app.js usa. */
   querySelector(sel) {
     return this.buscarTodos(sel.replace(/^\./, ''))[0] ?? null;
@@ -73,12 +77,16 @@ export function montarDom(ids) {
   const porId = {};
   for (const id of ids) porId[id] = new Elemento();
 
+  const principal = new Elemento('main');
   const raizDoc = new Elemento('html');
   raizDoc.dataset = {};
 
   globalThis.document = {
     documentElement: raizDoc,
-    querySelector: (sel) => porId[sel.replace('#', '')] ?? null,
+    querySelector: (sel) => {
+      if (sel === 'main') return principal;
+      return porId[sel.replace('#', '')] ?? null;
+    },
     querySelectorAll: (sel) => {
       const m = sel.match(/data-campo="([^"]+)"/);
       if (!m) return [];
@@ -96,5 +104,6 @@ export function montarDom(ids) {
   globalThis.matchMedia = () => ({ matches: false });
   globalThis.window = { scrollTo: () => {} };
 
+  porId._main = principal;
   return porId;
 }
