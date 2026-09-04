@@ -2,9 +2,11 @@
 //
 // Duas diferencas em relacao ao classificador geral:
 //
-//   1. Campo `verificacao` obrigatorio. Este dominio circula mito como fato -- o
-//      "juiz-robo da Estonia" foi noticiado no mundo inteiro e desmentido pelo
-//      proprio Ministerio da Justica estoniano. Nada entra sem grau de comprovacao.
+//   1. O modelo NAO decide a procedencia. Quem publicou e questao de autoria, nao
+//      de conteudo, e o dominio da URL responde melhor: ver coletor/procedencia.js.
+//      Aqui o modelo so responde sobre DISPUTA factual (campo `disputa`), que
+//      nenhum dominio resolve -- um orgao oficial pode publicar algo depois negado.
+//      Assim o modelo consegue rebaixar um item, nunca promove-lo a "oficial".
 //
 //   2. Campo `sistemas_mencionados`. Notícia sobre "TJBA amplia uso de IA" costuma
 //      nomear o sistema. Extraindo esses nomes, a NOTICIA ALIMENTA O CATALOGO de
@@ -56,14 +58,19 @@ function construirSchema() {
           + 'para quem trabalha no Judiciario. Sem adjetivo de propaganda. Se o texto '
           + 'recebido for so a manchete, diga o que ela afirma sem extrapolar.',
       },
-      verificacao: {
+      // NAO peca ao modelo para julgar autoria: quem publicou e decidido pelo
+      // dominio, em coletor/procedencia.js. Aqui ele so responde se ha DISPUTA
+      // factual, que e juizo de conteudo e nenhum dominio resolve.
+      disputa: {
         type: 'string',
-        enum: V.verificacao,
+        enum: ['nenhuma', 'contestado', 'desmentido'],
         description:
-          'fonte_primaria: veio de orgao oficial, norma ou portal do proprio tribunal. '
-          + 'fonte_secundaria: imprensa ou literatura, sem confirmacao oficial direta. '
-          + 'contestado: existe mas o funcionamento ou a legitimidade estao em disputa. '
-          + 'desmentido: foi noticiado e depois negado pela fonte oficial.',
+          'nenhuma: nada indica disputa sobre os fatos relatados (o caso comum). '
+          + 'contestado: o funcionamento, o alcance ou a legitimidade do que se '
+          + 'afirma sao objeto de disputa publica documentada no proprio texto. '
+          + 'desmentido: o texto registra que uma afirmacao antes divulgada foi '
+          + 'negada pela fonte oficial. '
+          + 'Na duvida responda "nenhuma" -- nao infira polemica a partir de tom critico.',
       },
       paises: { type: 'array', items: { type: 'string', enum: V.paises }, minItems: 1, maxItems: 3 },
       orgaos: { type: 'array', items: { type: 'string', enum: V.orgaos }, minItems: 1, maxItems: 3 },
@@ -90,7 +97,7 @@ function construirSchema() {
       confianca: { type: 'number', description: 'De 0 a 1. Seja honesto: abaixo de 0,5 vai para revisao manual.' },
     },
     required: [
-      'indice', 'relevante', 'motivo_descarte', 'resumo', 'verificacao', 'paises',
+      'indice', 'relevante', 'motivo_descarte', 'resumo', 'disputa', 'paises',
       'orgaos', 'fases', 'aplicacoes', 'temas', 'sistemas_mencionados', 'confianca',
     ],
     additionalProperties: false,
@@ -115,11 +122,13 @@ const SISTEMA = [
   '',
   '1. Seja severo em "relevante". As fontes sao agregadores ruidosos.',
   '',
-  '2. O campo "verificacao" e o mais importante deste hub. Este dominio e cheio de',
-  '   afirmacao repetida sem checagem -- o caso classico e o "juiz-robo da Estonia",',
-  '   noticiado mundialmente e desmentido pelo Ministerio da Justica estoniano.',
-  '   Comunicado de tribunal e fonte primaria. Reportagem sobre comunicado e',
-  '   secundaria. Na duvida, prefira o grau MENOR de comprovacao.',
+  '2. NAO julgue quem publicou. A procedencia (fonte primaria ou secundaria) e',
+  '   decidida pelo dominio da URL, fora daqui, de forma deterministica. Voce so',
+  '   responde sobre DISPUTA factual, no campo "disputa", e o padrao e "nenhuma".',
+  '   Este dominio e cheio de afirmacao repetida sem checagem -- o caso classico e',
+  '   o "juiz-robo da Estonia", noticiado mundialmente e depois desmentido pelo',
+  '   Ministerio da Justica estoniano. E esse tipo de registro que "desmentido"',
+  '   deve capturar, nao mera critica ou ceticismo do autor.',
   '',
   '3. Nunca invente. Se a manchete nao diz qual sistema foi usado, nao suponha.',
   '   Baixe a confianca em vez de preencher com plausibilidade.',
@@ -128,7 +137,6 @@ const SISTEMA = [
   '',
   'TAXONOMIA',
   JSON.stringify({
-    verificacao: taxonomia.verificacao.valores,
     paises: V.paises,
     orgaos: V.orgaos,
     fases: V.fases,

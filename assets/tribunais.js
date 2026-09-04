@@ -163,12 +163,13 @@ function montarFiltros() {
   }
 }
 
-function selo(verificacao) {
+function selo(verificacao, motivo) {
   const el = document.createElement('span');
   el.className = 'selo-verif v-' + verificacao;
   el.textContent = rotuloValor('verificacao', verificacao);
   const ajuda = estado.taxonomia.verificacao.valores.find((v) => v.id === verificacao);
-  if (ajuda) el.title = ajuda.ajuda;
+  // O motivo diz qual dominio decidiu, para a classificacao ser auditavel num passar de mouse.
+  el.title = [ajuda?.ajuda, motivo].filter(Boolean).join('\n\n');
   return el;
 }
 
@@ -180,7 +181,7 @@ function fichaAplicacao(item) {
   topo.className = 'ficha-topo';
   const h3 = document.createElement('h3');
   h3.textContent = item.nome;
-  topo.append(h3, selo(item.verificacao));
+  topo.append(h3, selo(item.verificacao, item.verificacao_motivo));
 
   const meta = document.createElement('p');
   meta.className = 'ficha-meta';
@@ -244,9 +245,12 @@ function linhaNoticia(item) {
   a.textContent = item.nome;
   h3.append(a);
 
+  // Selo junto do veiculo: e na notícia que a regra de dominio mais trabalha,
+  // distinguindo o comunicado do proprio tribunal da materia sobre ele.
   const meta = document.createElement('p');
-  meta.className = 'ficha-meta';
-  meta.textContent = item.sinais?.veiculo || '';
+  meta.className = 'ficha-meta linha-veiculo';
+  meta.append(document.createTextNode(item.sinais?.veiculo || ''));
+  if (item.verificacao) meta.append(selo(item.verificacao, item.verificacao_motivo));
 
   const p = document.createElement('p');
   p.className = 'resumo';

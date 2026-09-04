@@ -34,7 +34,20 @@ function extrairLink(bloco) {
   return atom ? atom[1] : '';
 }
 
-/** Devolve [{ titulo, link, data, descricao, fonte }]. */
+/**
+ * URL do veiculo, do atributo de <source url="...">.
+ *
+ * Isto e o que torna possivel decidir a procedencia automaticamente: o <link>
+ * do Google News e sempre um redirecionador news.google.com/rss/articles/...,
+ * que esconde quem publicou. O <source url> traz o dominio real -- stf.jus.br,
+ * g1.globo.com -- sem custar uma requisicao a mais.
+ */
+function extrairUrlDaFonte(bloco) {
+  const m = bloco.match(/<source[^>]*\surl=["']([^"']+)["']/i);
+  return m ? m[1] : '';
+}
+
+/** Devolve [{ titulo, link, data, descricao, fonte, urlFonte }]. */
 export function analisar(xml) {
   const blocos = xml.match(/<(item|entry)(?:\s[^>]*)?>[\s\S]*?<\/\1>/gi) || [];
   return blocos.map((b) => ({
@@ -43,6 +56,7 @@ export function analisar(xml) {
     data: extrair(b, 'pubDate') || extrair(b, 'published') || extrair(b, 'updated'),
     descricao: extrair(b, 'description') || extrair(b, 'summary') || extrair(b, 'content'),
     fonte: extrair(b, 'source'),
+    urlFonte: extrairUrlDaFonte(b),
   })).filter((i) => i.titulo && i.link);
 }
 

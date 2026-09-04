@@ -83,19 +83,34 @@ diferentes e forçá-las num mesmo schema estragaria as três:
 | **Notícias** | fluxo que decai (podado em 18 meses) | Google News RSS, PT e EN |
 | **Artigos** | referência permanente | OpenAlex + arXiv |
 
-### O campo `verificacao` é o coração do hub
+### O campo `verificacao` é decidido pelo domínio, não pelo modelo
 
 Este domínio circula mito como fato. O caso canônico é o **"juiz-robô da Estônia"**:
 noticiado em 2019 pela Wired, replicado pelo Fórum Econômico Mundial e por artigos
-acadêmicos, e **desmentido formalmente** pelo Ministério da Justiça estoniano — não
-havia, nem nunca houve, tal projeto.
+acadêmicos, e **desmentido formalmente** pelo Ministério da Justiça estoniano.
 
-Por isso nenhuma aplicação entra sem grau de comprovação declarado:
+Mas "isto é fonte primária?" não é pergunta sobre o conteúdo — é sobre **quem
+publicou**. Isso o domínio responde de forma determinística, gratuita e auditável,
+melhor do que um LLM adivinhando. `coletor/procedencia.js` decide:
 
-- `fonte_primaria` — documento do próprio órgão
-- `fonte_secundaria` — imprensa ou literatura, sem confirmação oficial
-- `contestado` — existe, mas o funcionamento ou a legitimidade estão em disputa
-- `desmentido` — noticiado e depois negado pela fonte oficial
+| Domínio | Resultado |
+|---|---|
+| `.jus.br`, `.mp.br`, `.gov.br`, `.gov`, `europa.eu`, `coe.int`… | `fonte_primaria` |
+| qualquer outro | `fonte_secundaria` |
+| DOI, arXiv, SciELO (só para `artigo`) | `fonte_primaria` — o link é a própria obra |
+
+**A regra de ouro: só o domínio promove.** O classificador de IA nunca pode marcar
+algo como primária; ele só responde sobre *disputa factual* (campo `disputa`), e
+pode **rebaixar** para `contestado` ou `desmentido` — inclusive sobre um domínio
+oficial, já que um órgão pode publicar algo depois negado. Assim o pior erro
+possível é subestimar a procedência, nunca afirmar oficialidade inexistente.
+
+O caso que motivou tudo isso: uma matéria do `tudorondonia.com` sobre o TJRO. Bem
+escrita, sobre um tribunal — exatamente o item que o modelo promovia a "confirmado
+oficialmente". O domínio não se confunde.
+
+Isso só é possível porque o RSS do Google News traz `<source url="...">` com o
+domínio real do veículo — o `<link>` é sempre um redirecionador que o esconde.
 
 O caso da Estônia **está no acervo de propósito**, marcado como desmentido, para que
 quem encontrar a afirmação já ache aqui o desmentido junto.
@@ -226,6 +241,8 @@ coletor/fontes/noticias-tribunais.js  Google News RSS (PT + EN)
 coletor/fontes/academico.js           OpenAlex + arXiv
 coletor/classificador-tribunais.js    classifica e extrai sistemas nomeados
 coletor/main-tribunais.js             orquestrador do hub
+coletor/procedencia.js  regra de dominio: quem publicou decide a procedencia
+coletor/teste-procedencia.js          testes da regra de dominio
 coletor/teste-tribunais.js            testes do hub
 ```
 

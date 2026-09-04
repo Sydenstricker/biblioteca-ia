@@ -16,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 import { hoje } from './schema.js';
+import { resolverVerificacao } from './procedencia.js';
 import * as fonteNoticias from './fontes/noticias-tribunais.js';
 import * as fonteAcademico from './fontes/academico.js';
 
@@ -111,14 +112,24 @@ async function principal() {
   );
   const novosCandidatos = [];
 
+  const contagemProcedencia = {};
+
   for (const c of aprovados) {
     const b = c._bruto;
+
+    // A procedencia sai do dominio de quem publicou, nao do palpite do modelo.
+    // Para noticia isso e o <source url> do Google News; para artigo, o proprio
+    // link (DOI, arXiv). O modelo so pode rebaixar, via campo `disputa`.
+    const proc = resolverVerificacao(b._urlVeiculo || b.url, c.disputa, { tipo: b._tipoAlvo });
+    contagemProcedencia[proc.verificacao] = (contagemProcedencia[proc.verificacao] || 0) + 1;
+
     const base = {
       id: chave(b.url),
       nome: b.nome,
       url: b.url,
       resumo: c.resumo,
-      verificacao: c.verificacao,
+      verificacao: proc.verificacao,
+      verificacao_motivo: proc.motivo,
       paises: c.paises,
       orgaos: c.orgaos,
       fases: c.fases,
@@ -171,6 +182,8 @@ async function principal() {
   log('=== resumo ===');
   log(novasNoticias.length + ' noticias novas (' + podadas + ' podadas por idade)');
   log(novosArtigos.length + ' artigos novos');
+  log('procedencia (decidida por dominio): '
+    + Object.entries(contagemProcedencia).map(([k, v]) => k + '=' + v).join(' '));
   log(novosCandidatos.length + ' candidatos a aplicacao extraidos das noticias');
   if (novosCandidatos.length) {
     log('  -> confira cada um com fonte primaria antes de promover a data/tribunais/aplicacoes.json:');

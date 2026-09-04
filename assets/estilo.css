@@ -529,3 +529,11 @@ main {
 .destaque strong { display: block; font-size: 14.5px; color: var(--texto); }
 .destaque span.txt { font-size: 12.5px; color: var(--texto-suave); }
 .destaque .seta { margin-left: auto; color: var(--acento); flex: none; }
+
+/* Veículo e selo de procedência na mesma linha, no fluxo de notícias. */
+.linha-veiculo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}

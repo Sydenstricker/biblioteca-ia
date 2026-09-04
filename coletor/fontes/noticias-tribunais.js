@@ -8,6 +8,7 @@
 // ingles trazem o contraponto internacional.
 
 import { buscarFeed, normalizarData } from '../rss.js';
+import { hostDe } from '../procedencia.js';
 
 const BASE_GN = 'https://news.google.com/rss/search?q=';
 
@@ -69,7 +70,10 @@ export async function coletar({ log = console.log, limitePorConsulta = 12 } = {}
         fonte_url: it.link,
         _tipoAlvo: 'noticia',
         _idioma: feed.idioma,
-        sinais: { veiculo, data_publicacao: data },
+        // O <link> do Google News esconde quem publicou; o <source url> revela.
+        // E dele que sai a decisao automatica de fonte primaria vs secundaria.
+        _urlVeiculo: it.urlFonte || it.link,
+        sinais: { veiculo, data_publicacao: data, dominio_veiculo: hostDe(it.urlFonte || '') },
       });
       aceitos++;
     }
