@@ -83,6 +83,39 @@ diferentes e forçá-las num mesmo schema estragaria as três:
 | **Notícias** | fluxo que decai (podado em 18 meses) | Google News RSS, PT e EN |
 | **Artigos** | referência permanente | OpenAlex + arXiv |
 
+### A aba "Comece aqui": duas faces da mesma tecnologia
+
+A porta de entrada do hub. As outras três abas são referência e só servem a quem já
+sabe o que procura; esta serve a quem chega perguntando "o que isso muda no meu
+gabinete?".
+
+O conteúdo está em `data/tribunais/guia.json` — **é dado, não código**. Trocar um
+texto, acrescentar pergunta ou recalibrar um cuidado é editar esse arquivo, direto
+pelo GitHub se quiser. Os `id` dos grupos (`usa` / `chega`) é que dirigem CSS e
+testes, então renomear um título não quebra nada.
+
+| Grupo | O que reúne |
+|---|---|
+| **A IA como aliada** | Ferramentas que o tribunal contrata e o magistrado decide adotar. Sete cartões: resumir, minutar, agrupar repetitivos, pesquisar jurisprudência, transcrever, ampliar o acesso, medir o acervo. |
+| **A IA como desafio** | O que chega nos autos **independentemente** de adotar ferramenta alguma. Quatro cartões: jurisprudência inventada, comando oculto na petição, prova sintética, ação em massa gerada por IA. |
+
+Cada cartão traz o que a máquina faz, o ganho (ou o alerta), **onde tomar cuidado**
+— ou, no segundo grupo, **como se proteger** — e quem já usa. E leva ao catálogo
+filtrado pela função correspondente, ligando o didático ao acervo.
+
+Os dois grupos têm **linguagem visual deliberadamente distinta**: o primeiro desenha
+um fluxo (entrada → caixa tracejada → saída), o segundo um artefato com anomalia
+destacada, sem seta. A diferença conceitual se vê antes de qualquer palavra.
+
+**Sem iconografia de robô, androide de toga ou cérebro de circuito.** Este hub
+existe em parte para desmentir o "juiz-robô da Estônia"; ilustrá-lo assim reforçaria
+o imaginário que ele combate. Os esquemas de `assets/diagramas.js` mostram a
+transformação concreta (muitas páginas viram uma, áudio vira texto) e herdam
+`currentColor`, funcionando nos dois temas sem duplicação. Há teste que barra a
+volta dessa iconografia.
+
+Fecha com um FAQ de nove perguntas, cada resposta com links para conferência.
+
 ### O campo `verificacao` é decidido pelo domínio, não pelo modelo
 
 Este domínio circula mito como fato. O caso canônico é o **"juiz-robô da Estônia"**:

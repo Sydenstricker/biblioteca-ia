@@ -2,15 +2,15 @@
   "_comentario": "Conteudo da aba 'Comece aqui'. E dado, nao codigo: edite este arquivo para mudar o texto do guia. O campo `icone` escolhe o esquema SVG desenhado em assets/diagramas.js. Grupo 'usa' = ferramentas que voce adota; grupo 'chega' = fenomenos que entram no gabinete independentemente de voce usar IA.",
 
   "abertura": {
-    "titulo": "IA no gabinete, em duas direções",
-    "texto": "A inteligência artificial chega ao Judiciário por dois caminhos que costumam ser confundidos. Um é a ferramenta que o tribunal contrata e você adota. O outro é o que passa a entrar nos autos porque as partes, os advogados e o mundo lá fora também usam IA — e esse independe da sua escolha. Quem só se prepara para o primeiro fica desarmado para o segundo."
+    "titulo": "Duas faces da mesma tecnologia",
+    "texto": "A inteligência artificial chega ao Judiciário por dois caminhos que costumam ser confundidos. De um lado, a ferramenta que o tribunal contrata e você decide adotar — a IA como aliada. De outro, o que passa a entrar nos autos porque as partes, os peritos e o mundo lá fora também usam IA, e que independe inteiramente da sua escolha — a IA como desafio. Quem só se prepara para a primeira fica desarmado diante da segunda."
   },
 
   "grupos": [
     {
       "id": "usa",
-      "titulo": "A IA que você usa",
-      "texto": "O que já está em produção em tribunais brasileiros. Nenhum destes sistemas decide: todos preparam material para quem decide.",
+      "titulo": "A IA como aliada",
+      "texto": "O que já está em produção em tribunais brasileiros e você pode decidir adotar. Nenhum destes sistemas decide: todos preparam material para quem decide.",
       "usos": [
         {
           "icone": "resumir",
@@ -79,8 +79,8 @@
     },
     {
       "id": "chega",
-      "titulo": "A IA que chega até você",
-      "texto": "Isto não depende de você adotar ferramenta nenhuma. São fenômenos que já entram nos autos, e conhecê-los é o que permite reagir a tempo.",
+      "titulo": "A IA como desafio",
+      "texto": "Nada aqui depende de você adotar ferramenta alguma: já chega nos autos, porque as partes, os peritos e o mundo lá fora também usam IA. Conhecer é o que permite reagir a tempo.",
       "usos": [
         {
           "icone": "citacaoFalsa",
