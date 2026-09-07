@@ -130,5 +130,47 @@
     "nome": "German advocacy group lodges criminal complaint over Meta AI glasses",
     "motivo": "Noticia juridica sobre oculos da Meta, nao e aplicacao catalogavel.",
     "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/kmario23/deep-learning-drizzle",
+    "nome": "deep-learning-drizzle",
+    "motivo": "Colecao de aulas e material de estudo, nao e ferramenta ou aplicacao de IA.",
+    "data": "2026-09-07"
+  },
+  {
+    "id": "scalex.dev",
+    "nome": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+    "motivo": "Artigo/estudo de blog, não é ferramenta ou projeto catalogável.",
+    "data": "2026-09-07"
+  },
+  {
+    "id": "acceptmarkdown.com",
+    "nome": "Serve Markdown to AI Agents with Accept Headers",
+    "motivo": "Convenção/proposta técnica de site, não é aplicação de IA.",
+    "data": "2026-09-07"
+  },
+  {
+    "id": "github.com/swimmingbrain/texbrain",
+    "nome": "TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM",
+    "motivo": "Editor LaTeX em WASM, sem relacao com IA.",
+    "data": "2026-09-07"
+  },
+  {
+    "id": "arstechnica.com",
+    "nome": "ChatGPT starts blocking direct requests to copy an author's style",
+    "motivo": "Noticia sobre politica de produto, nao e aplicacao catalogavel.",
+    "data": "2026-09-07"
+  },
+  {
+    "id": "wsj.com",
+    "nome": "Situational Awareness down 67% in July in AI stock rout",
+    "motivo": "Noticia de mercado financeiro, nao e aplicacao de IA.",
+    "data": "2026-09-07"
+  },
+  {
+    "id": "bloomberg.com",
+    "nome": "Nvidia's $750B in Deals Reignite Circular AI Fears",
+    "motivo": "Noticia economica sobre acordos da Nvidia, nao e ferramenta de IA.",
+    "data": "2026-09-07"
   }
 ]

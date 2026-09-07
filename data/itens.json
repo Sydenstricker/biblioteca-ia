@@ -23,8 +23,8 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.55,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
       "pontos_hn": 121,
       "comentarios_hn": 89,
@@ -58,12 +58,161 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.5,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
       "pontos_hn": 170,
       "comentarios_hn": 73,
       "data_hn": "2026-07-30"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "discoveredmaterials.com",
+    "tipo": "ferramenta",
+    "nome": "Discovered Materials (YC P26)",
+    "resumo": "Startup que usa agentes de IA para descobrir novos materiais. Voltada a indústrias e laboratórios de P&D em ciência de materiais. Cobrança não informada.",
+    "url": "https://discoveredmaterials.com/research/",
+    "dominio": "discoveredmaterials.com",
+    "industrias": [
+      "Ciencia e Pesquisa",
+      "Manufatura e Industria"
+    ],
+    "funcoes": [
+      "Pesquisa e P&D",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "ML Classico e Dados Estruturados"
+    ],
+    "implementacao": "SaaS Pronto",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49269090",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.6,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 162,
+      "comentarios_hn": 37,
+      "data_hn": "2026-08-12"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "docker.com",
+    "tipo": "ferramenta",
+    "nome": "Docker Sandboxes",
+    "resumo": "Sandboxes descartáveis e isolados da Docker para execução segura de agentes de IA. Voltado a desenvolvedores que rodam agentes com acesso a código e sistema. Modelo de cobrança não informado.",
+    "url": "https://www.docker.com/products/docker-sandboxes/",
+    "dominio": "docker.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Seguranca e Risco",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Em Crescimento",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49239751",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.7,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 694,
+      "comentarios_hn": 396,
+      "data_hn": "2026-08-10"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/abus-aikorea/voice-pro",
+    "tipo": "ferramenta",
+    "nome": "voice-pro",
+    "resumo": "Voice-Pro e uma WebUI Gradio com TTS, clonagem de voz zero-shot, transcricao Whisper, isolamento vocal e traducao multilingue. Voltada a criadores de conteudo e desenvolvedores de audio. Open source, cobranca nao informada.",
+    "url": "https://github.com/abus-aikorea/voice-pro",
+    "dominio": "github.com",
+    "industrias": [
+      "Midia e Entretenimento",
+      "Transversal",
+      "Educacao"
+    ],
+    "funcoes": [
+      "Marketing e Conteudo",
+      "Design e Criacao",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/abus-aikorea/voice-pro",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.75,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 12763,
+      "forks": 1844,
+      "ultimo_push": "2026-07-13"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/activeloopai/deeplake",
+    "tipo": "projeto_oss",
+    "nome": "deeplake",
+    "resumo": "Deeplake e um runtime de dados para agentes de IA, com datalake multimodal e postgres serverless para recuperacao e treino em escala. Para engenheiros de ML e times que constroem RAG e agentes. Open source com versao gerenciada, cobranca nao informada.",
+    "url": "https://github.com/activeloopai/deeplake",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal",
+      "Ciencia e Pesquisa"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Engenharia e Codigo",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Multimodal",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/activeloopai/deeplake",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.75,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 9229,
+      "forks": 723,
+      "ultimo_push": "2026-05-21"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -92,12 +241,86 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.55,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 252433,
+      "forks": 37876,
+      "ultimo_push": "2026-09-07"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/ahujasid/blender-mcp",
+    "tipo": "projeto_oss",
+    "nome": "blender-mcp",
+    "resumo": "Plugin comunitario que conecta o Blender 3D a LLMs via Model Context Protocol, permitindo controlar modelagem por comandos em linguagem natural. Voltado a artistas 3D e desenvolvedores que usam assistentes de IA. Open source e gratuito.",
+    "url": "https://github.com/ahujasid/blender-mcp",
+    "dominio": "github.com",
+    "industrias": [
+      "Midia e Entretenimento",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Design e Criacao",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Plug-in ou Extensao",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/ahujasid/blender-mcp",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 248227,
-      "forks": 37411,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 27496,
+      "forks": 2556,
+      "ultimo_push": "2026-09-05"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/alphacep/vosk-api",
+    "tipo": "projeto_oss",
+    "nome": "vosk-api",
+    "resumo": "Vosk oferece API de reconhecimento de fala offline para Android, iOS, Raspberry Pi e servidores. Para desenvolvedores que precisam de STT local com privacidade em varias linguagens de programacao. Open source, cobranca nao informada.",
+    "url": "https://github.com/alphacep/vosk-api",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software",
+      "Telecomunicacoes"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos",
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Robotica e Embarcado"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/alphacep/vosk-api",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 15111,
+      "forks": 1756,
+      "ultimo_push": "2026-08-09"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -130,12 +353,50 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.6,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 28015,
+      "forks": 4970,
+      "ultimo_push": "2026-09-06"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/apache/seatunnel",
+    "tipo": "projeto_oss",
+    "nome": "seatunnel",
+    "resumo": "Apache SeaTunnel e uma ferramenta distribuida de integracao de dados multimodal, com suporte a CDC, streaming, embeddings e LLM. Para equipes de engenharia de dados e plataformas de IA. Open source sob a Apache Software Foundation, cobranca nao informada.",
+    "url": "https://github.com/apache/seatunnel",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal",
+      "Financas"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "ML Classico e Dados Estruturados",
+      "RAG e Busca Semantica"
+    ],
+    "implementacao": "Infraestrutura e Plataforma",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/apache/seatunnel",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.7,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 27715,
-      "forks": 4907,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 9619,
+      "forks": 2395,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -166,12 +427,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 11328,
-      "forks": 1102,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 11358,
+      "forks": 1110,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -203,11 +464,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 8820,
-      "forks": 1021,
+      "estrelas": 8824,
+      "forks": 1024,
       "ultimo_push": "2026-08-28"
     },
     "status": "ativo",
@@ -236,11 +497,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 12524,
-      "forks": 836,
+      "estrelas": 12529,
+      "forks": 837,
       "ultimo_push": "2026-08-31"
     },
     "status": "ativo",
@@ -273,12 +534,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 58042,
-      "forks": 11171,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 58212,
+      "forks": 11238,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -309,12 +570,12 @@
     "classificado_por": "semente-manual",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 112274,
-      "forks": 12353,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 112894,
+      "forks": 12446,
+      "ultimo_push": "2026-09-05"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
@@ -348,12 +609,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 81362,
-      "forks": 11223,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 81720,
+      "forks": 11285,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -385,11 +646,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 38842,
-      "forks": 3929,
+      "estrelas": 38886,
+      "forks": 3933,
       "ultimo_push": "2026-08-05"
     },
     "status": "ativo",
@@ -420,12 +681,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 21795,
-      "forks": 1752,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 21853,
+      "forks": 1755,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -457,12 +718,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 30048,
-      "forks": 4766,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 30091,
+      "forks": 4776,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -493,12 +754,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 11926,
-      "forks": 1958,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 11929,
+      "forks": 1960,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -529,12 +790,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.55,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 212129,
-      "forks": 24893,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 214937,
+      "forks": 25334,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -565,12 +826,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
       "estrelas": 9947,
-      "forks": 2427,
-      "ultimo_push": "2026-09-04"
+      "forks": 2428,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -600,12 +861,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.6,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 131068,
-      "forks": 9014,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 131518,
+      "forks": 9055,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -637,12 +898,48 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 177514,
+      "forks": 9692,
+      "ultimo_push": "2026-09-07"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/garagehq/nightcrawler",
+    "tipo": "projeto_oss",
+    "nome": "Nightcrawler",
+    "resumo": "Nightcrawler é um agente de pentest que roda localmente em smartphone. Voltado a profissionais de segurança ofensiva. Repositório aberto no GitHub; cobrança não informada.",
+    "url": "https://github.com/garagehq/nightcrawler/",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Seguranca e Risco",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49154127",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.65,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 176457,
-      "forks": 9653,
-      "ultimo_push": "2026-09-04"
+      "pontos_hn": 120,
+      "comentarios_hn": 35,
+      "data_hn": "2026-08-03"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -674,12 +971,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 36838,
-      "forks": 6149,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 36867,
+      "forks": 6152,
+      "ultimo_push": "2026-09-05"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -711,12 +1008,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 106815,
-      "forks": 14526,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 106845,
+      "forks": 14541,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -747,12 +1044,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 114695,
-      "forks": 11142,
-      "ultimo_push": "2026-08-30"
+      "estrelas": 115565,
+      "forks": 11215,
+      "ultimo_push": "2026-09-05"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -785,12 +1082,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 120506,
-      "forks": 18484,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 121291,
+      "forks": 18698,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -823,12 +1120,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.75,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 68922,
-      "forks": 5341,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 69389,
+      "forks": 5377,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -861,12 +1158,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 21896,
-      "forks": 3387,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 21946,
+      "forks": 3410,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -899,12 +1196,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.95,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 164786,
-      "forks": 34444,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 164957,
+      "forks": 34483,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -936,12 +1233,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 28203,
-      "forks": 3688,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 28228,
+      "forks": 3693,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -974,12 +1271,12 @@
     "classificado_por": "semente-manual",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 90053,
-      "forks": 10623,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 90206,
+      "forks": 10643,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
@@ -1009,11 +1306,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.6,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 28973,
-      "forks": 2844,
+      "estrelas": 29059,
+      "forks": 2850,
       "ultimo_push": "2026-08-30"
     },
     "status": "ativo",
@@ -1047,11 +1344,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.75,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 47628,
-      "forks": 16179,
+      "estrelas": 47661,
+      "forks": 16181,
       "ultimo_push": "2026-09-02"
     },
     "status": "ativo",
@@ -1083,12 +1380,12 @@
     "classificado_por": "semente-manual",
     "confianca": 0.95,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 145646,
-      "forks": 24314,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 145865,
+      "forks": 24365,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
@@ -1120,12 +1417,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 41055,
-      "forks": 6934,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 41186,
+      "forks": 6954,
+      "ultimo_push": "2026-09-06"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1153,12 +1450,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 154247,
-      "forks": 10021,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 154377,
+      "forks": 10040,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1186,12 +1483,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 34203,
-      "forks": 3696,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 34296,
+      "forks": 3719,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1224,12 +1521,50 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 154730,
+      "forks": 24463,
+      "ultimo_push": "2026-09-07"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/leon-ai/leon",
+    "tipo": "projeto_oss",
+    "nome": "leon",
+    "resumo": "Leon e um assistente pessoal open source que roda offline, com reconhecimento e sintese de fala e automacoes. Voltado a entusiastas e desenvolvedores que querem um assistente focado em privacidade. Open source, cobranca nao informada.",
+    "url": "https://github.com/leon-ai/leon",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Produtividade Pessoal",
+      "Operacoes e Processos",
+      "Suporte e Atendimento"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Audio e Voz",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/leon-ai/leon",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.75,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 154450,
-      "forks": 24413,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 17497,
+      "forks": 1470,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1258,12 +1593,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.65,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 13316,
-      "forks": 988,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 13776,
+      "forks": 1036,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1293,11 +1628,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.7,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 34089,
-      "forks": 3998,
+      "estrelas": 34214,
+      "forks": 4015,
       "ultimo_push": "2026-08-26"
     },
     "status": "ativo",
@@ -1328,12 +1663,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 25498,
-      "forks": 3494,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 25501,
+      "forks": 3495,
+      "ultimo_push": "2026-09-05"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1362,12 +1697,49 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 33815,
+      "forks": 3558,
+      "ultimo_push": "2026-09-07"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/m-bain/whisperx",
+    "tipo": "projeto_oss",
+    "nome": "whisperX",
+    "resumo": "WhisperX faz reconhecimento automatico de fala com timestamps por palavra e diarizacao de falantes. Voltado a desenvolvedores e pesquisadores que precisam de transcricao precisa. Open source, cobranca nao informada.",
+    "url": "https://github.com/m-bain/whisperX",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Midia e Entretenimento",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Pesquisa e P&D",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "Audio e Voz"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/m-bain/whisperX",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 33693,
-      "forks": 3540,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 23920,
+      "forks": 2411,
+      "ultimo_push": "2026-08-30"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1397,12 +1769,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.75,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 23018,
-      "forks": 2822,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 23109,
+      "forks": 2826,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1433,11 +1805,11 @@
     "classificado_por": "semente-manual",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 64706,
-      "forks": 7577,
+      "estrelas": 64843,
+      "forks": 7596,
       "ultimo_push": "2026-09-04"
     },
     "status": "ativo",
@@ -1470,10 +1842,10 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 22203,
+      "estrelas": 22205,
       "forks": 2702,
       "ultimo_push": "2026-08-26"
     },
@@ -1508,11 +1880,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 65617,
-      "forks": 7250,
+      "estrelas": 65727,
+      "forks": 7276,
       "ultimo_push": "2026-09-04"
     },
     "status": "ativo",
@@ -1545,12 +1917,50 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 27843,
+      "forks": 6259,
+      "ultimo_push": "2026-09-07"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/modelscope/funasr",
+    "tipo": "projeto_oss",
+    "nome": "FunASR",
+    "resumo": "FunASR e um toolkit de reconhecimento de fala com treino, inferencia, ASR em streaming, VAD, pontuacao e diarizacao. Destinado a desenvolvedores e equipes que constroem pipelines de voz, com servico compativel com OpenAI/MCP. Open source, cobranca nao informada.",
+    "url": "https://github.com/modelscope/FunASR",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software",
+      "Telecomunicacoes"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Pesquisa e P&D",
+      "Suporte e Atendimento"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/modelscope/FunASR",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 27812,
-      "forks": 6251,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 20216,
+      "forks": 2014,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1581,12 +1991,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 15514,
-      "forks": 1655,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 15537,
+      "forks": 1663,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1615,11 +2025,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.75,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 13726,
-      "forks": 1449,
+      "estrelas": 13751,
+      "forks": 1451,
       "ultimo_push": "2026-08-18"
     },
     "status": "ativo",
@@ -1652,11 +2062,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 10254,
-      "forks": 1345,
+      "estrelas": 10257,
+      "forks": 1349,
       "ultimo_push": "2026-09-02"
     },
     "status": "ativo",
@@ -1688,12 +2098,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.75,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 24031,
-      "forks": 2858,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 24085,
+      "forks": 2861,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1724,12 +2134,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.5,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 241373,
-      "forks": 49508,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 242926,
+      "forks": 49972,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1760,15 +2170,52 @@
     "classificado_por": "semente-manual",
     "confianca": 0.95,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 180142,
-      "forks": 17690,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 180383,
+      "forks": 17746,
+      "ultimo_push": "2026-09-05"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "github.com/onecli/onecli",
+    "tipo": "projeto_oss",
+    "nome": "OneCLI (YC S26)",
+    "resumo": "Harness open source para executar agentes de IA em sandbox, voltado a uso em equipes. Para times de engenharia que rodam agentes de codigo. Open source; modelo comercial nao informado.",
+    "url": "https://github.com/onecli/onecli",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos",
+      "Seguranca e Risco"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49363710",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.7,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 88,
+      "comentarios_hn": 37,
+      "data_hn": "2026-08-19"
+    },
+    "status": "ativo",
+    "nota_curador": ""
   },
   {
     "id": "github.com/open-webui/open-webui",
@@ -1796,12 +2243,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 150937,
-      "forks": 22054,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 151214,
+      "forks": 22107,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1870,12 +2317,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 10802,
-      "forks": 3360,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 10811,
+      "forks": 3366,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1906,11 +2353,11 @@
     "classificado_por": "semente-manual",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 88871,
-      "forks": 11308,
+      "estrelas": 89027,
+      "forks": 11316,
       "ultimo_push": "2026-07-22"
     },
     "status": "ativo",
@@ -1942,11 +2389,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
       "estrelas": 12680,
-      "forks": 1960,
+      "forks": 1959,
       "ultimo_push": "2026-08-12"
     },
     "status": "ativo",
@@ -1979,11 +2426,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 58937,
-      "forks": 1478,
+      "estrelas": 58956,
+      "forks": 1487,
       "ultimo_push": "2026-07-05"
     },
     "status": "ativo",
@@ -2013,11 +2460,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 12901,
-      "forks": 1283,
+      "estrelas": 12922,
+      "forks": 1294,
       "ultimo_push": "2026-05-25"
     },
     "status": "ativo",
@@ -2049,12 +2496,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.88,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 24820,
-      "forks": 2261,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 24894,
+      "forks": 2277,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2086,12 +2533,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 11001,
+      "estrelas": 11009,
       "forks": 1135,
-      "ultimo_push": "2026-09-01"
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2122,12 +2569,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 9236,
-      "forks": 817,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 9257,
+      "forks": 821,
+      "ultimo_push": "2026-09-05"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2160,12 +2607,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 11400,
+      "estrelas": 11406,
       "forks": 842,
-      "ultimo_push": "2026-09-04"
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2195,12 +2642,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 49882,
-      "forks": 4755,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 49907,
+      "forks": 4763,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2233,12 +2680,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 52021,
-      "forks": 8080,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 52055,
+      "forks": 8090,
+      "ultimo_push": "2026-09-05"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2269,12 +2716,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.7,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 10276,
-      "forks": 371,
-      "ultimo_push": "2026-09-02"
+      "estrelas": 10283,
+      "forks": 372,
+      "ultimo_push": "2026-09-06"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2304,12 +2751,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.7,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 21411,
-      "forks": 2175,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 21463,
+      "forks": 2185,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2340,12 +2787,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 187120,
-      "forks": 46042,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 187179,
+      "forks": 46039,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2376,10 +2823,10 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 11801,
+      "estrelas": 11803,
       "forks": 1722,
       "ultimo_push": "2026-08-27"
     },
@@ -2414,11 +2861,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.5,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 9871,
-      "forks": 846,
+      "estrelas": 9891,
+      "forks": 851,
       "ultimo_push": "2026-08-30"
     },
     "status": "ativo",
@@ -2451,12 +2898,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 93179,
-      "forks": 8187,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 93391,
+      "forks": 8203,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2486,11 +2933,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.7,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
       "estrelas": 8987,
-      "forks": 2417,
+      "forks": 2418,
       "ultimo_push": "2026-09-02"
     },
     "status": "ativo",
@@ -2521,12 +2968,45 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.6,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 15836,
+      "forks": 1372,
+      "ultimo_push": "2026-09-06"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/x-plug/mobileagent",
+    "tipo": "projeto_oss",
+    "nome": "MobileAgent",
+    "resumo": "Familia de agentes GUI multimodais que operam aplicativos móveis de forma autônoma. Voltada a pesquisadores e desenvolvedores de automação mobile. Projeto open source no GitHub; cobrança não aplicável.",
+    "url": "https://github.com/X-PLUG/MobileAgent",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/X-PLUG/MobileAgent",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 15724,
-      "forks": 1367,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 9175,
+      "forks": 914,
+      "ultimo_push": "2026-07-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2555,12 +3035,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 28192,
-      "forks": 1511,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 28229,
+      "forks": 1515,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2589,12 +3069,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.6,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 14911,
-      "forks": 1516,
-      "ultimo_push": "2026-08-30"
+      "estrelas": 14931,
+      "forks": 1519,
+      "ultimo_push": "2026-09-06"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2628,11 +3108,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 9981,
-      "forks": 1503,
+      "estrelas": 9989,
+      "forks": 1504,
       "ultimo_push": "2026-08-19"
     },
     "status": "ativo",
@@ -2664,12 +3144,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 57491,
-      "forks": 7612,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 57498,
+      "forks": 7615,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2704,5 +3184,185 @@
     "sinais": {},
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "marbleos.com",
+    "tipo": "ferramenta",
+    "nome": "What should the GUI for AI agents look like?",
+    "resumo": "MarbleOS propõe uma interface gráfica dedicada para operar agentes de IA. Voltada a usuários e desenvolvedores que supervisionam agentes. Cobrança não informada.",
+    "url": "https://marbleos.com/demo",
+    "dominio": "marbleos.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Produtividade Pessoal",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Agentes Autonomos"
+    ],
+    "implementacao": "SaaS Pronto",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49119274",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.5,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 139,
+      "comentarios_hn": 85,
+      "data_hn": "2026-07-31"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "ozbrain.com",
+    "tipo": "ferramenta",
+    "nome": "OzBrain, a shared brain for knowledge between agents and your team",
+    "resumo": "Base de conhecimento compartilhada entre agentes de IA e equipes humanas. Para times que usam agentes e precisam de contexto comum. Cobranca nao informada.",
+    "url": "https://ozbrain.com",
+    "dominio": "ozbrain.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Gestao de Projetos",
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "SaaS Pronto",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49394827",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.6,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 93,
+      "comentarios_hn": 59,
+      "data_hn": "2026-08-21"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "speko.ai",
+    "tipo": "ferramenta",
+    "nome": "Speko (YC S26)",
+    "resumo": "Plataforma que agrega e roteia modelos de voz por uma unica API, no estilo OpenRouter. Para desenvolvedores que constroem aplicacoes de voz. Cobranca nao informada, provavelmente por uso.",
+    "url": "https://speko.ai/",
+    "dominio": "speko.ai",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Suporte e Atendimento"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Texto e LLM"
+    ],
+    "implementacao": "API / Developer Tool",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49332751",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.7,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 118,
+      "comentarios_hn": 69,
+      "data_hn": "2026-08-17"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "sprocket-demo.spikonado.com",
+    "tipo": "ferramenta",
+    "nome": "Sprocket",
+    "resumo": "Sprocket é um agente de IA para desenvolvimento de hardware e software. Voltado a engenheiros de produto e desenvolvedores. Cobrança não informada.",
+    "url": "https://sprocket-demo.spikonado.com",
+    "dominio": "sprocket-demo.spikonado.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Manufatura e Industria"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Design e Criacao"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "SaaS Pronto",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49145934",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.5,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 124,
+      "comentarios_hn": 15,
+      "data_hn": "2026-08-02"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "terminal-bench-science.ai",
+    "tipo": "projeto_oss",
+    "nome": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
+    "resumo": "Benchmark para avaliar agentes de IA em fluxos de trabalho de pesquisa cientifica via terminal. Voltado a pesquisadores de IA e equipes que desenvolvem agentes. Licenciamento e cobranca nao informados.",
+    "url": "https://www.terminal-bench-science.ai/announcement",
+    "dominio": "terminal-bench-science.ai",
+    "industrias": [
+      "Ciencia e Pesquisa",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Pesquisa e P&D",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49472820",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.55,
+    "primeira_aparicao": "2026-09-07",
+    "ultima_verificacao": "2026-09-07",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 117,
+      "comentarios_hn": 36,
+      "data_hn": "2026-08-28"
+    },
+    "status": "ativo",
+    "nota_curador": ""
   }
 ]
