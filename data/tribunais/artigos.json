@@ -79,14 +79,14 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2019,
-      "citacoes": 367,
+      "citacoes": 368,
       "acesso_aberto": false,
       "doi": "10.1093/oso/9780198838364.001.0001",
       "autores": [
         "Richard Susskind"
       ],
       "veiculo": "nao informado",
-      "velocidade": 52.4,
+      "velocidade": 52.6,
       "aceleracao": 1.07,
       "citacoes_ano_recente": 54
     },
@@ -121,7 +121,7 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2021,
-      "citacoes": 311,
+      "citacoes": 312,
       "acesso_aberto": false,
       "doi": "10.1016/j.clsr.2021.105567",
       "autores": [
@@ -130,7 +130,7 @@
         "Chris Russell"
       ],
       "veiculo": "Computer law & security review",
-      "velocidade": 62.2,
+      "velocidade": 62.4,
       "aceleracao": 1.43,
       "citacoes_ano_recente": 77
     },
@@ -303,7 +303,7 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2023,
-      "citacoes": 148,
+      "citacoes": 149,
       "acesso_aberto": true,
       "doi": "10.2139/ssrn.4583531",
       "autores": [
@@ -314,7 +314,7 @@
         "Adam Chilton"
       ],
       "veiculo": "SSRN Electronic Journal",
-      "velocidade": 49.3,
+      "velocidade": 49.7,
       "aceleracao": null,
       "citacoes_ano_recente": 74
     },
@@ -582,6 +582,288 @@
       "velocidade": 13.3,
       "aceleracao": 1.06,
       "citacoes_ano_recente": 14
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.3233/faia251578",
+    "nome": "Does ChatGPT Understand the Law? A Case Study on Road Homicide in Italy",
+    "url": "https://doi.org/10.3233/faia251578",
+    "resumo": "Estudo propoe metodologia replicavel para avaliar empiricamente a capacidade interpretativa e argumentativa de LLMs em materia juridica, aplicando o teste ao homicidio no transito na lei italiana com o GPT-4o. A avaliacao mede compreensao de conceitos legais e sua aplicacao a decisoes reais, servindo de referencia para testes de confiabilidade de IA em tribunais.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Alucinacao e Erro",
+      "IA Generativa",
+      "Transparencia e Explicabilidade"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "ano": 2025,
+      "citacoes": 4,
+      "acesso_aberto": true,
+      "doi": "10.3233/faia251578",
+      "autores": [
+        "Grazia Garzo",
+        "Alessandro Palumbo"
+      ],
+      "veiculo": "Frontiers in artificial intelligence and applications",
+      "velocidade": 4,
+      "aceleracao": null,
+      "citacoes_ano_recente": 0
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.5204/lthj.4330",
+    "nome": "Legal Education in the Age of Generative Artificial Intelligence",
+    "url": "https://doi.org/10.5204/lthj.4330",
+    "resumo": "Artigo introdutorio de volume especial discute o impacto da IA generativa no ensino juridico e na profissao, apontando limites dos LLMs no raciocinio normativo e na interpretacao contextual. Interessa a capacitacao de servidores e magistrados no uso responsavel dessas ferramentas.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Gestao Administrativa",
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Capacitacao e Pessoas",
+      "IA Generativa",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.6,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "ano": 2025,
+      "citacoes": 4,
+      "acesso_aberto": true,
+      "doi": "10.5204/lthj.4330",
+      "autores": [
+        "Muhammad Zubair Abbasi"
+      ],
+      "veiculo": "Law Technology and Humans",
+      "velocidade": 4,
+      "aceleracao": null,
+      "citacoes_ano_recente": 0
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1145/3746252.3761120",
+    "nome": "SyLeR: A Framework for Explicit Syllogistic Legal Reasoning in Large Language Models",
+    "url": "https://doi.org/10.1145/3746252.3761120",
+    "resumo": "Pesquisa apresenta o SyLeR, arcabouco que faz LLMs realizarem raciocinio juridico silogistico explicito, com recuperacao hierarquica de leis e precedentes e ajuste fino em duas etapas. Visa aumentar explicabilidade e confiabilidade das respostas, tema central para uso de IA em fundamentacao de decisoes.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "China",
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Transparencia e Explicabilidade",
+      "IA Generativa",
+      "Alucinacao e Erro"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "ano": 2025,
+      "citacoes": 4,
+      "acesso_aberto": true,
+      "doi": "10.1145/3746252.3761120",
+      "autores": [
+        "Kepu Zhang",
+        "Weijie Yu",
+        "Zhongxiang Sun",
+        "Jun Xu"
+      ],
+      "veiculo": "nao informado",
+      "velocidade": 4,
+      "aceleracao": null,
+      "citacoes_ano_recente": 0
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.3389/frai.2025.1688209",
+    "nome": "Evaluating AI decision tools in Ecuador’s courts: efficiency, consistency, and uncertainty in legal judgments",
+    "url": "https://doi.org/10.3389/frai.2025.1688209",
+    "resumo": "Estudo avalia o impacto de ferramentas de apoio a decisao com IA no desempenho judicial no Equador, comparando 50 processos antes e depois da implementacao, com analise de duracao, consistencia entre julgadores e qualidade argumentativa. Traz tambem analise de 12 documentos regulatorios sobre governanca algoritmica, servindo de comparacao latino-americana para o Brasil.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.6,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "ano": 2025,
+      "citacoes": 4,
+      "acesso_aberto": true,
+      "doi": "10.3389/frai.2025.1688209",
+      "autores": [
+        "Eliana Rodríguez-Salcedo",
+        "Carlos Martínez-Bonilla",
+        "Betty Pérez-Mayorga",
+        "Mónica Salame-Ortiz",
+        "Pamela Armas-Freire"
+      ],
+      "veiculo": "Frontiers in Artificial Intelligence",
+      "velocidade": 4,
+      "aceleracao": null,
+      "citacoes_ano_recente": 1
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.22495/clgrv8i2p7",
+    "nome": "Artificial intelligence in criminal justice governance: Opportunities and legal challenges (A comparative study)",
+    "url": "https://doi.org/10.22495/clgrv8i2p7",
+    "resumo": "Artigo compara os marcos legais de Franca, Emirados Arabes Unidos e Reino Unido sobre uso de IA em policiamento preditivo e justica criminal, incluindo coleta de provas e decisao judicial. Aponta riscos a privacidade, a justica procedimental e a integridade probatoria, e defende regulacao precisa e criterios de legitimidade da prova produzida por IA.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Franca",
+      "Reino Unido",
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau",
+      "Ministerio Publico"
+    ],
+    "fases": [
+      "Instrucao Probatoria",
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Avaliacao de Risco de Pessoas",
+      "Deteccao de Fraude ou Anomalia"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Devido Processo Legal",
+      "Protecao de Dados",
+      "Vies e Discriminacao"
+    ],
+    "confianca": 0.78,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 3,
+      "acesso_aberto": true,
+      "doi": "10.22495/clgrv8i2p7",
+      "autores": [
+        "Adham Hashish",
+        "Abouelwafa Ibrahim",
+        "Fatiha Mohammed Gourari",
+        "Gehad Mohamed Abdelaziz"
+      ],
+      "veiculo": "Corporate Law & Governance Review",
+      "velocidade": 3,
+      "aceleracao": null,
+      "citacoes_ano_recente": 0
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.37276/sjh.v7i2.570",
+    "nome": "Measuring Judicial Accountability in the Algorithmic Era: Juridical Implications of Using Judicial Assistants and Black Box Risks in Constructing Judgment Arguments",
+    "url": "https://doi.org/10.37276/sjh.v7i2.570",
+    "resumo": "Artigo analisa a responsabilidade judicial diante do uso de IA como assistente na redacao de fundamentos de decisoes na Suprema Corte da Indonesia, apontando o risco de decisoes baseadas em modelos opacos (black box) frente ao dever de motivacao. Compara marcos regulatorios da UE, EUA e China e propõe modelo regulatorio preventivo, util ao debate brasileiro sobre IA em minutas judiciais.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global",
+      "Uniao Europeia",
+      "China"
+    ],
+    "orgaos": [
+      "Suprema Corte",
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Responsabilidade e Auditoria",
+      "Transparencia e Explicabilidade",
+      "Governanca e Regulacao",
+      "Devido Processo Legal"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "ano": 2025,
+      "citacoes": 3,
+      "acesso_aberto": true,
+      "doi": "10.37276/sjh.v7i2.570",
+      "autores": [
+        "Asbudi Dwi Saputra",
+        "Hartono Tasir Irwanto",
+        "Nurisnah Nurisnah"
+      ],
+      "veiculo": "SIGn Jurnal Hukum",
+      "velocidade": 3,
+      "aceleracao": null,
+      "citacoes_ano_recente": 0
     },
     "tipo": "artigo"
   },

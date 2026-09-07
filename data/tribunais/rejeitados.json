@@ -154,5 +154,77 @@
     "nome": "Epistemic Trustworthiness in Generative AI: A Normative Framework for Warranted Reliance in High-Stakes Workflows",
     "motivo": "Artigo sobre confiabilidade epistemica em IA generativa em geral, sem recorte juridico ou judiciario.",
     "data": "2026-09-04"
+  },
+  {
+    "chave": "news.google.com/rss/articles/cbmibefvx3lxtfbhmzvwdvh5szddtmnebnrwz0k2sgvbenzpcwjit1nlbfhinvlxckpzvgnqclb5d3radghlcnlzuflynjvlqnpkblktrul5bze0mhlpttrimxvtzuotv1vovzlksmnaswtjujgzrg",
+    "nome": "InovaJus - Laboratório de Inovação do Poder Judiciário Goiano",
+    "motivo": "Manchete sobre laboratorio de inovacao sem mencao a IA.",
+    "data": "2026-09-07"
+  },
+  {
+    "chave": "news.google.com/rss/articles/cbmi7gfbvv95cuxnwdvievlnnfzxy3nvrfnonexcmw03bxlzthgwqzhuvunvdlq5shzpd2g4vhf6sww3d043qxdyr1bfakz6n2poclbiegllohpxbefuenjvbnq0n2nhctbvqjbuqxm1evlmuda4qwdnvhdlc2djouvmblrzdkfcdevlqvq2edl5q0jeaxrxz1b6vmvfuwjxtfhsbzy0mnhwr3pewjbezf80s2dusznvv0nobmvpsl9nsmlxdkdld21xamvscwvwwtzftmhtmkzhakhlruf0n3zktelklwzbbzlhawv6rkjeoxp0cjbpt193",
+    "nome": "Ministra do STF alerta para riscos da inteligência artificial às eleições e à democracia; tema foi debatido em Plenária da Fenajufe - Sintrajufe",
+    "motivo": "Recorte eleitoral sobre IA e democracia, fora do tema.",
+    "data": "2026-09-07"
+  },
+  {
+    "chave": "news.google.com/rss/articles/cbmioafbvv95cuxnmefivkposy00unzjt0phrxdbwxrnm0hpuzjquy1low83ztl4tmfwrfphb0xbwwhgue9bcud5zwhvwdnun2j5yxz6wdjitnzlqxhibnhnwlrjs1ffrfe2vmzxrmpistblztlwatziuwrmudz3tv9jcxr3b3nzvvbuzuvnre85ylo4zf9pv2eynlv2cfnfrwdfzm1wb2wxdxf2",
+    "nome": "STJ regulamenta exigência de resumos em recursos e prevê sanções",
+    "motivo": "Manchete trata de regra processual sobre resumos em recursos, sem mencao a inteligencia artificial.",
+    "data": "2026-09-07"
+  },
+  {
+    "chave": "news.google.com/rss/articles/cbmixafbvv95cuxoee8ywkduetlkz3k5r0vvdgjuvvjjnkzmngtvq1d4bndiqzluvk1tuvkzx3bszkhwnwyxuy1wu0n4mvnxtdloq0jsdw9srggyvmlgcvluckfprm9ltg9ty0rla2dzz1bzq2lnegd0rmxtq0rjcdf6nnlwazhqmfc0tmr1qkjnnmhscl9xu29yws1lowdxqk85n2pvn2rvrmvlqw5raxjlt0fwrni2szcxsej5bwprd3rfm2q4mmi0ewr1uvcz",
+    "nome": "Federal Court Says AI Child Sex Abuse Images Are Constitutionally Protected",
+    "motivo": "Trata de direito penal sobre conteudo gerado por IA, nao de IA aplicada a administracao da justica.",
+    "data": "2026-09-07"
+  },
+  {
+    "chave": "doi.org/10.5281/zenodo.18717850",
+    "nome": "The Murder of the Vow: On the Structural Illegality of Contracts Document 157 — Crimson Hexagon Archive",
+    "motivo": "Deposito sem conteudo academico util nem recorte de IA no Judiciario.",
+    "data": "2026-09-07"
+  },
+  {
+    "chave": "doi.org/10.1016/j.radi.2026.103339",
+    "nome": "Malpractice in the machine age: Legal and ethical responses to machine learning in medical imaging",
+    "motivo": "Trata de IA em imagem medica e responsabilidade civil na saude, sem recorte judiciario.",
+    "data": "2026-09-07"
+  },
+  {
+    "chave": "doi.org/10.33327/ajee-18-9.1-a000177",
+    "nome": "The Role of Artificial Intelligence in Enhancing Corporate Governance and Achieving Sustainable Development",
+    "motivo": "Foco em governanca corporativa e desenvolvimento sustentavel, nao em IA na administracao da justica.",
+    "data": "2026-09-07"
+  },
+  {
+    "chave": "doi.org/10.64391/ijssat.v1i3.003",
+    "nome": "The Centrality of Institutional Leadership: The International Maritime Organization's Role in Steering Global Maritime Governance",
+    "motivo": "Trata de governanca maritima internacional, sem recorte de IA no Judiciario.",
+    "data": "2026-09-07"
+  },
+  {
+    "chave": "doi.org/10.62768/tbj/2025/15/4/07",
+    "nome": "The Impact of Effective Public Administration and European Digital Connectivity on Building Smart Cities: An Analysis of Legal Frameworks, Policy Initiatives and Transformative Impact in the Emerging ",
+    "motivo": "Trata de cidades inteligentes e administracao publica na UE, sem recorte judiciario.",
+    "data": "2026-09-07"
+  },
+  {
+    "chave": "arxiv.org/abs/2608.29251v1",
+    "nome": "GuardianAgent: Policy-Conditioned Risk-Adaptive Anonymization with Verified Adversarial Escalation",
+    "motivo": "Anonimizacao de trafego web em geral, sem recorte judiciario.",
+    "data": "2026-09-07"
+  },
+  {
+    "chave": "arxiv.org/abs/2608.28150v1",
+    "nome": "The Approximation Rank of Softmax Attention: Sharp Geometric Laws and Robust Interaction Dimension",
+    "motivo": "Teoria matematica de atencao em transformers, sem qualquer recorte juridico.",
+    "data": "2026-09-07"
+  },
+  {
+    "chave": "arxiv.org/abs/2608.20097v1",
+    "nome": "TrustRAG: Blockchain-Enhanced RAG via Committee-Based Credibility Scoring",
+    "motivo": "Arquitetura generica de RAG com blockchain; area juridica citada apenas como exemplo.",
+    "data": "2026-09-07"
   }
 ]
