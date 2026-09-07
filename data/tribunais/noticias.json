@@ -1,5 +1,42 @@
 [
   {
+    "id": "news.google.com/rss/articles/cbmiywfbvv95cuxnwjd2dtf3cfd3wtdhvelrnu1sqnv2ek5jyv84sjryvexjthhwsxcyswjwzs1nx3fwrdbkmfjquzztrwnheflumc1obupavmlmx1zpwtzezdfemi1js2vyslk2qlh6wln3vmjcnmottlo1awzntlhpr3ftewpynflvn1vhetl0nwfnulbcq294yllqy0nvymvjdudmxzfuxzlcugfhbnr6etvwa0jgykjoz1qxumtqnwq0nejncepbbgm2mefpn3psdffkrq",
+    "nome": "California Approves the First U.S. Bill Regulating Lawyers' Use of AI - Судово-юридична газета",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWjd2dTF3cFd3WTdhVElrNU1SQnV2ek5jYV84SjRYVExJTHhwSXcySWJwZS1nX3FWRDBKMFJqUzZtRWNHeFlUMC1ObUpaVmlmX1ZpWTZEZDFEMi1jS2VySlk2Qlh6WlN3VmJCNmotTlo1aWZNTlhPR3FTeWpYNFlvN1VheTl0NWFnUlBCQ294YllqY0NVYmVjdUdmXzFuXzlCUGFHbnR6eTVwa0JGYkJoZ1QxUmtQNWQ0NEJncEpBbGM2MEFpN3pSdFFkRQ?oc=5",
+    "resumo": "A Californiaaprovou o que e apresentado como o primeiro projeto de lei dos EUA a regular o uso de inteligencia artificial por advogados. Serve de referencia comparativa para a discussao brasileira sobre deveres de diligencia e transparencia no uso de IA na advocacia contenciosa.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (sud.ua)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Gestao Administrativa",
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Responsabilidade e Auditoria",
+      "Alucinacao e Erro",
+      "Transparencia e Explicabilidade"
+    ],
+    "confianca": 0.72,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "veiculo": "Судово-юридична газета",
+      "data_publicacao": "2026-09-06",
+      "dominio_veiculo": "sud.ua"
+    },
+    "tipo": "noticia"
+  },
+  {
     "id": "news.google.com/rss/articles/cbmioafbvv95cuxnmdlca2m5cwlkqu96luu3rwlkqkhxy1lmzgo5tnhfyxcwoth1ni01lxrntmr2m0locxn3bdjyavplnug5wlpav1vxr1pbs05jrmprdwfiag9rbghmmjhpwdntdghsyvdyu2pjc19kz0hwy0pmstveq1dttwezmi15tjb0agdhbxkwyk4wdza0mw14dmj6thpuchvklurwsmxt",
     "nome": "Governing AI Hallucinations: Evaluating the Supreme Court’s Zero-Tolerance Rule",
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMDlCa2M5cWlKQU96LUU3RWlKQkhxY1lMZGo5TnhFYXcwOTh1Ni01LXRNTmR2M0lOcXN3bDJYaVpLNUg5WlpaV1VXR1pBS05jRmprdWFiaG9rbGhMMjhpWDNTdGhSYVdYU2pjc19kZ0hwY0pmSTVEQ1dtTWEzMi15TjB0aGdHbXkwYk4wdzA0MW14dmJ6THpucHVkLURWSmxt?oc=5",
@@ -33,6 +70,73 @@
       "veiculo": "SCC Online",
       "data_publicacao": "2026-09-04",
       "dominio_veiculo": "scconline.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmivgfbvv95cuxpmfbfaje3cv9xrvn4bu1fm01rqjv5m0dnnw1cr0zhx094svq3c3pdmdvjwkh0alu5au53z1dus253dmdhz0hmvnqzre0zyui4deliaw1hb2q3cmiyzexsa3v2ddlfddzbu1dlchp2uupodudmatnwy19gufbfq3zrnkjqnmg0ewjloevbltrjved2qk5enufum1lgdwrmstjwdfhduwzgngzjve1uuzg1vmlrdm1roupztgxycjdr",
+    "nome": "STJ volta a identificar tentativa de manipular inteligência artificial em processo judicial",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMFBfajE3cV9XRVN4bU1FM01rQjV5M0dnNW1CR0ZHX094SVQ3c3pDMDVjWkh0alU5aU53Z1dUS253dmdHZ0hMVnQzRE0zYUI4dEliaW1Hb2Q3cmIyZExsa3V2dDlFdDZBU1dlcHp2UUpodUdmaTNwY19GUFBfQ3ZrNkJQNmg0eWJlOEVBLTRjVEd2Qk5ENUFUM1lGdWRmSTJWdFhDUWZGNGZjVE1UUzg1Vmlrdm1rOUpZTGxycjdR?oc=5",
+    "resumo": "O STJ identificou novamente tentativa de manipular ferramenta de inteligencia artificial dentro de processo judicial. O caso interessa a magistrados e servidores por envolver integridade das pecas processuais e uso de IA na analise de recursos.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (agendadopoder.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal Superior"
+    ],
+    "fases": [
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Deteccao de Fraude ou Anomalia"
+    ],
+    "temas": [
+      "Responsabilidade e Auditoria",
+      "Devido Processo Legal"
+    ],
+    "confianca": 0.75,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "veiculo": "Agenda do Poder",
+      "data_publicacao": "2026-09-04",
+      "dominio_veiculo": "agendadopoder.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiqafbvv95cuxqrflmuktsztf6wwd0sxboue1mwfywqjuzvgzxrjc2vhi1m2nktnc3buzfdthfeklwbvqyduyta050etj5qjvdbkzgqzjzofnlbvjowfnhowy3vuk2ne13akyxq0vpmxr4mgrpr3vxbflzsznxcf9pugrutdzgofjonnozqxlnbxfya21gwwhsu2f4szmzvexuymqws21xujbtalc5z2ngv1k",
+    "nome": "STJ multa município após identificar comando oculto em recurso assinado por procurador",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRFlMUktSZTF6WWd0SXBOUE1mWFYwQjUzVGZxRjc2VHI1M2NkTnc3bUZFdThfeklwbVQydUYta050eTJ5QjVDbkZGQzJZOFNlbVJOWFNHOWY3VUk2NE13akYxQ0VpMXR4MGRPR3VxbFlZSzNXcF9PUGRuTDZGOFJONnozQXlNbXFYa21GWWhsU2F4SzMzVExUYmQwS21xUjBTalc5Z2NGV1k?oc=5",
+    "resumo": "O STJ multou um municipio depois de identificar comando oculto (prompt injection) em recurso assinado por procurador. O caso importa por sinalizar sancao processual para tentativa de manipular sistemas de IA usados pelo tribunal.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (migalhas.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal Superior"
+    ],
+    "fases": [
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Deteccao de Fraude ou Anomalia"
+    ],
+    "temas": [
+      "Responsabilidade e Auditoria",
+      "Devido Processo Legal",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "veiculo": "Migalhas",
+      "data_publicacao": "2026-09-04",
+      "dominio_veiculo": "migalhas.com.br"
     },
     "tipo": "noticia"
   },
@@ -575,6 +679,38 @@
     "tipo": "noticia"
   },
   {
+    "id": "news.google.com/rss/articles/cbmisgfbvv95cuxqd1r4blpiy3fxdzffnupczwq2zs1wcefqnvnkt29qmer2c2xoqjjmnvducwxlbdn4ywjcuwrey2diwhrsehntatbdmgzdt2liedlty1ntqlrqtkn6t0fqugliwjqwu21yelhxcjgxymjoevdoshvjwf9frghndgfqznhkegxgdglmrffmx2joyw44lvy3m3ntq3huehnbte8wmkvrwnd6cupamk1fvdeyavf3",
+    "nome": "Inteligência Artificial: TJBA amplia debate sobre uso da tecnologia no Judiciário",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQd1R4blpIY3FxdzFFNUpCZWQ2ZS1WcEFQNVNkT29QMER2c2xoQjJMNVducWxLbDN4YWJCUWREY2dIWHRseHNtaTBDMGZDT2lieDlTY1NtQlRqTkN6T0FQUGlIWjQwU21yelhXcjgxYmJOeVdOSHVJWF9FRGhNdGFqZnhKeGxGdGlmRFFMX2JOYW44LVY3M3NtQ3hueHNBTE8wMkVRWnd6cUpaMk1fVDEyaVF3?oc=5",
+    "resumo": "A manchete informa que o TJBA ampliou o debate interno sobre o uso de inteligência artificial no Judiciário. Sinaliza movimentação institucional de governança e capacitação sobre IA em tribunal estadual.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjba.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos"
+    ],
+    "temas": [
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.5,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "veiculo": "Tribunal de Justiça do Estado da Bahia",
+      "data_publicacao": "2026-08-21",
+      "dominio_veiculo": "tjba.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
     "id": "news.google.com/rss/articles/cbminafbvv95cuxnvvzkem1nrkrbsvzkoelfrjnszhdmrjjxnjjmunvhmtlicudyzjljb1fzww9sahytlwdtztjmcfq2u3vkaxf1qjnxy3jkn2njcvuysxjmujnomzfxzwpnegldvmjsnfhlwk0xmm1bwunmawtscvdzvkvsdes2yunpyzi3vzz5m25yzzjodtrdnldmakhjue1pvzc5xzg",
     "nome": "Conecta lança quatro novas soluções tecnológicas no 6º FestLabs Nacional",
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVVZKem1NRkRBSVZkOElFRjNSZHdmRjJXNjJmUnVHMTlicUdyZjljb1FzWW9saHYtLWdTZTJmcFQ2U3VKaXF1QjNXY3JKN2NJcVUySXJmUjNOMzFXZWpNeGlDVmJSNFhlWk0xMm1BWUNMaWtScVdzVkVSdEs2YUNPYzI3VzZ5M25yZzJodTRDNldMakhjUE1PVzc5Xzg?oc=5",
@@ -638,6 +774,42 @@
       "veiculo": "Tribunal de Justiça do Estado da Bahia",
       "data_publicacao": "2026-08-20",
       "dominio_veiculo": "tjba.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmirgfbvv95cuxneur2bhjhu3pdd0tklw5qnnlyu2iwuk1yx01ttfrzqjfyd3liqzllvnfqnk4yae42aguwajboumhlltzodi1uufbvdljsq0r2euryeg13t2d5njnranvfel9ometgcxyxz0vss1hmtjeyrnlix1lfnvpnmxzgmmhxbg5tt3blbk1hulhstehftxhtq1j5ce1jyzb2c1bsrnmtuuvgz2jnc3zvofjdv0e",
+    "nome": "Banco Mundial destaca uso de IA pelo STF para agilizar análise de processos",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNeUR2bHJhU3pDd0tkLW5QNnlyU2IwUk1YX01TTFRZQjFyd3lIQzllVnFQNk4yaE42aGUwajBOUmhlLTZodi1uUFBvdlJSQ0R2eURyeG13T2d5NjNRanVFel9OMEtGcXYxZ0VSS1hMTjEyRnlIX1lfNVpNMXZGMmhXbG5tT3BLbk1hUlhSTEhfTXhtQ1J5cE1jYzB2c1BsRnMtUUVGZ2Jnc3ZvOFJDV0E?oc=5",
+    "resumo": "Segundo a materia, o Banco Mundial destacou o uso de inteligencia artificial pelo STF para acelerar a analise de processos. Serve de referencia sobre reconhecimento internacional de iniciativas de IA no Judiciario brasileiro.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (juristas.com.br)",
+    "paises": [
+      "Brasil",
+      "Global"
+    ],
+    "orgaos": [
+      "Suprema Corte"
+    ],
+    "fases": [
+      "Triagem e Distribuicao",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos",
+      "Deteccao de Casos Repetitivos",
+      "Resumo de Documentos"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "veiculo": "Portal Juristas",
+      "data_publicacao": "2026-08-20",
+      "dominio_veiculo": "juristas.com.br"
     },
     "tipo": "noticia"
   },
@@ -779,6 +951,40 @@
       "veiculo": "tomshardware.com",
       "data_publicacao": "2026-08-18",
       "dominio_veiculo": "tomshardware.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiqafbvv95cuxncuffaejowwvjt3vftlqwn2y2oerindjnq3prr2pud2fkahh1mulvwmllbljzbgp6mvvwnjlwdfr0twzxx2xkne1onjfvauetywk0bzbdzg5uyzjsn2lpmk9odmpivu1oa0jmmk5pmhjwn1zpyv9nykxmntrtmthfwmyyvku3dwy0ndlingm2ltvfskoyt0e0wudscvvysxpvzxzplw4yykk",
+    "nome": "Judicial Immunity Still Applies Even If The Judge Let AI Decide The Case",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcUFFaEJOWWVJT3VfTlQwN2Y2OERINDJNQ3pRR2pUd2FKaHh1MUlvWmllblJzbGp6MVVwNjlWdFR0TWZxX2xkNE1ONjFVaUEtYWk0bzBDZG5UYzJSN2lPMk9OdmpiVU1oa0JMMk5PMHJWN1ZpYV9NYkxmNTRTMThfWmYyVkU3dWY0NDlINGM2LTVFSkoyT0E0WUdScVVySXpVZXZpLW4yYkk?oc=5",
+    "resumo": "Materia sustenta que a imunidade judicial permanece aplicavel mesmo quando o juiz delega a decisao a uma ferramenta de inteligencia artificial. Interessa ao debate sobre responsabilidade, devido processo e limites do uso de IA na atividade decisoria.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (abovethelaw.com)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Responsabilidade e Auditoria",
+      "Devido Processo Legal",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "veiculo": "Above the Law",
+      "data_publicacao": "2026-08-18",
+      "dominio_veiculo": "abovethelaw.com"
     },
     "tipo": "noticia"
   },
@@ -949,6 +1155,73 @@
       "veiculo": "New York State Bar Association",
       "data_publicacao": "2026-08-13",
       "dominio_veiculo": "nysba.org"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi9gfbvv95cuxnm0d2d3pvwmlkq0sxttdjluduevrhn1lycefib0xsc09vogf2r0peduktaevydupdu2zkmgiwyl9tdww3ui10muxsdhdecgdun2pictrlswxuchnrynzpm2ktelhhszreluzbtwuymfe5cmzcajrpzwnqcxrluuhiuuqwudu1otdodw1lcvpznmnksxrjzwfatfhkdxq0yzftwlyxm2rbcvp4ctlrz2e5eehha042m252rdzhymhht0d4nnvyvee3szlqtm1mnlzit0xpaeoxsepwnlr3nefwlve2v29tu0p2n0xccxq2yjhqm0h5ale",
+    "nome": "TJPI utiliza IA para transcrever, em apenas duas semanas, volume equivalente a mais de nove anos de audiências",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNM0d2d3pvWmlkQ0sxTTdJLUdueVRHN1lYcEFib0xsc09vOGF2R0pEdUktaEVydUpDU2ZKMGIwYl9TdWw3Ui10MUxSdHdEcGduN2picTRlSWxucHNrYnZpM2ktelhHSzRELUZBTWUyMFE5cmZCajRPZWNqcXRLUUhiUUQwUDU1OTdOdW1LcVpZNmNkSXRjZWFaTFhKdXQ0YzFtWlYxM2RBcVp4cTlRZ2E5eEhha042M252RDZhYmhhT0d4NnVYVEE3SzlqTm1mNlZIT0xpaEoxSEpwNlR3NEFWLVE2V29tU0p2N0xCcXQ2YjhqM0h5alE?oc=5",
+    "resumo": "Segundo a manchete, o TJPI usou IA para transcrever em duas semanas um volume de audiências equivalente a mais de nove anos de trabalho. Exemplo concreto de ganho de produtividade com transcrição automatizada em tribunal estadual.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjpi.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Instrucao Probatoria",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Transcricao de Audiencias"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.75,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "veiculo": "Tribunal de Justiça do Piauí",
+      "data_publicacao": "2026-08-13",
+      "dominio_veiculo": "tjpi.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiugfbvv95cuxnx0dizumtbg1su01rnnbhs2xvmnnmsfhyowrmvml2rxbwbgvqmurqdkpgqklltknrvvqxoxo4rnl2ovh3q2dmenfum3djzmrwr1m0whvzvl8yz1btv0kycecymkzoz2rzzuxtagtpbexvzxnxof9jnnbovnfpeknuz1n6wfhroef6zdd0ukhluk9cbnnrbgpuq3zweknqs1u0nxhscwv4tnq5akzpd1rwyutvefbzsglguee",
+    "nome": "Emenda 53/2026 do STJ, inteligência artificial e a nova responsabilidade da advocacia",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNX0diZUMtbG1sU01RNnBHS2xvMnNMSFhYOWRMVml2RXBWbGVQMURQdkpGQkllTkNRVVQxOXo4Rnl2OVh3Q2dmenFuM3djZmRwR1M0WHVZVl8yZ1BTV0kycEcyMkZOZ2RzZUxtaGtPbExvZXNxOF9jNnBOVnFPekNuZ1N6WFhrOEF6ZDd0UkhLUk9CbnNrbGpuQ3ZWekNqS1U0NXhscWV4TnQ5akZPd1RwYUtVeFBzSGlGUEE?oc=5",
+    "resumo": "Artigo analisa a Emenda 53/2026 do STJ e os deveres da advocacia quanto ao uso de inteligencia artificial em pecas processuais. Relevante por tratar de norma interna de tribunal superior sobre responsabilidade no uso de IA.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (conjur.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal Superior"
+    ],
+    "fases": [
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Responsabilidade e Auditoria",
+      "IA Generativa"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-09-07",
+    "sinais": {
+      "veiculo": "Consultor Jurídico",
+      "data_publicacao": "2026-08-11",
+      "dominio_veiculo": "conjur.com.br"
     },
     "tipo": "noticia"
   }
