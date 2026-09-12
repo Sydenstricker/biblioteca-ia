@@ -6,7 +6,7 @@ name: Coletar novidades
 
 on:
   schedule:
-    - cron: '0 9 * * 1' # toda segunda-feira, 09:00 UTC (06:00 em Brasilia)
+    - cron: '0 9 1 * *' # dia 1 de cada mes, 09:00 UTC (06:00 em Brasilia)
   workflow_dispatch: # e sob demanda, pelo botao "Run workflow"
     inputs:
       seco:
@@ -79,7 +79,7 @@ jobs:
 
             ---
 
-            :warning: **Resolva este PR ainda esta semana.** Enquanto ele nao for
+            :warning: **Resolva este PR ainda este mes.** Enquanto ele nao for
             mesclado, estes itens nao estao nem no acervo nem em `rejeitados.json`,
             entao a proxima rodada vai paga-los de novo. Fechar sem merge nao
             resolve: eles voltam. Para descartar um item de vez, apague o bloco

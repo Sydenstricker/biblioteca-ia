@@ -11,7 +11,7 @@ Custo de operação: **zero**, exceto os centavos de API do classificador.
 ## Como funciona
 
 ```
-                        cron semanal (GitHub Actions)
+                        cron mensal (GitHub Actions)
                                    │
    ┌───────────────────────────────▼───────────────────────────────┐
    │  1. FONTES        GitHub API · Hacker News (Algolia)          │
@@ -222,8 +222,8 @@ ao modelo:
 | | Itens | `claude-opus-5` | `claude-haiku-4-5` |
 |---|---|---|---|
 | Primeira rodada | ~127 | ~US$ 0,90 | ~US$ 0,18 |
-| Cada semana depois | ~10 | ~US$ 0,12 | ~US$ 0,02 |
-| **Por mês, em regime** | | **~US$ 0,50** | **~US$ 0,08** |
+| Cada rodada mensal | ~25 | ~US$ 0,30 | ~US$ 0,05 |
+| **Por mês, em regime** | | **~US$ 0,30** | **~US$ 0,05** |
 
 > Estes valores são **estimativas**, não medições. Cada rodada imprime o custo real
 > calculado a partir do `usage` da resposta — é esse que vale.
@@ -236,13 +236,16 @@ Enquanto um PR do coletor não é mesclado, os itens dele ficam num limbo: não 
 no acervo nem em `rejeitados.json`. Na rodada seguinte o coletor os reencontra e
 **paga para reclassificar os mesmos itens**.
 
-Não é grave — o conjunto é limitado, então gira em torno de US$ 0,12/semana rodando
-em falso — mas o hábito certo é dar merge ou editar o PR na mesma semana. Fechar o
+Não é grave — o conjunto é limitado, então gira em torno de US$ 0,30/mês rodando
+em falso — mas o hábito certo é dar merge ou editar o PR no mesmo mês. Fechar o
 PR sem merge não basta: os itens voltam na próxima rodada.
 
 ### Como gastar menos, ou zero
 
-1. **Cron mensal** em vez de semanal (uma linha em `coletar.yml`) — corta por 4.
+1. **Cron mensal** — já é o padrão (`0 9 1 * *` em `coletar.yml`). Rodar mensal em
+   vez de semanal não divide o custo por 4: os itens se acumulam entre as rodadas.
+   O que some é o overhead fixo de cada execução e o teto por consulta de cada
+   fonte, cobrados uma vez por mês em vez de quatro.
 2. **Modelo mais barato** — variável `MODELO_CLASSIFICADOR`.
 3. **Zero:** apague o bloco `schedule:` do workflow. Ele passa a rodar só pelo botão
    "Run workflow", e você paga apenas quando decide atualizar. Deixa de ser

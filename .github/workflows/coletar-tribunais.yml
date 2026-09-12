@@ -2,15 +2,15 @@ name: Coletar IA em Tribunais
 
 # Mesma regra do coletor geral: nunca escreve na main, sempre abre PR.
 #
-# Roda na MESMA segunda-feira que o coletor geral, de proposito. Os dois usam
+# Roda no MESMO dia que o coletor geral, de proposito. Os dois usam
 # grupos de concorrencia, branches de PR e conjuntos de arquivos disjuntos, entao
-# nao ha risco de colisao -- e um unico ritual semanal de revisao e mais facil de
-# manter que dois. Separar por dia so multiplicaria as chances de esquecer um PR
-# aberto, e PR esquecido faz a rodada seguinte pagar de novo pelos mesmos itens.
+# nao ha risco de colisao -- e um unico ritual mensal de revisao e mais facil de
+# manter que dois. Separar em datas diferentes so multiplicaria as chances de esquecer
+# um PR aberto, e PR esquecido faz a rodada seguinte pagar de novo pelos mesmos itens.
 
 on:
   schedule:
-    - cron: '0 9 * * 1' # toda segunda-feira, 09:00 UTC (06:00 em Brasilia)
+    - cron: '0 9 1 * *' # dia 1 de cada mes, 09:00 UTC (06:00 em Brasilia)
   workflow_dispatch:
     inputs:
       seco:
@@ -78,7 +78,7 @@ jobs:
 
             ---
 
-            :warning: **Resolva este PR ainda esta semana.** Enquanto nao for
+            :warning: **Resolva este PR ainda este mes.** Enquanto nao for
             mesclado, estes itens nao estao nem no acervo nem em `rejeitados.json`,
             entao a proxima rodada vai paga-los de novo.
           add-paths: |

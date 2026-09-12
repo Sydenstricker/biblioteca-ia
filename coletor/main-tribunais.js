@@ -95,7 +95,7 @@ async function principal() {
 
   log('\n2. portao (sem custo de LLM)');
 
-  // Nenhuma fonte devolver nada nao e "semana calma": e fonte quebrada.
+  // Nenhuma fonte devolver nada nao e "mes calmo": e fonte quebrada.
   // Bloqueio por IP de datacenter, mudanca de API, feed fora do ar -- tudo isso
   // terminaria verde e sem alteracao se nao fosse esta guarda.
   if (brutos.length === 0) {

@@ -25,7 +25,7 @@ const CONSULTAS_INTL = [
   'AI judge court decision controversy',
 ];
 
-const JANELA_DIAS = 30;
+const JANELA_DIAS = 45; // margem sobre o cron mensal: rodada atrasada nao abre buraco
 
 export const nome = 'noticias-tribunais';
 
