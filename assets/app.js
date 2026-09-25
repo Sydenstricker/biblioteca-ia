@@ -1,6 +1,8 @@
 // Biblioteca de IA -- toda a logica roda no navegador sobre um JSON estatico.
 // Sem build, sem framework, sem backend.
 
+import { carimbar } from './carimbo.js';
+
 const CAMPOS_FILTRO = [
   { chave: 'tipo', rotulo: 'Tipo', dim: 'tipo', multi: false, url: 't' },
   { chave: 'industrias', rotulo: 'Indústria', dim: 'industrias', multi: true, url: 'i' },
@@ -48,6 +50,7 @@ async function carregar() {
   lerUrl();
   montarFiltros();
   aplicar();
+  carimbar('#rodape-info', 'data/ultima-rodada.json');
 }
 
 // ---------- estado na URL (links compartilhaveis) ----------

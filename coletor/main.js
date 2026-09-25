@@ -1,9 +1,15 @@
 // Orquestrador do coletor.
 //
-//   fontes -> dedup -> portao barato -> LLM -> data/pendentes.json -> Pull Request
+//   fontes -> dedup -> portao barato -> LLM -> data/pendentes.json -> promover.js
 //
-// Nada aqui escreve em data/itens.json. Isso e deliberado: o acervo so cresce por
-// merge de PR, revisado por um humano. E o que impede a biblioteca de virar lixeira.
+// Nada aqui promove item nenhum ao acervo. Este arquivo so deposita o resultado da
+// classificacao em data/pendentes.json (fora do git); quem decide o que entra e
+// promover.js, e ele separa por confianca: alta vai direto para a main, baixa vira
+// Pull Request. E essa bifurcacao que impede a biblioteca de virar lixeira sem
+// cobrar sua atencao todo mes. Veja o README, secao "Por que um portao seletivo".
+//
+// A excecao sao as mencoes e os sinais dos itens JA conhecidos, que este arquivo
+// atualiza em data/itens.json: sao contadores de algo que voce ja aprovou um dia.
 //
 //   node main.js --seco    coleta e mostra o que seria classificado, sem gastar LLM
 //   node main.js           roda o pipeline completo

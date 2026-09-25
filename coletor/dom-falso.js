@@ -53,6 +53,9 @@ export class Elemento {
   get innerHTML() { return this._html; }
 
   append(...nos) { this.filhos.push(...nos); }
+
+  /** Troca todo o conteudo de uma vez. Usado por assets/carimbo.js. */
+  replaceChildren(...nos) { this._texto = ""; this.filhos = [...nos]; }
   addEventListener(evt, fn) { (this.ouvintes[evt] ||= []).push(fn); }
   disparar(evt, arg) { for (const fn of this.ouvintes[evt] || []) fn(arg); }
 

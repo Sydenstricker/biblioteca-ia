@@ -274,4 +274,10 @@ ok('voltar ao guia re-renderiza o conteudo didatico', () => {
   assert.equal(cartoesUso().length, totalUsos());
 });
 
+ok('o carimbo da ultima rodada aparece no rodape do hub', () => {
+  const texto = porId['rodape-info'].textContent;
+  assert.match(texto, /^Atualizado em [0-9]{1,2} de [a-zc]+ de [0-9]{4}$/,
+    'rodape ficou "' + texto + '" -- carimbo.js nao escreveu, ou mudou de formato');
+});
+
 console.log('\n' + passou + ' verificacoes passaram');

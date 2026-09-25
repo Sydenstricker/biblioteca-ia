@@ -1,8 +1,9 @@
 name: Coletar novidades
 
-# O coletor NUNCA escreve na main. Ele abre um Pull Request com os itens novos
-# ja classificados, e voce aprova pelo celular em meio minuto. E esse portao que
-# impede o acervo de virar lixeira -- veja o README, secao "Por que Pull Request".
+# O coletor publica sozinho o que o modelo classificou com confianca alta, e abre
+# um Pull Request apenas com os itens duvidosos (confianca < 0,5). O portao humano
+# nao sumiu: ficou seletivo, para nao cobrar sua atencao num mes em que nao ha
+# nada a decidir -- veja o README, secao "Por que Pull Request".
 
 on:
   schedule:
@@ -54,37 +55,84 @@ jobs:
           MODELO_CLASSIFICADOR: ${{ vars.MODELO_CLASSIFICADOR }}
         run: node main.js
 
-      - name: Promover pendentes para o acervo
+      - name: Promover os itens de confianca alta
         if: ${{ !inputs.seco }}
         run: node coletor/promover.js
 
-      - name: Abrir Pull Request
+      # Publicacao direta: o que o modelo classificou com confianca alta entra na
+      # main sem esperar ninguem. O portao humano nao sumiu, ficou seletivo -- ele
+      # continua valendo para o que vem depois, no Pull Request.
+      - name: Publicar na main
+        if: ${{ !inputs.seco }}
+        env:
+          EXECUCAO: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          git config user.name 'coletor'
+          git config user.email 'coletor@users.noreply.github.com'
+
+          git add data/itens.json data/rejeitados.json data/sinais.jsonl
+          if git diff --cached --quiet; then
+            MENSAGEM="coletor: rodada de $(date -u +%F) sem novidades"
+          else
+            MENSAGEM="coletor: novidades de $(date -u +%F)"
+          fi
+
+          # Heartbeat, gravado a CADA rodada mesmo sem novidade. Serve a duas coisas:
+          # da atividade mensal ao repositorio (o GitHub desativa cron de repo publico
+          # parado por 60 dias, e derruba o workflow inteiro junto, botao "Run workflow"
+          # incluso) e alimenta o carimbo "Atualizado em" do rodape do site. Sem ele,
+          # mes tranquilo e coletor quebrado ficam indistinguiveis: os dois sao silencio.
+          node -e "require('fs').writeFileSync('data/ultima-rodada.json', JSON.stringify({ rodada: new Date().toISOString().slice(0, 10), execucao: process.env.EXECUCAO }, null, 2) + '\n')"
+          git add data/ultima-rodada.json
+
+          if git diff --cached --quiet; then
+            echo 'nada mudou, nem o carimbo -- provavelmente uma re-execucao no mesmo dia'
+            exit 0
+          fi
+          git commit -m "$MENSAGEM"
+
+          # Os dois coletores rodam no mesmo dia e os dois empurram para a main.
+          # Os arquivos sao disjuntos, entao o rebase nunca conflita -- o que pode
+          # falhar e a corrida entre o pull e o push. Tentar de novo resolve.
+          for tentativa in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "push falhou (tentativa $tentativa); repetindo em 10s"
+            sleep 10
+          done
+          echo 'nao consegui publicar na main depois de 3 tentativas'
+          exit 1
+
+      - name: Separar os itens de confianca baixa
+        if: ${{ !inputs.seco }}
+        run: node coletor/promover.js --tudo
+
+      # Se nada sobrou, a acao nao encontra diff e NAO abre PR nenhum. Em mes
+      # tranquilo voce nao recebe notificacao alguma -- que e o objetivo.
+      - name: Abrir Pull Request com o que precisa de olho humano
         if: ${{ !inputs.seco }}
         uses: peter-evans/create-pull-request@v8
         with:
-          branch: coletor/novidades
+          branch: coletor/revisao
           delete-branch: true
-          commit-message: 'coletor: novidades de ${{ github.run_started_at }}'
-          title: 'Novidades do coletor'
+          assignees: ${{ github.repository_owner }}
+          commit-message: 'coletor: itens de confianca baixa de ${{ github.run_started_at }}'
+          title: 'Itens para conferir — confiança baixa'
           body: |
-            Itens novos encontrados pelo coletor automatico, ja classificados
-            contra a taxonomia fechada.
+            Os itens desta rodada com confiança alta **já estão na `main`** — veja o
+            commit do coletor. Este PR traz apenas o que o próprio modelo marcou como
+            classificação incerta (`confianca` abaixo de 0,5), quase sempre porque veio
+            pouco texto da fonte.
 
-            **Como revisar:** leia o diff de `data/itens.json`. Cada bloco
-            adicionado e um item novo. Se algum nao merece entrar, apague o
-            bloco dele aqui mesmo no PR antes de dar merge.
-
-            Itens marcados com `nota_curador` sobre confianca baixa foram
-            classificados com pouco texto -- confira esses primeiro.
+            **Como revisar:** leia o diff de `data/itens.json`. Cada bloco adicionado é
+            um item duvidoso. Se algum não merece entrar, apague o bloco dele aqui mesmo
+            antes de dar merge.
 
             ---
 
-            :warning: **Resolva este PR ainda este mes.** Enquanto ele nao for
-            mesclado, estes itens nao estao nem no acervo nem em `rejeitados.json`,
-            entao a proxima rodada vai paga-los de novo. Fechar sem merge nao
-            resolve: eles voltam. Para descartar um item de vez, apague o bloco
-            dele aqui e de merge no resto.
+            :warning: Enquanto este PR não for mesclado, estes itens não estão nem no
+            acervo nem em `rejeitados.json`, então a próxima rodada vai pagá-los de novo.
+            Para descartar um item de vez, apague o bloco dele e dê merge no resto.
           add-paths: |
             data/itens.json
-            data/rejeitados.json
-            data/sinais.jsonl

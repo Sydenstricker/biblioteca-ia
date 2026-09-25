@@ -2,6 +2,7 @@
 // aplicacao e ficha, noticia e fluxo cronologico, artigo e referencia por citacao.
 
 import { diagrama } from './diagramas.js';
+import { carimbar } from './carimbo.js';
 
 const VISTAS = {
   // A porta de entrada. Quem chega aqui costuma nao saber ainda o que procurar --
@@ -105,6 +106,7 @@ async function carregar() {
 
   lerUrl();
   trocarVista(estado.vista, true);
+  carimbar('#rodape-info', 'data/tribunais/ultima-rodada.json');
 }
 
 function lerUrl() {

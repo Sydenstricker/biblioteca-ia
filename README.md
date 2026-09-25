@@ -17,25 +17,35 @@ Custo de operação: **zero**, exceto os centavos de API do classificador.
    │  1. FONTES        GitHub API · Hacker News (Algolia)          │
    │  2. PORTÃO        dedup + heurísticas    ← sem custo de LLM    │
    │  3. CLASSIFICADOR Claude, taxonomia fechada + strict tools     │
-   │  4. PULL REQUEST  itens novos → você aprova                    │
+   │  4. BIFURCAÇÃO    confiança ≥ 0,5 → main · resto → Pull Request│
    └───────────────────────────────┬───────────────────────────────┘
-                                   │  merge
+                                   │
                           data/itens.json
                                    │
                           index.html (GitHub Pages)
                      filtros facetados + busca + URL compartilhável
 ```
 
-## Por que Pull Request
+## Por que um portão seletivo
 
 Este é o detalhe que separa o projeto de um agregador que apodrece.
 
-Ingestão automática direto na `main` parece prática por duas semanas. Depois o
-acervo tem centenas de wrappers triviais e listas "awesome", e ninguém — nem você —
-consulta mais. O coletor por isso **nunca escreve na `main`**: ele abre um PR, e
-aprovar leva meio minuto no celular.
+Ingestão automática direto na `main`, sem nenhum critério, parece prática por duas
+semanas. Depois o acervo tem centenas de wrappers triviais e listas "awesome", e
+ninguém — nem você — consulta mais. Mas exigir aprovação humana para **todo** item
+tem o defeito oposto: cobra sua atenção todo mês, inclusive nos meses em que não há
+nada a decidir, e PR esquecido faz a rodada seguinte pagar de novo pelos mesmos itens.
 
-Bônus: o diff do PR é, de graça, o seu resumo periódico de novidades do setor.
+Por isso o portão existe, mas é seletivo. O classificador devolve um campo
+`confianca` de 0 a 1, e o prompt manda ser honesto nele:
+
+- **`confianca` ≥ 0,5** — o coletor dá commit direto na `main`. Você não faz nada.
+- **`confianca` < 0,5** (ou ausente) — vira um Pull Request contendo *só* esses itens.
+  Em mês tranquilo esse PR não é sequer aberto.
+
+Nada disso é irreversível: o acervo está no git. Item ruim que passou é um
+`git revert`, e o diff do commit mensal continua sendo, de graça, o seu resumo
+periódico de novidades do setor — só que para ler quando quiser, sem bloquear nada.
 
 Há três filtros em série, do mais barato ao mais caro:
 
@@ -43,10 +53,35 @@ Há três filtros em série, do mais barato ao mais caro:
 |---|---|---|---|
 | Dedup + regex | `portao()` em `coletor/main.js` | zero | já visto, `awesome-*`, cursos, roadmaps |
 | Campo `relevante` | classificador LLM | ~1 token | wrappers triviais, tutoriais, repos de estudo |
-| Você | diff do PR | 30 s | o resto |
+| Você | diff do PR de confiança baixa | 30 s, e só quando há | o resto |
+
+O segundo filtro é o que carrega o peso agora que o terceiro é seletivo — e é por
+isso que o `MODELO_CLASSIFICADOR` padrão é o `claude-opus-5` e não o mais barato.
+O *strict tool use* garante que os valores sejam **válidos**, nunca que sejam
+**certos**: só o julgamento do modelo separa uma ferramenta real de uma coleção de
+tutoriais, e é ele quem preenche a `confianca` que decide o caminho do item.
 
 Descartes vão para `data/rejeitados.json` e **nunca voltam** — nada é reprocessado
 nem re-sugerido.
+
+### Quando o silêncio é suspeito
+
+Publicar sozinho cria um problema novo: um mês tranquilo e um coletor quebrado se
+parecem — os dois são silêncio. E o GitHub **desativa o cron de repositório público
+parado por 60 dias**, derrubando o workflow inteiro junto, botão "Run workflow"
+incluso. A documentação não define o que conta como atividade, e as fontes de
+terceiros se contradizem sobre se commit de bot reseta o contador.
+
+Em vez de apostar numa resposta, o projeto torna o silêncio visível:
+
+- Cada rodada grava `data/ultima-rodada.json` (e o equivalente do hub) **mesmo quando
+  não há novidade**. Isso dá atividade mensal ao repositório — se commit de bot contar,
+  o problema some; se não contar, nada se perdeu.
+- O rodapé do site mostra essa data. Passados dois meses sem rodada, aparece um aviso
+  em vermelho ali mesmo. Ver `assets/carimbo.js`.
+
+Então o pior caso é: você abre o site, vê uma data velha, e clica em "Enable workflow"
+na aba Actions. Falha de execução continua chegando por e-mail, como sempre.
 
 ## A taxonomia é fechada, de propósito
 
@@ -169,6 +204,7 @@ própria. Boa parte do material na internet ainda cita a 332 como vigente.
 ```bash
 node coletor/main-tribunais.js --seco   # sem gastar LLM
 node coletor/main-tribunais.js          # pipeline completo
+node coletor/promover-tribunais.js      # dobra os de confianca baixa no acervo
 node coletor/teste-tribunais.js         # testes
 ```
 
@@ -182,12 +218,14 @@ node coletor/main.js --seco
 
 # pipeline completo (precisa de ANTHROPIC_API_KEY)
 node coletor/main.js
-node coletor/promover.js
+node coletor/promover.js         # so os de confianca >= 0,5
+node coletor/promover.js --tudo  # e depois o resto, se quiser tudo local
 
 # testes
 node coletor/teste-schema.js       # valida os schemas sem gastar API
 node coletor/teste-procedencia.js
 node coletor/teste-frontend.js
+node coletor/teste-tribunais.js
 ```
 
 Servir o site (qualquer servidor estático — `fetch` não funciona via `file://`):
@@ -211,24 +249,28 @@ Depois disso o site fica em `https://SEU-USUARIO.github.io/NOME-DO-REPO/`.
 ## Custo
 
 Tudo é gratuito — GitHub Actions, Pages, a API do GitHub, o Algolia do Hacker News —
-**exceto a classificação pelo Claude**. Itens vão em lotes de 8 por chamada e o
-prefixo (ferramenta + *system prompt*) é cacheado, então o gasto é dominado pelos
-tokens de saída.
+**exceto a classificação pelo Claude**. Itens vão em lotes de 8 por chamada (6 no hub
+de tribunais, cujos textos são mais longos) e o prefixo (ferramenta + *system prompt*)
+é cacheado dentro da rodada, então o gasto é dominado pelos tokens de saída — que
+incluem o raciocínio adaptativo, cobrado como saída.
 
-A primeira rodada é a cara. Depois dela, o portão de dedup bloqueia de graça tudo
-que já está no acervo ou em `rejeitados.json`, e só o que é genuinamente novo chega
-ao modelo:
+São **dois coletores**, cada um com seu próprio orçamento. A primeira rodada é a cara;
+depois dela o portão de dedup bloqueia de graça tudo que já está no acervo ou em
+`rejeitados.json`, e só o que é genuinamente novo chega ao modelo:
 
-| | Itens | `claude-opus-5` | `claude-haiku-4-5` |
+| | Itens novos | `claude-opus-5` | `claude-haiku-4-5` |
 |---|---|---|---|
-| Primeira rodada | ~127 | ~US$ 0,90 | ~US$ 0,18 |
-| Cada rodada mensal | ~25 | ~US$ 0,30 | ~US$ 0,05 |
-| **Por mês, em regime** | | **~US$ 0,30** | **~US$ 0,05** |
+| Primeira rodada (geral) | ~127 | ~US$ 0,90 | ~US$ 0,18 |
+| Coletor geral, por mês | ~20–35 | ~US$ 0,15–0,25 | ~US$ 0,03–0,05 |
+| Hub de tribunais, por mês | ~20–35 | ~US$ 0,20–0,30 | ~US$ 0,04–0,06 |
+| **Somados, por mês** | | **~US$ 0,35–0,55** | **~US$ 0,07–0,11** |
 
 > Estes valores são **estimativas**, não medições. Cada rodada imprime o custo real
 > calculado a partir do `usage` da resposta — é esse que vale.
 
 Trocar de modelo é a variável `MODELO_CLASSIFICADOR` no GitHub, sem mexer no código.
+Antes de trocar, leia a seção "Por que um portão seletivo": o modelo é o filtro que
+carrega o peso, e a diferença entre as duas colunas acima é de uns US$ 5 por ano.
 
 ### PR não mesclado custa de novo
 
@@ -236,17 +278,21 @@ Enquanto um PR do coletor não é mesclado, os itens dele ficam num limbo: não 
 no acervo nem em `rejeitados.json`. Na rodada seguinte o coletor os reencontra e
 **paga para reclassificar os mesmos itens**.
 
-Não é grave — o conjunto é limitado, então gira em torno de US$ 0,30/mês rodando
-em falso — mas o hábito certo é dar merge ou editar o PR no mesmo mês. Fechar o
-PR sem merge não basta: os itens voltam na próxima rodada.
+Isso agora afeta só os itens de confiança baixa — o resto já entrou na `main` sozinho.
+É pouco dinheiro, mas o hábito certo é resolver o PR no mesmo mês. Fechar sem merge
+não basta: os itens voltam na próxima rodada. Para descartar um de vez, apague o
+bloco dele no PR e dê merge no resto.
 
 ### Como gastar menos, ou zero
 
-1. **Cron mensal** — já é o padrão (`0 9 1 * *` em `coletar.yml`). Rodar mensal em
+1. **Cron mensal** — já é o padrão (`0 9 1 * *` nos dois workflows). Rodar mensal em
    vez de semanal não divide o custo por 4: os itens se acumulam entre as rodadas.
    O que some é o overhead fixo de cada execução e o teto por consulta de cada
    fonte, cobrados uma vez por mês em vez de quatro.
-2. **Modelo mais barato** — variável `MODELO_CLASSIFICADOR`.
+2. **Modelo mais barato** — variável `MODELO_CLASSIFICADOR`. Corta para cerca de um
+   quinto, ao preço de piorar exatamente o filtro que mais importa. Note também que
+   o prefixo mínimo para o cache engatar no Haiku 4.5 é de 4.096 tokens e o nosso
+   tem ~1.900: com Haiku o cache **silenciosamente nunca é usado**, sem erro nenhum.
 3. **Zero:** apague o bloco `schedule:` do workflow. Ele passa a rodar só pelo botão
    "Run workflow", e você paga apenas quando decide atualizar. Deixa de ser
    automático e vira sob demanda.
@@ -258,14 +304,16 @@ taxonomia.json          vocabulário fechado — o ativo central
 index.html              o site
 assets/estilo.css       tokens de cor, tema claro/escuro
 assets/app.js           filtros, busca, ordenação, estado na URL
+assets/carimbo.js       carimbo "Atualizado em" no rodapé, com alerta de coletor parado
 data/itens.json         o acervo
 data/rejeitados.json    memória de descartes (nunca reprocessados)
 data/sinais.jsonl       série temporal, append-only
+data/ultima-rodada.json heartbeat: prova de vida do coletor, gravada toda rodada
 coletor/schema.js       forma do item, dedup, validação
 coletor/fontes/*.js     um arquivo por fonte
 coletor/classificador.js  Claude + strict tools
 coletor/main.js         orquestrador
-coletor/promover.js     pendentes → acervo
+coletor/promover.js     pendentes → acervo, em duas fases (confiança alta / revisão)
 coletor/teste-frontend.js  teste de fumaça sem navegador
 coletor/dom-falso.js    DOM mínimo compartilhado pelos testes
 coletor/teste-schema.js  valida os schemas contra os limites do strict tool use
@@ -280,6 +328,8 @@ coletor/fontes/noticias-tribunais.js  Google News RSS (PT + EN)
 coletor/fontes/academico.js           OpenAlex + arXiv
 coletor/classificador-tribunais.js    classifica e extrai sistemas nomeados
 coletor/main-tribunais.js             orquestrador do hub
+coletor/tribunais-acervo.js           formato, ordenação e poda, compartilhados
+coletor/promover-tribunais.js         fase 2: itens de confiança baixa
 coletor/procedencia.js  regra de dominio: quem publicou decide a procedencia
 coletor/teste-procedencia.js          testes da regra de dominio
 coletor/teste-tribunais.js            testes do hub

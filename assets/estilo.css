@@ -300,6 +300,11 @@ main {
 
 .rodape a { color: var(--acento); }
 
+/* So aparece quando o coletor passou de dois meses sem rodar -- ver assets/carimbo.js.
+   Usa a mesma paleta de ".v-desmentido", que ja e a cor de alarme do projeto. */
+.rodape-alerta { color: #8c2f2f; font-weight: 600; }
+:root[data-tema="escuro"] .rodape-alerta { color: #e59090; }
+
 /* =====================================================================
    Hub "IA em Tribunais" (tribunais.html)
    ===================================================================== */

@@ -1,12 +1,13 @@
 name: Coletar IA em Tribunais
 
-# Mesma regra do coletor geral: nunca escreve na main, sempre abre PR.
+# Mesma regra do coletor geral: confianca alta entra direto na main, o resto vira
+# Pull Request.
 #
-# Roda no MESMO dia que o coletor geral, de proposito. Os dois usam
-# grupos de concorrencia, branches de PR e conjuntos de arquivos disjuntos, entao
-# nao ha risco de colisao -- e um unico ritual mensal de revisao e mais facil de
-# manter que dois. Separar em datas diferentes so multiplicaria as chances de esquecer
-# um PR aberto, e PR esquecido faz a rodada seguinte pagar de novo pelos mesmos itens.
+# Roda no MESMO dia que o coletor geral, de proposito. Os dois usam grupos de
+# concorrencia, branches de PR e conjuntos de arquivos disjuntos, entao nao ha
+# risco de colisao -- e um unico ritual mensal de revisao e mais facil de manter
+# que dois. Separar em datas diferentes so multiplicaria as chances de esquecer um
+# PR aberto, e PR esquecido faz a rodada seguinte pagar de novo pelos mesmos itens.
 
 on:
   schedule:
@@ -54,35 +55,85 @@ jobs:
           EMAIL_CONTATO: ${{ vars.EMAIL_CONTATO }}
         run: node coletor/main-tribunais.js
 
-      - name: Abrir Pull Request
+      # Publicacao direta: noticias e artigos de confianca alta entram na main sem
+      # esperar ninguem. Os candidatos a aplicacao vao junto de proposito -- aquele
+      # arquivo e fila de confirmacao, nao catalogo: nada ali vira ficha em
+      # aplicacoes.json sem fonte primaria, em cenario nenhum.
+      - name: Publicar na main
+        if: ${{ !inputs.seco }}
+        env:
+          EXECUCAO: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          git config user.name 'coletor'
+          git config user.email 'coletor@users.noreply.github.com'
+
+          git add data/tribunais/noticias.json data/tribunais/artigos.json \
+                  data/tribunais/candidatos-aplicacoes.json data/tribunais/rejeitados.json
+          if git diff --cached --quiet; then
+            MENSAGEM="hub tribunais: rodada de $(date -u +%F) sem novidades"
+          else
+            MENSAGEM="hub tribunais: novidades de $(date -u +%F)"
+          fi
+
+          # Heartbeat, gravado a CADA rodada mesmo sem novidade. Serve a duas coisas:
+          # da atividade mensal ao repositorio (o GitHub desativa cron de repo publico
+          # parado por 60 dias, e derruba o workflow inteiro junto, botao "Run workflow"
+          # incluso) e alimenta o carimbo "Atualizado em" do rodape do hub. Sem ele,
+          # mes tranquilo e coletor quebrado ficam indistinguiveis: os dois sao silencio.
+          node -e "require('fs').writeFileSync('data/tribunais/ultima-rodada.json', JSON.stringify({ rodada: new Date().toISOString().slice(0, 10), execucao: process.env.EXECUCAO }, null, 2) + '\n')"
+          git add data/tribunais/ultima-rodada.json
+
+          if git diff --cached --quiet; then
+            echo 'nada mudou, nem o carimbo -- provavelmente uma re-execucao no mesmo dia'
+            exit 0
+          fi
+          git commit -m "$MENSAGEM"
+
+          # Os dois coletores rodam no mesmo dia e os dois empurram para a main.
+          # Os arquivos sao disjuntos, entao o rebase nunca conflita -- o que pode
+          # falhar e a corrida entre o pull e o push. Tentar de novo resolve.
+          for tentativa in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "push falhou (tentativa $tentativa); repetindo em 10s"
+            sleep 10
+          done
+          echo 'nao consegui publicar na main depois de 3 tentativas'
+          exit 1
+
+      - name: Separar os itens de confianca baixa
+        if: ${{ !inputs.seco }}
+        run: node coletor/promover-tribunais.js
+
+      # Se nada sobrou, a acao nao encontra diff e NAO abre PR nenhum.
+      - name: Abrir Pull Request com o que precisa de olho humano
         if: ${{ !inputs.seco }}
         uses: peter-evans/create-pull-request@v8
         with:
-          branch: coletor/tribunais
+          branch: coletor/tribunais-revisao
           delete-branch: true
-          commit-message: 'hub tribunais: novidades de ${{ github.run_started_at }}'
-          title: 'IA em Tribunais — novidades'
+          assignees: ${{ github.repository_owner }}
+          commit-message: 'hub tribunais: itens de confianca baixa de ${{ github.run_started_at }}'
+          title: 'IA em Tribunais — itens para conferir'
           body: |
-            Notícias e artigos novos sobre IA no Judiciário, ja classificados
-            contra `taxonomia-tribunais.json`.
+            As notícias e artigos desta rodada com confiança alta **já estão na `main`**,
+            e os candidatos a aplicação já estão em
+            `data/tribunais/candidatos-aplicacoes.json` — ainda como fila de confirmação,
+            não como fichas do catálogo.
 
-            **Como revisar:**
+            Este PR traz apenas o que o próprio modelo marcou como classificação incerta
+            (`confianca` abaixo de 0,5).
 
-            - `data/tribunais/noticias.json` e `artigos.json` — itens novos.
-              Confira o campo `verificacao`: comunicado de tribunal e
-              `fonte_primaria`, reportagem sobre comunicado e `fonte_secundaria`.
-            - `data/tribunais/candidatos-aplicacoes.json` — sistemas NOMEADOS nas
-              noticias desta rodada. **Nao entram no catalogo sozinhos.** Confirme
-              cada um com fonte primaria e, so entao, escreva a ficha em
-              `data/tribunais/aplicacoes.json`.
+            **Como revisar:** leia o diff de `noticias.json` e `artigos.json`. Confira o
+            campo `verificacao`: comunicado de tribunal é `fonte_primaria`, reportagem
+            sobre comunicado é `fonte_secundaria`. Se um item não merece entrar, apague o
+            bloco dele aqui mesmo antes de dar merge.
 
             ---
 
-            :warning: **Resolva este PR ainda este mes.** Enquanto nao for
-            mesclado, estes itens nao estao nem no acervo nem em `rejeitados.json`,
-            entao a proxima rodada vai paga-los de novo.
+            :warning: Enquanto este PR não for mesclado, estes itens não estão nem no
+            acervo nem em `rejeitados.json`, então a próxima rodada vai pagá-los de novo.
           add-paths: |
             data/tribunais/noticias.json
             data/tribunais/artigos.json
-            data/tribunais/candidatos-aplicacoes.json
-            data/tribunais/rejeitados.json

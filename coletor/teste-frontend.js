@@ -18,6 +18,7 @@ import { montarDom } from './dom-falso.js';
 const porId = montarDom(['filtros', 'busca', 'ordem', 'grade', 'contagem', 'limpar', 'vazio', 'tema', 'rodape-info', 'link-repo']);
 
 globalThis.fetch = async (caminho) => ({
+  ok: true, // carimbo.js checa isto antes de ler o corpo
   json: async () => JSON.parse(readFileSync(join(RAIZ, caminho), 'utf8')),
 });
 
@@ -96,6 +97,12 @@ await new Promise((r) => setTimeout(r, 220));
 ok('a busca por "juridico" retornou algo', () => {
   assert.ok(cartoes().length > 0, 'busca sem acento nao casou nenhum item acentuado');
   assert.ok(cartoes().length < ativos.length, 'busca nao filtrou nada');
+});
+
+ok('o carimbo da ultima rodada aparece no rodape', () => {
+  const texto = porId['rodape-info'].textContent;
+  assert.match(texto, /^Atualizado em [0-9]{1,2} de [a-zc]+ de [0-9]{4}$/,
+    'rodape ficou "' + texto + '" -- carimbo.js nao escreveu, ou mudou de formato');
 });
 
 console.log('\n' + passou + ' verificacoes passaram');

@@ -11,44 +11,17 @@
 //   node coletor/main-tribunais.js --seco
 //   node coletor/main-tribunais.js
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
-
 import { hoje } from './schema.js';
 import { resolverVerificacao } from './procedencia.js';
+import {
+  C, LIMIAR_CONFIANCA, chave, confiavel, escrever, ler,
+  ordenarArtigos, ordenarNoticias, podarNoticias,
+} from './tribunais-acervo.js';
 import * as fonteNoticias from './fontes/noticias-tribunais.js';
 import * as fonteAcademico from './fontes/academico.js';
 
-const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
-const DIR = join(RAIZ, 'data', 'tribunais');
-
-const C = {
-  aplicacoes: join(DIR, 'aplicacoes.json'),
-  noticias: join(DIR, 'noticias.json'),
-  artigos: join(DIR, 'artigos.json'),
-  candidatos: join(DIR, 'candidatos-aplicacoes.json'),
-  rejeitados: join(DIR, 'rejeitados.json'),
-};
-
-const MESES_RETENCAO_NOTICIA = 18;
 const SECO = process.argv.includes('--seco');
 const log = console.log;
-
-const ler = (p, padrao) => (existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : padrao);
-
-function escrever(p, dados) {
-  mkdirSync(dirname(p), { recursive: true });
-  writeFileSync(p, JSON.stringify(dados, null, 2) + '\n', 'utf8');
-}
-
-/** URL canonica para dedup: sem querystring de rastreio nem barra final. */
-function chave(url) {
-  try {
-    const u = new URL(url);
-    return (u.hostname.replace(/^www\./, '') + u.pathname.replace(/\/$/, '')).toLowerCase();
-  } catch { return url.toLowerCase(); }
-}
 
 function estimarCusto(uso, modelo) {
   const T = { 'claude-opus-5': [5, 25], 'claude-sonnet-5': [2, 10], 'claude-haiku-4-5': [1, 5] };
@@ -185,28 +158,36 @@ async function principal() {
     }
   }
 
-  // Poda: noticia velha sai do JSON que o site carrega.
-  const corte = new Date(Date.now() - MESES_RETENCAO_NOTICIA * 30 * 864e5).toISOString().slice(0, 10);
-  const todasNoticias = [...noticias, ...novasNoticias];
-  const noticiasVivas = todasNoticias.filter((n) => (n.sinais?.data_publicacao || n.coletado_em) >= corte);
-  const podadas = todasNoticias.length - noticiasVivas.length;
+  // Fase 1: so o que o modelo classificou com confianca alta e gravado no acervo,
+  // e o workflow publica isso direto na main. O restante vai para pendentes.json
+  // (fora do git) e entra na fase 2, em promover-tribunais.js, virando um Pull
+  // Request que contem SO os itens duvidosos -- o unico momento que pede um humano.
+  const noticiasAuto = novasNoticias.filter(confiavel);
+  const artigosAuto = novosArtigos.filter(confiavel);
+  const paraRevisar = {
+    noticias: novasNoticias.filter((n) => !confiavel(n)),
+    artigos: novosArtigos.filter((a) => !confiavel(a)),
+  };
+  const nRevisar = paraRevisar.noticias.length + paraRevisar.artigos.length;
 
-  noticiasVivas.sort((a, b) => (b.sinais?.data_publicacao || b.coletado_em)
-    .localeCompare(a.sinais?.data_publicacao || a.coletado_em));
-  const todosArtigos = [...artigos, ...novosArtigos]
-    .sort((a, b) => (b.sinais?.citacoes ?? 0) - (a.sinais?.citacoes ?? 0));
+  const { vivas, podadas } = podarNoticias([...noticias, ...noticiasAuto]);
+  escrever(C.noticias, ordenarNoticias(vivas));
+  escrever(C.artigos, ordenarArtigos([...artigos, ...artigosAuto]));
 
-  escrever(C.noticias, noticiasVivas);
-  escrever(C.artigos, todosArtigos);
+  // Candidatos entram inteiros, inclusive os vindos de noticia em revisao: este
+  // arquivo nao e catalogo, e fila de confirmacao -- nenhum deles vira ficha em
+  // aplicacoes.json sem fonte primaria, em cenario nenhum.
   escrever(C.candidatos, [...candidatos, ...novosCandidatos]);
   escrever(C.rejeitados, [
     ...rejeitados,
     ...descartados.map((d) => ({ chave: chave(d._bruto.url), nome: d._bruto.nome, motivo: d.motivo_descarte, data: hoje() })),
   ]);
+  if (nRevisar) escrever(C.pendentes, paraRevisar);
 
   log('=== resumo ===');
-  log(novasNoticias.length + ' noticias novas (' + podadas + ' podadas por idade)');
-  log(novosArtigos.length + ' artigos novos');
+  log(noticiasAuto.length + ' noticias e ' + artigosAuto.length + ' artigos entraram direto '
+    + '(confianca >= ' + LIMIAR_CONFIANCA + '); ' + podadas + ' noticias podadas por idade');
+  if (nRevisar) log(nRevisar + ' itens de confianca baixa aguardando revisao humana');
   log('procedencia (decidida por dominio): '
     + Object.entries(contagemProcedencia).map(([k, v]) => k + '=' + v).join(' '));
   log(novosCandidatos.length + ' candidatos a aplicacao extraidos das noticias');
