@@ -1,0 +1,24 @@
+name: TESTE — falha proposital
+
+# ARQUIVO TEMPORARIO. Existe so para confirmar que o e-mail de falha do GitHub
+# Actions chega na caixa certa. Deve ser apagado assim que o teste terminar.
+#
+# Dispara no proprio push deste arquivo, porque nao ha gh CLI na maquina que o
+# criou para usar "workflow_dispatch" remotamente.
+
+on:
+  push:
+    paths:
+      - '.github/workflows/teste-falha.yml'
+  workflow_dispatch:
+
+jobs:
+  falhar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simular fonte quebrada
+        run: |
+          echo 'Simulacao de falha real do coletor:'
+          echo 'todas as fontes devolveram zero itens. Isso indica fonte quebrada,'
+          echo 'nao ausencia de novidades.'
+          exit 1
