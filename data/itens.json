@@ -1,5 +1,41 @@
 [
   {
+    "id": "acceptmarkdown.com",
+    "tipo": "ferramenta",
+    "nome": "Serve Markdown to AI Agents with Accept Headers",
+    "resumo": "Propoe servir conteudo em Markdown para agentes de IA via negociacao de content-type com Accept headers. Voltado a desenvolvedores web que querem tornar sites legiveis por agentes. Cobranca nao informada.",
+    "url": "https://acceptmarkdown.com/",
+    "dominio": "acceptmarkdown.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "API / Developer Tool",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49454764",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.55,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 176,
+      "comentarios_hn": 108,
+      "data_hn": "2026-08-26"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
     "id": "codewithbullet.com",
     "tipo": "ferramenta",
     "nome": "Bullet (YC S26)",
@@ -69,6 +105,78 @@
     "nota_curador": ""
   },
   {
+    "id": "github.com/0xplaygrounds/rig",
+    "tipo": "projeto_oss",
+    "nome": "rig",
+    "resumo": "Framework em Rust para construir aplicacoes e agentes com LLMs de forma modular e escalavel. Para desenvolvedores Rust que criam produtos de IA. Open source; cobranca nao informada.",
+    "url": "https://github.com/0xPlaygrounds/rig",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Texto e LLM",
+      "Agentes Autonomos",
+      "RAG e Busca Semantica"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/0xPlaygrounds/rig",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 8788,
+      "forks": 983,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/abus-aikorea/voice-pro",
+    "tipo": "projeto_oss",
+    "nome": "voice-pro",
+    "resumo": "WebUI em Gradio que reune TTS, clonagem de voz zero-shot, transcricao com Whisper, isolamento vocal e traducao multilingue. Voltado a criadores de conteudo e desenvolvedores de audio. Open source; cobranca nao informada.",
+    "url": "https://github.com/abus-aikorea/voice-pro",
+    "dominio": "github.com",
+    "industrias": [
+      "Midia e Entretenimento",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Marketing e Conteudo",
+      "Design e Criacao"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/abus-aikorea/voice-pro",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 12968,
+      "forks": 1870,
+      "ultimo_push": "2026-07-13"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
     "id": "github.com/affaan-m/ecc",
     "tipo": "projeto_oss",
     "nome": "ECC",
@@ -92,12 +200,85 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.55,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 270515,
+      "forks": 40438,
+      "ultimo_push": "2026-09-30"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/ahujasid/mcp-for-blender",
+    "tipo": "projeto_oss",
+    "nome": "mcp-for-blender",
+    "resumo": "Plugin comunitario que permite controlar o Blender 3D via MCP com qualquer LLM. Voltado a artistas 3D e desenvolvedores de pipelines criativos. Open source e gratuito; licenca nao informada.",
+    "url": "https://github.com/ahujasid/mcp-for-blender",
+    "dominio": "github.com",
+    "industrias": [
+      "Midia e Entretenimento",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Design e Criacao",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM",
+      "Multimodal"
+    ],
+    "implementacao": "Plug-in ou Extensao",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/ahujasid/mcp-for-blender",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 248227,
-      "forks": 37411,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 29810,
+      "forks": 2711,
+      "ultimo_push": "2026-09-30"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/alphacep/vosk-api",
+    "tipo": "projeto_oss",
+    "nome": "vosk-api",
+    "resumo": "Oferece reconhecimento de fala offline com APIs para Android, iOS, Raspberry Pi e servidores. Destinado a desenvolvedores que precisam de transcricao local e com privacidade. Projeto open source, licenciamento no repositorio; cobranca nao informada.",
+    "url": "https://github.com/alphacep/vosk-api",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/alphacep/vosk-api",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 15158,
+      "forks": 1768,
+      "ultimo_push": "2026-08-09"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -130,12 +311,48 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.6,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 29504,
+      "forks": 5408,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/apache/seatunnel",
+    "tipo": "projeto_oss",
+    "nome": "seatunnel",
+    "resumo": "Ferramenta distribuida de integracao de dados em lote e streaming, com suporte a embeddings e cenarios multimodais para LLMs. Para equipes de engenharia de dados. Projeto Apache open source.",
+    "url": "https://github.com/apache/seatunnel",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "ML Classico e Dados Estruturados",
+      "RAG e Busca Semantica"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/apache/seatunnel",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.7,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 27715,
-      "forks": 4907,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 9696,
+      "forks": 2429,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -166,12 +383,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 11328,
-      "forks": 1102,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 11675,
+      "forks": 1175,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -203,12 +420,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 8820,
-      "forks": 1021,
-      "ultimo_push": "2026-08-28"
+      "estrelas": 8869,
+      "forks": 1037,
+      "ultimo_push": "2026-09-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -236,12 +453,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 12524,
-      "forks": 836,
-      "ultimo_push": "2026-08-31"
+      "estrelas": 12551,
+      "forks": 847,
+      "ultimo_push": "2026-09-28"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -273,12 +490,49 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 59992,
+      "forks": 11953,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/blaizzy/mlx-audio",
+    "tipo": "projeto_oss",
+    "nome": "mlx-audio",
+    "resumo": "Biblioteca de TTS, STT e speech-to-speech construida sobre o framework MLX da Apple. Voltada a desenvolvedores que rodam modelos de fala localmente em Apple Silicon. Open source; licenca especifica nao informada.",
+    "url": "https://github.com/Blaizzy/mlx-audio",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Texto e LLM",
+      "Multimodal"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/Blaizzy/mlx-audio",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 58042,
-      "forks": 11171,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 7966,
+      "forks": 736,
+      "ultimo_push": "2026-09-28"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -309,12 +563,12 @@
     "classificado_por": "semente-manual",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 112274,
-      "forks": 12353,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 116914,
+      "forks": 12900,
+      "ultimo_push": "2026-09-30"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
@@ -348,12 +602,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 81362,
-      "forks": 11223,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 83303,
+      "forks": 11560,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -385,12 +639,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 38842,
-      "forks": 3929,
-      "ultimo_push": "2026-08-05"
+      "estrelas": 39180,
+      "forks": 3966,
+      "ultimo_push": "2026-09-24"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -420,12 +674,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 21795,
-      "forks": 1752,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 22320,
+      "forks": 1834,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -457,12 +711,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 30048,
-      "forks": 4766,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 30388,
+      "forks": 4837,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -493,12 +747,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 11926,
-      "forks": 1958,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 12019,
+      "forks": 1974,
+      "ultimo_push": "2026-09-30"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -529,12 +783,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.55,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 212129,
-      "forks": 24893,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 241594,
+      "forks": 29009,
+      "ultimo_push": "2026-09-29"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -565,12 +819,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 9947,
-      "forks": 2427,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 9976,
+      "forks": 2438,
+      "ultimo_push": "2026-09-30"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -600,12 +854,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.6,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 131068,
-      "forks": 9014,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 139340,
+      "forks": 9398,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -637,12 +891,48 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 187465,
+      "forks": 10000,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/ggml-org/whisper.cpp",
+    "tipo": "projeto_oss",
+    "nome": "whisper.cpp",
+    "resumo": "Porte em C/C++ do modelo Whisper da OpenAI para transcricao de fala eficiente em CPU e dispositivos locais. Util para desenvolvedores que precisam de ASR offline e embarcado. Open source (MIT, conforme o projeto ggml).",
+    "url": "https://github.com/ggml-org/whisper.cpp",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software",
+      "Midia e Entretenimento"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "Audio e Voz"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/ggml-org/whisper.cpp",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 176457,
-      "forks": 9653,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 54075,
+      "forks": 6199,
+      "ultimo_push": "2026-09-28"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -674,12 +964,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 36838,
-      "forks": 6149,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 37142,
+      "forks": 6179,
+      "ultimo_push": "2026-09-30"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -711,12 +1001,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 106815,
-      "forks": 14526,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 107215,
+      "forks": 14675,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -747,12 +1037,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 114695,
-      "forks": 11142,
-      "ultimo_push": "2026-08-30"
+      "estrelas": 122983,
+      "forks": 11856,
+      "ultimo_push": "2026-09-30"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -785,12 +1075,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 120506,
-      "forks": 18484,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 127878,
+      "forks": 20005,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -823,12 +1113,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.75,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 68922,
-      "forks": 5341,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 74231,
+      "forks": 5741,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -861,12 +1151,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 21896,
-      "forks": 3387,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 22022,
+      "forks": 3482,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -899,12 +1189,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.95,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 164786,
-      "forks": 34444,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 166890,
+      "forks": 34737,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -936,12 +1226,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 28203,
-      "forks": 3688,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 28388,
+      "forks": 3728,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -974,12 +1264,12 @@
     "classificado_por": "semente-manual",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 90053,
-      "forks": 10623,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 91581,
+      "forks": 10870,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
@@ -1009,12 +1299,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.6,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 28973,
-      "forks": 2844,
-      "ultimo_push": "2026-08-30"
+      "estrelas": 29749,
+      "forks": 2903,
+      "ultimo_push": "2026-09-24"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1083,12 +1373,12 @@
     "classificado_por": "semente-manual",
     "confianca": 0.95,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 145646,
-      "forks": 24314,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 147355,
+      "forks": 24673,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
@@ -1120,12 +1410,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 41055,
-      "forks": 6934,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 42562,
+      "forks": 7216,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1153,12 +1443,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 154247,
-      "forks": 10021,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 155426,
+      "forks": 10157,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1186,12 +1476,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 34203,
-      "forks": 3696,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 35280,
+      "forks": 3898,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1224,12 +1514,49 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 157667,
+      "forks": 24875,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/leon-ai/leon",
+    "tipo": "projeto_oss",
+    "nome": "leon",
+    "resumo": "Assistente pessoal open source com reconhecimento e sintese de voz, skills automatizaveis e funcionamento offline. Para entusiastas e desenvolvedores que querem um assistente privado e customizavel. Open source (MIT, conforme o projeto); sem cobranca informada.",
+    "url": "https://github.com/leon-ai/leon",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Produtividade Pessoal",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/leon-ai/leon",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 154450,
-      "forks": 24413,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 17551,
+      "forks": 1472,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1258,12 +1585,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.65,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 13316,
-      "forks": 988,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 16758,
+      "forks": 1261,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1293,12 +1620,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.7,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 34089,
-      "forks": 3998,
-      "ultimo_push": "2026-08-26"
+      "estrelas": 36103,
+      "forks": 4182,
+      "ultimo_push": "2026-09-24"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1328,12 +1655,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 25498,
-      "forks": 3494,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 25530,
+      "forks": 3496,
+      "ultimo_push": "2026-09-20"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1362,12 +1689,48 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 35276,
+      "forks": 3726,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/m-bain/whisperx",
+    "tipo": "projeto_oss",
+    "nome": "whisperX",
+    "resumo": "Sistema de reconhecimento de fala com timestamps por palavra e diarizacao de locutores. Para desenvolvedores de transcricao, legendagem e analise de audio. Open source; cobranca nao informada.",
+    "url": "https://github.com/m-bain/whisperX",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Midia e Entretenimento",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "Audio e Voz"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/m-bain/whisperX",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.87,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 33693,
-      "forks": 3540,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 24328,
+      "forks": 2454,
+      "ultimo_push": "2026-09-26"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1397,12 +1760,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.75,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 23018,
-      "forks": 2822,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 23539,
+      "forks": 2857,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1433,12 +1796,12 @@
     "classificado_por": "semente-manual",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 64706,
-      "forks": 7577,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 66423,
+      "forks": 7826,
+      "ultimo_push": "2026-09-30"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
@@ -1470,12 +1833,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 22203,
-      "forks": 2702,
-      "ultimo_push": "2026-08-26"
+      "estrelas": 22228,
+      "forks": 2705,
+      "ultimo_push": "2026-09-21"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1508,12 +1871,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 65617,
-      "forks": 7250,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 66650,
+      "forks": 7435,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1545,12 +1908,50 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 28214,
+      "forks": 6410,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/modelscope/funasr",
+    "tipo": "projeto_oss",
+    "nome": "FunASR",
+    "resumo": "Toolkit aberto de reconhecimento de fala com treino, inferencia, ASR em streaming, VAD, pontuacao e diarizacao, alem de servico compativel com OpenAI/MCP. Destinado a desenvolvedores e pesquisadores de voz, com forte suporte a chines e multilingue. Open source; cobranca nao informada.",
+    "url": "https://github.com/modelscope/FunASR",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software",
+      "Telecomunicacoes"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Pesquisa e P&D",
+      "Suporte e Atendimento"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Multimodal"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/modelscope/FunASR",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 27812,
-      "forks": 6251,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 20565,
+      "forks": 2054,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1581,12 +1982,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 15514,
-      "forks": 1655,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 15767,
+      "forks": 1711,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1615,11 +2016,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.75,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 13726,
-      "forks": 1449,
+      "estrelas": 13854,
+      "forks": 1467,
       "ultimo_push": "2026-08-18"
     },
     "status": "ativo",
@@ -1652,12 +2053,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 10254,
-      "forks": 1345,
-      "ultimo_push": "2026-09-02"
+      "estrelas": 10286,
+      "forks": 1367,
+      "ultimo_push": "2026-09-25"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1688,12 +2089,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.75,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 24031,
-      "forks": 2858,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 24426,
+      "forks": 2900,
+      "ultimo_push": "2026-09-30"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1724,12 +2125,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.5,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 241373,
-      "forks": 49508,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 250534,
+      "forks": 53591,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1760,12 +2161,12 @@
     "classificado_por": "semente-manual",
     "confianca": 0.95,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 180142,
-      "forks": 17690,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 182001,
+      "forks": 18069,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
@@ -1796,12 +2197,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 150937,
-      "forks": 22054,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 153721,
+      "forks": 22475,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1842,6 +2243,44 @@
     "nota_curador": "Item semente, classificado à mão."
   },
   {
+    "id": "github.com/opencv/opencv",
+    "tipo": "projeto_oss",
+    "nome": "opencv",
+    "resumo": "Biblioteca de visao computacional e processamento de imagem com suporte a deep learning. Usada por desenvolvedores, pesquisadores e industria em geral. Open source sob licenca Apache 2.0 (gratuito).",
+    "url": "https://github.com/opencv/opencv",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software",
+      "Manufatura e Industria"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Pesquisa e P&D",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "Visao Computacional",
+      "ML Classico e Dados Estruturados"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/opencv/opencv",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 91027,
+      "forks": 57047,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
     "id": "github.com/openvinotoolkit/openvino",
     "tipo": "projeto_oss",
     "nome": "openvino",
@@ -1870,12 +2309,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 10802,
-      "forks": 3360,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 10939,
+      "forks": 3423,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -1906,12 +2345,12 @@
     "classificado_por": "semente-manual",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-02",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 2,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 3,
     "sinais": {
-      "estrelas": 88871,
-      "forks": 11308,
-      "ultimo_push": "2026-07-22"
+      "estrelas": 90490,
+      "forks": 11431,
+      "ultimo_push": "2026-09-16"
     },
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
@@ -1942,11 +2381,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 12680,
-      "forks": 1960,
+      "estrelas": 12690,
+      "forks": 1955,
       "ultimo_push": "2026-08-12"
     },
     "status": "ativo",
@@ -1979,11 +2418,11 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 58937,
-      "forks": 1478,
+      "estrelas": 58864,
+      "forks": 1501,
       "ultimo_push": "2026-07-05"
     },
     "status": "ativo",
@@ -2049,12 +2488,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.88,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 24820,
-      "forks": 2261,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 25620,
+      "forks": 2417,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2086,12 +2525,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 11001,
-      "forks": 1135,
-      "ultimo_push": "2026-09-01"
+      "estrelas": 11109,
+      "forks": 1143,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2122,12 +2561,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 9236,
-      "forks": 817,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 9426,
+      "forks": 833,
+      "ultimo_push": "2026-09-30"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2160,12 +2599,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 11400,
-      "forks": 842,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 11524,
+      "forks": 858,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2195,12 +2634,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 49882,
-      "forks": 4755,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 51104,
+      "forks": 4865,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2233,12 +2672,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 52021,
-      "forks": 8080,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 52381,
+      "forks": 8258,
+      "ultimo_push": "2026-09-29"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2269,12 +2708,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.7,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 10276,
-      "forks": 371,
-      "ultimo_push": "2026-09-02"
+      "estrelas": 10319,
+      "forks": 383,
+      "ultimo_push": "2026-09-30"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2304,12 +2743,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.7,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 21411,
-      "forks": 2175,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 21789,
+      "forks": 2225,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2340,12 +2779,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 187120,
-      "forks": 46042,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 187634,
+      "forks": 45977,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2376,12 +2815,48 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 11851,
+      "forks": 1729,
+      "ultimo_push": "2026-08-27"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/stablyai/orca",
+    "tipo": "ferramenta",
+    "nome": "orca",
+    "resumo": "Ambiente de desenvolvimento para orquestrar frotas de agentes de codificacao em paralelo, em desktop, mobile e runtime remoto. Destinado a desenvolvedores que usam agentes como Claude Code e Codex. Usa a propria assinatura do usuario; modelo de cobranca do produto nao informado.",
+    "url": "https://github.com/stablyai/orca",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Produtividade Pessoal",
+      "Gestao de Projetos"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "API / Developer Tool",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/stablyai/orca",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.7,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 11801,
-      "forks": 1722,
-      "ultimo_push": "2026-08-27"
+      "estrelas": 82942,
+      "forks": 5372,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2414,12 +2889,124 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.5,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 10124,
+      "forks": 867,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/systran/faster-whisper",
+    "tipo": "projeto_oss",
+    "nome": "faster-whisper",
+    "resumo": "Reimplementacao do Whisper com CTranslate2 para transcricao muito mais rapida e com quantizacao. Para desenvolvedores que precisam de ASR de alto desempenho. Open source; cobranca nao informada.",
+    "url": "https://github.com/SYSTRAN/faster-whisper",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Audio e Voz"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/SYSTRAN/faster-whisper",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.88,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 9871,
-      "forks": 846,
-      "ultimo_push": "2026-08-30"
+      "estrelas": 25664,
+      "forks": 2105,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/tauricresearch/tradingagents",
+    "tipo": "projeto_oss",
+    "nome": "TradingAgents",
+    "resumo": "Framework multiagente com LLMs que simula equipes de trading financeiro. Voltado a pesquisadores e desenvolvedores do mercado financeiro. Projeto open source, licenca especifica nao informada.",
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "dominio": "github.com",
+    "industrias": [
+      "Financas",
+      "Tecnologia e Software",
+      "Ciencia e Pesquisa"
+    ],
+    "funcoes": [
+      "Dados e Analytics",
+      "Pesquisa e P&D",
+      "Financeiro e Contabil"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM",
+      "ML Classico e Dados Estruturados"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/TauricResearch/TradingAgents",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.8,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 109448,
+      "forks": 21022,
+      "ultimo_push": "2026-09-29"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/tencent/weknora",
+    "tipo": "projeto_oss",
+    "nome": "WeKnora",
+    "resumo": "Plataforma de conhecimento com LLM que transforma documentos em RAG consultavel, agente de raciocinio e wiki automantida. Para empresas e times que precisam de base de conhecimento interna. Open source, licenca especifica nao informada.",
+    "url": "https://github.com/Tencent/WeKnora",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Suporte e Atendimento",
+      "Dados e Analytics"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Texto e LLM",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/Tencent/WeKnora",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 31626,
+      "forks": 4217,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2451,12 +3038,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 93179,
-      "forks": 8187,
-      "ultimo_push": "2026-09-04"
+      "estrelas": 95087,
+      "forks": 8417,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2497,6 +3084,116 @@
     "nota_curador": ""
   },
   {
+    "id": "github.com/ultralytics/ultralytics",
+    "tipo": "projeto_oss",
+    "nome": "ultralytics",
+    "resumo": "Framework de visao computacional com modelos YOLO para deteccao, segmentacao, classificacao, pose e rastreamento. Voltado a desenvolvedores e equipes de ML que precisam de visao em producao. Open source sob licenca AGPL, com licenca comercial disponivel segundo a Ultralytics.",
+    "url": "https://github.com/ultralytics/ultralytics",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software",
+      "Manufatura e Industria"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Pesquisa e P&D",
+      "Operacoes e Processos"
+    ],
+    "modalidades": [
+      "Visao Computacional"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/ultralytics/ultralytics",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 62145,
+      "forks": 11808,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/ultralytics/yolov5",
+    "tipo": "projeto_oss",
+    "nome": "yolov5",
+    "resumo": "Implementacao do YOLOv5 em PyTorch para deteccao, segmentacao, classificacao, treino e exportacao de modelos. Para desenvolvedores de visao computacional e pesquisadores. Open source; detalhes de licenciamento comercial nao informados aqui.",
+    "url": "https://github.com/ultralytics/yolov5",
+    "dominio": "github.com",
+    "industrias": [
+      "Transversal",
+      "Tecnologia e Software"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Visao Computacional"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/ultralytics/yolov5",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.88,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 58104,
+      "forks": 17459,
+      "ultimo_push": "2026-10-01"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/unclecode/crawl4ai",
+    "tipo": "projeto_oss",
+    "nome": "crawl4ai",
+    "resumo": "Crawler e scraper web que converte sites em Markdown pronto para LLMs e agentes. Serve desenvolvedores de pipelines de RAG e agentes de IA. Open source, com opcao paga/cloud (Crawl4AI Cloud) cujos precos nao foram informados.",
+    "url": "https://github.com/unclecode/crawl4ai",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Engenharia e Codigo",
+      "Dados e Analytics",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Consolidado",
+    "fonte": "github",
+    "fonte_url": "https://github.com/unclecode/crawl4ai",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.9,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "estrelas": 84607,
+      "forks": 8755,
+      "ultimo_push": "2026-09-25"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
     "id": "github.com/wanshuiyin/auto-claude-code-research-in-sleep",
     "tipo": "projeto_oss",
     "nome": "Auto-claude-code-research-in-sleep",
@@ -2521,12 +3218,50 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.6,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 16871,
+      "forks": 1427,
+      "ultimo_push": "2026-09-29"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/x-plug/mobileagent",
+    "tipo": "projeto_oss",
+    "nome": "MobileAgent",
+    "resumo": "Familia de agentes multimodais que operam interfaces graficas de celular de forma autonoma. Voltada a pesquisadores e desenvolvedores de automacao mobile. Open source; cobranca nao informada.",
+    "url": "https://github.com/X-PLUG/MobileAgent",
+    "dominio": "github.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Pesquisa e P&D",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Multimodal",
+      "Visao Computacional"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Em Crescimento",
+    "fonte": "github",
+    "fonte_url": "https://github.com/X-PLUG/MobileAgent",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.85,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 15724,
-      "forks": 1367,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 9270,
+      "forks": 928,
+      "ultimo_push": "2026-07-07"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2555,12 +3290,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.85,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 28192,
-      "forks": 1511,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 28634,
+      "forks": 1557,
+      "ultimo_push": "2026-09-29"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2589,12 +3324,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.6,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 14911,
-      "forks": 1516,
-      "ultimo_push": "2026-08-30"
+      "estrelas": 15078,
+      "forks": 1539,
+      "ultimo_push": "2026-09-30"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2628,12 +3363,48 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.9,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
+    "sinais": {
+      "estrelas": 10023,
+      "forks": 1509,
+      "ultimo_push": "2026-09-17"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "github.com/zhouxiaoka/autoclip",
+    "tipo": "projeto_oss",
+    "nome": "autoclip",
+    "resumo": "Extrai automaticamente trechos de destaque e gera cortes de video com apoio de LLMs. Util para criadores de conteudo e editores de video. Open source; cobranca nao informada.",
+    "url": "https://github.com/zhouxiaoka/autoclip",
+    "dominio": "github.com",
+    "industrias": [
+      "Midia e Entretenimento"
+    ],
+    "funcoes": [
+      "Marketing e Conteudo",
+      "Design e Criacao"
+    ],
+    "modalidades": [
+      "Geracao de Video",
+      "Texto e LLM",
+      "Agentes Autonomos"
+    ],
+    "implementacao": "Open Source",
+    "maturidade": "Experimental",
+    "fonte": "github",
+    "fonte_url": "https://github.com/zhouxiaoka/autoclip",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.75,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
     "mencoes": 1,
     "sinais": {
-      "estrelas": 9981,
-      "forks": 1503,
-      "ultimo_push": "2026-08-19"
+      "estrelas": 9073,
+      "forks": 1670,
+      "ultimo_push": "2026-10-01"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2664,12 +3435,12 @@
     "classificado_por": "claude-opus-5",
     "confianca": 0.8,
     "primeira_aparicao": "2026-09-04",
-    "ultima_verificacao": "2026-09-04",
-    "mencoes": 1,
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 2,
     "sinais": {
-      "estrelas": 57491,
-      "forks": 7612,
-      "ultimo_push": "2026-09-03"
+      "estrelas": 57558,
+      "forks": 7622,
+      "ultimo_push": "2026-09-29"
     },
     "status": "ativo",
     "nota_curador": ""
@@ -2704,5 +3475,116 @@
     "sinais": {},
     "status": "ativo",
     "nota_curador": "Item semente, classificado à mão."
+  },
+  {
+    "id": "narilabs.com",
+    "tipo": "ferramenta",
+    "nome": "Nari Qwen3-TTS and Qwen3-ASR",
+    "resumo": "Nari Labs oferece modelos de sintese de voz (Qwen3-TTS) e reconhecimento de fala (Qwen3-ASR) com foco em precisao, baixa latencia e custo. Voltado a desenvolvedores de aplicacoes de voz e agentes conversacionais. Cobranca nao informada, aparentemente por uso de API.",
+    "url": "https://narilabs.com/blog/nari-labs-leads-coval-voice-ai-benchmarks/",
+    "dominio": "narilabs.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal",
+      "Telecomunicacoes"
+    ],
+    "funcoes": [
+      "Suporte e Atendimento",
+      "Engenharia e Codigo"
+    ],
+    "modalidades": [
+      "Audio e Voz",
+      "Texto e LLM"
+    ],
+    "implementacao": "API / Developer Tool",
+    "maturidade": "Em Crescimento",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49699267",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.65,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 92,
+      "comentarios_hn": 31,
+      "data_hn": "2026-09-14"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "ozbrain.com",
+    "tipo": "ferramenta",
+    "nome": "OzBrain, a shared brain for knowledge between agents and your team",
+    "resumo": "OzBrain oferece uma base de conhecimento compartilhada entre agentes de IA e equipes humanas. Dirigido a times que usam agentes e precisam de memoria/contexto comum. Cobranca nao informada.",
+    "url": "https://ozbrain.com",
+    "dominio": "ozbrain.com",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Operacoes e Processos",
+      "Produtividade Pessoal",
+      "Gestao de Projetos"
+    ],
+    "modalidades": [
+      "RAG e Busca Semantica",
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "SaaS Pronto",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49394827",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.6,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 93,
+      "comentarios_hn": 59,
+      "data_hn": "2026-08-21"
+    },
+    "status": "ativo",
+    "nota_curador": ""
+  },
+  {
+    "id": "transluce.org",
+    "tipo": "caso_de_uso",
+    "nome": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
+    "resumo": "Relato da Transluce sobre deteccao de atividade de agentes de IA autonomos tentando hackear sistemas, observada via urlquery.net. Interessa a equipes de seguranca e pesquisadores de risco em IA. Publicacao aberta; cobranca nao informada.",
+    "url": "https://transluce.org/agent-activity",
+    "dominio": "transluce.org",
+    "industrias": [
+      "Tecnologia e Software",
+      "Transversal"
+    ],
+    "funcoes": [
+      "Seguranca e Risco",
+      "Pesquisa e P&D"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "Servico ou Consultoria",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49826565",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.5,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 267,
+      "comentarios_hn": 313,
+      "data_hn": "2026-09-24"
+    },
+    "status": "ativo",
+    "nota_curador": ""
   }
 ]

@@ -130,5 +130,95 @@
     "nome": "German advocacy group lodges criminal complaint over Meta AI glasses",
     "motivo": "Noticia juridica sobre oculos da Meta, nao e aplicacao catalogavel.",
     "data": "2026-09-04"
+  },
+  {
+    "id": "github.com/developer-y/cs-video-courses",
+    "nome": "cs-video-courses",
+    "motivo": "Lista de cursos em video, nao e aplicacao de IA.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "github.com/microsoft/ai-for-beginners",
+    "nome": "AI-For-Beginners",
+    "motivo": "Curriculo educacional/curso, nao e ferramenta ou aplicacao de IA.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "github.com/ashishpatel26/500-ai-machine-learning-deep-learning-computer-vision-nlp-projects-with-code",
+    "nome": "500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code",
+    "motivo": "Lista/colecao de projetos de estudo, nao uma ferramenta de IA.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "github.com/kmario23/deep-learning-drizzle",
+    "nome": "deep-learning-drizzle",
+    "motivo": "Colecao de aulas e material de estudo, nao e aplicacao de IA.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "github.com/twigpine/openclaude",
+    "nome": "openclaude",
+    "motivo": "Descricao vaga e sem informacao verificavel; aparenta wrapper de CLI de agente.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "yoshuabengio.org",
+    "nome": "Why are AI agents lying, cheating and coordinating?",
+    "motivo": "Artigo/publicacao de opiniao e pesquisa, nao uma aplicacao catalogavel.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "jorgegarciaherrero.com",
+    "nome": "A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]",
+    "motivo": "Paper academico de analise, nao ferramenta ou projeto.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "eoinhiggins.substack.com",
+    "nome": "There are no \"rogue\" AI agents",
+    "motivo": "Artigo de opiniao em blog.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "404media.co",
+    "nome": "There's a 100% Chance AI Agents Are Ruining the Internet",
+    "motivo": "Materia jornalistica de opiniao.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "cnbc.com",
+    "nome": "Nvidia wants to put a watchdog chip next to every AI agent",
+    "motivo": "Noticia sobre anuncio de hardware, sem produto catalogavel detalhado.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "engadget.com",
+    "nome": "Muse, the band, lost its social media handles to Muse, Meta's new AI agent",
+    "motivo": "Noticia sobre disputa de perfis, nao e aplicacao catalogavel.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "appleinsider.com",
+    "nome": "Unsurprisingly, Meta's new Muse AI agent blatantly ignores users permissions",
+    "motivo": "Materia jornalistica de critica, nao e ferramenta ou caso documentado.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "forbes.com",
+    "nome": "Amazon blocks Meta’s new Muse AI agent from shopping on amazon.com",
+    "motivo": "Noticia de mercado sobre bloqueio entre empresas.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "tedium.co",
+    "nome": "The worst spam emails: iLands AI agent hustle",
+    "motivo": "Artigo de opiniao sobre spam gerado por IA.",
+    "data": "2026-10-01"
+  },
+  {
+    "id": "tomshardware.com",
+    "nome": "Microsoft director: AI scraping 'the largest theft of labor in human history'",
+    "motivo": "Noticia sobre processo judicial, nao e aplicacao de IA.",
+    "data": "2026-10-01"
   }
 ]
