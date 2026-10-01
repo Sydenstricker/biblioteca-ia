@@ -36,6 +36,40 @@
     "nota_curador": ""
   },
   {
+    "id": "ai.meta.com",
+    "tipo": "ferramenta",
+    "nome": "Muse",
+    "resumo": "Muse e um agente de IA pessoal apresentado pela Meta. Destinado a usuarios finais para assistencia pessoal. Cobranca nao informada.",
+    "url": "https://ai.meta.com/muse/",
+    "dominio": "ai.meta.com",
+    "industrias": [
+      "Transversal"
+    ],
+    "funcoes": [
+      "Produtividade Pessoal"
+    ],
+    "modalidades": [
+      "Agentes Autonomos",
+      "Texto e LLM"
+    ],
+    "implementacao": "SaaS Pronto",
+    "maturidade": "Experimental",
+    "fonte": "hackernews",
+    "fonte_url": "https://news.ycombinator.com/item?id=49615537",
+    "classificado_por": "claude-opus-5",
+    "confianca": 0.45,
+    "primeira_aparicao": "2026-10-01",
+    "ultima_verificacao": "2026-10-01",
+    "mencoes": 1,
+    "sinais": {
+      "pontos_hn": 666,
+      "comentarios_hn": 742,
+      "data_hn": "2026-09-08"
+    },
+    "status": "ativo",
+    "nota_curador": "confianca baixa -- confira antes de aceitar"
+  },
+  {
     "id": "codewithbullet.com",
     "tipo": "ferramenta",
     "nome": "Bullet (YC S26)",
