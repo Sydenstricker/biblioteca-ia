@@ -154,5 +154,143 @@
     "nome": "Epistemic Trustworthiness in Generative AI: A Normative Framework for Warranted Reliance in High-Stakes Workflows",
     "motivo": "Artigo sobre confiabilidade epistemica em IA generativa em geral, sem recorte juridico ou judiciario.",
     "data": "2026-09-04"
+  },
+  {
+    "chave": "news.google.com/rss/articles/cbmiuafbvv95cuxotw1kuvpoumngn29bn1own0s2cxz3du5twertq2mxz3ott18wsg9vautmrm9ostbqoe9ltxbpwfq4swzlsuzyrgnraerqenh4tgvcnelpeutguuhrc2dmatnzq2qxenvtdxhbdwhnufrcnkjtudawsudozjnvqktjsddmu2ffumpdv1vnc1rlymgzd3lzdkpmsmg1zm9wagxkmwdfsxvwbjh4xy1kcv96ddrjuvfuexr2",
+    "nome": "TRF2 recebe visita técnica do CNJ para discutir segurança cibernética no Judiciário",
+    "motivo": "Trata de segurança cibernética, sem recorte de IA.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "news.google.com/rss/articles/cbmiogfbvv95cuxncfditk54rvlllxn3qvpodkvnchpqcevpedrsdxo1mjzvugl4z19bdkywrjblv2xgtw0zz0hhckrrvhl5bkn3vznuanq1ywj3anfawwe4auqytjrym0hmuxndm1dun09bcdeyme8xc0m5lw42ztvdn2jtaxpsn3z3ejmycm9jd05fvumtser0dzj2rmn0tnhon3duzxvnbg9rwee",
+    "nome": "TJRO tem iniciativas reconhecidas pelo Prêmio CNJ",
+    "motivo": "Manchete sobre premiacao do CNJ sem indicar relacao com IA.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "news.google.com/rss/articles/cbmifkfvx3lxte5cdxrrd1p6z2h6utdnsmpsvlj5mwrgltntanlfnlu5smvfvvhtdglfdnpmb3z6cmyxytlouxu0zc1xytzoa1r4lwgyt0fhr0q4ntrncedub3r0ntrnsk9ar3l2c2npt3dfx2x1edhadg5ud3lotgfkmedhswwxqq",
+    "nome": "Trump Administration’s Blacklisting of Anthropic Was Legal, Judges Rule",
+    "motivo": "Disputa judicial sobre politica comercial com empresa de IA; nao trata de IA aplicada a administracao da justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "news.google.com/rss/articles/cbmiwgfbvv95cuxodzj5otv6vghvv0nbmfz5smfote4tdehac09qajlwqlg0dnnnwm9vn1q1edr2nejeb0xolxlvzmhms2pdmutsveftbm1tajrgrmryugphsjvfaezpruuttur4bwozn2twsgteuuhznvmzegdhd25qzun6otkzadj4wxjwa0jiskt2vndmedjiwtlrzm1icf9pvejvvtq3shpfsgndruxhtzrfdxbpbuhhvlqzdjbqlwrfd1dnegvpnnnwuq",
+    "nome": "Court Decision Shines Light on AI-Generated Child Pornography - American Enterprise Institute",
+    "motivo": "Trata de decisao sobre material de abuso infantil gerado por IA, materia de direito penal substantivo, nao de IA na administracao da justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "news.google.com/rss/articles/cbmipafbvv95cuxqc3d0dghhbwljnethmmlirmc5bjjfbxzjdfetuzbyqwt3tkkzvgvtaldfn0pomgzhwuszsms1dezsmtfkdhh0bdyyejlfntk3ynvtcfriwmexdvv4ejywt09kq0hheurnqwo0revommr2utdqde4zmw1lz0drvdr2ogvhc2tybnrnowf3wgdpqwo4owpivznjtuvtyu0tc2dfwuh6uq",
+    "nome": "Federal court ruling conflicts with part of Wisconsin law banning AI child pornography",
+    "motivo": "Trata de direito penal sobre conteudo gerado por IA, nao de IA aplicada a administracao da justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "news.google.com/rss/articles/cbmickfvx3lxte56atjhq2xzuvdnlwr0sxnpbs1wutrurvlwmms2cgdfyjnlwtzkzfoyqwg2ymt6ckt1sgzqrxjtcwgwehnsa1b0wm10sjz1tzhxs3zmr0u2zljbaknochj4c2ytov9zvhr1eghucfr3vktbdw",
+    "nome": "Federal appeals court upholds Pentagon's blacklisting of Anthropic in AI dispute",
+    "motivo": "Litigio comercial/administrativo envolvendo empresa de IA; nao trata de IA na administracao da justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "doi.org/10.1145/3351095.3372864",
+    "nome": "On the apparent conflict between individual and group fairness",
+    "motivo": "Artigo teorico sobre justica algoritmica em geral, sem recorte de aplicacao ao Judiciario.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "doi.org/10.1080/13600869.2024.2324540",
+    "nome": "Generative AI and deepfakes: a human rights approach to tackling harmful content",
+    "motivo": "Regulacao de deepfakes e conteudo nocivo sob o AI Act; nao trata de IA na administracao da justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "doi.org/10.1016/j.jfineco.2026.104306",
+    "nome": "Intellectual property protection lost and competition: An examination using large language models",
+    "motivo": "Estudo de economia financeira que usa LLM como metodo; nao trata de IA na administracao da justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "doi.org/10.5281/zenodo.18717850",
+    "nome": "The Murder of the Vow: On the Structural Illegality of Contracts Document 157 — Crimson Hexagon Archive",
+    "motivo": "Deposito sem conteudo academico identificavel e sem relacao com IA aplicada a justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "doi.org/10.1016/j.radi.2026.103339",
+    "nome": "Malpractice in the machine age: Legal and ethical responses to machine learning in medical imaging",
+    "motivo": "IA na medicina: responsabilidade civil em imagem diagnostica, sem recorte de administracao da justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "doi.org/10.33327/ajee-18-9.1-a000177",
+    "nome": "The Role of Artificial Intelligence in Enhancing Corporate Governance and Achieving Sustainable Development",
+    "motivo": "Foco em governanca corporativa e sustentabilidade; mencao ao Judiciario e lateral.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "doi.org/10.24144/2307-3322.2025.92.4.70",
+    "nome": "Constitutional model of criminal procedure evidence: doctrinal categories, the phenomenon of procedural toxicity and the role of the Supreme Court in shaping evidentiary standards",
+    "motivo": "Trata de direito probatorio constitucional na Ucrania, sem relacao com IA.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "doi.org/10.1186/s12910-025-01323-0",
+    "nome": "Artificial intelligence guidance in ethically challenging clinical scenarios in child and adolescent psychiatry: a qualitative study in the context of Turkiye",
+    "motivo": "IA aplicada a psiquiatria infantil; recorte medico-etico, nao judiciario.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "doi.org/10.71465/ajml3452",
+    "nome": "Intelligent Tax Systems and the Role of Natural Language Processing in Regulatory Interpretation",
+    "motivo": "NLP aplicado a interpretacao tributaria e compliance fiscal, sem recorte de administracao da justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "doi.org/10.1017/err.2025.10069",
+    "nome": "Systemic Risk Management and the Constitutional Limits of Delegating Political Discretion: An Analysis of the DSA and the AI Act",
+    "motivo": "Regulacao de risco sistemico no DSA e AI Act sob otica constitucional da UE, sem foco no Judiciario.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "arxiv.org/abs/2609.39537v1",
+    "nome": "A Reusable Semantic Web Framework for Evidence-Grounded Fundamental Rights Impact Assessments under the EU AI Act",
+    "motivo": "Framework de avaliacao de impacto em direitos fundamentais sob o AI Act para emprego e servicos publicos, sem recorte de Judiciario.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "arxiv.org/abs/2609.33983v1",
+    "nome": "High-Level Text Preprocessing for Semantic Similarity Analysis of Discursive Texts: A Framework and Empirical Demonstration",
+    "motivo": "Metodo generico de PLN sem recorte juridico ou judiciario.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "arxiv.org/abs/2609.30009v1",
+    "nome": "Automated Regulatory Compliance Question Answering in Financial Services with Domain-Adapted Retrieval-Augmented Generation",
+    "motivo": "IA aplicada a compliance no setor financeiro, nao a administracao da justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "arxiv.org/abs/2609.19199v1",
+    "nome": "Code-as-Auditor: Executable Compliance Reasoning via Regulation-to-Code",
+    "motivo": "IA para compliance regulatorio corporativo, sem recorte de administracao da justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "arxiv.org/abs/2609.15113v2",
+    "nome": "Legislating World-Model-Based Planning with Legal Reasoning",
+    "motivo": "Trata de controle normativo de robos por logica deontica, nao de IA na administracao da justica.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "arxiv.org/abs/2609.13535v1",
+    "nome": "From Legal Text to AI-specific Risk Sources: A Systematic Analysis of the EU AI Act's High-Risk Requirements",
+    "motivo": "Analise do AI Act europeu sob otica de gestao de risco tecnica, sem recorte judicial.",
+    "data": "2026-10-01"
+  },
+  {
+    "chave": "arxiv.org/abs/2609.13523v1",
+    "nome": "Positive Topology and Feasible Refinement: Forcing Matrices, Positivity, and Information",
+    "motivo": "Matematica pura (topologia); sem relacao com IA ou Judiciario.",
+    "data": "2026-10-01"
   }
 ]

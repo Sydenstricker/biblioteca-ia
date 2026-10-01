@@ -1,5 +1,931 @@
 [
   {
+    "id": "news.google.com/rss/articles/cbmiyafbvv95cuxqqldaru9ws1zjdnrswhrnouhmtfrkexa0thi3afrtqtvioetaefnnctdja2tgzuzrzzv0cvn2q0r1z2xtcjzxdedtekxln1vuejm2axdvofdeqjhovk5hbw16zdfoofd5rhrzclrpnwr2n1jtazdfwepmtulqlwnov2znmhhwuu5md2lhluc2wvzwzgluvuv1zvnfsdfbtjvmslvzwdhev2dbvnyxlxzaqmntvwfsnkrmsunlt1jtctbeumj2qu1yaq",
+    "nome": "Tribunal da Bahia detecta comando oculto em habeas corpus para manipular inteligência artificial",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQldaRU9wS1ZJdnRsWHRNOUhmTFRKeXA0THI3aFRTQTViOEtaeFNncTdJa2tGZUZrZzV0cVN2Q0R1Z2xtcjZxdEdTekxlN1VuejM2aXdVOFdEQjhOVk5HbW16ZDFoOFd5RHRzclRpNWR2N1JTazdFWEpmTUlqLWNoV2ZNMHhWUU5md2lHLUc2WVZWZGluVUV1ZVNfSDFBTjVMSlVzWDhEV2dBVnYxLXZaQmNtVWFsNkRMSUNLT1JtcTBEUmJ2QU1YaQ?oc=5",
+    "resumo": "Segundo a manchete, tribunal baiano identificou comando oculto inserido em petição de habeas corpus com o objetivo de manipular sistema de inteligência artificial. O episódio interessa ao Judiciário por expor risco de injeção de prompt em peças processuais.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (brasil247.com)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Julgamento",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Deteccao de Fraude ou Anomalia",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Responsabilidade e Auditoria",
+      "Devido Processo Legal",
+      "Alucinacao e Erro"
+    ],
+    "confianca": 0.78,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "Brasil 247",
+      "data_publicacao": "2026-10-01",
+      "dominio_veiculo": "brasil247.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi2wfbvv95cuxpruxmse5srwq5nlnsvljdbms0ofpqnu4yt1nywfpsvlbhaxnxltb1qnj2btzstjletgljt2u3tnnpunpjytfnvnpwouvemnrbulv6bhyzafzhbdzqetzjavbdetyza0xfr3pkakj1cddaujjjr2e5zef3nfrkckiwrdrzrkrcytl4nfbhn19hsglzvfrqzerqbxjiu0pqs2hoelpdvzzkq3uzempnynozag1xde9muhr3bg50m1nlv0rkwgpkdw8yuuvkszv3yxvumu5iz1bawxrldlu",
+    "nome": "\"A IA tem a inteligência emocional de um psicopata\": até onde pode um juiz usar ChatGPT para decidir uma sentença?",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRUxMSE5sRWQ5NlNSVlJDbms0OFpQNU4yT1NyWFpsVlBHaXNXLTB1QnJ2bTZSTjlETGljT2U3TnNpUnpjYTFNVnpwOUVEMnRBUlV6bHYzaFZHbDZqeTZjaVBDeTYza0xfR3pKakJ1cDdaUjJjR2E5ZEF3NFRKckIwRDRzRkRCYTl4NFBhN19HSGlzVFRQZERQbXJiU0pqS2hoelpDVzZKQ3UzempNYnozaG1xdE9mUHR3bG50M1NlV0RkWGpkdW8yUUVKSzV3YXVUMU5IZ1BaWXRLdlU?oc=5",
+    "resumo": "Reportagem discute os limites do uso de ferramentas como o ChatGPT por juízes na elaboração de sentenças, citando crítica sobre a ausência de inteligência emocional da IA. Serve de referência ao debate sobre balizas éticas para magistrados.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (executivedigest.sapo.pt)",
+    "paises": [
+      "Portugal",
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "IA Generativa",
+      "Governanca e Regulacao",
+      "Devido Processo Legal"
+    ],
+    "confianca": 0.6,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "Executive Digest",
+      "data_publicacao": "2026-10-01",
+      "dominio_veiculo": "executivedigest.sapo.pt"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmivafbvv95cuxouxrav0l0thd4u05kqxrhre5pskxmuhnlrwrzqno4oviwskduewl5xzv1mju4uzbfa3hnmvcwneh1dhlgc05pahnowgf3otftr05uqmx3vvn0dvktvhnit2flakixuux5cnfnlvc5rgy3uezxzjnulwf1amzkt3b3c2leog15nvnqeupzy2fhvxnjy2dtrnlzn0izrgi3cmhvche0ctlxslluamppsfbacjvpb1hvbhr0dl80nq",
+    "nome": "TJMT compartilha inteligência artificial Hannah com Tribunal de Justiça da Bahia",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUXRaV0l0THd4U05kQXRHRE5pSkxMUHNLRWRZQno4OVIwSkdueWl5XzV1MjU4UzBfa3hNMVcwNEh1dHlGc05paHNOWGF3OTFTR05UQmx3VVN0dVktVHNiT2FLakIxUUx5cnFnLVc5RGY3UEZxZjNULWF1amZKT3B3c2lEOG15NVNqeUpzY2FhVXNjY2dTRnlzN0IzRGI3cmhvcHE0cTlxSlluamppSFBacjVPb1hvbHR0dl80NQ?oc=5",
+    "resumo": "O TJMT compartilha com o TJBA sua solução de inteligência artificial Hannah. O caso ilustra a prática de cessão de sistemas de IA entre tribunais estaduais.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (novidadesmt.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Gestao Administrativa",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "novidades mt",
+      "data_publicacao": "2026-09-30",
+      "dominio_veiculo": "novidadesmt.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmikwjbvv95cuxouljizljdvtv3ru9jvdrsrm9ta1u4tvvouffvlu9jyw16adfxewf5akpku0diwumtmhlscgfmtznfn0h4twfxouj1ahhmrlzwstnyqlvaazkxdjjlqkzuc1vyoffztndjwuhon1lpatbfymffdjd4bkdsvhzgzxhblvjotl9bx2tkedbmyndidgxlexruwfrvdhn1ogdxtkfqofuxu1fiwuixd3qzmzvcsu1tqtvibdizrzctauw2evmwbxbntdh6yxlmy1pxmxgztwhzrfbymxjcs2pjutnxyuvuumvtbvb0qlnfc3d5eeuttgxon3dqcnbwog9dodfod1fly2sxb1nbr09xt0qxszrtzw",
+    "nome": "BRASILIANAS | Tribunal de Justiça do DF inicia construção da política institucional de inteligência artificial",
+    "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOUlJIZlJDVTV3RU9jVDRSRm9ta1U4TVVoUFFvLU9JYW16aDFXeWF5akpkU0dIWUMtMHlScGFMTzNFN0h4TWFXOUJ1aHhMRlZWSTNyQlVaazkxdjJlQkZUc1VyOFFZTndJWUhON1lpaTBFYmFfdjd4bkdSVHZGZXhBLVJOTl9BX2tkeDBmYndidGxLeXRuWFRvdHN1OGdxTkFqOFUxU1FIWUIxd3QzMzVCSU1TQTVIbDIzRzctaUw2eVMwbXBnTDh6YXlmY1pxMXgzTWhZRFByMXJCS2pJUTNxYUVuUmVtbVB0QlNFc3d5eEUtTGxoN3dQcnBWOG9DODFod1FLY2sxb1NBR09xT0QxSzRtZw?oc=5",
+    "resumo": "O TJDFT iniciou a construção de sua política institucional de inteligência artificial. Interessa como referência de governança interna de IA em tribunal.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (correiodamanha.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.75,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "correiodamanha.com.br",
+      "data_publicacao": "2026-09-30",
+      "dominio_veiculo": "correiodamanha.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi1gfbvv95cuxntzjocgeyvm1eq18wefbib0lxshrsbg4wzexkbujjn2pgt1q3cvjnvndjtk55b3pqum9jbm5uzgvlx1jtbnb6bdbds19xugrhbtrxoeo2zffizzveqjznvtg2mxf3yxbhcuf0dhq1b1cwmjbtana0zg9lmjrknzhjx1awvfatt21sul9nn1y3bdruqi1fdvnunkzwdufccnnkyum2ajutnwhjb1h0su1sshnvuehvb05nvxjnmzjpm3hmdwp3svnlr3jxtuxvcwfhrwezwkp3",
+    "nome": "Escola Judicial realiza 4º Congresso de Precedentes com debates sobre inteligência artificial e jurisdição",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNTzJOcGEyVm1EQ18weFBib0lXSHRsbG4wZExkbUJjN2pGT1Q3cVJnVndjTk55b3pqUm9jbm5UZGVLX1JtbnB6bDBDS19XUGRHbTRXOEo2ZFFIZzVEQjZnVTg2MXF3YXBhcUF0dHQ1b1cwMjBTanA0ZG9lMjRKNzhJX1AwVFAtT21sUl9NN1Y3bDRuQi1FdVNUNkZWdUFCcnNKYUM2ajUtNWhJb1h0SU1SSHNvUEhvb05NVXJNMzJpM3hMdWp3SVNLR3JXTUxVcWFHRWEzWkp3?oc=5",
+    "resumo": "Escola Judicial promoveu o 4º Congresso de Precedentes, com debates sobre inteligência artificial e jurisdição. Relevante para capacitação e para a discussão sobre uso de IA no sistema de precedentes.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (rotajuridica.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual",
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Recursos e Precedentes",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Deteccao de Casos Repetitivos"
+    ],
+    "temas": [
+      "Capacitacao e Pessoas",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.65,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "Rota Jurídica",
+      "data_publicacao": "2026-09-30",
+      "dominio_veiculo": "rotajuridica.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiqgfbvv95cuxqzk4xnf94zkxux1bymnrktna1n3bstwhnwhu0d0s4vxrhdtzwa1vsq2rewlfddwhxcm5eeljirff0wu9towjvzzfzekotvnhvn1ndoutuagp3wjvvyw94tgfrd2pla2zznklpcnitdup2x0uzq0lialnsr0zssedoz3rhbnr0dwi4ovdgafnsru8tdnu2lujvy0zeynlvbnm5dhfzowpocffpuq",
+    "nome": "Decisão coincide com ordem de prompt oculto para IA; juiz nega influência",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZk4xNF94ZkxUX1BYMnRKTnA1N3BsTWhnWHU0d0s4VXRHdTZWa1VsQ2REWlFDdWhxcm5EelJiRFF0WU9TOWJvZzFzekotVnhvN1NDOUtUaGp3WjVvYW94TGFRd2pLa2ZZNklPcnItdUp2X0UzQ0lialNsR0ZsSEdoZ3RhbnR0dWI4OVdGaFNSRU8tdnU2LUJvY0ZEYnlvbnM5dHFZOWpocFFPUQ?oc=5",
+    "resumo": "A manchete relata que uma decisão judicial coincidiu com instruções contidas em prompt oculto inserido em peça, e o juiz nega que tenha havido influência. O caso expõe riscos de manipulação de IA na redação de decisões.",
+    "verificacao": "contestado",
+    "verificacao_motivo": "dominio nao institucional (migalhas.com.br); rebaixado pelo classificador para contestado",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Deteccao de Fraude ou Anomalia"
+    ],
+    "temas": [
+      "Transparencia e Explicabilidade",
+      "Devido Processo Legal",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "migalhas.com.br",
+      "data_publicacao": "2026-09-30",
+      "dominio_veiculo": "migalhas.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiqwfbvv95cuxolvi0uxbqyuptmtzwte9kvgj2rddxdjlimetqrnr0vw03nerfoevav1jxsvnpu1nsrw1jvutmx2z0a2zhmew0ztfowdhmx0ctvgo4nhbon1jvm1nxelzzbhjxrlg2sndorenrb0hadldtmlrardndr2m1re1dv1brbu82r1g2umzjrvvgbtjwszmzx2xfumluvmvau3fplwq3yujnbveyrnjxvgs",
+    "nome": "Juiz \"esquece\" prompt e publica despacho com instruções dadas à IA",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOLVI0UXBqYUpTMTZwTE9kVGJ2RDdxdjliMEtQRnR0VW03NERfOEVaV1JxSVNpU1NsRW1jVUtMX2Z0a2ZHMEw0ZTFoWDhMX0ctVGo4NHBoN1JVM1NxelZzbHJXRlg2SndORENrb0hadldTMlRaRDNDR2M1RE1DV1BRbU82R1g2UmZjRVVGbTJwSzMzX2xfUmluVmVaU3FpLWQ3YUJnbVEyRnJxVGs?oc=5",
+    "resumo": "Segundo a manchete, um juiz publicou despacho contendo as instruções (prompt) que havia dado à IA. O episódio importa por evidenciar uso de IA generativa na redação de atos judiciais e falhas de revisão.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (migalhas.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "IA Generativa",
+      "Transparencia e Explicabilidade",
+      "Alucinacao e Erro",
+      "Capacitacao e Pessoas"
+    ],
+    "confianca": 0.72,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "migalhas.com.br",
+      "data_publicacao": "2026-09-29",
+      "dominio_veiculo": "migalhas.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmizwfbvv95cuxntg5usunpnwl6qmrxze5ybva2zhbtumdtu2hwwkq2yy1hdzfubhjnlxdcx3dxutluv3lzemk5zhm5bdj1b3zyznhxnkhmcwcywxzqnc1fejllyvk3yi1bnhzlodgyzvnpaxzlevp5zkticelpclnabgnotglpm3bosgfsshhiqwpolwd0qutfn2hgqwtlvjlszmvrzezfqwt6clbjrfzon2rccfbxetrzmflgbffzdhhtclncsfjzq2jeutfuevp4nexhytncuuk",
+    "nome": "Inteligência artificial ajuda STF a identificar processos que discutem questões semelhantes",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTG5USUNPNWl6QmRXZE5ybVA2ZHBtUmdTU2hwWkQ2Yy1HdzFUbHJNLXdCX3dxUTlUV3lZemk5ZHM5bDJ1b3ZyZnhxNkhmcWcyWXZqNC1fejllYVk3Yi1BNHZlODgyZVNPaXZLeVp5ZkticElPclNabGNOTGlPM3BOSGFsSHhIQWpOLWd0QUtFN2hGQWtlVjlSZmVRZEZfQWt6clBJRFZON2RCcFBXeTRzMFlGbFFZdHhTclNCSFJZQ2JEUTFueVp4NExHYTNCUUk?oc=5",
+    "resumo": "O STF informa que usa inteligencia artificial para identificar processos que discutem questoes semelhantes. A agregacao de casos semelhantes apoia a gestao de precedentes e a repercussao geral.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (noticias.stf.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Suprema Corte"
+    ],
+    "fases": [
+      "Triagem e Distribuicao",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Deteccao de Casos Repetitivos",
+      "Classificacao e Triagem de Processos",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia",
+      "Transparencia e Explicabilidade"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "stf noticias",
+      "data_publicacao": "2026-09-28",
+      "dominio_veiculo": "noticias.stf.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmixgfbvv95cuxqy0zhtwtinuk4d19ymgd1x2e1nlhyzmxzstdfvv91u3nkwfizvunhy004mwfzbvlnthvtmjdmdnbbquv6unjioeq2oe1ttwe4bkhoa011dzm1ewvgvnniclp5eulscvvbrglfdmh5swvydgzpcjzeoedsvlpnemrjq3plakthmfdha2hrm1riwkriu3rma3eztzfsagdovvdfqwtstgxsyw1qcjzkvguzrvfnamoyc0rry1n1zxhgyzzfdzdus2c",
+    "nome": "STF usa inteligência artificial para identificar processos com questões semelhantes",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQY0ZhTWtiNUk4d19YMGd1X2E1NlhyZmxZSTdfVV91U3NkWFIzVUNhY004MWFZbVlNTHVtMjdmdnBBQUV6UnJIOEQ2OE1TTWE4bkhoa011dzM1eWVGVnNiclp5eUlScVVBRGlFdmh5SWVydGZpcjZEOEdSVlpNemRJQ3pLakthMFdha2hrM1RiWkRIU3RMa3EzTzFsaGdOVVdfQWtsTGxSYW1QcjZKVGUzRVFNamoyc0RRY1N1ZXhGYzZfdzduS2c?oc=5",
+    "resumo": "A manchete afirma que o STF emprega inteligência artificial para identificar processos com questões jurídicas semelhantes. Interessa ao Judiciário por tratar de agrupamento de casos repetitivos e gestão de precedentes.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (portalimpactto.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Suprema Corte"
+    ],
+    "fases": [
+      "Triagem e Distribuicao",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Deteccao de Casos Repetitivos",
+      "Classificacao e Triagem de Processos"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.72,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "Impactto News",
+      "data_publicacao": "2026-09-28",
+      "dominio_veiculo": "portalimpactto.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmizwfbvv95cuxqdxhnbxbqefraeezmampnagfuyjh1uc14uxbgd2feathxv2lieeluzfjbztzvmzvmtxy0wvnex2l2tzuybxjhrnnxmjdrv3hld1hetu9wbfbzam16c01swvheskplr3rhq2f2tzrscwlklxdznnrrri1rmmdtofdqmkjyn3pwbdnwutvla0xyejdhszrndxhob18tltlvwg4xq2tlwkxycflimxdieumxlvfusxvhrlhtoemyedlydzhdvjazuhrxderlyxryzws",
+    "nome": "STF identifica uso de comandos ocultos para influenciar IA em processo e comunica OAB e MPF",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQdXhNbXBQeFRaeEZmampNaGFUYjh1UC14UXBGd2FEaThxV2lIeEluZFJBZTZVMzVMTXY0WVNEX2l2TzUybXJHRnNXMjdrV3hLd1hETU9WbFBZam16c01sWVhESkplR3RHQ2F2TzRscWlkLXdzNnRrRi1rMmdtOFdqMkJYN3pWbDNWUTVLa0xYejdHSzRNdXhob18tLTlVWG4xQ2tlWkxycFlIMXdieUMxLVFuSXVHRlhtOEMyeDlYdzhDVjAzUHRxdERLYXRyZWs?oc=5",
+    "resumo": "O STF identificou em peca processual comandos ocultos destinados a influenciar sistemas de inteligencia artificial e comunicou OAB e MPF. O caso levanta questoes de integridade processual e auditoria no uso de IA por tribunais.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (noticias.stf.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Suprema Corte",
+      "Ministerio Publico"
+    ],
+    "fases": [
+      "Julgamento",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Deteccao de Fraude ou Anomalia",
+      "Resumo de Documentos",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Responsabilidade e Auditoria",
+      "Devido Processo Legal",
+      "Governanca e Regulacao",
+      "Alucinacao e Erro"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "stf noticias",
+      "data_publicacao": "2026-09-25",
+      "dominio_veiculo": "noticias.stf.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiugfbvv95cuxpum1jegpgefpys0hxsvppy2v3amr6zjc3eu5xvfctu1pkz3dfr1jpwvbustewa0x0ztdrcvfitjnxsxdmcmexenl6mufsbwxvr19abmzcdljzmmzby1r5v25er2gtshayzhhssmlhqwvwa296vefqsdmwdw5mbfqxa1zuc1lyyzfndtlvc21lqtvqdgzlstlrvu9vbjjxu2xrse12ujbuuji2wxhmodhbdjjwekjjoxzrdve",
+    "nome": "Supremo identifica 1ª tentativa de fraude em processo na corte; relatoria é de Zanin",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUm1JeGpGeFpYS0hXSVppY2V3amR6Zjc3eU5xVFctU1pKZ3dfR1JpWVBUSTEwa0x0ZTdrcVFITjNxSXdMcmExenl6MUFSbWxVR19abmZCdlJZMmZBY1R5V25ER2gtSHAyZHhsSmlHQWVwa296VEFQSDMwdW5MbFQxa1Zuc1lyYzFNdTlvc21lQTVQdGZLSTlrVU9vbjJxU2xRSE12UjBuUjI2WXhMODhBdjJWekJjOXZrdVE?oc=5",
+    "resumo": "Reportagem sobre a primeira tentativa de fraude identificada no STF envolvendo manipulacao de IA em processo sob relatoria do ministro Zanin. Serve de alerta sobre riscos de peticoes com instrucoes ocultas a sistemas de IA.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (conjur.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Suprema Corte"
+    ],
+    "fases": [
+      "Julgamento",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Deteccao de Fraude ou Anomalia",
+      "Resumo de Documentos"
+    ],
+    "temas": [
+      "Responsabilidade e Auditoria",
+      "Devido Processo Legal",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "Consultor Jurídico",
+      "data_publicacao": "2026-09-25",
+      "dominio_veiculo": "conjur.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmisgfbvv95cuxolum0egf5cdvnawktn1bymlfjmuntbtfczwzutvitsvy5tvlbuty3v3vaumfkbklmtnpft2ffzu5icxe5elktvniyujbmehzleuxncmlqchawvnhfnxjomxkxzfbuutzkrmzln2jiq0pynwdietvotezzoepbykpjwk1mng81y3lqsgvjvmy3emowm1zjb1p2unzyahbjsvzrvkjuefjjmurey29rz2g1wfh3",
+    "nome": "STF identifica primeiro caso de prompt injection na Corte; Zanin vota por multa",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOLUM0eGF5cDVnaWktN1BYMlFJMUNtbTFCZWZuTVItSVY5TVlBUTY3V3VaUmFKbklmTnpfT2FFZU5IcXE5elktVnIyUjBmeHZLeUxNcmlqcHAwVnhFNXJOMXkxZFBuUTZKRmZlN2JiQ0pYNWdIeTVoTEZzOEpBYkpJWk1mNG81Y3lqSGVjVmY3emowM1Zjb1p2UnZYaHBjSVZrVkJueFJjMUREY29RZ2g1WFh3?oc=5",
+    "resumo": "Segundo a manchete, o STF identificou o primeiro caso de prompt injection em peça processual e o ministro Zanin votou pela aplicação de multa. O tema importa por envolver manipulação de sistemas de IA usados no fluxo decisório e a resposta disciplinar do tribunal.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (migalhas.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Suprema Corte"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Deteccao de Fraude ou Anomalia",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Responsabilidade e Auditoria",
+      "Devido Processo Legal",
+      "Governanca e Regulacao",
+      "IA Generativa"
+    ],
+    "confianca": 0.78,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "migalhas.com.br",
+      "data_publicacao": "2026-09-25",
+      "dominio_veiculo": "migalhas.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi9gfbvv95cuxpvmw5awfqtvi4oxvizfpctl85n1ncwljrynzfatd6cdlld0rhywzawdqtuwpqchbowhlurkvdqvhycu1wec04ulrwbe9qmuj5qla4yk1lddl4dho0tklsae51qvu2aefrcxfvdfrwtjfnuzjlotjmyne5bhnpukiyy0lkmuo4eglysgwybnfmoet6zdvinnn6bkhfam13nhvvazm0wjk0ofbxbnd1v3noagzkrmoxt1jky2lkd1vguuz1cel1t3y0cvvgdtdgy0f1t0e3x2xzy1rtvxjcqtn4odhrlwjjyjdbcunca2uzyllerje0ofhsayqcqvvfexfmttvnn0xjoxjeru9iwllnvtlsqvqznxowdu1ycmtwrgtqwvzovefiskp1sfr6wwxisy00m1dsuu1kt0fjzvjawfu5ehnnbhbkbgo5zhf0s2vowmsxm1bsv3rrynniskc2avjydnpzdy1qdtnaywg0eekxmwjsc0jmzdriuhjtbmpvnllgodvlauw4a2xja3pbvmdkuuxldnpneuzzlthssteyq0ptaeo0uk5mn1dyewvomkrrcdn2wfznznq0a2j5rhlvr1numfnsv3c1ukpdevnsn2fjetazytlvqy1vvzrzbdzmawdjb0jidgjhwfvmynvyqm9tylpfzhbzb24",
+    "nome": "Zanin manda apurar primeiro caso de tentativa de fraude com IA no Supremo",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPVmw5aWFqTVI4OXVIZFpCTl85N1NCWlJrYnZfaTd6cDlld0RHYWZaWDQtUWpQcHBOWHlURkVDQVhycU1WeC04UlRwbE9qMUJ5QlA4Yk1LdDl4dHo0TklsaE51QVU2aEFrcXFvdFRWTjFNUzJLOTJmYnE5bHNPUkIyY0lkMUo4eGlySGwybnFMOEt6ZDVINnN6bkhFam13NHVVazM0Wjk0OFBxbnd1V3NOaGZKRmoxT1JKY2lkd1VGUUZ1cEl1T3Y0cVVGdTdGY0F1T0E3X2xZY1RtVXJCQTN4ODhrLWJJYjdBcUNCa2UzYllERjE0OFHSAYQCQVVfeXFMTTVnN0xJOXJERU9IWllNVTlSQVQzNXowdU1ycmtwRGtQWVZOVEFISkp1SFR6WWxiSy00M1dsUU1KT0FJZVJaWFU5eHNnbHBKbGo5ZHF0S2VOWmsxM1BSV3RRYnNISkc2aVJYdnpZdy1QdTNaYWg0eEkxMWJsc0JmZDRiUHJtbmpVNllGODVLaUw4a2xJa3pBVmdKUUxldnpneUZZLThsSTEyQ0pTaEo0Uk5MN1dyeWVOMkRRcDN2WFZnZnQ0a2J5RHlVR1NuMFNsV3c1UkpDeVNSN2FJeTAzYTlVQy1VVzRzbDZmaWdJb0JIdGJhWFVMYnVYQm9tYlpFZHBzb24?oc=5",
+    "resumo": "Conforme a manchete, o ministro Zanin determinou apuração do primeiro caso de tentativa de fraude com uso de IA no STF. Relevante para a discussão sobre integridade das peças processuais e uso indevido de IA por partes.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (oglobo.globo.com)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Suprema Corte"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Deteccao de Fraude ou Anomalia"
+    ],
+    "temas": [
+      "Responsabilidade e Auditoria",
+      "Devido Processo Legal",
+      "IA Generativa"
+    ],
+    "confianca": 0.75,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "O GLOBO",
+      "data_publicacao": "2026-09-25",
+      "dominio_veiculo": "oglobo.globo.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi7wfbvv95cuxpbhpin0nwekp6akxock5acmzbrflxcnvvswjqszdvqlvauedxz000czlfatnwlvhvtfl2texfwfj5b0jqrdz4edvcq005d0dfbgvhskjun3g2b1ruuez1x01wmdlkuhjjznfpsg5rx1fkugjzwdl0y1itnjdmsw50ekfnc3pmy3p3rgxgnhjtq2rrt3ctmwlttwdpzjvmzknwc3p4agpqnfr2avrgexzlwhrqmnzgtndzrlawmda4mxhwumttoxflz29rd0yxvuptul9yuhu2stlqu1i5qtrqemw0t3jlafzsqk5prmvdma",
+    "nome": "10th Circuit Court of Appeals Proposes Rule To Require Certification of Filings Using Artificial Intelligence",
+    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPbHpiN0Nwekp6akxOck5acmZBRFlXcnVvSWJqSzdVQlVaUEdxZ000czlFaTNwLVhVTFl2TExFWFJ5b0JqRDZ4eDVCQ005d0dfbGVHSkJuN3g2b1RuUEZ1X01wMDlkUHJJZnFpSG5RX1FkUGJZWDl0Y1ItNjdMSW50ekFNc3pMY3p3RGxGNHJtQ2RRT3ctMWltTWdpZjVmZkNWc3p4aGpqNFR2aVRGeXZLWHRQMnZGTndZRlAwMDA4MXhWUmtTOXFlZ29rd0YxVUptUl9YUHU2STlqU1I5QTRqemw0T3JLaFZSQk5PRmVDMA?oc=5",
+    "resumo": "O 10th Circuit propos regra exigindo certificacao quando peticoes forem elaboradas com uso de inteligencia artificial. E um modelo normativo de transparencia no uso de IA por advogados, com paralelo possivel para regulamentacoes no Brasil.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (findlaw.com)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Tribunal Regional Federal"
+    ],
+    "fases": [
+      "Recursos e Precedentes",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Transparencia e Explicabilidade",
+      "IA Generativa"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "FindLaw",
+      "data_publicacao": "2026-09-25",
+      "dominio_veiculo": "findlaw.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiwgfbvv95cuxoohfpzm40rfviu18wtzh6surbbhvtt2zsmg9jwhvir1riejbeqjm3dffqzevitflxs1heunnvwxbhazbieep1tu9trlh2rjfub2hwz3hibefzwthebufuckj5b3jtznjimvflr1d0ywjrbzfintc4u1p2dvzyamptcellwjhvsdrhmxnfvjvjnkhhwjj0lwnxrg5utnvpvmyyeutebknprtbfzv9cr21ocvh6qvr5mtfdm2jonkuznhdsdw",
+    "nome": "TJAC participa de debate sobre inteligência artificial no Judiciário com conselheiro do CNJ",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOHFpZm40RFViU18wTzh6SURBbHVTT2ZSMG9jWHVIR1RIejBEQjM3dFFQZEVITFlxS1hEUnNvWXBhazBIeEp1TU9TRlh2RjFUb2hwZ3hIbEFzWThEbUFuckJ5b3JtZnJiMVFLR1d0YWJRbzFINTc4U1p2dVZyamptcEllWjhvSDRHMXNfVjVJNkhhWjJ0LWNxRG5uTnVpVmYyeUtEbkNPRTBFZV9CR21OcVh6QVR5MTFDM2JoNkUzNHdsdw?oc=5",
+    "resumo": "O TJAC participou de debate sobre inteligência artificial no Judiciário com a presença de conselheiro do CNJ. A manchete indica discussão institucional sobre uso de IA nos tribunais.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjac.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual",
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Capacitacao e Pessoas"
+    ],
+    "confianca": 0.6,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "TJAC",
+      "data_publicacao": "2026-09-22",
+      "dominio_veiculo": "tjac.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi_wfbvv95cuxoqmtfttc2u1zkbe5fd1rezul6ofprmnl4ttdils1uqs1umhnzdfrjsklwuuxsx0pxtzhhynbuz2pdafnrajq1ytdcsefjn3aym3rjaujmm3barhpudxjsak9dr0tyauxkuhoxszdqbv9oyzjaoxhgn05pswlnauy2uepkoxn5mjdkqvjmtumzy0hyrgxlnllwt2xtcg1hejljamfwajyycuvbre5enkhvbhzgbw9mqvpmvndnbmlocjjnbwdmouoxovozrkxwvxhqaflsu0zwtwjwwvfxbm50ymdvwefgoevrwg5mm3babzjzoxo2qkzbnvjwm3mwvm8",
+    "nome": "Sistema Hannah: TJBA inicia processo de implementação de sistema de inteligência artificial que gerencia recursos dirigidos ao STJ e ao STF",
+    "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOQmtfTTc2U1ZkbE5Fd1REZUl6OFpRMnl4TTdILS1uQS1UMHNzdFRjSklwUUxSX0pXTzhhYnBuZ2pDaFNRajQ1YTdCSEFjN3AyM3RJaUJMM3BaRHpUdXJsak9DR0tyaUxKUHoxSzdQbV9OYzJaOXhGN05PSWlnaUY2UEpkOXN5MjdkQVJMTUMzY0hYRGxLNllWT2xtcG1hejlJamFWajYycUVBRE5ENkhvbHZGbW9mQVpmVndNbmlocjJNbWdMOUoxOVozRkxWVXhqaFlsU0ZWTWJWWVFXbm50YmdVWEFGOEVrWG5mM3BabzJzOXo2QkZBNVJWM3MwVm8?oc=5",
+    "resumo": "O TJBA iniciou a implementacao do sistema de inteligencia artificial Hannah, que gerencia recursos dirigidos ao STJ e ao STF. Interessa a setores recursais pela automacao da triagem de recursos a cortes superiores.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjba.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual",
+      "Tribunal Superior",
+      "Suprema Corte"
+    ],
+    "fases": [
+      "Recursos e Precedentes",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos",
+      "Deteccao de Casos Repetitivos",
+      "Extracao de Dados de Documentos"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "Tribunal de Justiça do Estado da Bahia",
+      "data_publicacao": "2026-09-22",
+      "dominio_veiculo": "tjba.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiugfbvv95cuxpvmjayje3rmjgvksxs0jgwc1tsgdsd1zutfhxcwdoznfqv1vitl9wwnm2zxvmvjhzn3rnltrhutzlz2pwr3gwehu0txlpvwyxq20wdknobmrysjjtbny5yxvfctdzy2fomdnleg55bf9wohe2ohpmcjzwvlftoenma3qxr3drrmy1emjiy0ngeg5eulljzkjgzmlvos1hvlbpdtfnnkt4wtlyyve5t0s5c3netnhztc1aeve",
+    "nome": "Appeals court warns about ‘AI slop’ in filings, weighs punishing lawyer",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVmJaYjE3RmJGVksxS0JGWC1TSGdSd1ZuTFhxcWdOZnFqV1ViTl9WWnM2ZXVmVjhZN3RNLTRHUTZlZ2pwR3gweHU0TXlPVWYxQ20wdkNobmRYSjJTbnY5YXVfcTdzY2FoMDNleG55bF9wOHE2OHpmcjZWVlFTOENma3QxR3drRmY1emJiY0NGeG5EUllJZkJGZmlVOS1HVlBpdTFNNkt4WTlyYVE5T0s5c3NETnhzTC1aeVE?oc=5",
+    "resumo": "Tribunal de apelacao norte-americano alertou sobre peticoes com conteudo gerado por IA de baixa qualidade e avalia punir advogado responsavel. O caso interessa ao Judiciario brasileiro como referencia sobre controle de citacoes falsas e responsabilidade profissional no uso de IA generativa.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (reuters.com)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Tribunal Regional Federal"
+    ],
+    "fases": [
+      "Recursos e Precedentes",
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Alucinacao e Erro",
+      "IA Generativa",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "reuters.com",
+      "data_publicacao": "2026-09-18",
+      "dominio_veiculo": "reuters.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi4wfbvv95cuxqywxtnu5obfg5u0zon1rjlue0dtrgn1i3s2x3bkrovtyysedyquppbnv2s0jwrwnrnxndaev3wtbnn2r6ugpam0tkceh1rxfhmfa4snvhsw1scw1jslmty0h1bwnrtjvwzxfyqmluytqzzexroejjdmt3evh6rdfhvesxuw9oc0qtcdb4bdvwymhtrdbuqzhtz0twb21la3zxvufusmjvt2xlbwpztkjqzhpnsuzkztnsqvpvnnpdzep3q3v6nlvismhpdkx5cje3wfdkegmxujnnnxrsbf9zwjjxuq",
+    "nome": "Florida Supreme Court creates new rules after AI 'hallucinations'",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQYWxtNU5obFg5U0ZON1RjLUE0dTRGN1I3S2x3bkRoVTYySEdYQUpPbnV2S0JwRWNRNXNDaEV3WTBnN2R6UGpaM0tKcEh1RXFhMFA4SnVHSW1scW1jSlMtY0h1bWNrTjVWZXFyQmlUYTQzZExROEJjdmt3eVh6RDFhVEsxUW9oc0QtcDB4bDVWYmhtRDBUQzhTZ0tWb21La3ZxVUFuSmJVT2xLbWpZTkJQZHpnSUZKZTNSQVpVNnpDZEp3Q3V6NlViSmhPdkx5cjE3WFdkeGMxUjNnNXRsbF9ZWjJXUQ?oc=5",
+    "resumo": "A Suprema Corte da Florida criou novas regras apos casos de 'alucinacoes' de IA em documentos processuais. Serve de referencia para tribunais brasileiros que discutem normas internas sobre verificacao de conteudo gerado por IA.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (winknews.com)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Suprema Corte"
+    ],
+    "fases": [
+      "Gestao Administrativa",
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Alucinacao e Erro",
+      "Governanca e Regulacao",
+      "IA Generativa"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "WINK News",
+      "data_publicacao": "2026-09-18",
+      "dominio_veiculo": "winknews.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiywfbvv95cuxqvvdzvmzjnkrjwlpcq052yjjjbdkwte9msuu2nuzizwfim3j4bk5xs091ethethk1m2hvszvxavnhbmpznju4yxjdswc4y0e2zgvyegzhdi1iaedubvu2cujwejroytq0ckjosvzqaeiwbem0qwezq2hgsu5mynhwcfe5dujwmnitckk1qnrptmvteue3s3m0oetjynptmgpzng1yclzxvepqr0l0wk1pcezhrxpietjxz211mktimlfxtgxhdetzsuzcyw",
+    "nome": "CNJ disponibiliza ferramenta nacional de inteligência artificial para uso nos tribunais",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVVdZVmZjNkRJWlpCQ052YjJjbDkwTE9MSUU2NUZiZWFIM3J4bk5xS091eThETHk1M2hvSzVXaVNHbmpZNjU4YXJDSWc4Y0E2ZGVyeGZhdi1iaEdubVU2cUJWejRoYTQ0ckJOSVZQaEIwbEM0QWEzQ2hGSU5MYnhWcFE5dUJWMnItckk1QnRpTmVteUE3S3M0OEtjYnpTMGpzNG1yclZxVEpqR0l0Wk1pcEZHRXpieTJxZ211MktiMlFxTGxhdEtZSUZCYw?oc=5",
+    "resumo": "O CNJ disponibilizou uma ferramenta nacional de inteligência artificial para uso pelos tribunais. A medida interessa a servidores e magistrados por padronizar recursos de IA no Judiciário.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjba.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca",
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Gestao Administrativa",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Resumo de Documentos"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Produtividade e Eficiencia",
+      "IA Generativa"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "Tribunal de Justiça do Estado da Bahia",
+      "data_publicacao": "2026-09-16",
+      "dominio_veiculo": "tjba.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmizwfbvv95cuxoqu01qvfmtki4qvfmdljkr3dcbjq5x2jmdfruahlflxe0t0vocewzamu0mkjtcnb2clv1bi1yx0xyexzbtkg1whm5bldkze9ot0p0tzjwcvplrg9iduvmautystlrve9kbe1ytxhptxnwslzxuy11x0nsvzn5bwtrrja0uejmceg0offvwv8ysurengqznjdicy15ngdlxzy2x2hvnxbxnu1wx2q1wlnmutvnreityks0muvfvzv2s3k4z3dtr1fomuk2smi0mwc",
+    "nome": "CNJ realiza webinário amanhã (19) para apresentar IA voltada ao combate à litigância abusiva",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQU01QVFmTkI4QVFMdlJkR3dCbjQ5X2JmdFRuaHlfLXE0T0VocEwzamU0MkJTcnB2clV1bi1yX0xYeXZBTkg1WHM5bldkZE9oT0p0TzJwcVpLRG9IdUVmaUtYSTlRVE9kbE1yTXhPTXNwSlZXUy11X0NSVzN5bWtRRjA0UEJmcEg0OFFVWV8ySURENGQzNjdIcy15NGdlXzY2X2hvNXBxNU1WX2Q1WlNmUTVnREItYks0MUVfVzV2S3k4Z3dTR1FoMUk2SmI0MWc?oc=5",
+    "resumo": "O CNJ anunciou webinario para apresentar solucao de inteligencia artificial voltada ao combate a litigancia abusiva. Interessa a tribunais que lidam com demandas predatorias e triagem de processos repetitivos.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjba.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca",
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Triagem e Distribuicao",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Deteccao de Fraude ou Anomalia",
+      "Deteccao de Casos Repetitivos",
+      "Classificacao e Triagem de Processos"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia",
+      "Governanca e Regulacao",
+      "Acesso a Justica"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "Tribunal de Justiça do Estado da Bahia",
+      "data_publicacao": "2026-09-15",
+      "dominio_veiculo": "tjba.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiqgfbvv95cuxpewddz1zcuuhrqlrwdnpvse14cehvb3dcuddgyu9ysjjudtllc3bstudhztdwwtvrs2tluwjovhjmvxzovfdku0ljugtanmlkem5mrvbxes1rajndcxhbounsr00yemxbv0xwbmdhuznczulnv2izcndcrtn0n19qefhtc0pjrehsnfzjoe9dbdytdxfndfoxahh5dngzr3o5utg0slvcy3lzdw",
+    "nome": "Inteligência artificial e tecnologias exponenciais no Judiciário: Entre a eficiência e a decisão humana",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeWdDZ1ZCUUhrQlRWdnpVSE14cEhvb3dCUDdGYU9YSjJUdTlLc3BSTUdHZTdwWTVRS2tlUWJoVHJmVXZoVFdkU0lJUGtaNmlkem5MRVBxeS1rajNDcXhBOUNSR00yemxBV0xWbmdHUzNCZUlnV2IzcndCRTN0N19qeFhTc0pjREhsNFZjOE9DbDYtdXFndFoxaHh5dngzR3o5UTg0SlVCY3lzdw?oc=5",
+    "resumo": "Artigo discute o uso de IA e tecnologias exponenciais no Judiciário, contrapondo ganhos de eficiência à necessidade de decisão humana. Serve de material doutrinário sobre limites da automação decisória.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (migalhas.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia",
+      "Devido Processo Legal",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "migalhas.com.br",
+      "data_publicacao": "2026-09-14",
+      "dominio_veiculo": "migalhas.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmifefvx3lxte13bkewrm9pzujws3jrz3bnthpsyup1beg4elf6twlma2rizk83rgryd2ldzzdomzhsb3froxh2mu9onmraunj2mvnrrm5emti4yxq0bzzua2rgoe9pv0jjbu1azgdzuxpna2ztumh5sfbonmx4dwhnrlvvs3q",
+    "nome": "Inteligência artificial é tema de debate no Pará",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE13bkEwRm9pZUJWS3JrZ3BnTHpSYUp1bEg4elF6TWlMa2RiZk83RGRYd2lDZzdoMzhSb3FROXh2MU9oNmRaUnJ2MVNRRm5EMTI4YXQ0bzZUa2RGOE9pV0JjbU1aZGdzUXpna2ZTUmh5SFBoNmx4dWhNRlVVS3Q?oc=5",
+    "resumo": "Portal do CNJ noticia debate sobre inteligência artificial realizado no Pará. Trata-se de discussão institucional sobre o uso de IA no Judiciário.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (cnj.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca",
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Capacitacao e Pessoas"
+    ],
+    "confianca": 0.55,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "Portal CNJ",
+      "data_publicacao": "2026-09-11",
+      "dominio_veiculo": "cnj.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmizafbvv95cuxozwpyohduy0vhltzhdf9dy1hinupbeffjzjlmn080dufhqwnvenvidlbhckp4ntrhywpka2jvrmhdnnfsmxcwbu5qamx2ufnhehz6wjnibeqywkduzhhhdhu5bwixnhbienoxwlblmlljm0c1twt2rxjfwjjkuflislf5bgv3cexmbzvod1o4bhqzbtjdoelltznzb3u4ofrms05juuhvcelyyupxbfjtbnrxc3m4dy1qaexlu1brahjhn2tsumdieuizuvc",
+    "nome": "Oklahoma judge used AI in ruling that contained false citations, prosecutor says",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZWpyOHduY0VhLTZhdF9DY1hINUpBeFFjZjlmN080dUFHQWNVenVIdlBhckp4NTRhYWpKa2JvRmhDNnFsMXcwbU5qamx2UFNheHZ6WjNIbEQyWkduZHhHdHU5bWIxNHBIenoxWlBLMlljM0c1TWt2RXJfWjJKUFlISlF5bGV3cExmbzVOd1o4bHQzbTJDOElLTzNZb3U4OFRMS05JUUhvcElyYUpxbFJTbnRXc3M4dy1QaExlU1BraHJHN2tSUmdieUIzUVc?oc=5",
+    "resumo": "Segundo promotor, um juiz de Oklahoma usou IA em decisao que continha citacoes falsas. Caso relevante como precedente sobre uso de IA generativa por magistrados e controle de qualidade das decisoes.",
+    "verificacao": "contestado",
+    "verificacao_motivo": "dominio nao institucional (reuters.com); rebaixado pelo classificador para contestado",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Alucinacao e Erro",
+      "Responsabilidade e Auditoria",
+      "IA Generativa",
+      "Devido Processo Legal"
+    ],
+    "confianca": 0.82,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "reuters.com",
+      "data_publicacao": "2026-09-09",
+      "dominio_veiculo": "reuters.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi3wfbvv95cuxncnm4ewxcnk56rglqrnjjredbwehtz2nmt1zkztrfyw9tzjjadtnzm1jyvtbyadrmslgwmwtiuzriz20yzvj3qlo2qnjjewdcnfzhc2vmbw9mbexjwwzaeny4exhmbjzgd0jyndh0bzk4sgvfuve0d1nztjj5x2tdbfpdufz5tlvya2v4b1p6v3dwr1rzzey0zhrfdvdtz0t2r0z0bkpcnff6nufcunf4txm4anjybmz5wtjnywvxn0s5rvrxr09rwks4cug2ngnranzuz2jfaxl3nepusdi0",
+    "nome": "Quem decide o que o juiz vê? IA, precedentes e garantias constitucionais",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcnM4eWxCNk56RGlQRnJjREdBWEhTZ2NmT1ZKZTRfYW9TZjJadTNZM1JYVTByaDRmSlgwMWtiUzRIZ20yZVJ3Qlo2QnJJeWdCNFZhc2VmbW9mbExJWWZaenY4eXhmbjZGd0JyNDh0bzk4SGVfUVE0d1NzTjJ5X2tDbFpDUFZ5TlVya2V4b1p6V3dWR1RZZEY0ZHRFdVdtZ0t2R0Z0bkpCNFF6NUFCUnF4TXM4anJYbmZ5WTJnYWVxN0s5RVRxR09rWks4cUg2NGNRanZuZ2JfaXl3NEpuSDI0?oc=5",
+    "resumo": "Artigo do JOTA discute como sistemas de IA filtram precedentes e informações apresentadas ao juiz e os impactos sobre garantias constitucionais. Interessa ao debate sobre transparência e devido processo no uso de IA judicial.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (jota.info)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca",
+      "Tribunal Superior"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Devido Processo Legal",
+      "Transparencia e Explicabilidade",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.75,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "JOTA Jornalismo",
+      "data_publicacao": "2026-09-08",
+      "dominio_veiculo": "jota.info"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmirwfbvv95cuxnmlhuue03uug0ownfruotehranxa1y2zuanmzamvlz3jfas10s2pzthrjtw8xrhz6ugtls2d0uhpou0foyzzocnl2ddrbwgpgse9ps0ncyxbjbhriru9ondzmwlpvmxpzmjvxyvrmy0vcbjhor3lzsurycvzlyk52u3hvm0l5we9rx1huymlaanqzqvnwzwjwt3zzahpnothfcjzfcxlkzlrfskjsttgw0gg0aufvx3lxtfbknjyxsudpnvbjogd6axlpx2fzbhhhqunyazjnmeiwsdjwwerezzmtahrtdkt5agnmwhb1sf9pu1i2ymteznjhvzb5n0jntud3cjbuowetr3dks1m0t1pcaznwmetywdjsblazmfjplwnonufeyxfrrdhmv05vauhmt0xgczdxcuq4rdhwlu1lujlqx29irzrpszvryjiyogzsdznhswd6uvbdd01utmx0eewtng",
+    "nome": "China’s Supreme People’s Court Issues First National Judicial Rules on AI Disputes — But Sidesteps Copyrightability of AI-Generated Works",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMlhuUE03UUg0OWNFRUoteHRaNXA1Y2ZUanMzamVLZ3JfaS10S2pzTHRjTW8xRHZ6UGtLS2d0UHpOU0FoYzZOcnl2dDRBWGpGSE9pS0NCYXBJbHRIRU9ONDZMWlpvMXpZMjVXYVRmY0VCbjhOR3lZSURycVZLYk52U3hVM0l5WE9rX1hUYmlaanQzQVNwZWJwT3ZzaHpnOThfcjZfcXlKZlRfSkJsTTgw0gG0AUFVX3lxTFBKNjYxSUdPNVBJOGd6aXlpX2FZbHhhQUNyazJnMEIwSDJWWEREZzMtaHRtdkt5aGNmWHB1SF9pU1I2YmtEZnJhVzB5N0JnTUd3cjBuOWEtR3dkS1M0T1pCazNwMEtYWDJsblAzMFJPLWNONUFEYXFRRDhmV05VaUhMT0xGczdxcUQ4RDhwLU1lUjlQX29iRzRpSzVRYjIyOGZSdzNHSWd6UVBDd01UTmx0eEwtNg?oc=5",
+    "resumo": "A Suprema Corte Popular da China editou as primeiras regras judiciais nacionais sobre litigios envolvendo IA, sem decidir sobre a protecao autoral de obras geradas por IA. Interessa como precedente de orientacao de cupula judicial para julgamento de casos de IA, tema tambem em debate no Brasil.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (natlawreview.com)",
+    "paises": [
+      "China"
+    ],
+    "orgaos": [
+      "Suprema Corte"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "IA Generativa"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "The National Law Review",
+      "data_publicacao": "2026-09-08",
+      "dominio_veiculo": "natlawreview.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi_gfbvv95cuxqqzlrn0v1mv84ugnod1zznzazuxvix1vjzxq1r0dlbg9rrktczhvheg1fm0gwbwfvwetwmuhnulj2zzdfx0u0lxrdby1twtbzzxpjuvjtbl9zum40r3bsyzzqbjvpexrqztnisuptekg5rdf1sznuaxk3mwl2vxvseet5znzpr3jjv0dma1ztnjlfq2izczhwlwryeuxhwldcb1zouuvlm2lkdmhrq3lzls1ytuc5z29jcs01tjj1es1zm0y5s2pqewjnn2zuy09lbv9xcnhylwezefzryldjwtlhtnlvb0tmam1satrlcfzvmfzinnhwwgjvuunguq",
+    "nome": "Courtroom 'hallucinations': Lawyers cite precedents dreamt up by AI as clients sabotage their own cases",
+    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQQzlRN0V1MV84UGNOd1ZZNzAzUXViX1VJZXQ1R0dlbG9rRktCZHVheG1fM0gwbWFvWEtWMUhnUlJ2ZzdFX0U0LXRDby1tWTBZZXpjUVJtbl9zUm40R3BsYzZqbjVpeXRqZTNISUptekg5RDF1SzNUaXk3MWl2VXVseEt5ZnZpR3JJV0dma1ZtNjlFQ2IzczhwLWRYeUxhWldCb1ZoUUVlM2lkdmhrQ3lzLS1YTUc5Z29jcS01TjJ1eS1ZM0Y5S2pqeWJnN2ZuY09lbV9XcnhYLWEzeFZRYldjWTlHTnlvb0tMam1saTRlcFZvMFZINnhWWGJvUUNGUQ?oc=5",
+    "resumo": "Reportagem sobre advogados que citaram precedentes inventados por IA generativa em juizo, prejudicando seus proprios clientes. Interessa ao Judiciario pelo risco de alucinacao em pecas processuais e pela necessidade de conferencia de citacoes.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (i24news.tv)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Alucinacao e Erro",
+      "IA Generativa",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.78,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "i24NEWS",
+      "data_publicacao": "2026-09-05",
+      "dominio_veiculo": "i24news.tv"
+    },
+    "tipo": "noticia"
+  },
+  {
     "id": "news.google.com/rss/articles/cbmioafbvv95cuxnmdlca2m5cwlkqu96luu3rwlkqkhxy1lmzgo5tnhfyxcwoth1ni01lxrntmr2m0locxn3bdjyavplnug5wlpav1vxr1pbs05jrmprdwfiag9rbghmmjhpwdntdghsyvdyu2pjc19kz0hwy0pmstveq1dttwezmi15tjb0agdhbxkwyk4wdza0mw14dmj6thpuchvklurwsmxt",
     "nome": "Governing AI Hallucinations: Evaluating the Supreme Court’s Zero-Tolerance Rule",
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMDlCa2M5cWlKQU96LUU3RWlKQkhxY1lMZGo5TnhFYXcwOTh1Ni01LXRNTmR2M0lOcXN3bDJYaVpLNUg5WlpaV1VXR1pBS05jRmprdWFiaG9rbGhMMjhpWDNTdGhSYVdYU2pjc19kZ0hwY0pmSTVEQ1dtTWEzMi15TjB0aGdHbXkwYk4wdzA0MW14dmJ6THpucHVkLURWSmxt?oc=5",
@@ -66,6 +992,40 @@
       "veiculo": "Tudo Rondônia",
       "data_publicacao": "2026-09-03",
       "dominio_veiculo": "tudorondonia.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmix0fvx3lxtfbfvudwnmriau1uyjezejrmd1lysddoa1blnmt3bg0wzvfkzvzxswszr2fbvm1gwlvqrkpmc3n6bjjlmghuzju4othndxe3d0rolxfqrkr1mdrltwdwa2hv",
+    "nome": "TJTO disponibiliza inteligência artificial para auxiliar na elaboração de atos normativos",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBFVUdwNmRiaU1uYjEzejRmd1lySDdoa1BLNmt3bG0wZVFkZVZxSWszR2FBVm1GWlVQRkpMc3N6bjJLMGhuZjU4OThndXE3d0ROLXFqRkR1MDRLTWdwa2hv?oc=5",
+    "resumo": "O TJTO passou a oferecer ferramenta de inteligência artificial para apoiar a elaboração de atos normativos internos. Exemplo de uso de IA generativa em atividade administrativa de tribunal.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjto.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Resumo de Documentos"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia",
+      "IA Generativa"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "Tribunal de Justiça do Tocantins",
+      "data_publicacao": "2026-09-03",
+      "dominio_veiculo": "tjto.jus.br"
     },
     "tipo": "noticia"
   },
@@ -471,6 +1431,39 @@
       "veiculo": "The Washington Post",
       "data_publicacao": "2026-08-26",
       "dominio_veiculo": "washingtonpost.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi1gfbvv95cuxnc0lgbhvqogzrdxz4eke4lxbyvdvntjnttlf6cv9zdvvtdhu2du81buotry1kyvpgtlm0ew93ow45x0xkx293cgvkckpsotfza3h3tjfsd2m4uxbqaw45tgdtwxlkmwxlx0nsq0w4uvczrflsz2fpuwhxqu11agxpbfmwz183cdhdakvfnvv2buxndvpscvvksfq4t0exdmg1zmvgoxlsznbnrjnmwe9yvnazs3lyuuxymfr0nmxomghkx2xpskk1mvhwn1kyzwhjy0f6swhn",
+    "nome": "OAB e CNJ debatem uso da IA pelo Judiciário na quarta jornada do ciclo “Advocacia em Tempos de Inovação”",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNc0lGbHVqOGZrdXZ4ekE4LXBYVDVNTjNtTlF6cV9zdVVtdHU2dU81bUotRy1KYVpGTlM0eW93OW45X0xkX293cGVkckpsOTFza3h3TjFsd2M4UXBqaW45TGdTWXlKMWxLX0NsQ0w4UVczRFlSZ2FPUWhxQU11aGxPbFMwZ183cDhDakVfNVV2bUxNdVpscVVKSFQ4T0Exdmg1ZmVGOXlsZnBNRjNMWE9YVnAzS3lYUUxYMFR0NmxoMGhKX2xPSkk1MVhwN1kyZWhjY0F6SWhn?oc=5",
+    "resumo": "OAB e CNJ debateram o uso de IA pelo Judiciário em jornada do ciclo 'Advocacia em Tempos de Inovação'. O evento aproxima advocacia e tribunais na discussão de regras para IA.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (oab.org.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Capacitacao e Pessoas"
+    ],
+    "confianca": 0.65,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "veiculo": "OAB",
+      "data_publicacao": "2026-08-25",
+      "dominio_veiculo": "oab.org.br"
     },
     "tipo": "noticia"
   },

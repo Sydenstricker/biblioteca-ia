@@ -30,7 +30,7 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2019,
-      "citacoes": 427,
+      "citacoes": 430,
       "acesso_aberto": true,
       "doi": "10.1007/s10506-019-09255-y",
       "autores": [
@@ -39,8 +39,8 @@
         "Martijn Wieling"
       ],
       "veiculo": "Artificial Intelligence and Law",
-      "velocidade": 61,
-      "aceleracao": 1.2,
+      "velocidade": 61.4,
+      "aceleracao": 1.19,
       "citacoes_ano_recente": 73
     },
     "tipo": "artigo"
@@ -79,14 +79,14 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2019,
-      "citacoes": 367,
+      "citacoes": 373,
       "acesso_aberto": false,
       "doi": "10.1093/oso/9780198838364.001.0001",
       "autores": [
         "Richard Susskind"
       ],
       "veiculo": "nao informado",
-      "velocidade": 52.4,
+      "velocidade": 53.3,
       "aceleracao": 1.07,
       "citacoes_ano_recente": 54
     },
@@ -121,7 +121,7 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2021,
-      "citacoes": 311,
+      "citacoes": 323,
       "acesso_aberto": false,
       "doi": "10.1016/j.clsr.2021.105567",
       "autores": [
@@ -130,8 +130,8 @@
         "Chris Russell"
       ],
       "veiculo": "Computer law & security review",
-      "velocidade": 62.2,
-      "aceleracao": 1.43,
+      "velocidade": 64.6,
+      "aceleracao": 1.42,
       "citacoes_ano_recente": 77
     },
     "tipo": "artigo"
@@ -168,15 +168,15 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2020,
-      "citacoes": 223,
+      "citacoes": 231,
       "acesso_aberto": true,
       "doi": "10.1007/s12027-020-00602-0",
       "autores": [
         "Aleš Završník"
       ],
       "veiculo": "ERA Forum",
-      "velocidade": 37.2,
-      "aceleracao": 1.06,
+      "velocidade": 38.5,
+      "aceleracao": 1.04,
       "citacoes_ano_recente": 39
     },
     "tipo": "artigo"
@@ -213,15 +213,15 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2018,
-      "citacoes": 201,
+      "citacoes": 204,
       "acesso_aberto": true,
       "doi": "10.53637/zgux2213",
       "autores": [
         "Tania Sourdin"
       ],
       "veiculo": "University of New South Wales law journal",
-      "velocidade": 25.1,
-      "aceleracao": 1.6,
+      "velocidade": 25.5,
+      "aceleracao": 1.59,
       "citacoes_ano_recente": 35
     },
     "tipo": "artigo"
@@ -257,14 +257,14 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2021,
-      "citacoes": 159,
+      "citacoes": 166,
       "acesso_aberto": true,
       "doi": "10.1007/s10506-021-09294-4",
       "autores": [
         "Stanley Greenstein"
       ],
       "veiculo": "Artificial Intelligence and Law",
-      "velocidade": 31.8,
+      "velocidade": 33.2,
       "aceleracao": 1.62,
       "citacoes_ano_recente": 46
     },
@@ -303,7 +303,7 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2023,
-      "citacoes": 148,
+      "citacoes": 151,
       "acesso_aberto": true,
       "doi": "10.2139/ssrn.4583531",
       "autores": [
@@ -314,7 +314,7 @@
         "Adam Chilton"
       ],
       "veiculo": "SSRN Electronic Journal",
-      "velocidade": 49.3,
+      "velocidade": 50.3,
       "aceleracao": null,
       "citacoes_ano_recente": 74
     },
@@ -353,7 +353,7 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2024,
-      "citacoes": 128,
+      "citacoes": 136,
       "acesso_aberto": true,
       "doi": "10.1016/j.aiopen.2024.09.002",
       "autores": [
@@ -364,7 +364,7 @@
         "Philip S. Yu"
       ],
       "veiculo": "AI Open",
-      "velocidade": 64,
+      "velocidade": 68,
       "aceleracao": null,
       "citacoes_ano_recente": 62
     },
@@ -400,14 +400,14 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2018,
-      "citacoes": 118,
+      "citacoes": 119,
       "acesso_aberto": true,
       "doi": "10.1007/s10506-018-9237-x",
       "autores": [
         "Daniel L. Chen"
       ],
       "veiculo": "Artificial Intelligence and Law",
-      "velocidade": 14.8,
+      "velocidade": 14.9,
       "aceleracao": 0.45,
       "citacoes_ano_recente": 8
     },
@@ -442,15 +442,15 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2019,
-      "citacoes": 101,
+      "citacoes": 100,
       "acesso_aberto": false,
       "doi": "10.1080/10345329.2019.1658694",
       "autores": [
         "Carolyn McKay"
       ],
       "veiculo": "Current Issues in Criminal Justice",
-      "velocidade": 14.4,
-      "aceleracao": 1.47,
+      "velocidade": 14.3,
+      "aceleracao": 1.49,
       "citacoes_ano_recente": 20
     },
     "tipo": "artigo"
@@ -572,16 +572,405 @@
     "coletado_em": "2026-09-04",
     "sinais": {
       "ano": 2020,
-      "citacoes": 80,
+      "citacoes": 81,
       "acesso_aberto": false,
       "doi": "10.1515/ajle-2020-0008",
       "autores": [
         "Jasper Ulenaers"
       ],
       "veiculo": "Asian Journal of Law and Economics",
-      "velocidade": 13.3,
-      "aceleracao": 1.06,
+      "velocidade": 13.5,
+      "aceleracao": 1.04,
       "citacoes_ano_recente": 14
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1007/s10506-023-09361-y",
+    "nome": "Mining legal arguments in court decisions",
+    "url": "https://doi.org/10.1007/s10506-023-09361-y",
+    "resumo": "Artigo propoe novo esquema de anotacao e modelos de NLP para mineracao de argumentos juridicos em decisoes da Corte Europeia de Direitos Humanos. Interessa a quem busca extracao automatica de fundamentos e analise de jurisprudencia.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Conselho da Europa",
+      "Global"
+    ],
+    "orgaos": [
+      "Corte Internacional"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Extracao de Dados de Documentos",
+      "Pesquisa de Jurisprudencia",
+      "Classificacao e Triagem de Processos"
+    ],
+    "temas": [
+      "Transparencia e Explicabilidade",
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2023,
+      "citacoes": 81,
+      "acesso_aberto": true,
+      "doi": "10.1007/s10506-023-09361-y",
+      "autores": [
+        "Ivan Habernal",
+        "Daniel R. Faber",
+        "Nicola Recchia",
+        "Sebastian Bretthauer",
+        "Iryna Gurevych"
+      ],
+      "veiculo": "Artificial Intelligence and Law",
+      "velocidade": 27,
+      "aceleracao": null,
+      "citacoes_ano_recente": 21
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1007/s44163-026-00902-3",
+    "nome": "Challenges for generative AI in legal reasoning",
+    "url": "https://doi.org/10.1007/s44163-026-00902-3",
+    "resumo": "Artigo analisa limites dos modelos de linguagem como ferramentas de raciocinio juridico em decisoes judiciais, incluindo escolha do marco normativo, distincao entre ratio decidendi e obiter dicta, conflito de normas e onus da prova. Mapeia mecanismos como RAG e multiagentes. Relevante para tribunais que avaliam IA generativa em apoio a decisao.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca",
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Alucinacao e Erro",
+      "IA Generativa",
+      "Transparencia e Explicabilidade",
+      "Devido Processo Legal"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 6,
+      "acesso_aberto": true,
+      "doi": "10.1007/s44163-026-00902-3",
+      "autores": [
+        "Eljas Linna",
+        "Tuula Linna"
+      ],
+      "veiculo": "Discover Artificial Intelligence",
+      "velocidade": 6,
+      "aceleracao": null,
+      "citacoes_ano_recente": 0
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1016/j.cosrev.2026.100906",
+    "nome": "A survey of large language models for legal tasks: Progress, prospects and challenges",
+    "url": "https://doi.org/10.1016/j.cosrev.2026.100906",
+    "resumo": "Revisao sistematica sobre uso de grandes modelos de linguagem em tarefas juridicas, com progresso, perspectivas e desafios. Serve de referencia tecnica para quem avalia adocao de IA em atividades do Judiciario.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Resumo de Documentos",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "IA Generativa",
+      "Produtividade e Eficiencia",
+      "Alucinacao e Erro"
+    ],
+    "confianca": 0.65,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 4,
+      "acesso_aberto": false,
+      "doi": "10.1016/j.cosrev.2026.100906",
+      "autores": [
+        "Congqing He",
+        "Haichuan Hu",
+        "Yanli Li",
+        "Hao Zhang",
+        "Quanjun Zhang"
+      ],
+      "veiculo": "Computer Science Review",
+      "velocidade": 4,
+      "aceleracao": null,
+      "citacoes_ano_recente": 0
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.48161/qtj.v4n4a77",
+    "nome": "AI Integration in Legal Decision-Making: Innovations and Challenges",
+    "url": "https://doi.org/10.48161/qtj.v4n4a77",
+    "resumo": "Estudo examina a integracao de IA na tomada de decisao juridica, com foco em fundamentos conceituais, arquiteturas tecnicas e implicacoes regulatorias. Discute transparencia, responsabilizacao, equidade e devido processo, temas centrais para governanca de IA em tribunais.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca",
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Avaliacao de Risco de Pessoas"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Transparencia e Explicabilidade",
+      "Devido Processo Legal",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.8,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2025,
+      "citacoes": 4,
+      "acesso_aberto": true,
+      "doi": "10.48161/qtj.v4n4a77",
+      "autores": [
+        "Salvatore Vitale",
+        "Deepika Kulhari",
+        "Priscila Caneparo"
+      ],
+      "veiculo": "Qubahan Techno Journal",
+      "velocidade": 4,
+      "aceleracao": null,
+      "citacoes_ano_recente": 1
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.48161/qtj.v4n4a76",
+    "nome": "Impact of Digital Technologies on Legal Theory and Practice",
+    "url": "https://doi.org/10.48161/qtj.v4n4a76",
+    "resumo": "Artigo examina como IA, big data e blockchain remodelam teoria e pratica juridicas, incluindo eficiencia e acesso a justica em tribunais, alem de desafios de accountability. Util como panorama comparado sobre governanca algoritmica na justica.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Gestao Administrativa",
+      "Julgamento",
+      "Atendimento ao Cidadao"
+    ],
+    "aplicacoes": [
+      "Jurimetria e Estatistica",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Acesso a Justica",
+      "Responsabilidade e Auditoria",
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2025,
+      "citacoes": 4,
+      "acesso_aberto": true,
+      "doi": "10.48161/qtj.v4n4a76",
+      "autores": [
+        "E. E. Gulyaeva",
+        "Helen Grace Felix"
+      ],
+      "veiculo": "Qubahan Techno Journal",
+      "velocidade": 4,
+      "aceleracao": null,
+      "citacoes_ano_recente": 1
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.22495/clgrv8i2p7",
+    "nome": "Artificial intelligence in criminal justice governance: Opportunities and legal challenges (A comparative study)",
+    "url": "https://doi.org/10.22495/clgrv8i2p7",
+    "resumo": "Estudo comparado (Franca, Reino Unido e Emirados) sobre uso de IA em policiamento preditivo, coleta de provas e decisao judicial. Aponta riscos a privacidade, ao devido processo e a integridade da prova, defendendo regulacao precisa — util como referencia comparativa.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Franca",
+      "Reino Unido",
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau",
+      "Ministerio Publico"
+    ],
+    "fases": [
+      "Instrucao Probatoria",
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Avaliacao de Risco de Pessoas",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Devido Processo Legal",
+      "Protecao de Dados"
+    ],
+    "confianca": 0.78,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 3,
+      "acesso_aberto": true,
+      "doi": "10.22495/clgrv8i2p7",
+      "autores": [
+        "Adham Hashish",
+        "Abouelwafa Ibrahim",
+        "Fatiha Mohammed Gourari",
+        "Gehad Mohamed Abdelaziz"
+      ],
+      "veiculo": "Corporate Law & Governance Review",
+      "velocidade": 3,
+      "aceleracao": null,
+      "citacoes_ano_recente": 0
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.37276/sjh.v7i2.570",
+    "nome": "Measuring Judicial Accountability in the Algorithmic Era: Juridical Implications of Using Judicial Assistants and Black Box Risks in Constructing Judgment Arguments",
+    "url": "https://doi.org/10.37276/sjh.v7i2.570",
+    "resumo": "Artigo analisa o uso de IA como 'assistente judicial' na redacao de fundamentacao de sentencas na Indonesia, discutindo accountability judicial e o risco de decisoes baseadas em caixa-preta diante do principio da decisao motivada. Propoe modelo regulatorio preventivo com base em comparacao com UE, EUA e China, tema diretamente analogo aos debates brasileiros sobre IA generativa em minutas.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global",
+      "Uniao Europeia",
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Suprema Corte",
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Transparencia e Explicabilidade",
+      "Responsabilidade e Auditoria",
+      "Devido Processo Legal",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2025,
+      "citacoes": 3,
+      "acesso_aberto": true,
+      "doi": "10.37276/sjh.v7i2.570",
+      "autores": [
+        "Asbudi Dwi Saputra",
+        "Hartono Tasir Irwanto",
+        "Nurisnah Nurisnah"
+      ],
+      "veiculo": "SIGn Jurnal Hukum",
+      "velocidade": 3,
+      "aceleracao": null,
+      "citacoes_ano_recente": 0
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "doi.org/10.1145/3731443.3771354",
+    "nome": "Capturing Legal Reasoning Paths from Facts to Law in Court Judgments using Knowledge Graphs",
+    "url": "https://doi.org/10.1145/3731443.3771354",
+    "resumo": "Pesquisa constroi grafo de conhecimento a partir de 648 decisoes administrativas japonesas, usando LLMs para extrair e normalizar os elos entre fatos, normas e aplicacao do direito. Interessa a quem trabalha com analise estruturada de jurisprudencia e limites dos LLMs na captura do raciocinio judicial.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (doi.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau",
+      "Tribunal Superior"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Extracao de Dados de Documentos",
+      "Jurimetria e Estatistica"
+    ],
+    "temas": [
+      "Transparencia e Explicabilidade",
+      "IA Generativa",
+      "Alucinacao e Erro"
+    ],
+    "confianca": 0.78,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2025,
+      "citacoes": 3,
+      "acesso_aberto": true,
+      "doi": "10.1145/3731443.3771354",
+      "autores": [
+        "Ryoma Kondo",
+        "Riona Matsuoka",
+        "Takahiro Yoshida",
+        "Kazuyuki Yamasawa",
+        "Ryohei Hisano"
+      ],
+      "veiculo": "nao informado",
+      "velocidade": 3,
+      "aceleracao": null,
+      "citacoes_ano_recente": 1
     },
     "tipo": "artigo"
   },
@@ -838,6 +1227,273 @@
     "confianca": 0.5,
     "classificado_por": "claude-opus-5",
     "coletado_em": "2026-09-04",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2609.35370v1",
+    "nome": "A decision-support system applied to Law: Reasoning and explainability of the decision",
+    "url": "https://arxiv.org/abs/2609.35370v1",
+    "resumo": "Preprint propoe sistema de apoio a decisao com representacao formal de normas (GDPR e Diretiva de protecao de dados penal) e mecanismo de raciocinio voltado a orgaos de aplicacao da lei. Enfatiza que decisoes juridicas nao podem ser totalmente automatizadas e que a explicabilidade do resultado e essencial.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "Uniao Europeia"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca",
+      "Ministerio Publico"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Transparencia e Explicabilidade",
+      "Protecao de Dados",
+      "Devido Processo Legal"
+    ],
+    "confianca": 0.63,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2609.27032v1",
+    "nome": "LexLattice: Multilingual Extractive Summarization via Neural Cellular Automata on Document Hierarchies",
+    "url": "https://arxiv.org/abs/2609.27032v1",
+    "resumo": "Artigo apresenta o LexLattice, sumarizador extrativo de textos legais que organiza a hierarquia do ato normativo em uma malha semantica, com resultados em 24 idiomas do EUR-Lex-Sum. Interessa a tribunais por priorizar fidelidade ao texto-fonte, reduzindo risco de alucinacao em resumos de documentos juridicos.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "Uniao Europeia",
+      "Global"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Resumo de Documentos",
+      "Traducao e Acessibilidade"
+    ],
+    "temas": [
+      "Alucinacao e Erro",
+      "Transparencia e Explicabilidade",
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.72,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2609.27009v1",
+    "nome": "LEGO: Synergizing Expert GraphRAG and Expert Chain-of-Thought for Legal Reasoning",
+    "url": "https://arxiv.org/abs/2609.27009v1",
+    "resumo": "O artigo propoe o LEGO, arquitetura que combina GraphRAG sobre um grafo anotado do codigo civil com cadeia de raciocinio estruturada para tarefas de raciocinio juridico complexo. Relevante para quem avalia ferramentas de apoio a fundamentacao e pesquisa normativa em tribunais.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "China",
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "IA Generativa",
+      "Transparencia e Explicabilidade",
+      "Alucinacao e Erro"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2609.23726v1",
+    "nome": "GRACE: Grounded Adversarial Reasoning over Canadian Law",
+    "url": "https://arxiv.org/abs/2609.23726v1",
+    "resumo": "Pesquisadores apresentam o GRACE, conjunto de 1.915 exemplos de raciocinio juridico adversarial baseado na legislacao federal canadense, com verificacao de citacoes e auditoria por LLM. Serve de referencia metodologica para avaliar modelos juridicos em linguas e ordenamentos pouco representados, inclusive o brasileiro.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "IA Generativa",
+      "Alucinacao e Erro",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.65,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2609.22529v1",
+    "nome": "IntLawNER: A Named Entity Recognition Dataset and Benchmark in International Law",
+    "url": "https://arxiv.org/abs/2609.22529v1",
+    "resumo": "O IntLawNER e um conjunto de dados e benchmark de reconhecimento de entidades nomeadas em fontes de direito internacional, com 2.987 sentencas anotadas de decisoes da CIJ, resolucoes do Conselho de Seguranca e julgados da Corte Europeia de Direitos Humanos. Interessa a quem desenvolve extracao automatica de dados de decisoes judiciais.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "Global",
+      "Conselho da Europa"
+    ],
+    "orgaos": [
+      "Corte Internacional"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Extracao de Dados de Documentos",
+      "Pesquisa de Jurisprudencia",
+      "Jurimetria e Estatistica"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia",
+      "Transparencia e Explicabilidade"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2609.10293v1",
+    "nome": "GANDR: Claim Auditing for Verifiable Legal Answer Generation",
+    "url": "https://arxiv.org/abs/2609.10293v1",
+    "resumo": "O artigo apresenta o GANDR, sistema de dois agentes (redator e critico) que audita cada afirmacao juridica contra a fonte citada, visando reduzir citacoes fabricadas em respostas geradas por LLM. Importa ao Judiciario e a advocacia porque enfrenta diretamente o problema de alucinacao de jurisprudencia em minutas e pesquisas.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "Global"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Minutas e Redacao de Decisoes",
+      "Resumo de Documentos"
+    ],
+    "temas": [
+      "Alucinacao e Erro",
+      "Transparencia e Explicabilidade",
+      "Responsabilidade e Auditoria",
+      "IA Generativa"
+    ],
+    "confianca": 0.78,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
+    "sinais": {
+      "ano": 2026,
+      "citacoes": 0,
+      "acesso_aberto": true,
+      "veiculo": "arXiv (preprint)"
+    },
+    "tipo": "artigo"
+  },
+  {
+    "id": "arxiv.org/abs/2609.06769v2",
+    "nome": "Ordinary, Reasonable Chatbots: Do AI Models Track Human Legal Judgments?",
+    "url": "https://arxiv.org/abs/2609.06769v2",
+    "resumo": "Estudo testa se chatbots de LLM reproduzem juizos humanos de razoabilidade, discutindo a hipotese de 'jurados de silicio' em decisoes judiciais. Relevante para avaliar limites do uso de IA generativa em juizos valorativos no processo.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "link para a propria obra (arxiv.org)",
+    "paises": [
+      "Estados Unidos",
+      "Global"
+    ],
+    "orgaos": [
+      "Primeiro Grau",
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Instrucao Probatoria"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Avaliacao de Risco de Pessoas"
+    ],
+    "temas": [
+      "Devido Processo Legal",
+      "IA Generativa",
+      "Vies e Discriminacao"
+    ],
+    "confianca": 0.75,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-10-01",
     "sinais": {
       "ano": 2026,
       "citacoes": 0,
