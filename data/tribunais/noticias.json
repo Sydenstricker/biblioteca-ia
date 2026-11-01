@@ -69,6 +69,39 @@
     "tipo": "noticia"
   },
   {
+    "id": "news.google.com/rss/articles/cbmikwfbvv95cuxosmq2ujn5qwtlakoxcgkxu0hizhpuvjljm1bhc0r4mvdkq2tnuusxegjeltbuckhoeehzstf2ns1ky2rueejmofdnr3f5n0jmbmdocwfjvxlyrepaemvqalbysfpwsgfzrdayqwgzz3jyehzrwny3d3nxyl9oyurjeehjt3c1tup1mjlzsmflckh3alk",
+    "nome": "O tribunal de ética e a inteligência artificial",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSmQ2UjN5QWtlakoxcGkxU0hIZHpUVjlJM1BHc0R4MVdkQ2tnUUsxeGJELTBUckhOeEhZSTF2NS1kY2RUeEJmOFdNR3F5N0JmbmdOcWFJVXlyREpaemVqalBYSFpwSGFzRDAyQWgzZ3JyeHZRWnY3d3NXYl9OYURJeEhjT3c1TUp1MjlzSmFLckh3alk?oc=5",
+    "resumo": "Artigo do Migalhas discute a atuação de tribunal de ética diante da inteligência artificial. A manchete não detalha o caso, mas o recorte é ético-profissional no campo jurídico.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (migalhas.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.45,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "Migalhas",
+      "data_publicacao": "2026-10-27",
+      "dominio_veiculo": "migalhas.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
     "id": "news.google.com/rss/articles/cbmiugfbvv95cuxqqxq5v3f4zji2ewexdgpld1m5ekhwajdhme9tz3rlsmtryxhbqwlxofqxcnixdjnnv0tnynhhqlrienb5cfzqwkliq21emxrrafiyc1nusuezmgvnadu5udzjzzryaw1srjyzwho4emdznvh0rzdnumhpm3hwv0utuflpaxflwwtlnfp6zl91twthz0rrvvdmuzvwwfnhckpstxbvy3hvtl9bsho4tnmyvg1fvulwatdsnxc",
     "nome": "Judges explore Artificial Intelligence but keep decision-making human",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQXQ5V3F4ZjI2eWExdGpld1M5ekhwajdHME9TZ3RLSmtRYXhBQWlxOFQxcnIxdjNnV0tnYnhHQlRienB5cFZqWklIQ21EMXRraFIyc1NuSUEzMGVnaDU5UDZjZzRyaW1SRjYzWHo4emdzNVh0RzdNUmhpM3hWV0UtUFlPaXFlWWtlNFp6Zl91TWtHZ0RrVVdmUzVWWFNHckpSTXBvY3hVTl9BSHo4TnMyVG1FVUlWaTdSNXc?oc=5",
