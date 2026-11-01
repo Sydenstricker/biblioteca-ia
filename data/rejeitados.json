@@ -220,5 +220,29 @@
     "nome": "Microsoft director: AI scraping 'the largest theft of labor in human history'",
     "motivo": "Noticia sobre processo judicial, nao e aplicacao de IA.",
     "data": "2026-10-01"
+  },
+  {
+    "id": "github.com/shadcn-ui/ui",
+    "nome": "ui",
+    "motivo": "Biblioteca de componentes de UI; nao e aplicacao de IA.",
+    "data": "2026-11-01"
+  },
+  {
+    "id": "arstechnica.com",
+    "nome": "AI coding agents generate more code, but not more software",
+    "motivo": "Artigo jornalistico/opiniao, nao e aplicacao catalogavel.",
+    "data": "2026-11-01"
+  },
+  {
+    "id": "blog.character.ai",
+    "nome": "Character.ai has initiated voluntary Chapter 11 bankruptcy",
+    "motivo": "Noticia corporativa, nao e aplicacao catalogavel.",
+    "data": "2026-11-01"
+  },
+  {
+    "id": "ft.com",
+    "nome": "Anthropic assigned highest junk credit rating in June",
+    "motivo": "Materia jornalistica sobre credito, nao e ferramenta de IA.",
+    "data": "2026-11-01"
   }
 ]
