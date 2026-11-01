@@ -1,5 +1,251 @@
 [
   {
+    "id": "news.google.com/rss/articles/cbmibkfvx3lxte9wbvmttzfvq0voyxnoymptvklede1yduzhujy3vtniejbmmedksgrkqlrhy2hzqm9ua3fywvjexzdzdzfkcgw1qmhpv1j4mutrwmixrxhkbwdvyupuy0jrmdbydwheqkrozktcvtzn",
+    "nome": "TJSP promove capacitação para uso de ferramentas de inteligência artificial",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9WbVMtTzFvQ0VOYXNoYmpTVklEdE1YdUZHUjY3VTNIejBMMEdKSGRKQlRhY2hZQm9Ua3FYWVJEXzdzdzFkcGw1QmhPV1J4MUtRWmIxRXhKbWdVYUpuY0JrMDBYdWhEQkROZktCVTZn?oc=5",
+    "resumo": "O TJSP promove capacitação de magistrados e servidores para uso de ferramentas de inteligência artificial. Interessa como iniciativa de formação interna em IA no Judiciário estadual.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjsp.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Capacitacao e Pessoas",
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.72,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "TJSP",
+      "data_publicacao": "2026-10-27",
+      "dominio_veiculo": "tjsp.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi0gfbvv95cuxnul91n2xncjnzmxfry0xsrjbjd1i0vnldx2htcuryqmlxvxjsrmzjc3ztmmqtnddkyznwanzmrgfsmwhxeepsnmrtsfnxx25jczutb1g0wghkqi1tvwdizhy2thfmvdjfbmd4mtzllvhfuugznxhqn2xommz4ali0a3nici1fxzlscjf2c09jymvscddcdvzpeep6wthwrjyzdtfvzfzmcjjuellfak5hcuf6ve5tnutzthzqsgfsdfe0ykpwmvm0txhdvdfqzmhrdnc",
+    "nome": "Validade de provas digitais desafia Justiça na era da IA",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUl91N2xNcjNZMXFRY0xsRjBjd1I0VnlDX2hTcURyQmlXVXJSRmZJc3ZtMmQtNDdkYzNwanZMRGFsMWhxeEpsNmRtSFNXX25JczUtb1g0WGhKQi1tVWdiZHY2THFMVDJfbmd4MTZLLVhfUUgzNXhqN2xOMmZ4alI0a3Nici1FXzlScjF2c09JYmVScDdCdVZpeEp6WThWRjYzdTFvZFZmcjJuellFak5HcUF6VE5TNUtzTHZQSGFSdFE0YkpwMVM0TXhDVDFqZmhrdnc?oc=5",
+    "resumo": "Reportagem aborda os desafios de validade e autenticidade de provas digitais diante da IA. Interessa à instrução probatória, com risco de conteúdos sintéticos juntados aos autos.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (terra.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Instrucao Probatoria"
+    ],
+    "aplicacoes": [
+      "Deteccao de Fraude ou Anomalia",
+      "Extracao de Dados de Documentos"
+    ],
+    "temas": [
+      "Devido Processo Legal",
+      "Alucinacao e Erro",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.6,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "Terra",
+      "data_publicacao": "2026-10-27",
+      "dominio_veiculo": "terra.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiugfbvv95cuxqqxq5v3f4zji2ewexdgpld1m5ekhwajdhme9tz3rlsmtryxhbqwlxofqxcnixdjnnv0tnynhhqlrienb5cfzqwkliq21emxrrafiyc1nusuezmgvnadu5udzjzzryaw1srjyzwho4emdznvh0rzdnumhpm3hwv0utuflpaxflwwtlnfp6zl91twthz0rrvvdmuzvwwfnhckpstxbvy3hvtl9bsho4tnmyvg1fvulwatdsnxc",
+    "nome": "Judges explore Artificial Intelligence but keep decision-making human",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQXQ5V3F4ZjI2eWExdGpld1M5ekhwajdHME9TZ3RLSmtRYXhBQWlxOFQxcnIxdjNnV0tnYnhHQlRienB5cFZqWklIQ21EMXRraFIyc1NuSUEzMGVnaDU5UDZjZzRyaW1SRjYzWHo4emdzNVh0RzdNUmhpM3hWV0UtUFlPaXFlWWtlNFp6Zl91TWtHZ0RrVVdmUzVWWFNHckpSTXBvY3hVTl9BSHo4TnMyVG1FVUlWaTdSNXc?oc=5",
+    "resumo": "Publicação da Ordem dos Advogados da Flórida relata que juízes exploram usos de IA mantendo a decisão sob controle humano. Serve de comparação internacional para o debate brasileiro sobre supervisão humana.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (floridabar.org)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Pesquisa de Jurisprudencia"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Capacitacao e Pessoas",
+      "IA Generativa"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "The Florida Bar",
+      "data_publicacao": "2026-10-22",
+      "dominio_veiculo": "floridabar.org"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiwwfbvv95cuxntdjtmfzhd0picmtnbk9jyta2ne40bmzxs0vnd1zoz3vhd1runjjjbth4d2c1njhhzlvtv2k5btndu0jpu2fftmhdtgzyx0w2wmpqdi1lbxfuuxrnq2nhs2ltyvjwrzfhv0d3sfjxz0iyykt1ehl6ag9nemmyc1veetjieldvr0ffdulnd1fmdgjkohbmegm2vk95ynyzsvp6y1gyos1lrmzxx0rfaznqwunbdgkxd3zwqmxvc2zeltrzbjg",
+    "nome": "A transparência no uso de IA generativa pelo Judiciário",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTDJTMFZhd0picmtNbk9JYTA2NE40bmZXS0Vnd1ZOZ3Vhd1RuNjJjbTh4d2c1NjhHZlVTV2k5bTNDU0JpU2FfTmhDTGZyX0w2Wmpqdi1LbXFUUXRnQ2NHS2ltYVJWRzFHV0d3SFJXZ0IyYkt1eHl6aG9NemMyc1VEeTJIeldvR0FFdUlnd1FmdGJKOHBMeGM2Vk95YnYzSVp6Y1gyOS1lRmZxX0RFazNqWUNBdGkxd3ZwQmxVc2ZELTRzbjg?oc=5",
+    "resumo": "Artigo do JOTA discute a transparência no uso de IA generativa pelo Judiciário. Interessa a magistrados e servidores por tratar do dever de informar quando ferramentas generativas participam da produção de atos judiciais.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (jota.info)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Transparencia e Explicabilidade",
+      "IA Generativa",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.78,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "JOTA Info",
+      "data_publicacao": "2026-10-20",
+      "dominio_veiculo": "jota.info"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi3gfbvv95cuxot0z2z3vrr3eyu2l5qw5td3l3owszv1jwogrsavn3tgzrwwdwr25vtkvswxhsd3ffmgtltux3zulsvudpukl3bu5xnth2ddjuevpla051d25mu0zpq2lrzlptcljsv0vsww9nctrxr0x3mve2cmvbq2x5shzpqkjzanrqwvvxbwdum1liewdltja4ujlmzthmamjmnerwr25fq0tjvfn5vuwtzk5hce4ztmvjv3buv0vvnm5kvjexr1blb3boauznb2fjnwi3uvlzannodddya2syyzqtvxc",
+    "nome": "Supervisão humana da IA é tarefa do juiz ou do Judiciário? Da Resolução CNJ nº 615/2025",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOT0Z2Z3VrR3EyU2l5QW5td3l3OWszV1JwOGRSaVN3TGZrWWdWR25vTkVSWXhsd3FFMGtlTUx3ZUlSVUdpUkl3bU5XNTh2dDJUeVpLa051d25mU0ZpQ2lRZlpTclJsV0VSWW9NcTRXR0x3MVE2cmVBQ2x5SHZPQkJZanRqWVVXbWduM1lIeWdlTjA4UjlmZThmamJMNERWR25fQ0tJVFN5VUwtZk5hcE4zTmVjV3BuV0VVNm5kVjExR1BLb3BOaUZnb2FJNWI3UVlzanNOdDdYa2syYzQtVXc?oc=5",
+    "resumo": "Artigo da ConJur discute se o dever de supervisão humana previsto na Resolução CNJ nº 615/2025 recai sobre o juiz individualmente ou sobre o Judiciário como instituição. Relevante para a aplicação prática da norma nos tribunais.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (conjur.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Julgamento",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Responsabilidade e Auditoria",
+      "Devido Processo Legal"
+    ],
+    "confianca": 0.85,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "Consultor Jurídico",
+      "data_publicacao": "2026-10-17",
+      "dominio_veiculo": "conjur.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmiggjbvv95cuxnay1zamrpqzzpug5rtgvjwjc4bmqwadjsowztt3d6tljkdefksgh2rwtwwv9imk9ybwz5x2fyelm0ru1lywjvref0nzbxee1fee1faxhjn0nwaxnrtelfbfz5ngr5rllswkjuszqxtzbjmfriykj0szvxu2zsruzvvc1qoxhfegpetleyuu5wm19tv2lpr085alnsdjvqnfk1v1htm2jvd28ylxd3z21rczqzt2lvtvdask5sbkfmvejan2xhzfpeymoty25edjf4t1v0rkrjze9pa0ctskttzxnnr0q2mkq1cwnibzlrseqywfmwoe1wowo5um9dndrkcke",
+    "nome": "STJ sedia XXIII Cúpula Judicial Ibero-Americana sobre inteligência artificial e Justiça",
+    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNay1zamRpQzZpUG5rTGVJWjc4bmQwaDJSOWZtT3d6TlJkdEFkSGh2RWtwWV9IMk9YbWZ5X2FYelM0RU1LYWJvREF0NzBxeE1feE1faXhjN0NwaXNrTElfbFZ5NGR5RllSWkJUSzQxTzBjMFRIYkJ0SzVxU2ZsRUZVVC1QOXhFeGpETlEyUU5WM19tV2lpR085alNsdjVQNFk1V1hTM2Jvd28yLXd3Z21rczQzT2lvTVdaSk5sbkFmVEJaN2xHZFpEYmotY25EdjF4T1V0RkRjZE9Pa0ctSktTZXNNR0Q2MkQ1cWNibzlrSEQyWFMwOE1wOWo5Um9DNDRKckE?oc=5",
+    "resumo": "O STJ sedia a XXIII Cúpula Judicial Ibero-Americana com foco em inteligência artificial e Justiça. Evento relevante para a governança e a cooperação internacional sobre IA no Judiciário.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (stj.jus.br)",
+    "paises": [
+      "Brasil",
+      "Global"
+    ],
+    "orgaos": [
+      "Tribunal Superior"
+    ],
+    "fases": [
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "Governanca e Regulacao",
+      "Capacitacao e Pessoas"
+    ],
+    "confianca": 0.75,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "STJ",
+      "data_publicacao": "2026-10-14",
+      "dominio_veiculo": "stj.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmijgfbvv95cuxqcer3sfhsznvpalvdq2nrvwrerwflmko5vnm4b2q0vljgqufslw9zu1nnsjh3t0pmuxrqx05xmnhszvvxstbtazlpz25jtl9hze9msg1juhq4ckr5eup2ytlotdveohetymtlytfuzjbune9wcmvybxnrsgrscc1icwgxawutc2jqnlj1q2db",
+    "nome": "Court throws out killer’s sentence after judge said he ‘loved’ AI video of slain man",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcER3SFhsZnVPalVDQ2NRVWRERWFlMko5VnM4b2Q0VlJGQUFSLW9zU1NnSjh3T0pMUXRqX05XMnhSZVVxSTBTazlPZ25jTl9HZE9mSG1jUHQ4ckR5eUp2YTloTDVEOHEtYmtlYTFuZjBuNE9WcmVYbXNRSGRScC1IcWgxaWUtc2JqNlJ1Q2dB?oc=5",
+    "resumo": "Tribunal de apelacao nos EUA anulou a pena apos o juiz declarar que 'amou' um video gerado por IA que recriava a vitima de homicidio em declaracao de impacto. O caso e precedente sobre uso de conteudo sintetico como elemento em audiencia de sentenca e seus limites no devido processo.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (nbcnews.com)",
+    "paises": [
+      "Estados Unidos"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual",
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Julgamento",
+      "Recursos e Precedentes"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes",
+      "Avaliacao de Risco de Pessoas"
+    ],
+    "temas": [
+      "Devido Processo Legal",
+      "IA Generativa",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.72,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "NBC News",
+      "data_publicacao": "2026-10-04",
+      "dominio_veiculo": "nbcnews.com"
+    },
+    "tipo": "noticia"
+  },
+  {
     "id": "news.google.com/rss/articles/cbmiyafbvv95cuxqqldaru9ws1zjdnrswhrnouhmtfrkexa0thi3afrtqtvioetaefnnctdja2tgzuzrzzv0cvn2q0r1z2xtcjzxdedtekxln1vuejm2axdvofdeqjhovk5hbw16zdfoofd5rhrzclrpnwr2n1jtazdfwepmtulqlwnov2znmhhwuu5md2lhluc2wvzwzgluvuv1zvnfsdfbtjvmslvzwdhev2dbvnyxlxzaqmntvwfsnkrmsunlt1jtctbeumj2qu1yaq",
     "nome": "Tribunal da Bahia detecta comando oculto em habeas corpus para manipular inteligência artificial",
     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQldaRU9wS1ZJdnRsWHRNOUhmTFRKeXA0THI3aFRTQTViOEtaeFNncTdJa2tGZUZrZzV0cVN2Q0R1Z2xtcjZxdEdTekxlN1VuejM2aXdVOFdEQjhOVk5HbW16ZDFoOFd5RHRzclRpNWR2N1JTazdFWEpmTUlqLWNoV2ZNMHhWUU5md2lHLUc2WVZWZGluVUV1ZVNfSDFBTjVMSlVzWDhEV2dBVnYxLXZaQmNtVWFsNkRMSUNLT1JtcTBEUmJ2QU1YaQ?oc=5",
@@ -67,6 +313,41 @@
       "veiculo": "Executive Digest",
       "data_publicacao": "2026-10-01",
       "dominio_veiculo": "executivedigest.sapo.pt"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi1ajbvv95cuxqcmozexpxnnlrmnh1ttv2mzljsvnizwdketczs3gyr2zurxuwt0vfcmdzs0rmv0riyuzmahhmy1vmuxh2tjdqsw9mzlniohpcymvymta3yvhzcw0ydhk4x2hrm0rrr3k2emlkakznnf8twkh6wno1ys1dqjcxtejjzetibvbvqkxoa3ezvho3ctnabge4ckm0ughzzgjfauxkzu9jmutlu05rsdq2dujpr0t4vy01zfhdogdndjnlzglumdbfrhk1mll2zmm4ctv5amhzdy1vdk9emgp3a21jmwqzteddsu80q0ltnndebljcnxpwdlmwm1vjdg95a01qtth3uexxrwvleg9iujlym3bsqw1ragszddbkaufptlhymwtwrvlwvepjmgzxwmplcm45tf9ndnphqk02vhvzngf0nu5iclhyzde0mekzs3q0tmvr",
+    "nome": "Ejug realiza 4º Congresso de Precedentes com debates sobre inteligência artificial e jurisdição, nos dias 1º e 2 de outubro; evento é aberto ao público",
+    "url": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxQcmozeXpxNnlrMnh1TTV2MzlJSVNIZWdKeTczS3gyR2ZuRXUwT0VFcmdzS0RMV0RiYUZmaHhmY1VmUXh2TjdQSW9mZlNiOHpCYmVyMTA3YVhzcW0ydHk4X2hRM0RrR3k2emlkakZnNF8tWkh6Wno1YS1DQjcxTEJjZEtibVBvQkxoa3EzVHo3cTNabGE4ckM0UGhzZGJfaUxKZU9jMUtlU05rSDQ2dUJpR0t4Vy01ZFhDOGdndjNlZGlUMDBfRHk1Mll2ZmM4cTV5amhZdy1Vdk9EMGp3a21JMWQzTEdDSU80Q0ltNndEblJCNXpWdlMwM1VjdG95a01qTTh3UExXRWVLeG9iUjlYM3BsQW1raGszdDBKaUFPTlhyMWtwRVlWVEpJMGZXWmplcm45TF9ndnpHQk02VHVzNGF0NU5iclhyZDE0MEkzS3Q0TmVR?oc=5",
+    "resumo": "A Escola Judicial de Goiás realiza o 4º Congresso de Precedentes com debates sobre inteligência artificial e jurisdição. Evento aberto ao público voltado à formação de magistrados e servidores.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjgo.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Recursos e Precedentes",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Pesquisa de Jurisprudencia",
+      "Deteccao de Casos Repetitivos"
+    ],
+    "temas": [
+      "Capacitacao e Pessoas",
+      "Governanca e Regulacao"
+    ],
+    "confianca": 0.68,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "Tribunal de Justiça do Estado de Goiás",
+      "data_publicacao": "2026-10-01",
+      "dominio_veiculo": "tjgo.jus.br"
     },
     "tipo": "noticia"
   },
@@ -206,6 +487,75 @@
       "veiculo": "migalhas.com.br",
       "data_publicacao": "2026-09-30",
       "dominio_veiculo": "migalhas.com.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmirgfbvv95cuxqclnbymfsbm1lvvvpztv0rmrqaudunwjauurjdwf6muoyntdoehrkruyxt0nvaxlst1r6be1qufl5sxrod1lmshb6u29hrfdlcwzzetnwqxpockxhs0plcxcymxv1qljvr2jdzzmwte16rfqyamgxrxnewhdkmudovwd6s0nmuc1uexf3cec5zkhrmjlizhrycwdvx2r2bhbxzhhwa1bomy1menpjsue",
+    "nome": "Inteligência artificial Hannah é compartilhada com Tribunal de Justiça da Bahia",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQclNBYmFSbm1lVVVPZTV0RmRqaUduNWJaUURjdWF6MUoyNTdOeHRkRUYxT0NvaXlsT1R6bE1qUFl5SXROd1lmSHB6U29hRFdlcWZzeTNwQXpockxHS0pLcXcyMXV1QlJvR2JDZzMwTE16RFQyamgxRXNEWHdkMUdOVWd6S0NmUC1ueXF3cEc5ZkhRMjlIZHRycWdvX2R2bHBXZHhwa1BoMy1menpjSUE?oc=5",
+    "resumo": "A ferramenta de IA Hannah, do Judiciário de Mato Grosso, foi compartilhada com o Tribunal de Justiça da Bahia. Exemplo de reaproveitamento de soluções de IA entre tribunais estaduais.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjmt.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Gestao Administrativa",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Classificacao e Triagem de Processos",
+      "Resumo de Documentos"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "Poder Judiciário do Estado de Mato Grosso",
+      "data_publicacao": "2026-09-30",
+      "dominio_veiculo": "tjmt.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi2wfbvv95cuxptmeta3vzcndxew5iawppv054clpmbgpacu9vckrzak9gr2xjughiwmdsrtyyefnms182yvl6tmjfay1ioetwsdbxbvjuatzfwtb6bxg5d2fcadg0vgqxm0jts3rmauh6aly4ynhbcnldductbjvcnkd0ri1brknvugzud2zxmddlrkntvdfjy3qwyzfjrkdaazvsbs1lwwziqjdruwvrnmvgzxfowuxwrxdhywnqefjpduc5x3q2su5lanrlwkp3zdh4eentefftogtusnjrb2hfyzq",
+    "nome": "SC: Juiz publica decisão com instruções a IA fazer o texto 'com seu estilo'",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPTmEta3VzcndxeW5IaWpPV054clpMbGpacU9VckRZak9GR2xjUGhiWmdSRTYyeFNmS182YVl6TmJfay1IOEtwSDBxbVJuaTZfWTB6bXg5d2FCaDg0VGQxM0JTS3RMaUh6alY4YnhBcnlDdUctbjVCNkd0Ri1BRkNVUGZud2ZxMDdLRkNTVDFJY3QwYzFJRkdaazVSbS1lWWZiQjdrUWVrNmVGZXFoWUxWRXdHYWNqeFJpdUc5X3Q2SU5LanRLWkp3ZDh4eENteFFTOGtUSnJRb2hFYzQ?oc=5",
+    "resumo": "Juiz em Santa Catarina publicou decisão que continha, por descuido, instruções (prompt) para a IA redigir o texto 'com seu estilo'. O caso expõe riscos de uso não revelado de IA generativa na redação de decisões.",
+    "verificacao": "fonte_secundaria",
+    "verificacao_motivo": "dominio nao institucional (noticias.uol.com.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Primeiro Grau",
+      "Tribunal de Justica Estadual"
+    ],
+    "fases": [
+      "Julgamento"
+    ],
+    "aplicacoes": [
+      "Minutas e Redacao de Decisoes"
+    ],
+    "temas": [
+      "IA Generativa",
+      "Transparencia e Explicabilidade",
+      "Responsabilidade e Auditoria"
+    ],
+    "confianca": 0.82,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "UOL Notícias",
+      "data_publicacao": "2026-09-30",
+      "dominio_veiculo": "noticias.uol.com.br"
     },
     "tipo": "noticia"
   },
@@ -567,6 +917,41 @@
     "tipo": "noticia"
   },
   {
+    "id": "news.google.com/rss/articles/cbmirafbvv95cuxque04duk1sfrwmlg4sfrja3lnuf83azhjbgfobg5kmhvmn2f1ek13rvr0ynzranrouhbjawpzuehurmsxuuzmq2xlvg5uc2pxstvobg9tckrhs1fszdfrsjjtcwvvyjj0ltznd2tld3gwugt1nlpuqtzhsf9fdm1nmjlkugnkc1pznwf6ald6mlmtukntsdvwsmhswvv4umljadflttjsagy1vzry",
+    "nome": "Poder Judiciário do Estado do Acre | Presidente do TJAC apresenta Humanize IA ao ouvidor nacional adjunto do CNJ",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUE04dUk1SFRwMlg4SFRja3lnUF83azhjbGFobG5kMHVmN2F1ek13RVR0YnZRanROUHBjaWpzUEhuRmsxUUZmQ2xLVG5Uc2pXSTVobG9tckRHS1FSZDFrSjJtcWVVYjJ0LTZNd2tld3gwUGt1NlpuQTZHSF9Fdm1NMjlkUGNKc1pZNWF6ald6MlMtUkNTSDVWSmhSWVV4UmljaDFlTTJSaGY1VzRY?oc=5",
+    "resumo": "O TJAC apresentou a ferramenta Humanize IA ao ouvidor nacional adjunto do CNJ. Registra iniciativa de IA em tribunal estadual ligada à ouvidoria/atendimento.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjac.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual",
+      "Conselho ou Orgao de Governanca"
+    ],
+    "fases": [
+      "Atendimento ao Cidadao",
+      "Gestao Administrativa"
+    ],
+    "aplicacoes": [
+      "Atendimento e Chatbot"
+    ],
+    "temas": [
+      "Produtividade e Eficiencia",
+      "Acesso a Justica"
+    ],
+    "confianca": 0.7,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "TJAC",
+      "data_publicacao": "2026-09-21",
+      "dominio_veiculo": "tjac.jus.br"
+    },
+    "tipo": "noticia"
+  },
+  {
     "id": "news.google.com/rss/articles/cbmiugfbvv95cuxpvmjayje3rmjgvksxs0jgwc1tsgdsd1zutfhxcwdoznfqv1vitl9wwnm2zxvmvjhzn3rnltrhutzlz2pwr3gwehu0txlpvwyxq20wdknobmrysjjtbny5yxvfctdzy2fomdnleg55bf9wohe2ohpmcjzwvlftoenma3qxr3drrmy1emjiy0ngeg5eulljzkjgzmlvos1hvlbpdtfnnkt4wtlyyve5t0s5c3netnhztc1aeve",
     "nome": "Appeals court warns about ‘AI slop’ in filings, weighs punishing lawyer",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVmJaYjE3RmJGVksxS0JGWC1TSGdSd1ZuTFhxcWdOZnFqV1ViTl9WWnM2ZXVmVjhZN3RNLTRHUTZlZ2pwR3gweHU0TXlPVWYxQ20wdkNobmRYSjJTbnY5YXVfcTdzY2FoMDNleG55bF9wOHE2OHpmcjZWVlFTOENma3QxR3drRmY1emJiY0NGeG5EUllJZkJGZmlVOS1HVlBpdTFNNkt4WTlyYVE5T0s5c3NETnhzTC1aeVE?oc=5",
@@ -635,6 +1020,42 @@
       "veiculo": "WINK News",
       "data_publicacao": "2026-09-18",
       "dominio_veiculo": "winknews.com"
+    },
+    "tipo": "noticia"
+  },
+  {
+    "id": "news.google.com/rss/articles/cbmi3wfbvv95cuxnsxnjrfoymhhiqk8xeujinkfhadhrwgvrslpidklauejrqulzrgxnbxbyrgtscwr4dgpcy3gzsu53ymozqzg1cwvsm0otdwfkoxprvhc3elvkwmz4wkd5sdhqrejyqvzllvf3bg9xbkk1ahbtsznbu0nttxb0ym8wdzhpcu9yee5jrlbycfbuttjptjdknhlmas1ks01lahi3zli1efdfs04wyuvwwkhxxzdzshjqs2xjmwdjlxn2ourinef1bzdhx1ztafnqdgruyvhhdtz6thgxlxzwmwjn",
+    "nome": "TJAC apresenta uso de inteligência artificial na atermação durante Fórum dos Juizados Especiais no Espírito Santo",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNSXNjRFoyMHhiQk8xeUJINkFhaDhrWGVrSlpidklaUEJrQUlzRGxnbXBYRGtscWR4dGpCY3gzSU53YmozQzg1cWVsM0otdWFKOXprVHc3elVKWmZ4Wkd5SDhQREJYQVZlLVF3bG9xbkk1aHBtSzNBU0NtTXB0Ym8wdzhpcU9YeE5JRlBycFBuTTJPTjdKNHlmaS1kS01LaHI3ZlI1eFdFS04wYUVWWkhXXzdzSHJQS2xjMWdjLXN2OURiNEF1bzdHX1ZtaFNqdGRUYVhHdTZ6THgxLXZWMWJN?oc=5",
+    "resumo": "O TJAC apresentou, em fórum dos Juizados Especiais no Espírito Santo, o uso de inteligência artificial na atermação de pedidos. A aplicação toca diretamente o atendimento ao cidadão e o acesso à Justiça.",
+    "verificacao": "fonte_primaria",
+    "verificacao_motivo": "dominio institucional (tjac.jus.br)",
+    "paises": [
+      "Brasil"
+    ],
+    "orgaos": [
+      "Tribunal de Justica Estadual",
+      "Primeiro Grau"
+    ],
+    "fases": [
+      "Atendimento ao Cidadao",
+      "Triagem e Distribuicao"
+    ],
+    "aplicacoes": [
+      "Atendimento e Chatbot",
+      "Extracao de Dados de Documentos"
+    ],
+    "temas": [
+      "Acesso a Justica",
+      "Produtividade e Eficiencia"
+    ],
+    "confianca": 0.72,
+    "classificado_por": "claude-opus-5",
+    "coletado_em": "2026-11-01",
+    "sinais": {
+      "veiculo": "TJAC",
+      "data_publicacao": "2026-09-18",
+      "dominio_veiculo": "tjac.jus.br"
     },
     "tipo": "noticia"
   },

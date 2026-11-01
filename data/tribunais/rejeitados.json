@@ -292,5 +292,47 @@
     "nome": "Positive Topology and Feasible Refinement: Forcing Matrices, Positivity, and Information",
     "motivo": "Matematica pura (topologia); sem relacao com IA ou Judiciario.",
     "data": "2026-10-01"
+  },
+  {
+    "chave": "doi.org/10.3389/fdgth.2026.1756620",
+    "nome": "Fatal deception: how generative AI fosters therapeutic misconception in vulnerable users",
+    "motivo": "Trata de IA em saude mental, sem recorte juridico ou judiciario.",
+    "data": "2026-11-01"
+  },
+  {
+    "chave": "doi.org/10.5281/zenodo.18717849",
+    "nome": "The Murder of the Vow: On the Structural Illegality of Contracts Document 157 — Crimson Hexagon Archive",
+    "motivo": "Texto sem conteudo verificavel sobre IA no Judiciario; deposito experimental/artistico.",
+    "data": "2026-11-01"
+  },
+  {
+    "chave": "doi.org/10.32342/eurosec/9789664346181",
+    "nome": "European Security Architecture in the Twenty-First Century",
+    "motivo": "Seguranca europeia, sem relacao com IA no Judiciario.",
+    "data": "2026-11-01"
+  },
+  {
+    "chave": "arxiv.org/abs/2610.40031v1",
+    "nome": "AI Cosmos: An Agentic Infra for Situated Learning",
+    "motivo": "Infraestrutura de aprendizagem com agentes; uso juridico apenas como dominio de teste educacional.",
+    "data": "2026-11-01"
+  },
+  {
+    "chave": "arxiv.org/abs/2610.35801v1",
+    "nome": "FOCUS: Active Critic Learning for Long-Horizon Language Model Agents",
+    "motivo": "Metodo generico de aprendizado por reforco para agentes de LLM, sem recorte juridico.",
+    "data": "2026-11-01"
+  },
+  {
+    "chave": "arxiv.org/abs/2610.07873v1",
+    "nome": "Preparing an AI-Augmented SIEM for the EU Cyber Resilience Act: A Practitioner Case Study",
+    "motivo": "Trata de cibersseguranca de produto e conformidade com o CRA, sem recorte judiciario.",
+    "data": "2026-11-01"
+  },
+  {
+    "chave": "arxiv.org/abs/2610.02792v1",
+    "nome": "Law And Order: Tax Law Autoformalization",
+    "motivo": "Formalizacao de normas tributarias em programas simbolicos; nao trata de aplicacao da IA ao Judiciario ou a administracao da justica.",
+    "data": "2026-11-01"
   }
 ]
